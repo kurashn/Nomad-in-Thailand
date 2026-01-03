@@ -238,6 +238,81 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Nomad Camp Section */}
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-12">
+            <div className="h-[1px] w-8 bg-slate-300"></div>
+            <h2 className="text-2xl md:text-4xl font-extrabold text-slate-800 tracking-tight">Nomad Camp</h2>
+            <div className="h-[1px] w-8 bg-slate-300"></div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Image Side */}
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500">
+              <Image
+                src="/images/nomad-camp-villa.png"
+                alt="Nomad Camp Villa Party"
+                fill
+                className="object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <p className="font-bold text-lg">Next: June 2026</p>
+                <p className="opacity-90">Location: Chiang Mai</p>
+              </div>
+            </div>
+
+            {/* Content Side */}
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h3 className="text-2xl font-bold text-slate-800">
+                  2泊3日の共同生活。<br />
+                  ルールは「自由」であること。
+                </h3>
+                <p className="text-slate-600 leading-relaxed">
+                  運営が用意するのは、非日常を味わえる「豪華ヴィラ」だけ。<br />
+                  スケジュールも講義もありません。<br />
+                  プールサイドで優雅に仕事をするもよし、夜通し語り合うもよし。<br />
+                  ノマドらしく、それぞれのスタイルで楽しむ大人の合宿です。
+                </p>
+
+              </div>
+
+              {/* Past Achievements */}
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <h4 className="font-bold text-slate-700 mb-4 flex items-center gap-2">
+                  <Users className="w-4 h-4 text-indigo-500" />
+                  過去の開催実績
+                </h4>
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
+                    <span className="font-medium text-slate-800">Vol.5 Phuket</span>
+                    <span className="text-slate-500">2024.10</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
+                    <span className="font-medium text-slate-800">Vol.4 Bali Ubud</span>
+                    <span className="text-slate-500">2024.04</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
+                    <span className="font-medium text-slate-800">Vol.3 Pattaya</span>
+                    <span className="text-slate-500">2023.12</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
+                    <span className="font-medium text-slate-800">Vol.2 Vietnam Da Nang</span>
+                    <span className="text-slate-500">2023.10</span>
+                  </div>
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="font-medium text-slate-800">Vol.1 Chiang Mai</span>
+                    <span className="text-slate-500">2023.05</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
 
       {/* Newsletter Section */}

@@ -17,7 +17,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed w-full z-50 bg-background/80 backdrop-blur-md border-b border-muted">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-full pl-[20px] pr-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity" onClick={() => setIsOpen(false)}>
@@ -26,7 +26,7 @@ export default function Navbar() {
                                     src="/images/nplogo.png"
                                     alt="Nomad Place"
                                     fill
-                                    className="object-contain"
+                                    className="object-contain object-left"
                                     priority
                                 />
                             </div>
