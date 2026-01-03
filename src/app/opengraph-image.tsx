@@ -1,4 +1,6 @@
 import { ImageResponse } from 'next/og'
+import { join } from 'path'
+import { readFile } from 'fs/promises'
 
 // Route segment config
 export const runtime = 'nodejs'
@@ -21,13 +23,9 @@ export default async function Image() {
     // Load the image
     // In a real app, you might fetch this from your public folder URL or import it if supported
     // For Vercel/Next.js dynamic OG, it's often easiest to use an absolute URL or fetch
-    const imageData = await fetch(new URL('../../public/character/nomad-dog-waving-new.png', import.meta.url)).then(
-        (res) => res.arrayBuffer()
-    )
+    const imageData = await readFile(join(process.cwd(), 'public/character/nomad-dog-waving-new.png'))
 
-    const logoData = await fetch(new URL('../../public/images/nplogo.png', import.meta.url)).then(
-        (res) => res.arrayBuffer()
-    )
+    const logoData = await readFile(join(process.cwd(), 'public/images/nplogo.png'))
 
     return new ImageResponse(
         (
