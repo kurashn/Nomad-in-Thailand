@@ -23,9 +23,11 @@ export default async function Image() {
     // Load the image
     // In a real app, you might fetch this from your public folder URL or import it if supported
     // For Vercel/Next.js dynamic OG, it's often easiest to use an absolute URL or fetch
-    const imageData = await readFile(join(process.cwd(), 'public/character/nomad-dog-waving-new.png'))
+    const imageBuffer = await readFile(join(process.cwd(), 'public/character/nomad-dog-waving-new.png'))
+    const imageData = imageBuffer.buffer.slice(imageBuffer.byteOffset, imageBuffer.byteOffset + imageBuffer.byteLength)
 
-    const logoData = await readFile(join(process.cwd(), 'public/images/nplogo.png'))
+    const logoBuffer = await readFile(join(process.cwd(), 'public/images/nplogo.png'))
+    const logoData = logoBuffer.buffer.slice(logoBuffer.byteOffset, logoBuffer.byteOffset + logoBuffer.byteLength)
 
     return new ImageResponse(
         (
