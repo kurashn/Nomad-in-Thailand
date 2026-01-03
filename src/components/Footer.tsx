@@ -45,9 +45,9 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <a href="https://forms.gle/xyz" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors font-bold text-primary">
-                                    メルマガ (先行登録受付中)
-                                </a>
+                                <span className="text-muted-foreground cursor-not-allowed">
+                                    メルマガ (準備中)
+                                </span>
                             </li>
                         </ul>
                     </div>

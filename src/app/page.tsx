@@ -248,18 +248,41 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image Side */}
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500">
-              <Image
-                src="/images/nomad-camp-villa.png"
-                alt="Nomad Camp Villa Party"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <p className="font-bold text-lg">Next: June 2026</p>
-                <p className="opacity-90">Location: Chiang Mai</p>
+            {/* Image Side - Replaced with YouTube Video */}
+            <div className="space-y-6">
+              <div className="rounded-xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500 border border-slate-200 bg-black">
+                <YouTubeEmbed videoId="XvF1XOgDkiY" />
+              </div>
+
+              {/* Next Event Card - Premium Luxury Design */}
+              <div className="bg-neutral-950 rounded-xl p-6 border border-amber-500/20 shadow-xl shadow-amber-900/10 relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -mr-16 -mt-32 pointer-events-none"></div>
+
+                <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+                  <div>
+                    <div className="inline-flex items-center gap-2 mb-3">
+                      <div className="h-[1px] w-8 bg-gradient-to-r from-transparent to-amber-500"></div>
+                      <span className="text-amber-400 text-[10px] font-bold tracking-[0.2em] uppercase">Coming Soon</span>
+                      <div className="h-[1px] w-8 bg-gradient-to-l from-transparent to-amber-500"></div>
+                    </div>
+                    <h3 className="text-4xl md:text-5xl font-serif text-white tracking-tight mb-2">
+                      2026.06
+                    </h3>
+                    <p className="text-amber-200/60 font-medium tracking-wide">
+                      Next ノマド合宿
+                    </p>
+                  </div>
+
+                  <div className="text-sm font-medium text-neutral-400 bg-neutral-900/50 px-6 py-4 rounded-lg border border-white/5 backdrop-blur-sm group-hover:border-amber-500/20 transition-colors">
+                    <p className="flex items-center justify-center sm:justify-start gap-3 mb-1 text-neutral-200">
+                      <MapPin className="w-4 h-4 text-amber-600" />
+                      場所・日程調整中
+                    </p>
+                    <p className="text-xs text-neutral-600 text-center sm:text-left pl-7">
+                      詳細が決まり次第お知らせします
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -267,17 +290,22 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-slate-800">
-                  2泊3日の共同生活。<br />
-                  ルールは「自由」であること。
+                  2泊3日のノマド合宿。<br />
+                  ルールは「自由」。
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
                   運営が用意するのは、非日常を味わえる「豪華ヴィラ」だけ。<br />
                   スケジュールも講義もありません。<br />
                   プールサイドで優雅に仕事をするもよし、夜通し語り合うもよし。<br />
-                  ノマドらしく、それぞれのスタイルで楽しむ大人の合宿です。
+                  ノマドらしく、それぞれのスタイルで楽しむ合宿です。
                 </p>
 
+
+
               </div>
+
+
+
 
               {/* Past Achievements */}
               <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
@@ -287,23 +315,23 @@ export default function Home() {
                 </h4>
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
-                    <span className="font-medium text-slate-800">Vol.5 Phuket</span>
+                    <span className="font-medium text-slate-800">Vol.5 プーケット</span>
                     <span className="text-slate-500">2024.10</span>
                   </div>
                   <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
-                    <span className="font-medium text-slate-800">Vol.4 Bali Ubud</span>
+                    <span className="font-medium text-slate-800">Vol.4 バリ島 ウブド</span>
                     <span className="text-slate-500">2024.04</span>
                   </div>
                   <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
-                    <span className="font-medium text-slate-800">Vol.3 Pattaya</span>
+                    <span className="font-medium text-slate-800">Vol.3 パタヤ</span>
                     <span className="text-slate-500">2023.12</span>
                   </div>
                   <div className="flex items-center justify-between text-sm border-b border-slate-100 pb-2">
-                    <span className="font-medium text-slate-800">Vol.2 Vietnam Da Nang</span>
+                    <span className="font-medium text-slate-800">Vol.2 ベトナム ダナン</span>
                     <span className="text-slate-500">2023.10</span>
                   </div>
                   <div className="flex items-center justify-between text-sm">
-                    <span className="font-medium text-slate-800">Vol.1 Chiang Mai</span>
+                    <span className="font-medium text-slate-800">Vol.1 チェンマイ</span>
                     <span className="text-slate-500">2023.05</span>
                   </div>
                 </div>

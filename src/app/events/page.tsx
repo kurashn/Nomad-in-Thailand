@@ -67,7 +67,7 @@ export default function EventsPage() {
                         <div className="absolute top-0 left-0 w-full h-full bg-[url('/images/grid-pattern.svg')] opacity-10"></div>
                         <h2 className="text-2xl md:text-3xl font-black mb-3 relative z-10 flex items-center justify-center gap-3">
                             <PartyPopper className="w-6 h-6 md:w-8 md:h-8 text-yellow-300" />
-                            タイ好きノマド🇹🇭
+                            Nomad in Thailand🇹🇭
                         </h2>
                         <p className="opacity-90 font-medium text-lg relative z-10">ここから始まる、新しい出会い。</p>
                     </div>
