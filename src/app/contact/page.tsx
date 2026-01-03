@@ -67,8 +67,9 @@ export default function ContactPage() {
                             href="https://forms.gle/dMwB4JjFq5R6qJ7s5"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="bg-white text-slate-700 font-bold w-full py-4 rounded-xl border-2 border-slate-200 flex items-center justify-center gap-2 hover:bg-slate-50 transition-colors"
+                            className="bg-orange-500 text-white font-bold w-full py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20"
                         >
+                            お問い合わせフォームへ <ExternalLink className="w-4 h-4" />
                         </a>
                     </div>
                 </div>
