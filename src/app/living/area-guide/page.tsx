@@ -35,8 +35,8 @@ export default function AreaGuidePage() {
 
             <div className="container max-w-3xl mx-auto px-4 mt-12">
                 {/* Intro */}
-                <div className="prose prose-lg prose-slate max-w-none mb-16">
-                    <p className="lead text-xl leading-loose font-medium text-foreground/80">
+                <div className="prose prose-lg prose-slate max-w-none mb-10">
+                    <p className="leading-loose font-medium text-foreground/80 mb-6">
                         「どこに住むか」で、あなたのバンコク生活は180度変わります。
                     </p>
                     <p className="leading-relaxed">

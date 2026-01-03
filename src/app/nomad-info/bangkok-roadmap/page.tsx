@@ -56,7 +56,7 @@ export default function BangkokRoadmapPage() {
 
             <div className="container max-w-3xl mx-auto px-4 mt-8">
                 {/* Intro */}
-                <div className="prose prose-lg prose-slate max-w-none mb-16 relative">
+                <div className="prose prose-lg prose-slate max-w-none mb-10 relative">
                     <div className="float-right ml-6 mb-4 w-28 h-28 md:w-36 md:h-36 relative animate-bounce-slow" style={{ animationDuration: '3s' }}>
                         <Image
                             src="/character/nomad-dog-waving-new.png"
@@ -65,7 +65,7 @@ export default function BangkokRoadmapPage() {
                             className="object-contain"
                         />
                     </div>
-                    <p className="lead text-xl leading-loose font-medium text-foreground/80 pl-2 mb-12">
+                    <p className="leading-loose font-medium text-foreground/80 pl-2 mb-6">
                         「いつか海外で暮らしてみたい」<br />
                         その「いつか」を、2026年に実現しませんか？
                     </p>

@@ -36,8 +36,8 @@ export default function TransportGuidePage() {
 
             <div className="container max-w-3xl mx-auto px-4 mt-12">
                 {/* Intro */}
-                <div className="prose prose-lg prose-slate max-w-none mb-16">
-                    <p className="lead text-xl leading-loose font-medium text-foreground/80">
+                <div className="prose prose-lg prose-slate max-w-none mb-10">
+                    <p className="leading-loose font-medium text-foreground/80 mb-6">
                         「メーターを使わないタクシー」「高額なトゥクトゥクの勧誘」...<br />
                         かつてバンコクの移動はストレスの戦いでしたが、2026年の今は違います。
                     </p>

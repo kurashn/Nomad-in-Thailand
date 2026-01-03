@@ -35,8 +35,8 @@ export default function SimGuidePage() {
 
             <div className="container max-w-3xl mx-auto px-4 mt-12">
                 {/* Intro */}
-                <div className="prose prose-lg prose-slate max-w-none mb-16">
-                    <p className="lead text-xl leading-loose font-medium text-foreground/80">
+                <div className="prose prose-lg prose-slate max-w-none mb-10">
+                    <p className="leading-loose font-medium text-foreground/80 mb-6">
                         海外ノマド生活で「最も詰む」瞬間。それは、<br />
                         <strong>「日本の銀行にログインしたいのに、SMS（ワンタイムパスワード）が届かない時」</strong>です。
                     </p>

@@ -35,8 +35,8 @@ export default function MedicalGuidePage() {
 
             <div className="container max-w-3xl mx-auto px-4 mt-12">
                 {/* Intro */}
-                <div className="prose prose-lg prose-slate max-w-none mb-12">
-                    <p className="lead text-xl leading-loose font-medium text-foreground/80">
+                <div className="prose prose-lg prose-slate max-w-none mb-10">
+                    <p className="leading-loose font-medium text-foreground/80 mb-6">
                         異国の地で最も不安なこと、それは「病気」です。
                     </p>
                     <p className="leading-relaxed">

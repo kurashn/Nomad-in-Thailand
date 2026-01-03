@@ -33,6 +33,15 @@ export const events = [
 
 export const nomadArticles = [
     {
+        id: 4,
+        title: "【2026年最新】タイDTVビザ完全ガイド！申請条件・費用・書類を実体験から徹底解説",
+        excerpt: "5年間滞在可能、180日ごとの出国でOK。デジタルノマドのための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。",
+        category: "ビザ情報",
+        date: "2026-03-15",
+        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
+        link: "/nomad-info/dtv-visa"
+    },
+    {
         id: 1,
         title: "【2026年版】ゼロから始めるバンコクノマド生活。準備〜渡航後1ヶ月の完全ロードマップ",
         excerpt: "会社を辞めるのが怖いですか？リスクを抑え、30日間だけノマド生活を試すための完全ガイド。",
