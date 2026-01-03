@@ -25,7 +25,7 @@ const zenOldMincho = Zen_Old_Mincho({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nomad-place-jpn.com"),
   title: "Nomad Place | タイ移住・ノマド生活コミュニティ",
   description: "タイ在住の日本人ノマドのためのコミュニティメディア。",
 };
@@ -40,8 +40,48 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://nomad-place-jpn.com/#organization",
+        "name": "Nomad Place",
+        "url": "https://nomad-place-jpn.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://nomad-place-jpn.com/images/nplogo.png",
+          "width": 512,
+          "height": 512
+        },
+        "description": "タイ移住・ノマド生活コミュニティ",
+        "sameAs": [
+          "https://x.com/nomad_place",
+          "https://instagram.com/nomad_place"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nomad-place-jpn.com/#website",
+        "url": "https://nomad-place-jpn.com",
+        "name": "Nomad Place",
+        "description": "タイ移住・ノマド生活コミュニティ",
+        "publisher": {
+          "@id": "https://nomad-place-jpn.com/#organization"
+        },
+        "inLanguage": "ja"
+      }
+    ]
+  };
+
   return (
     <html lang="ja">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${notoSansJP.variable} ${merriweather.variable} ${zenOldMincho.variable} antialiased bg-background text-foreground font-sans flex flex-col min-h-screen`}
       >
