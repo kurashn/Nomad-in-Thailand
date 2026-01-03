@@ -35,7 +35,7 @@ export default function NewsletterCTA({ isInline = false }: { isInline?: boolean
             <div className="inline-block p-3 rounded-full bg-primary/10 mb-6 animate-pulse">
                 <Gift className="w-8 h-8 text-primary" />
             </div>
-            <h2 className="text-3xl font-bold mb-4">ノマド攻略メルマガ（先行登録）</h2>
+            <h2 className="text-3xl font-bold mb-4">ノマド攻略メルマガ<br className="md:hidden" />（先行登録）</h2>
             <p className="text-lg text-muted-foreground mb-8">
                 バンコク移住の裏話や、仕事の話、ここだけのイベント情報などを配信。<br />
                 今なら<span className="font-bold text-primary">「バンコクノマド完全マップPDF」</span>を無料プレゼント中！

@@ -290,8 +290,8 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-2xl font-bold text-slate-800">
-                  2泊3日のノマド合宿。<br />
-                  ルールは「自由」。
+                  2泊3日のノマド合宿<br />
+                  ルールは「自由」
                 </h3>
                 <p className="text-slate-600 leading-relaxed">
                   運営が用意するのは、非日常を味わえる「豪華ヴィラ」だけ。<br />
