@@ -46,7 +46,7 @@ export default function BangkokRoadmapPage() {
                                 {/* Avatar placeholder */}
                                 <div className="absolute inset-0 bg-gradient-to-br from-primary to-accent opacity-80"></div>
                             </div>
-                            <span className="font-medium drop-shadow-sm">Nomad Place編集部</span>
+                            <span className="font-medium drop-shadow-sm">海外ノマドポッドキャスト編集部</span>
                         </div>
                         <span>•</span>
                         <time className="drop-shadow-sm">2025.12.31</time>

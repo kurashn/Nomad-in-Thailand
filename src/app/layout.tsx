@@ -26,7 +26,7 @@ const zenOldMincho = Zen_Old_Mincho({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nomad-place-jpn.com"),
-  title: "Nomad Place | タイ移住・ノマド生活コミュニティ",
+  title: "海外ノマドポッドキャスト | タイ移住・ノマド生活コミュニティ",
   description: "タイ在住の日本人ノマドのためのコミュニティメディア。",
 };
 
@@ -46,11 +46,11 @@ export default function RootLayout({
       {
         "@type": "Organization",
         "@id": "https://nomad-place-jpn.com/#organization",
-        "name": "Nomad Place",
+        "name": "海外ノマドポッドキャスト",
         "url": "https://nomad-place-jpn.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://nomad-place-jpn.com/images/nplogo.png",
+          "url": "https://nomad-place-jpn.com/images/np-logo.jpg",
           "width": 512,
           "height": 512
         },
@@ -64,7 +64,7 @@ export default function RootLayout({
         "@type": "WebSite",
         "@id": "https://nomad-place-jpn.com/#website",
         "url": "https://nomad-place-jpn.com",
-        "name": "Nomad Place",
+        "name": "海外ノマドポッドキャスト",
         "description": "タイ移住・ノマド生活コミュニティ",
         "publisher": {
           "@id": "https://nomad-place-jpn.com/#organization"

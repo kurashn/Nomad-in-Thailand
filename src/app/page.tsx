@@ -28,7 +28,7 @@ export default function Home() {
             </div>
           </div>
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent pb-2">
-            Nomad Place
+            海外ノマドポッドキャスト
           </h1>
           <p className="text-base md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             PC1台で、世界はもっと近くなる。<br />
@@ -243,7 +243,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-12">
             <div className="h-[1px] w-8 bg-slate-300"></div>
-            <h2 className="text-2xl md:text-4xl font-extrabold text-slate-800 tracking-tight">Nomad Camp</h2>
+            <h2 className="text-2xl md:text-4xl font-extrabold text-slate-800 tracking-tight">Nomad Place</h2>
             <div className="h-[1px] w-8 bg-slate-300"></div>
           </div>
 

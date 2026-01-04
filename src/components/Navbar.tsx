@@ -23,8 +23,8 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity" onClick={() => setIsOpen(false)}>
                             <div className="relative w-32 h-10 md:w-40 md:h-12">
                                 <Image
-                                    src="/images/nplogo.png"
-                                    alt="Nomad Place"
+                                    src="/images/np-logo.jpg"
+                                    alt="海外ノマドポッドキャスト"
                                     fill
                                     className="object-contain object-left"
                                     priority

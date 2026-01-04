@@ -2,8 +2,8 @@ import { Mail, MessageCircle, ExternalLink, HelpCircle, Briefcase } from "lucide
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "お問い合わせ | Nomad Place",
-    description: "Nomad Placeへのお問い合わせはこちら。取材依頼、コミュニティへの参加、その他ご質問など。",
+    title: "お問い合わせ | 海外ノマドポッドキャスト",
+    description: "海外ノマドポッドキャストへのお問い合わせはこちら。取材依頼、コミュニティへの参加、その他ご質問など。",
 };
 
 export default function ContactPage() {
