@@ -17,7 +17,7 @@ export default function DtvVisaPage() {
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 <Image
-                    src="/images/bangkok_nomad_roadmap_thumbnail.png" // Placeholder, user might want a specific DTV image later
+                    src="/images/dtv-visa-thumbnail.png"
                     alt="Thailand DTV Visa"
                     fill
                     className="object-cover"

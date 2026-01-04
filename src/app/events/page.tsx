@@ -25,9 +25,9 @@ export default function EventsPage() {
                                 <span className="tracking-wide">COMMUNITY EVENTS</span>
                             </div>
                             <h1 className="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight drop-shadow-sm text-sky-900">
-                                仲間と出会う、<br />
+                                ノマド仲間たちと、<br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
-                                    ワクワク体験。
+                                    定期イベント実施中。
                                 </span>
                             </h1>
                             <p className="text-lg md:text-2xl text-sky-800/80 font-medium leading-relaxed max-w-xl">

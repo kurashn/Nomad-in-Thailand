@@ -38,7 +38,7 @@ export const nomadArticles = [
         excerpt: "5年間滞在可能、180日ごとの出国でOK。デジタルノマドのための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。",
         category: "ビザ情報",
         date: "2026-03-15",
-        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
+        image: "/images/dtv-visa-thumbnail.png",
         link: "/nomad-info/dtv-visa"
     },
     {

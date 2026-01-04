@@ -34,14 +34,18 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <h2 className="text-xl font-bold text-slate-800 mb-2">一般のお問い合わせ</h2>
-                                <p className="text-muted-foreground leading-relaxed text-sm">
-                                    コミュニティへの参加方法や、記事の内容に関するご質問など、お気軽にお問い合わせください。<br />
-                                    ※ 既にコミュニティメンバーの方は、Discord内のサポートチャンネルをご利用ください。
+                                <p className="text-muted-foreground leading-relaxed text-sm mb-4">
+                                    Podcastの感想や、コミュニティ参加に関するご質問はこちら。
                                 </p>
+                                <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+                                    <li>Podcastのご感想・リクエスト</li>
+                                    <li>コミュニティ参加前の相談</li>
+                                    <li>その他、カジュアルなご質問</li>
+                                </ul>
                             </div>
                         </div>
                         <a
-                            href="https://forms.gle/dMwB4JjFq5R6qJ7s5" // Placeholder form URL, replace if distinct from events
+                            href="https://forms.gle/Detn3QuqLe2kEy4y7"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-blue-600 text-white font-bold w-full py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20"
@@ -57,14 +61,20 @@ export default function ContactPage() {
                                 <Briefcase className="w-6 h-6" />
                             </div>
                             <div>
-                                <h2 className="text-xl font-bold text-slate-800 mb-2">取材・協業のご依頼</h2>
-                                <p className="text-muted-foreground leading-relaxed text-sm">
-                                    メディア掲載、イベント共催、スポンサー契約など、ビジネス関連のご相談はこちらからお願いいたします。
+                                <h2 className="text-xl font-bold text-slate-800 mb-2">取材・協業・スポンサー</h2>
+                                <p className="text-muted-foreground leading-relaxed text-sm mb-4">
+                                    活動の幅を広げるためのパートナーシップ。
                                 </p>
+                                <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-4">
+                                    <li>番組スポンサーへのご応募</li>
+                                    <li>タイ移住・ノマド関連の取材</li>
+                                    <li>イベント登壇・共催のご依頼</li>
+                                    <li>プロモーション企画のご相談</li>
+                                </ul>
                             </div>
                         </div>
                         <a
-                            href="https://forms.gle/dMwB4JjFq5R6qJ7s5"
+                            href="https://forms.gle/4DU4CfPtEdavbhnD8"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-orange-500 text-white font-bold w-full py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/20"

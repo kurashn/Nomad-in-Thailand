@@ -3,6 +3,7 @@ import Image from "next/image";
 import { ArrowRight, MapPin, Calendar, Users, Home as HomeIcon, Mail, ExternalLink, Shield, Wallet, Globe, Smartphone, Heart } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import SponsorSection from "@/components/SponsorSection";
 
 export default function Home() {
   return (
@@ -28,7 +29,7 @@ export default function Home() {
             </div>
           </div>
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent pb-2">
-            海外ノマドポッドキャスト
+            海外ノマド<br className="md:hidden" />ポッドキャスト
           </h1>
           <p className="text-base md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             PC1台で、世界はもっと近くなる。<br />
@@ -163,7 +164,7 @@ export default function Home() {
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-[1px] w-8 bg-slate-300"></div>
-            <h2 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">2026 Scheduled Events</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">2026年 イベントスケジュール</h2>
             <div className="h-[1px] w-8 bg-slate-300"></div>
           </div>
 
@@ -172,7 +173,7 @@ export default function Home() {
             <div className="group flex items-center justify-between p-4 rounded-xl bg-orange-50/40 border border-orange-100 hover:border-orange-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-orange-100 flex flex-col items-center justify-center text-orange-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">JAN</span>
+                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">1月</span>
                   <span className="text-lg font-extrabold leading-none">31</span>
                 </div>
                 <div>
@@ -194,7 +195,7 @@ export default function Home() {
             <div className="group flex items-center justify-between p-4 rounded-xl bg-emerald-50/40 border border-emerald-100 hover:border-emerald-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-emerald-100 flex flex-col items-center justify-center text-emerald-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">APR</span>
+                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">4月</span>
                   <span className="text-lg font-extrabold leading-none">--</span>
                 </div>
                 <div>
@@ -216,7 +217,7 @@ export default function Home() {
             <div className="group flex items-center justify-between p-4 rounded-xl bg-indigo-50/40 border border-indigo-100 hover:border-indigo-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-indigo-100 flex flex-col items-center justify-center text-indigo-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">JUN</span>
+                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">6月</span>
                   <span className="text-lg font-extrabold leading-none">--</span>
                 </div>
                 <div>
@@ -373,6 +374,9 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      {/* Sponsor Section */}
+      <SponsorSection />
     </div>
   );
 }
