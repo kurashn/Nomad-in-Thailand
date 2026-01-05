@@ -29,7 +29,7 @@ export default function Home() {
             </div>
           </div>
           <h1 className="text-4xl md:text-7xl font-bold tracking-tight mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent pb-2">
-            海外ノマド<br className="md:hidden" />ポッドキャスト
+            Nomad in Thailand
           </h1>
           <p className="text-base md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             PC1台で、世界はもっと近くなる。<br />
