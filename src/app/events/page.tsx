@@ -9,8 +9,47 @@ export const metadata: Metadata = {
 };
 
 export default function EventsPage() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "イベント情報 | Nomad in Thailand",
+        "description": "タイ在住の日本人ノマド向けイベント情報。ミートアップや交流会。",
+        "url": "https://nomad-th.com/events",
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "Event",
+                    "name": "月末恒例！ノマドゆる飲み会",
+                    "description": "バンコク・オンヌットなどで開催される定期交流会。",
+                    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+                    "eventStatus": "https://schema.org/EventScheduled",
+                    "location": {
+                        "@type": "Place",
+                        "name": "Bangkok, Thailand",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Bangkok",
+                            "addressCountry": "TH"
+                        }
+                    }
+                },
+                {
+                    "@type": "Event",
+                    "name": "集中 & 交流！カフェ作業会",
+                    "description": "コワーキングスペースやカフェで集まって作業する会。",
+                    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+                }
+            ]
+        }
+    };
+
     return (
         <div className="min-h-screen bg-background pb-20">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Hero Section */}
             <div className="relative bg-gradient-to-br from-sky-400 via-cyan-300 to-yellow-200 text-sky-950 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-20 mix-blend-overlay"></div>

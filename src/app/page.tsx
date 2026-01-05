@@ -173,8 +173,8 @@ export default function Home() {
             <div className="group flex items-center justify-between p-4 rounded-xl bg-orange-50/40 border border-orange-100 hover:border-orange-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-orange-100 flex flex-col items-center justify-center text-orange-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">1月</span>
-                  <span className="text-lg font-extrabold leading-none">31</span>
+                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">2月</span>
+                  <span className="text-lg font-extrabold leading-none">--</span>
                 </div>
                 <div>
                   <h3 className="text-base font-bold text-slate-800 group-hover:text-orange-900 transition-colors">オンヌットで新年会</h3>
@@ -185,8 +185,8 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <span className="text-[10px] font-bold text-white bg-orange-500 px-3 py-1 rounded-full shadow-sm shadow-orange-200">
-                  募集中
+                <span className="text-[10px] font-bold text-orange-600 bg-white border border-orange-200 px-3 py-1 rounded-full">
+                  詳細未定
                 </span>
               </div>
             </div>
@@ -357,7 +357,8 @@ export default function Home() {
               Main Contents
             </span>
           </div>
-          <h2 className="text-3xl font-bold mb-6">YouTubeでリアルな情報を発信中</h2>
+          <h2 className="text-3xl font-bold mb-2">YouTubeでリアルな情報を発信中</h2>
+          <p className="text-xl text-primary font-bold mb-6">「海外ノマドポッドキャスト」</p>
           <p className="text-lg text-muted-foreground mb-8">
             文章だけでは伝わらない、現地の空気感やノマドの生の声をお届けします。
           </p>

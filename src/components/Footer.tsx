@@ -53,7 +53,7 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-muted text-center text-xs text-muted-foreground">
-                    &copy; {new Date().getFullYear()} 海外ノマドポッドキャスト. All rights reserved.
+                    &copy; {new Date().getFullYear()} Nomad in Thailand -ノマタイ-. All rights reserved.
                 </div>
             </div>
         </footer>

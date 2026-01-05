@@ -27,9 +27,9 @@ export default function SponsorSection() {
                         <div className="w-16 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto mb-6 rounded-full"></div>
 
                         <p className="text-lg text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-                            海外ノマドポッドキャストの活動を応援していただける<br className="hidden md:block" />
+                            当サイトの活動を応援していただける<br className="hidden md:block" />
                             個人・企業様を募集しています。<br />
-                            スポンサー様は、感謝の気持ちを込めて動画内でご紹介させていただきます。
+                            スポンサー様は、感謝の気持ちを込めて記事内・動画内でご紹介させていただきます。
                         </p>
 
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

@@ -20,15 +20,23 @@ export default function Navbar() {
             <div className="w-full pl-[20px] pr-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
-                        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity" onClick={() => setIsOpen(false)}>
-                            <div className="relative w-32 h-10 md:w-40 md:h-12">
+                        <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity" onClick={() => setIsOpen(false)}>
+                            <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
                                 <Image
-                                    src="/images/np-logo.jpg"
-                                    alt="海外ノマドポッドキャスト"
+                                    src="/character/nomad-dog-hero-white.png"
+                                    alt="Nomad in Thailand Logo"
                                     fill
-                                    className="object-contain object-left"
+                                    className="object-contain"
                                     priority
                                 />
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="font-bold text-lg md:text-xl leading-none tracking-tight text-foreground">
+                                    Nomad in Thailand
+                                </span>
+                                <span className="text-[10px] md:text-xs font-medium text-muted-foreground tracking-wide">
+                                    -ノマタイ-
+                                </span>
                             </div>
                         </Link>
                     </div>

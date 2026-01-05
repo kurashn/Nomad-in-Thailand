@@ -11,8 +11,68 @@ export const metadata: Metadata = {
 };
 
 export default function DtvVisaPage() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": "【2026年最新】タイDTVビザ完全ガイド！申請条件・費用・書類を実体験から徹底解説",
+                "image": "https://nomad-th.com/images/dtv-visa-thumbnail.png",
+                "datePublished": "2024-06-01",
+                "dateModified": new Date().toISOString(),
+                "author": {
+                    "@type": "Organization",
+                    "name": "Nomad in Thailand",
+                    "url": "https://nomad-th.com"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Nomad in Thailand",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://nomad-th.com/character/nomad-dog-hero-white.png"
+                    }
+                },
+                "description": "5年間滞在可能、180日ごとの出国でOK。デジタルノマドのための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。"
+            },
+            {
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "タイ国内で申請できますか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "原則としてできません。タイ国外（日本や近隣国のタイ大使館）で申請する必要があります。ノービザで入国してしまった場合は、一度ラオスやマレーシア等に出国して申請することになります。"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "税金はどうなりますか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "タイ滞在が年間180日を超えると「居住者」扱いとなり、タイ国内に持ち込んだ所得に対して課税される可能性があります（2024年の新税制）。ただし、DTVビザ自体が新しい制度であり、運用は不透明な部分が多いです。日本の非居住者となるかどうかも含め、専門家（税理士）への相談をおすすめします。"
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "180日以上の滞在はどうすればいいですか？",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "1回につき180日滞在できますが、イミグレーションで10,000バーツを支払えばさらに180日延長可能です。または、一度タイ国外に出国して再入国すれば、新たに180日の滞在許可が降ります（これを5年間繰り返せます）。"
+                        }
+                    }
+                ]
+            }
+        ]
+    };
+
     return (
         <article className="min-h-screen bg-background pb-20 font-sans text-foreground/90">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Hero Section */}
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-black/50 z-10" />

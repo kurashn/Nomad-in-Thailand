@@ -10,8 +10,20 @@ export const metadata: Metadata = {
 };
 
 export default function NomadInfoPage() {
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "ノマド情報 | Nomad in Thailand",
+        "description": "バンコクのノマド生活に役立つ情報を網羅。ビザ、コワーキング、生活費、コミュニティなど。",
+        "url": "https://nomad-th.com/nomad-info"
+    };
+
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <div className="mb-12">
                 <h1 className="text-4xl font-bold mb-4">ノマド情報</h1>
                 <p className="text-muted-foreground text-lg">
