@@ -139,7 +139,7 @@ export default async function Image() {
                             fontWeight: 700,
                             fontFamily: 'monospace',
                         }}>
-                            nomad-place.com
+                            nomad-th.com
                         </span>
                     </div>
 

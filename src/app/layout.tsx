@@ -25,18 +25,18 @@ const zenOldMincho = Zen_Old_Mincho({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://t78-community.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nomad-th.com"),
   title: "Nomad in Thailand -ノマタイ- | タイ移住・ノマド生活コミュニティ",
   description: "タイ在住の日本人ノマドのためのコミュニティメディア「ノマタイ」。バンコク、チェンマイなどの移住情報、ビザ、コワーキングスペース、イベント情報を発信。",
   keywords: ["タイ移住", "デジタルノマド", "バンコク生活", "チェンマイ生活", "海外ノマド", "ノマタイ", "Nomad in Thailand"],
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: "https://t78-community.com",
+    url: "https://nomad-th.com",
     siteName: "Nomad in Thailand -ノマタイ-",
     images: [
       {
-        url: "https://t78-community.com/images/ogp.jpg", // Ensure this path exists or update later
+        url: "https://nomad-th.com/images/ogp.jpg", // Ensure this path exists or update later
         width: 1200,
         height: 630,
         alt: "Nomad in Thailand -ノマタイ-",
@@ -65,13 +65,13 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://t78-community.com/#organization",
+        "@id": "https://nomad-th.com/#organization",
         "name": "Nomad in Thailand -ノマタイ-",
         "alternateName": "ノマタイ",
-        "url": "https://t78-community.com",
+        "url": "https://nomad-th.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://t78-community.com/character/nomad-dog-hero-white.png", // Using existing character as placeholder logo
+          "url": "https://nomad-th.com/character/nomad-dog-hero-white.png", // Using existing character as placeholder logo
           "width": 512,
           "height": 512
         },
@@ -84,18 +84,18 @@ export default function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://t78-community.com/#website",
-        "url": "https://t78-community.com",
+        "@id": "https://nomad-th.com/#website",
+        "url": "https://nomad-th.com",
         "name": "Nomad in Thailand -ノマタイ-",
         "description": "タイ移住・ノマド生活コミュニティ",
         "publisher": {
-          "@id": "https://t78-community.com/#organization"
+          "@id": "https://nomad-th.com/#organization"
         },
         "inLanguage": "ja"
       },
       {
         "@type": "FAQPage",
-        "@id": "https://t78-community.com/#faq",
+        "@id": "https://nomad-th.com/#faq",
         "mainEntity": [
           {
             "@type": "Question",
