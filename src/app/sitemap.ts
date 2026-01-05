@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://nomad-place-jpn.com' // Actual domain
+    const baseUrl = 'https://t78-community.com' // Actual domain
 
     // Core pages
     const routes = [

@@ -25,9 +25,29 @@ const zenOldMincho = Zen_Old_Mincho({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nomad-place-jpn.com"),
-  title: "海外ノマドポッドキャスト | タイ移住・ノマド生活コミュニティ",
-  description: "タイ在住の日本人ノマドのためのコミュニティメディア。",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://t78-community.com"),
+  title: "Nomad in Thailand -ノマタイ- | タイ移住・ノマド生活コミュニティ",
+  description: "タイ在住の日本人ノマドのためのコミュニティメディア「ノマタイ」。バンコク、チェンマイなどの移住情報、ビザ、コワーキングスペース、イベント情報を発信。",
+  keywords: ["タイ移住", "デジタルノマド", "バンコク生活", "チェンマイ生活", "海外ノマド", "ノマタイ", "Nomad in Thailand"],
+  openGraph: {
+    type: "website",
+    locale: "ja_JP",
+    url: "https://t78-community.com",
+    siteName: "Nomad in Thailand -ノマタイ-",
+    images: [
+      {
+        url: "https://t78-community.com/images/ogp.jpg", // Ensure this path exists or update later
+        width: 1200,
+        height: 630,
+        alt: "Nomad in Thailand -ノマタイ-",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@nomad_place",
+    creator: "@nomad_place",
+  },
 };
 
 import Navbar from "@/components/Navbar";
@@ -45,31 +65,63 @@ export default function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://nomad-place-jpn.com/#organization",
-        "name": "海外ノマドポッドキャスト",
-        "url": "https://nomad-place-jpn.com",
+        "@id": "https://t78-community.com/#organization",
+        "name": "Nomad in Thailand -ノマタイ-",
+        "alternateName": "ノマタイ",
+        "url": "https://t78-community.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://nomad-place-jpn.com/images/np-logo.jpg",
+          "url": "https://t78-community.com/character/nomad-dog-hero-white.png", // Using existing character as placeholder logo
           "width": 512,
           "height": 512
         },
         "description": "タイ移住・ノマド生活コミュニティ",
         "sameAs": [
           "https://x.com/nomad_place",
-          "https://instagram.com/nomad_place"
+          "https://instagram.com/nomad_place",
+          "https://www.youtube.com/@T78community"
         ]
       },
       {
         "@type": "WebSite",
-        "@id": "https://nomad-place-jpn.com/#website",
-        "url": "https://nomad-place-jpn.com",
-        "name": "海外ノマドポッドキャスト",
+        "@id": "https://t78-community.com/#website",
+        "url": "https://t78-community.com",
+        "name": "Nomad in Thailand -ノマタイ-",
         "description": "タイ移住・ノマド生活コミュニティ",
         "publisher": {
-          "@id": "https://nomad-place-jpn.com/#organization"
+          "@id": "https://t78-community.com/#organization"
         },
         "inLanguage": "ja"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://t78-community.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Nomad in Thailand (ノマタイ) とは何ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nomad in Thailand (通称：ノマタイ) は、タイ在住の日本人デジタルノマドのためのコミュニティメディアです。バンコクやチェンマイでの生活情報、ビザ情報、コワーキングスペースの紹介、そして定期的な交流イベントの開催を行っています。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "イベントに参加するにはどうすればいいですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "毎月開催される「ゆる飲み会」や「カフェ作業会」などは、公式サイトのイベントページまたは公式SNSから誰でも参加申し込みが可能です。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "初心者でもコミュニティに参加できますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "はい、大歓迎です。これからタイ移住を考えている方や、ノマドワークを始めたばかりの方も多く在籍しています。"
+            }
+          }
+        ]
       }
     ]
   };
