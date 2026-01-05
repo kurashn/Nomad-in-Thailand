@@ -87,15 +87,15 @@ export default function EventsPage() {
                                 <ul className="space-y-3">
                                     <li className="flex items-center gap-3 text-slate-700 bg-white p-2 rounded-lg shadow-sm border border-sky-50">
                                         <span className="text-xl">🍻</span>
-                                        <span className="font-medium">金曜夜のゆる飲み会</span>
+                                        <span className="font-medium">月末恒例！ノマドゆる飲み会</span>
                                     </li>
                                     <li className="flex items-center gap-3 text-slate-700 bg-white p-2 rounded-lg shadow-sm border border-sky-50">
                                         <span className="text-xl">💻</span>
-                                        <span className="font-medium">もくもく作業会 @コワーキング</span>
+                                        <span className="font-medium">集中 & 交流！カフェ作業会</span>
                                     </li>
                                     <li className="flex items-center gap-3 text-slate-700 bg-white p-2 rounded-lg shadow-sm border border-sky-50">
                                         <span className="text-xl">🧖</span>
-                                        <span className="font-medium">サウナ&アイスバス会</span>
+                                        <span className="font-medium">究極の整い…サウナ&アイスバス</span>
                                     </li>
                                 </ul>
                             </div>

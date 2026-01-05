@@ -169,68 +169,68 @@ export default function Home() {
           </div>
 
           <div className="space-y-4">
-            {/* Event 1: Monthly Drinking Party */}
+            {/* Event 1: On Nut Party */}
             <div className="group flex items-center justify-between p-4 rounded-xl bg-orange-50/40 border border-orange-100 hover:border-orange-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-orange-100 flex flex-col items-center justify-center text-orange-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">Monthly</span>
-                  <span className="text-lg font-extrabold leading-none">Last Fri</span>
+                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">1月</span>
+                  <span className="text-lg font-extrabold leading-none">31</span>
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-slate-800 group-hover:text-orange-900 transition-colors">月末恒例！ノマドゆる飲み会</h3>
+                  <h3 className="text-base font-bold text-slate-800 group-hover:text-orange-900 transition-colors">オンヌットで新年会</h3>
                   <div className="flex items-center gap-2 text-xs text-orange-800/70 mt-0.5">
                     <MapPin className="w-3 h-3" />
-                    <span>バンコク・オンヌット</span>
+                    <span>オンヌット（バンコク）</span>
                   </div>
                 </div>
               </div>
               <div>
                 <span className="text-[10px] font-bold text-white bg-orange-500 px-3 py-1 rounded-full shadow-sm shadow-orange-200">
-                  誰でも歓迎
+                  募集中
                 </span>
               </div>
             </div>
 
-            {/* Event 2: Cafe Co-working */}
+            {/* Event 2: Digital Detox */}
             <div className="group flex items-center justify-between p-4 rounded-xl bg-emerald-50/40 border border-emerald-100 hover:border-emerald-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-emerald-100 flex flex-col items-center justify-center text-emerald-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">Work</span>
-                  <span className="text-lg font-extrabold leading-none">Day</span>
+                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">4月</span>
+                  <span className="text-lg font-extrabold leading-none">--</span>
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-slate-800 group-hover:text-emerald-900 transition-colors">集中 & 交流！カフェ作業会</h3>
+                  <h3 className="text-base font-bold text-slate-800 group-hover:text-emerald-900 transition-colors">デジタルデトックス旅</h3>
                   <div className="flex items-center gap-2 text-xs text-emerald-800/70 mt-0.5">
                     <MapPin className="w-3 h-3" />
-                    <span>バンコク市内各所</span>
+                    <span>チェンマイ</span>
                   </div>
                 </div>
               </div>
               <div className="text-right">
                 <span className="text-[10px] font-bold text-emerald-600 bg-white border border-emerald-200 px-3 py-1 rounded-full">
-                  生産性UP
+                  詳細未定
                 </span>
               </div>
             </div>
 
-            {/* Event 3: Sauna & Ice Bath */}
+            {/* Event 3: Nomad Camp */}
             <div className="group flex items-center justify-between p-4 rounded-xl bg-indigo-50/40 border border-indigo-100 hover:border-indigo-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
               <div className="flex items-center gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-indigo-100 flex flex-col items-center justify-center text-indigo-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">Chill</span>
-                  <span className="text-lg font-extrabold leading-none">Sun</span>
+                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">6月</span>
+                  <span className="text-lg font-extrabold leading-none">--</span>
                 </div>
                 <div>
-                  <h3 className="text-base font-bold text-slate-800 group-hover:text-indigo-900 transition-colors">究極の整い…サウナ&アイスバス</h3>
+                  <h3 className="text-base font-bold text-slate-800 group-hover:text-indigo-900 transition-colors">ノマド合宿 vol.6</h3>
                   <div className="flex items-center gap-2 text-xs text-indigo-800/70 mt-0.5">
                     <MapPin className="w-3 h-3" />
-                    <span>スクンビット周辺</span>
+                    <span>未定</span>
                   </div>
                 </div>
               </div>
               <div>
                 <span className="text-[10px] font-bold text-indigo-600 bg-white border border-indigo-200 px-3 py-1 rounded-full">
-                  リフレッシュ
+                  詳細未定
                 </span>
               </div>
             </div>
