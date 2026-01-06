@@ -32,7 +32,7 @@ export default function Footer() {
 
                     {/* Connect Section */}
                     <div>
-                        <h3 className="font-bold text-lg mb-4 text-slate-800">つながる</h3>
+                        <h3 className="font-bold text-lg mb-4 text-slate-800">関連リンク</h3>
                         <ul className="space-y-3">
                             <li>
                                 <a href="https://www.youtube.com/@T78community" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-red-600 transition-colors">

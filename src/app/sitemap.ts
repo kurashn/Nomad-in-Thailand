@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/nomad-info/coworking-guide',
         '/nomad-info/tax-money-guide',
         '/nomad-info/dtv-visa',
+        '/nomad-info/cafe-guide',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),

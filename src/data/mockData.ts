@@ -42,6 +42,15 @@ export const nomadArticles = [
         link: "/nomad-info/dtv-visa"
     },
     {
+        id: 5,
+        title: "【2026年最新】バンコクの作業カフェ7選！電源・Wi-Fi完備・無料スポットも",
+        excerpt: "Samyan CO-OPなどの穴場から絶景カフェまで。ノマドが実際に使って選んだ「電源・Wi-Fi完備」の作業カフェを厳選レビュー。",
+        category: "カフェ・作業場所",
+        date: "2026-01-07",
+        image: "/images/cafe_guide_hero.png",
+        link: "/nomad-info/cafe-guide"
+    },
+    {
         id: 1,
         title: "【2026年版】ゼロから始めるバンコクノマド生活。準備〜渡航後1ヶ月の完全ロードマップ",
         excerpt: "会社を辞めるのが怖いですか？リスクを抑え、30日間だけノマド生活を試すための完全ガイド。",
