@@ -57,8 +57,6 @@ export const metadata: Metadata = {
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-// ... existing imports ...
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -106,7 +104,7 @@ export default function RootLayout({
             "name": "Nomad in Thailand (ノマタイ) とは何ですか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Nomad in Thailand (通称：ノマタイ) は、タイ在住の日本人デジタルノマドのためのコミュニティメディアです。バンコクやチェンマイでの生活情報、ビザ情報、コワーキングスペースの紹介、そして定期的な交流イベントの開催を行っています。"
+              "text": "Nomad in Thailand (通称：ノマタイ) は、タイ在住の日本人デジタルノマドのためのコミュニティメディアです。バンコクやチェンマイでの生活情報、ビザ、コワーキングスペース、イベントの紹介を行っています。"
             }
           },
           {

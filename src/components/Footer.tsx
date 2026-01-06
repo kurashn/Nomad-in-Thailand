@@ -5,55 +5,47 @@ import Image from "next/image";
 
 export default function Footer() {
     return (
-        <footer className="bg-muted/30 border-t border-muted py-12">
+        <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div>
-                        <div>
-                            <div className="mb-4">
-                                <div className="relative w-24 h-24">
-                                    <Image
-                                        src="/character/nomad-dog-waving-new.png"
-                                        alt="Nomad Dog"
-                                        fill
-                                        className="object-contain opacity-90 hover:opacity-100 transition-opacity"
-                                    />
-                                </div>
-                            </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    {/* Logo Section */}
+                    <div className="flex flex-col items-center md:items-start">
+                        <div className="relative w-24 h-24 mb-4">
+                            <Image
+                                src="/character/nomad-dog-hero-white.png"
+                                alt="Nomad in Thailand Logo"
+                                fill
+                                className="object-contain"
+                            />
                         </div>
                     </div>
-                    <div>
-                        <h4 className="font-semibold mb-4 text-foreground">コンテンツ</h4>
-                        <ul className="space-y-2 text-sm text-muted-foreground">
-                            <li><Link href="/events" className="hover:text-primary transition-colors">イベント情報</Link></li>
-                            <li><Link href="/nomad-info" className="hover:text-primary transition-colors">ノマド情報</Link></li>
-                            <li><Link href="/living" className="hover:text-primary transition-colors">タイ生活情報</Link></li>
 
+                    {/* Contents Section */}
+                    <div>
+                        <h3 className="font-bold text-lg mb-4 text-slate-800">コンテンツ</h3>
+                        <ul className="space-y-3">
+                            <li><Link href="/events" className="text-slate-500 hover:text-blue-600 transition-colors">イベント情報</Link></li>
+                            <li><Link href="/nomad-info" className="text-slate-500 hover:text-blue-600 transition-colors">ノマド情報</Link></li>
+                            <li><Link href="/living" className="text-slate-500 hover:text-blue-600 transition-colors">タイ生活情報</Link></li>
                         </ul>
                     </div>
+
+                    {/* Connect Section */}
                     <div>
-                        <h4 className="font-semibold mb-4 text-foreground">つながる</h4>
-                        <ul className="space-y-2 text-sm text-muted-foreground">
+                        <h3 className="font-bold text-lg mb-4 text-slate-800">つながる</h3>
+                        <ul className="space-y-3">
                             <li>
-                                <a href="https://www.youtube.com/@T78community" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                                <a href="https://www.youtube.com/@T78community" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-red-600 transition-colors">
                                     YouTube: 海外ノマドポッドキャスト
                                 </a>
                             </li>
-                            <li>
-                                <Link href="/contact" className="hover:text-primary transition-colors">
-                                    お問い合わせ
-                                </Link>
-                            </li>
-                            <li>
-                                <span className="text-muted-foreground cursor-not-allowed">
-                                    メルマガ (準備中)
-                                </span>
-                            </li>
+                            <li><Link href="/contact" className="text-slate-500 hover:text-blue-600 transition-colors">お問い合わせ</Link></li>
+                            <li><span className="text-slate-400">メルマガ (準備中)</span></li>
                         </ul>
                     </div>
                 </div>
-                <div className="mt-8 pt-8 border-t border-muted text-center text-xs text-muted-foreground">
-                    &copy; {new Date().getFullYear()} Nomad in Thailand -ノマタイ-. All rights reserved.
+                <div className="border-t border-slate-200 pt-8 text-center text-slate-500 text-sm">
+                    &copy; 2026 Nomad in Thailand -ノマタイ-. All rights reserved.
                 </div>
             </div>
         </footer>

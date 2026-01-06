@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, MapPin, Calendar, Users, Home as HomeIcon, Mail, ExternalLink, Shield, Wallet, Globe, Smartphone, Heart } from "lucide-react";
+import { ArrowRight, MapPin, Users, Wallet, Shield, Smartphone, Heart } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
-import SponsorSection from "@/components/SponsorSection";
+
 
 export default function Home() {
   return (
@@ -154,11 +154,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
-
-
-
       {/* 2026 Scheduled Events (Compact Version) */}
       <section className="py-12 px-4 bg-background">
         <div className="max-w-2xl mx-auto">
@@ -300,13 +295,7 @@ export default function Home() {
                   プールサイドで優雅に仕事をするもよし、夜通し語り合うもよし。<br />
                   ノマドらしく、それぞれのスタイルで楽しむ合宿です。
                 </p>
-
-
-
               </div>
-
-
-
 
               {/* Past Achievements */}
               <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
@@ -342,8 +331,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
       {/* Newsletter Section */}
       <section className="py-16 px-4 bg-background border-t border-muted">
         <NewsletterCTA />
@@ -376,8 +363,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Sponsor Section */}
-      <SponsorSection />
+
     </div>
   );
 }

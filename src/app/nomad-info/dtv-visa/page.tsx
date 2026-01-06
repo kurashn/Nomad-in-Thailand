@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, Plane, Home, Wallet, Shield, Calendar, AlertTriangle, FileText, ArrowRight } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Plane, Home, Wallet, Shield, Calendar, FileText, ArrowRight } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
 export const metadata: Metadata = {
-    title: "【2026年最新】タイDTVビザ完全ガイド！申請条件・費用・書類を実体験から徹底解説 | のまどくん",
-    description: "5年間滞在可能、180日ごとの出国でOK。デジタルノマドのための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。",
+    title: "【2025年6月取得】タイDTVビザ申請の実録！必要書類と審査期間を公開 | のまどくん",
+    description: "【実体験レポートあり】5万円で5年間滞在可能なDTVビザ。2025年6月にベトナムで取得した際の「提出書類」「審査期間」をすべて公開します。",
 };
 
 export default function DtvVisaPage() {
@@ -33,7 +33,7 @@ export default function DtvVisaPage() {
                         "url": "https://nomad-th.com/character/nomad-dog-hero-white.png"
                     }
                 },
-                "description": "5年間滞在可能、180日ごとの出国でOK。デジタルノマドのための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。"
+                "description": "【実体験レポートあり】5万円で5年間滞在可能なDTVビザ。2025年6月にベトナムで取得した際の「提出書類」「審査期間」をすべて公開します。"
             },
             {
                 "@type": "FAQPage",
@@ -260,11 +260,85 @@ export default function DtvVisaPage() {
                     </div>
                 </section>
 
+                {/* Real Experience Report */}
+                <section className="mb-20">
+                    <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+                        <span className="bg-blue-100 text-blue-600 p-2 rounded-lg"><CheckCircle2 className="w-6 h-6" /></span>
+                        3. 【実録】ベトナムでの取得レポート (2025年6月)
+                    </h2>
+                    <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 md:p-8">
+                        <div className="flex flex-col md:flex-row gap-6 mb-8">
+                            <div className="shrink-0">
+                                <Image
+                                    src="/images/dtv-visa-thumbnail.png" // Using existing thumbnail as placeholder or user's face if available, for now keep generic or omit image if not provided
+                                    alt="DTV Visa Report"
+                                    width={100}
+                                    height={100}
+                                    className="rounded-full border-4 border-white shadow-md hidden md:block"
+                                />
+                            </div>
+                            <div>
+                                <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
+                                    <span className="bg-blue-600 text-white text-xs px-2 py-1 rounded">通過済み</span>
+                                    実際の申請データ
+                                </h3>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-slate-700">
+                                    <p><strong className="font-semibold text-slate-900">申請場所:</strong> ベトナム・ダナン (オンライン申請)</p>
+                                    <p><strong className="font-semibold text-slate-900">提出先:</strong> タイ王国大使館 (ホーチミン)</p>
+                                    <p><strong className="font-semibold text-slate-900">申請日:</strong> 2025年5月28日</p>
+                                    <p><strong className="font-semibold text-slate-900">承認日:</strong> 2025年6月6日 (約9日間)</p>
+                                </div>
+                                <p className="mt-4 text-slate-600 text-sm italic">
+                                    ※ダナン滞在中でしたが、管轄であるホーチミン領事館へオンライン提出しました。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="space-y-6">
+                            <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                                <h4 className="font-bold text-lg mb-4 text-slate-800 border-b pb-2">提出した書類セット (すべて英語)</h4>
+                                <ul className="space-y-3 text-sm text-slate-700">
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                                        <div>
+                                            <strong className="block text-slate-900">基本書類 (JPEG)</strong>
+                                            パスポート(有効期限6ヶ月以上/査証欄2ページ以上)、証明写真(4.5×3.5cm)
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                                        <div>
+                                            <strong className="block text-slate-900">職業証明・経歴 (PDF)</strong>
+                                            英文履歴書(1ページ)、ポートフォリオ(1ページ)、業務委託契約書
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                                        <div>
+                                            <strong className="block text-slate-900">資金証明 (PDF)</strong>
+                                            英文残高証明書(50万バーツ相当以上)、過去6ヶ月分の取引明細
+                                        </div>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle2 className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                                        <div>
+                                            <strong className="block text-slate-900">現在地証明 (PDF)</strong>
+                                            ベトナム入国スタンプのページ、宿泊先(Agoda等)の予約確認書
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+
                 {/* Section 3: Step-by-Step Guide */}
                 <section className="mb-20">
                     <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
                         <span className="bg-green-100 text-green-600 p-2 rounded-lg"><Calendar className="w-6 h-6" /></span>
-                        3. 申請手順ステップバイステップ
+                        4. 申請手順ステップバイステップ
                     </h2>
                     <p className="mb-6 text-muted-foreground">
                         日本から申請する場合、全てオンライン（E-Visa）で完結します。大使館に行く必要はありません。
