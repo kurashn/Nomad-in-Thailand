@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter, Noto_Sans_JP, Merriweather, Zen_Old_Mincho } from "next/font/google";
 import "./globals.css";
 
@@ -47,6 +48,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@nomad_place",
     creator: "@nomad_place",
+  },
+  verification: {
+    google: "pwAWlIPQ24eVdNIJiOk6Lo8LFQOOjVJqT8-RKCSp0_E",
   },
 };
 
@@ -137,6 +141,16 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${notoSansJP.variable} ${merriweather.variable} ${zenOldMincho.variable} antialiased bg-background text-foreground font-sans flex flex-col min-h-screen`}
       >
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-WVPS6MH1M3" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-WVPS6MH1M3');
+          `}
+        </Script>
         <Navbar />
         <main className="flex-1 pt-16">
           {children}
