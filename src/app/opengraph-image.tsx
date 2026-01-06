@@ -38,11 +38,11 @@ export default async function Image() {
                     // @ts-ignore
                     src={imageData}
                     alt="Nomad Dog"
-                    width="450"
-                    height="450"
+                    width="300"
+                    height="300"
                     style={{
                         objectFit: 'contain',
-                        marginBottom: '20px',
+                        marginBottom: '30px',
                     }}
                 />
 
@@ -50,12 +50,11 @@ export default async function Image() {
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
-                    gap: '10px'
+                    gap: '12px'
                 }}>
                     <div style={{
-                        fontSize: '90px',
+                        fontSize: '80px',
                         fontWeight: 900,
-                        color: '#0f172a',
                         lineHeight: 1.1,
                         letterSpacing: '-0.02em',
                         background: 'linear-gradient(to right, #2a9d8f, #264653)',
@@ -65,7 +64,7 @@ export default async function Image() {
                         Nomad in Thailand
                     </div>
                     <div style={{
-                        fontSize: '48px',
+                        fontSize: '36px',
                         fontWeight: 700,
                         color: '#64748b',
                         letterSpacing: '0.1em',
