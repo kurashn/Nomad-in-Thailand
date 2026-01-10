@@ -373,6 +373,41 @@ export default function AiraloPage() {
                         })
                     }}
                 />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "mainEntity": [
+                                {
+                                    "@type": "Question",
+                                    "name": "私のスマホでも使えますか？",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "iPhone XR / XS以降のiPhoneであれば基本的に対応しています。AndroidもPixelやGalaxyの最近の機種なら対応しています。アプリ内で対応機種かどうかのチェックも可能です。"
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "日本の番号で電話は受けられますか？",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "はい、可能です。日本のSIMを「主回線」、Airaloを「モバイルデータ通信」に設定することで、普段の電話番号での着信・SMS受信（楽天モバイルなど）を維持したまま、ネットだけ現地の安い回線を使うことができます。"
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "テザリングはできますか？",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "多くのプランで可能です（プラン詳細に記載があります）。PCやタブレットを繋いで仕事をすることもできます。"
+                                    }
+                                }
+                            ]
+                        })
+                    }}
+                />
             </div>
         </article>
     );

@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/nomad-info/tax-money-guide',
         '/nomad-info/dtv-visa',
         '/nomad-info/cafe-guide',
+        // Added service guides
+        '/nomad-info/wise',
+        '/nomad-info/airalo',
+        '/nomad-info/nordvpn',
+        '/nomad-info/safetywing',
+        '/nomad-info/sponsor',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),

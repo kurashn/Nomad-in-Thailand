@@ -25,8 +25,7 @@ export default function Footer() {
                         <h3 className="font-bold text-lg mb-4 text-slate-800">コンテンツ</h3>
                         <ul className="space-y-3">
                             <li><Link href="/events" className="text-slate-500 hover:text-blue-600 transition-colors">イベント情報</Link></li>
-                            <li><Link href="/nomad-info" className="text-slate-500 hover:text-blue-600 transition-colors">ノマド情報</Link></li>
-                            <li><Link href="/living" className="text-slate-500 hover:text-blue-600 transition-colors">タイ生活情報</Link></li>
+                            <li><Link href="/nomad-info" className="text-slate-500 hover:text-blue-600 transition-colors">タイノマド攻略ガイド</Link></li>
                         </ul>
                     </div>
 

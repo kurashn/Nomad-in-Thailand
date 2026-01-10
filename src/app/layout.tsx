@@ -29,7 +29,20 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nomad-th.com"),
   title: "Nomad in Thailand -ノマタイ- | タイ移住・ノマド生活コミュニティ",
   description: "タイ在住の日本人ノマドのためのコミュニティメディア「ノマタイ」。バンコク、チェンマイなどの移住情報、ビザ、コワーキングスペース、イベント情報を発信。",
-  keywords: ["タイ移住", "デジタルノマド", "バンコク生活", "チェンマイ生活", "海外ノマド", "ノマタイ", "Nomad in Thailand"],
+  keywords: [
+    "タイ移住",
+    "デジタルノマド",
+    "バンコク生活",
+    "チェンマイ生活",
+    "海外ノマド",
+    "ノマタイ",
+    "Nomad in Thailand",
+    "タイ移住 費用",
+    "タイ ビザ ノマド",
+    "バンコク コワーキングスペース",
+    "タイ 海外送金 Wise",
+    "海外旅行保険 ノマド"
+  ],
   openGraph: {
     type: "website",
     locale: "ja_JP",
@@ -56,6 +69,7 @@ export const metadata: Metadata = {
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 
 export default function RootLayout({
   children,
@@ -149,6 +163,7 @@ export default function RootLayout({
             gtag('config', 'G-WVPS6MH1M3');
           `}
         </Script>
+        <BreadcrumbJsonLd />
         <Navbar />
         <main className="flex-1 pt-16">
           {children}

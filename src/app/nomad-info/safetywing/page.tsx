@@ -320,6 +320,49 @@ export default function SafetyWingPage() {
                         })
                     }}
                 />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "mainEntity": [
+                                {
+                                    "@type": "Question",
+                                    "name": "バイク事故は補償されますか？",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "条件付きで対象です。エンジン排気量に応じた正規の運転免許証（国際免許証など）を持っており、ヘルメットを着用している場合は補償対象となります。無免許運転は対象外です。"
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "歯の治療（歯科）は補償されますか？",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "限定的です。事故による歯の損傷や激痛を伴う緊急治療のみ対象となります。定期検診やクリーニングは対象外です。"
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "コロナウイルスは対象ですか？",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "はい、対象です。他の病気と同様に扱われ、治療費や検査費（医師の指示がある場合）が補償されます。"
+                                    }
+                                },
+                                {
+                                    "@type": "Question",
+                                    "name": "パソコンの盗難は補償されますか？",
+                                    "acceptedAnswer": {
+                                        "@type": "Answer",
+                                        "text": "標準プランでは対象外ですが、オプション（+$10/月）を追加することで、$1000/件（年間$3000迄）の盗難補償をつけることができます。"
+                                    }
+                                }
+                            ]
+                        })
+                    }}
+                />
             </div>
         </article>
     );

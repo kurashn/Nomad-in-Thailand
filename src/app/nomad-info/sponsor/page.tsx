@@ -261,6 +261,34 @@ export default function SponsorPage() {
                     </div>
                 </div>
             </div>
+
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "Article",
+                        "headline": "「海外ノマドポッドキャスト」パートナー・スポンサー募集",
+                        "image": "/images/sponsor_hero.png",
+                        "datePublished": "2026-01-09",
+                        "dateModified": "2026-01-10",
+                        "description": "海外ノマドポッドキャストの活動を応援していただける個人・企業スポンサー様を募集しています。",
+                        "author": {
+                            "@type": "Organization",
+                            "name": "Nomad in Thailand",
+                            "url": "https://nomad-th.com"
+                        },
+                        "publisher": {
+                            "@type": "Organization",
+                            "name": "Nomad in Thailand",
+                            "logo": {
+                                "@type": "ImageObject",
+                                "url": "https://nomad-th.com/logo.png"
+                            }
+                        }
+                    })
+                }}
+            />
         </article>
     );
 }
