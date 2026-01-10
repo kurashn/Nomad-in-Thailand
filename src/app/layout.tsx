@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: "Nomad in Thailand -ノマタイ-",
     images: [
       {
-        url: "https://nomad-th.com/images/ogp.jpg", // Ensure this path exists or update later
+        url: "https://nomad-th.com/images/ogp_default.png", // Ensure this path exists or update later
         width: 1200,
         height: 630,
         alt: "Nomad in Thailand -ノマタイ-",

@@ -108,10 +108,8 @@ export default function Home() {
             </Link>
 
             {/* e-SIM (Airalo) */}
-            <a
-              href="https://www.airalo.com/"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/nomad-info/airalo"
               className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-cyan-200 hover:bg-cyan-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1 cursor-pointer"
             >
               <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -123,15 +121,13 @@ export default function Home() {
                 <span className="font-bold text-cyan-600">アプリで即時開通</span>。
               </p>
               <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-cyan-500 text-cyan-600 bg-white group-hover:bg-cyan-500 group-hover:text-white group-hover:shadow-md">
-                公式サイトを見る
+                解説記事を読む
               </div>
-            </a>
+            </Link>
 
             {/* Insurance (SafetyWing) */}
-            <a
-              href="https://safetywing.com/nomad-insurance"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/nomad-info/safetywing"
               className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-red-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 cursor-pointer"
             >
               <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -143,9 +139,9 @@ export default function Home() {
                 <span className="font-bold text-red-600">月額サブスク型で安心</span>。
               </p>
               <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-red-500 text-red-600 bg-white group-hover:bg-red-500 group-hover:text-white group-hover:shadow-md">
-                公式サイトを見る
+                解説記事を読む
               </div>
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -294,14 +290,14 @@ export default function Home() {
 
       {/* YouTube Section (Moved to Bottom) */}
       <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center p-12 rounded-3xl bg-gradient-to-r from-primary/10 to-accent/10 border border-white/20 backdrop-blur-sm">
+        <div className="max-w-4xl mx-auto text-center p-6 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 to-accent/10 border border-white/20 backdrop-blur-sm">
           <div className="flex items-center justify-center gap-2 mb-4">
             <span className="px-3 py-1 rounded-full bg-red-100 text-red-600 text-xs font-bold">
               Main Contents
             </span>
           </div>
-          <h2 className="text-3xl font-bold mb-2">YouTubeでリアルな情報を発信中</h2>
-          <p className="text-xl text-primary font-bold mb-6">「海外ノマドポッドキャスト」</p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-2">YouTubeでリアルな情報を発信中</h2>
+          <p className="text-lg md:text-xl text-primary font-bold mb-6 whitespace-nowrap">「海外ノマドポッドキャスト」</p>
           <p className="text-lg text-muted-foreground mb-8">
             文章だけでは伝わらない、現地の空気感やノマドの生の声をお届けします。
           </p>

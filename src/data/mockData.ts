@@ -103,6 +103,24 @@ export const nomadArticles = [
         date: "2026-01-07",
         image: "/images/nordvpn_hero.png",
         link: "/nomad-info/nordvpn"
+    },
+    {
+        id: 108,
+        title: "【2026年最新】海外旅行の通信は「Airalo」一択。空港のSIM行列にはもう並ばない",
+        excerpt: "「飛行機を降りた瞬間にネットが繋がる」魔法のような体験。世界初のeSIMストア「Airalo（エラロ）」の使い方から、メリット・デメリットまで徹底解説します。",
+        category: "通信・ネット",
+        date: "2026-01-08",
+        image: "/images/airalo_hero.png",
+        link: "/nomad-info/airalo"
+    },
+    {
+        id: 109,
+        title: "【2026年最新】海外旅行保険は「SafetyWing」一択。ノマドが選ぶ最強のサブスク保険",
+        excerpt: "「いつ帰るかわからない」ノマドに最適な、月額制（サブスク）の海外旅行・医療保険。クレジットカード付帯保険が切れた後の選択肢として、世界中のノマドに愛される理由を解説します。",
+        category: "医療・健康",
+        date: "2026-01-08",
+        image: "/images/safetywing_hero.png",
+        link: "/nomad-info/safetywing"
     }
 ];
 
