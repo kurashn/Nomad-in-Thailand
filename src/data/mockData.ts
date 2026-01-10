@@ -33,6 +33,15 @@ export const events = [
 
 export const nomadArticles = [
     {
+        id: 99,
+        title: "「海外ノマドポッドキャスト」パートナー・スポンサー募集",
+        excerpt: "当サイトは個人運営のメディアです。持続可能な運営と、より質の高い情報発信のために。私たちのビジョンに共感し、応援していただける個人・企業様を募集しています。",
+        category: "お知らせ",
+        date: "2026-01-09",
+        image: "/images/sponsor_hero.png", // Placeholder, will need to be handled if not exists, but usually simple string is fine for mock
+        link: "/nomad-info/sponsor"
+    },
+    {
         id: 4,
         title: "【2026年最新】タイDTVビザ完全ガイド！申請条件・費用・書類を実体験から徹底解説",
         excerpt: "5年間滞在可能、180日ごとの出国でOK。デジタルノマドのための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。",
