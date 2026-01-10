@@ -21,7 +21,7 @@ export default function SponsorPage() {
             </div>
 
             {/* Hero Header */}
-            <div className="relative h-[50vh] w-full mb-12 -mx-4 md:-mx-0 md:rounded-3xl overflow-hidden md:mt-8">
+            <div className="relative h-[50vh] w-[calc(100%+2rem)] md:w-full mb-12 -mx-4 md:-mx-0 md:rounded-3xl overflow-hidden md:mt-8">
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 <div className="w-full h-full relative">
                     <Image
@@ -36,8 +36,8 @@ export default function SponsorPage() {
                     <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md mb-4 border border-white/30">
                         <Handshake className="w-6 h-6 text-white" />
                     </div>
-                    <h1 className="text-2xl md:text-5xl font-bold font-serif mb-4 leading-tight drop-shadow-lg">
-                        「海外ノマドポッドキャスト」<br />
+                    <h1 className="text-xl md:text-5xl font-bold font-serif mb-4 leading-tight drop-shadow-lg">
+                        <span className="whitespace-nowrap">「海外ノマドポッドキャスト」</span><br />
                         パートナー・スポンサー募集
                     </h1>
                     <p className="text-lg text-white/90 max-w-2xl mx-auto drop-shadow-md">

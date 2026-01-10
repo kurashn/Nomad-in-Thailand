@@ -19,17 +19,16 @@ type Props = {
     articles: Article[];
 };
 
+const categories = [
+    { id: "すべて", label: "すべて" },
+    { id: "仕事・ビザ", label: "仕事・ビザ", match: ["ビザ情報", "お知らせ", "初心者ガイド", "ワークスペース", "コミュニティ", "ワークショップ", "ミートアップ"] },
+    { id: "生活・場所", label: "生活・場所", match: ["カフェ・作業場所", "住まい", "交通", "医療・健康"] },
+    { id: "お金・IT", label: "お金・IT", match: ["お金・税金", "セキュリティ", "通信・ネット"] },
+];
+
 export default function ArticleFilter({ articles }: Props) {
     const [selectedCategory, setSelectedCategory] = useState("すべて");
     const [searchQuery, setSearchQuery] = useState("");
-
-    // Define category groups
-    const categories = [
-        { id: "すべて", label: "すべて" },
-        { id: "仕事・ビザ", label: "仕事・ビザ", match: ["ビザ情報", "お知らせ", "初心者ガイド", "ワークスペース", "コミュニティ", "ワークショップ", "ミートアップ"] },
-        { id: "生活・場所", label: "生活・場所", match: ["カフェ・作業場所", "住まい", "交通", "医療・健康"] },
-        { id: "お金・IT", label: "お金・IT", match: ["お金・税金", "セキュリティ", "通信・ネット"] },
-    ];
 
     // Filter logic
     const filteredArticles = useMemo(() => {
@@ -55,7 +54,7 @@ export default function ArticleFilter({ articles }: Props) {
             {/* Controls */}
             <div className="flex flex-col md:flex-row gap-4 justify-between items-center bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
                 {/* Category Tabs */}
-                <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                <div className="grid grid-cols-2 gap-2 w-full md:w-auto md:flex md:flex-wrap justify-center md:justify-start">
                     {categories.map((cat) => (
                         <button
                             key={cat.id}
