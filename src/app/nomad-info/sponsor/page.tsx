@@ -92,7 +92,7 @@ export default function SponsorPage() {
                     <div className="flex-1">
 
                         <p className="mb-6">
-                            2020年よりバンコクを拠点に活動するデジタルノマド。<br />
+                            DTVビザを取得してタイを拠点に活動するデジタルノマド。<br />
                             自身の経験を元に、「場所にとらわれない生き方」の選択肢を増やすべく発信活動を続けています。
                         </p>
                         <p className="mb-6">
