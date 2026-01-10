@@ -140,7 +140,7 @@ export const livingArticles = [
         excerpt: "「日本の番号は捨てるべき？」いいえ、そのままで大丈夫。日本のSMSを受け取りながら、タイの激安5Gを使う「デュアルSIM」構築術。",
         category: "通信・ネット",
         date: "2026-02-10",
-        image: "/images/sim_guide_hero.png",
+        image: "/images/sim_guide_hero_photo.png",
         link: "/living/sim-guide"
     }
 ];
