@@ -38,7 +38,7 @@ export const nomadArticles = [
         excerpt: "当サイトは個人運営のメディアです。持続可能な運営と、より質の高い情報発信のために。私たちのビジョンに共感し、応援していただける個人・企業様を募集しています。",
         category: "お知らせ",
         date: "2026-01-09",
-        image: "/images/sponsor_hero.png", // Placeholder, will need to be handled if not exists, but usually simple string is fine for mock
+        image: "/images/sponsor_hero.png",
         link: "/nomad-info/sponsor"
     },
     {
@@ -85,6 +85,24 @@ export const nomadArticles = [
         date: "2026-01-15",
         image: "/images/tax_money_hero.png",
         link: "/nomad-info/tax-money-guide"
+    },
+    {
+        id: 10,
+        title: "海外送金「Wise」完全ガイド。なぜノマドの必須ツールなのか？",
+        excerpt: "「隠れコスト」で損していませんか？銀行の最大8倍安く、圧倒的に速い。海外での給与受け取りから日々の支払いまですべてこれ1つで完結。",
+        category: "お金・税金",
+        date: "2026-01-25",
+        image: "/images/wise_hero_v2.png",
+        link: "/nomad-info/wise"
+    },
+    {
+        id: 4,
+        title: "海外ノマドの必需品「NordVPN」。なぜカフェのWi-Fiは危険なのか？",
+        excerpt: "「カフェのWi-Fi」そのまま使っていませんか？セキュリティリスクから、海外で日本のテレビを見る方法まで。ノマドの命綱・VPNについて解説します。",
+        category: "セキュリティ",
+        date: "2026-01-25",
+        image: "/images/nordvpn_hero.png",
+        link: "/nomad-info/nordvpn"
     }
 ];
 

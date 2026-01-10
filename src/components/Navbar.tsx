@@ -11,8 +11,7 @@ export default function Navbar() {
     const menuItems = [
         { href: "/", label: "TOP" },
         { href: "/events", label: "イベント情報" },
-        { href: "/nomad-info", label: "ノマド情報" },
-        { href: "/living", label: "タイ生活情報" },
+        { href: "/nomad-info", label: "タイノマド攻略ガイド" },
     ];
 
     return (

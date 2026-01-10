@@ -20,23 +20,37 @@ export default function SponsorPage() {
                 </Link>
             </div>
 
-            {/* Header */}
-            <header className="mb-12 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-gradient-to-br from-[#2a9d8f]/10 to-[#2a9d8f]/20 text-[#2a9d8f] mb-6 shadow-lg shadow-[#2a9d8f]/10">
-                    <Handshake className="w-8 h-8" />
+            {/* Hero Header */}
+            <div className="relative h-[50vh] w-full mb-12 -mx-4 md:-mx-0 md:rounded-3xl overflow-hidden md:mt-8">
+                <div className="absolute inset-0 bg-black/50 z-10" />
+                <div className="w-full h-full relative">
+                    <Image
+                        src="/images/sponsor_hero.png"
+                        alt="海外ノマドポッドキャスト スポンサー募集"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
                 </div>
-                <h1 className="text-3xl md:text-5xl font-bold font-serif mb-6 leading-tight">
-                    「海外ノマドポッドキャスト」<br />
-                    パートナー・スポンサー募集
-                </h1>
-                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                    自由な生き方を模索するすべての人へ。<br />
-                    私たちの発信を支え、共に盛り上げてくださるスポンサー様を募集します。
-                </p>
-                <div className="mt-8 text-sm text-muted-foreground">
-                    2026.01.09 | お知らせ
+                <div className="absolute bottom-0 left-0 right-0 z-20 px-6 pb-12 text-center text-white">
+                    <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-white/20 backdrop-blur-md mb-4 border border-white/30">
+                        <Handshake className="w-6 h-6 text-white" />
+                    </div>
+                    <h1 className="text-2xl md:text-5xl font-bold font-serif mb-4 leading-tight drop-shadow-lg">
+                        「海外ノマドポッドキャスト」<br />
+                        パートナー・スポンサー募集
+                    </h1>
+                    <p className="text-lg text-white/90 max-w-2xl mx-auto drop-shadow-md">
+                        自由な生き方を模索するすべての人へ。<br className="hidden md:inline" />
+                        私たちの発信を支え、共に盛り上げてくださるパートナー様を募集します。
+                    </p>
+                    <div className="mt-6 text-xs text-white/70">
+                        2026.01.09 | お知らせ
+                    </div>
                 </div>
-            </header>
+            </div>
+
+
 
             {/* Main Content */}
             <div className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-[#2a9d8f] hover:prose-a:text-[#21867a] prose-p:leading-loose prose-p:mb-8">
@@ -92,7 +106,7 @@ export default function SponsorPage() {
                     <span className="text-[#2a9d8f] text-4xl">02</span>
                     今後のロードマップ (2026)
                 </h2>
-                <p>いただいたご支援は、機材費、編集費、そしてゲストをお呼びする費用などに大切に使わせていただきます。</p>
+                <p>いただいたご支援は、機材費、編集費、そしてイベント費用などに大切に使わせていただきます。</p>
 
                 <div className="bg-[#2a9d8f]/5 p-6 rounded-2xl border border-[#2a9d8f]/20 mb-8 mt-8">
                     <h3 className="text-lg font-bold text-[#2a9d8f] mt-0 mb-2">🏆 2026年の目標</h3>

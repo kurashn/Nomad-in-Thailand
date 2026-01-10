@@ -72,10 +72,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Wise */}
-            <a
-              href="https://wise.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/nomad-info/wise"
               className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-green-200 hover:bg-green-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1 cursor-pointer"
             >
               <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -87,15 +85,13 @@ export default function Home() {
                 <span className="font-bold text-green-600">手数料が圧倒的に安い</span>。
               </p>
               <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-green-500 text-green-600 bg-white group-hover:bg-green-500 group-hover:text-white group-hover:shadow-md">
-                公式サイトを見る
+                解説記事を読む
               </div>
-            </a>
+            </Link>
 
             {/* NordVPN */}
-            <a
-              href="https://nordvpn.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/nomad-info/nordvpn"
               className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 cursor-pointer"
             >
               <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -107,9 +103,9 @@ export default function Home() {
                 <span className="font-bold text-blue-600">日本の動画も見れる</span>。
               </p>
               <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-blue-500 text-blue-600 bg-white group-hover:bg-blue-500 group-hover:text-white group-hover:shadow-md">
-                公式サイトを見る
+                解説記事を読む
               </div>
-            </a>
+            </Link>
 
             {/* e-SIM (Airalo) */}
             <a
@@ -159,77 +155,37 @@ export default function Home() {
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-[1px] w-8 bg-slate-300"></div>
-            <h2 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">2026年 イベントスケジュール</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">2026年 最新のお知らせ</h2>
             <div className="h-[1px] w-8 bg-slate-300"></div>
           </div>
 
-          <div className="space-y-4">
-            {/* Event 1: On Nut Party */}
-            <div className="group flex items-center justify-between p-4 rounded-xl bg-orange-50/40 border border-orange-100 hover:border-orange-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
-              <div className="flex items-center gap-4">
-                <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-orange-100 flex flex-col items-center justify-center text-orange-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">2月</span>
-                  <span className="text-lg font-extrabold leading-none">--</span>
+          <div className="space-y-3">
+            {/* News 1: Sponsor Recruitment (Newest First) */}
+            <Link href="/nomad-info/sponsor" className="block group">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-5 rounded-xl bg-white border border-slate-100 shadow-sm hover:border-orange-200 hover:bg-orange-50/30 transition-all">
+                <div className="flex items-center gap-3 shrink-0">
+                  <span className="text-slate-400 text-sm font-mono tracking-wider">2026.01.10</span>
+                  <span className="px-2.5 py-1 rounded text-[10px] font-bold bg-orange-100 text-orange-700">募集</span>
                 </div>
-                <div>
-                  <h3 className="text-base font-bold text-slate-800 group-hover:text-orange-900 transition-colors">オンヌットで新年会</h3>
-                  <div className="flex items-center gap-2 text-xs text-orange-800/70 mt-0.5">
-                    <MapPin className="w-3 h-3" />
-                    <span>オンヌット（バンコク）</span>
-                  </div>
+                <div className="flex items-center justify-between w-full">
+                  <p className="text-slate-700 font-bold group-hover:text-orange-800 transition-colors">
+                    「海外ノマドポッドキャスト」スポンサー様の募集について
+                  </p>
+                  <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-orange-400 group-hover:translate-x-1 transition-all" />
                 </div>
               </div>
-              <div>
-                <span className="text-[10px] font-bold text-orange-600 bg-white border border-orange-200 px-3 py-1 rounded-full">
-                  詳細未定
-                </span>
-              </div>
-            </div>
+            </Link>
 
-            {/* Event 2: Digital Detox */}
-            <div className="group flex items-center justify-between p-4 rounded-xl bg-emerald-50/40 border border-emerald-100 hover:border-emerald-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
-              <div className="flex items-center gap-4">
-                <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-emerald-100 flex flex-col items-center justify-center text-emerald-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">4月</span>
-                  <span className="text-lg font-extrabold leading-none">--</span>
-                </div>
-                <div>
-                  <h3 className="text-base font-bold text-slate-800 group-hover:text-emerald-900 transition-colors">デジタルデトックス旅</h3>
-                  <div className="flex items-center gap-2 text-xs text-emerald-800/70 mt-0.5">
-                    <MapPin className="w-3 h-3" />
-                    <span>チェンマイ</span>
-                  </div>
-                </div>
+            {/* News 2: Site Launch */}
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-5 rounded-xl bg-white border border-slate-100 shadow-sm cursor-default">
+              <div className="flex items-center gap-3 shrink-0">
+                <span className="text-slate-400 text-sm font-mono tracking-wider">2026.01.01</span>
+                <span className="px-2.5 py-1 rounded text-[10px] font-bold bg-blue-100 text-blue-700">お知らせ</span>
               </div>
-              <div className="text-right">
-                <span className="text-[10px] font-bold text-emerald-600 bg-white border border-emerald-200 px-3 py-1 rounded-full">
-                  詳細未定
-                </span>
-              </div>
+              <p className="text-slate-700 font-medium">
+                「Nomad in Thailand -ノマタイ-」公式サイトを公開しました
+              </p>
             </div>
-
-            {/* Event 3: Nomad Camp */}
-            <div className="group flex items-center justify-between p-4 rounded-xl bg-indigo-50/40 border border-indigo-100 hover:border-indigo-200 transition-all hover:shadow-sm hover:translate-x-1 cursor-default">
-              <div className="flex items-center gap-4">
-                <div className="shrink-0 w-12 h-12 rounded-lg bg-white border border-indigo-100 flex flex-col items-center justify-center text-indigo-600 shadow-sm">
-                  <span className="text-[10px] font-bold leading-none uppercase tracking-wide opacity-70">6月</span>
-                  <span className="text-lg font-extrabold leading-none">--</span>
-                </div>
-                <div>
-                  <h3 className="text-base font-bold text-slate-800 group-hover:text-indigo-900 transition-colors">ノマド合宿 vol.6</h3>
-                  <div className="flex items-center gap-2 text-xs text-indigo-800/70 mt-0.5">
-                    <MapPin className="w-3 h-3" />
-                    <span>未定</span>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <span className="text-[10px] font-bold text-indigo-600 bg-white border border-indigo-200 px-3 py-1 rounded-full">
-                  詳細未定
-                </span>
-              </div>
-            </div>
-
           </div>
         </div>
       </section>
