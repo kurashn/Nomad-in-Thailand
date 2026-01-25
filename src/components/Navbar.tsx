@@ -1,17 +1,27 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Link, usePathname, useRouter } from '@/i18n/routing';
+import { Menu, X, Globe } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const t = useTranslations('Navbar');
+    const pathname = usePathname();
+    const router = useRouter();
+
+    const switchLocale = (locale: string) => {
+        router.replace(pathname, { locale });
+        setIsOpen(false);
+    };
 
     const menuItems = [
-        { href: "/", label: "TOP" },
-        { href: "/events", label: "イベント情報" },
-        { href: "/nomad-info", label: "タイノマド攻略ガイド" },
+        { href: "/", label: t('top') },
+        { href: "/nomad-info", label: t('nomadGuide') },
+        { href: "/nomad-info/sponsor", label: t('sponsor') },
+        { href: "/contact", label: t('contact') },
     ];
 
     return (
@@ -41,22 +51,34 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:block">
-                        <div className="ml-10 flex items-baseline space-x-8">
-                            {menuItems.map((item) => (
-                                <Link
-                                    key={item.href}
-                                    href={item.href}
-                                    className="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
-                                >
-                                    {item.label}
-                                </Link>
-                            ))}
+                    <div className="hidden md:flex items-center space-x-8 ml-10">
+                        {menuItems.map((item) => (
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                className="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
+                            >
+                                {item.label}
+                            </Link>
+                        ))}
+
+                        {/* Language Switcher Desktop */}
+                        <div className="flex items-center gap-2 border-l pl-4 ml-4">
+                            <button onClick={() => switchLocale('ja')} className="text-sm font-bold hover:text-primary transition-colors px-1">JP</button>
+                            <span className="text-muted-foreground">/</span>
+                            <button onClick={() => switchLocale('en')} className="text-sm font-bold hover:text-primary transition-colors px-1">EN</button>
                         </div>
                     </div>
 
                     {/* Mobile Hamburger Button */}
-                    <div className="-mr-2 flex md:hidden">
+                    <div className="-mr-2 flex md:hidden items-center gap-4">
+                        {/* Language Switcher Mobile (Icon only or simple toggle) */}
+                        <div className="flex items-center gap-1">
+                            <button onClick={() => switchLocale('ja')} className="text-xs font-bold hover:text-primary p-1">JP</button>
+                            <span className="text-muted-foreground text-xs">/</span>
+                            <button onClick={() => switchLocale('en')} className="text-xs font-bold hover:text-primary p-1">EN</button>
+                        </div>
+
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             className="inline-flex items-center justify-center p-2 rounded-md text-foreground hover:text-primary focus:outline-none"

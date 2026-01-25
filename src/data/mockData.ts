@@ -1,37 +1,16 @@
-export const events = [
-    {
-        id: 1,
-        title: "バンコク・ニューカマー・ナイト",
-        date: "2024-02-15",
-        time: "19:00 - 21:00",
-        location: "The Hive Thonglor, Bangkok",
-        description: "タイに来たばかりの方、これから来る方へ。同じ境遇の仲間と出会い、不安を解消しましょう。「1ヶ月お試し移住」の方にも最適です。",
-        category: "ミートアップ",
-        image: "/images/event1.jpg"
-    },
-    {
-        id: 2,
-        title: "Deep Talk: 働き方と人生の未来",
-        date: "2024-02-20",
-        time: "18:00 - 20:00",
-        location: "Private Lounge, Asoke",
-        description: "経験豊富なノマド限定のクローズド会。表面的な会話ではなく、価値観や長期的なビジョン、QoLについて深く語り合いませんか。",
-        category: "コミュニティ",
-        image: "/images/event2.jpg"
-    },
-    {
-        id: 3,
-        title: "ビザ戦略マスタークラス",
-        date: "2024-03-01",
-        time: "14:00 - 16:00",
-        location: "Online / Zoom",
-        description: "観光ビザの期限が近い方へ。LTR、DTV、タイランドエリートなど、長期滞在のための最新ビザ情報を解説します。",
-        category: "ワークショップ",
-        image: "/images/event3.jpg"
-    }
-];
 
-export const nomadArticles = [
+
+
+export const nomadArticlesJa = [
+    {
+        id: 110,
+        title: "【保存版】バンコクノマド完全マップ2026 | カフェ・コワーキング・居住エリア網羅",
+        excerpt: "バンコクの「作業できるカフェ」「最強コワーキング」「住みやすいエリア」を1枚のマップ（リスト）にまとめました。PDFダウンロード可能。",
+        category: "完全マップ",
+        date: "2026-01-10",
+        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
+        link: "/nomad-info/bangkok-map"
+    },
     {
         id: 100,
         title: "「海外ノマドポッドキャスト」パートナー・スポンサー募集",
@@ -124,7 +103,109 @@ export const nomadArticles = [
     }
 ];
 
-export const livingArticles = [
+export const nomadArticlesEn = [
+    {
+        id: 110,
+        title: "Bangkok Nomad Map 2026 | Ultimate Guide to Cafes, Coworking & Living Areas",
+        excerpt: "A comprehensive map of Bangkok's best work-friendly cafes, top coworking spaces, and livable areas. PDF download available.",
+        category: "Ultimate Map",
+        date: "2026-01-10",
+        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
+        link: "/nomad-info/bangkok-map"
+    },
+    {
+        id: 100,
+        title: "Partner & Sponsor Recruitment for 'Overseas Nomad Podcast'",
+        excerpt: "We are looking for individuals and companies who resonate with our vision to support sustainable operation and high-quality content creation.",
+        category: "Announcements",
+        date: "2026-01-10",
+        image: "/images/sponsor_hero.png",
+        link: "/nomad-info/sponsor"
+    },
+    {
+        id: 101,
+        title: "Thailand DTV Visa Guide 2026: Requirements, Cost & Application Process",
+        excerpt: "Stay for 5 years with 180-day entries. A complete guide to the DTV visa for digital nomads, based on actual application experience.",
+        category: "Visa Info",
+        date: "2026-01-08",
+        image: "/images/dtv-visa-thumbnail.png",
+        link: "/nomad-info/dtv-visa"
+    },
+    {
+        id: 102,
+        title: "7 Best Work-Friendly Cafes in Bangkok (2026) | Power & Wi-Fi",
+        excerpt: "From hidden gems like Samyan CO-OP to scenic spots. Carefully selected cafes with power outlets and Wi-Fi, reviewed by nomads.",
+        category: "Cafes & Workspaces",
+        date: "2026-01-07",
+        image: "/images/cafe_guide_hero.png",
+        link: "/nomad-info/cafe-guide"
+    },
+    {
+        id: 103,
+        title: "Bangkok Nomad Life: From Zero to First Month Roadmap (2026)",
+        excerpt: "Scared to quit your job? A complete guide to testing the nomad lifestyle for just 30 days with minimal risk.",
+        category: "Beginner Guide",
+        date: "2025-12-30",
+        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
+        link: "/nomad-info/bangkok-roadmap"
+    },
+    {
+        id: 104,
+        title: "Bangkok Coworking Space Guide 2026",
+        excerpt: "For when you have a high-stakes deadline or need focus. Spots with silence and high-speed Wi-Fi for serious work.",
+        category: "Workspaces",
+        date: "2026-01-09",
+        image: "/images/coworking_guide_hero.png",
+        link: "/nomad-info/coworking-guide"
+    },
+    {
+        id: 105,
+        title: "Money & Taxes for Thailand Nomads",
+        excerpt: "What to do with JPY? How to use Wise, open local bank accounts, and basic tax knowledge you need to know.",
+        category: "Money & Tax",
+        date: "2026-01-02",
+        image: "/images/tax_money_hero.png",
+        link: "/nomad-info/tax-money-guide"
+    },
+    {
+        id: 106,
+        title: "Wise Guide: Why It's Essential for Digital Nomads",
+        excerpt: "Are you losing money on hidden costs? Up to 8x cheaper than banks and incredibly fast. Complete guide to international transfers.",
+        category: "Money & Tax",
+        date: "2026-01-03",
+        image: "/images/wise_hero_v2.png",
+        link: "/nomad-info/wise"
+    },
+    {
+        id: 107,
+        title: "NordVPN: Essential for Overseas Nomads",
+        excerpt: "Using cafe Wi-Fi directly? Security risks and how to watch Japanese TV from abroad. Explanation of VPNs.",
+        category: "Security",
+        date: "2026-01-07",
+        image: "/images/nordvpn_hero.png",
+        link: "/nomad-info/nordvpn"
+    },
+    {
+        id: 108,
+        title: "Airalo: The Number One Choice for Travel Connectivity",
+        excerpt: "Connect the moment you land. Complete guide to the world's first eSIM store, Airalo, including pros and cons.",
+        category: "Internet & SIM",
+        date: "2026-01-08",
+        image: "/images/airalo_hero.png",
+        link: "/nomad-info/airalo"
+    },
+    {
+        id: 109,
+        title: "SafetyWing: The Best Subscription Insurance for Nomads",
+        excerpt: "Monthly subscription medical insurance perfect for nomads with indefinite plans. Why it's loved globally.",
+        category: "Health & Medical",
+        date: "2026-01-08",
+        image: "/images/safetywing_hero.png",
+        link: "/nomad-info/safetywing"
+    }
+];
+
+export const livingArticlesJa = [
     {
         id: 201,
         title: "【2026年版】バンコク移動手段完全攻略！Grab, Bolt, MuvMiを使いこなせ",
@@ -162,3 +243,59 @@ export const livingArticles = [
         link: "/living/sim-guide"
     }
 ];
+
+export const livingArticlesEn = [
+    {
+        id: 201,
+        title: "Bangkok Transport Guide 2026: Master Grab, Bolt & MuvMi",
+        excerpt: "No more taxi scams. How to move cheaply, quickly, and safely using 2 god-tier apps and the latest electric tuk-tuk 'MuvMi'.",
+        category: "Transport",
+        date: "2026-01-05",
+        image: "/images/transport_hero.png",
+        link: "/living/transport-guide"
+    },
+    {
+        id: 202,
+        title: "Bangkok Livable Areas Guide 2026: Phrom Phong, On Nut, Ari",
+        excerpt: "Japanese town? Cost performance? Cafe district? Compare the top 3 popular areas to find what suits your budget and lifestyle.",
+        category: "Housing",
+        date: "2026-01-06",
+        image: "/images/area_guide_hero_photo.png",
+        link: "/living/area-guide"
+    },
+    {
+        id: 203,
+        title: "Sick in Thailand? English-Speaking Hospitals & Pharmacy Medicine List",
+        excerpt: "Stomach pain, fever, dengue... Choosing a hospital for emergencies and finding Japanese-like medicines at local pharmacies.",
+        category: "Health & Medical",
+        date: "2026-01-04",
+        image: "/images/medical_guide_hero.png",
+        link: "/living/medical-guide"
+    },
+    {
+        id: 204,
+        title: "Thailand SIM Guide 2026: Solving the SMS Issue",
+        excerpt: "Should you discard your home number? No. Keep receiving SMS while using cheap Thai 5G with a dual SIM setup.",
+        category: "Internet & SIM",
+        date: "2026-01-09",
+        image: "/images/sim_guide_hero_photo.png",
+        link: "/living/sim-guide"
+    }
+];
+
+// Backwards compatibility alias
+export const nomadArticles = nomadArticlesJa;
+export const livingArticles = livingArticlesJa;
+
+export const getArticles = (locale: string) => {
+    if (locale === 'en') {
+        return {
+            nomad: nomadArticlesEn,
+            living: livingArticlesEn
+        };
+    }
+    return {
+        nomad: nomadArticlesJa,
+        living: livingArticlesJa
+    };
+};

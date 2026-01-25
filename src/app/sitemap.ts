@@ -8,7 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '',
         '/nomad-info',
         '/living',
-        '/events',
+
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Articles - Nomad Info
     const nomadInfoArticles = [
         '/nomad-info/bangkok-roadmap',
+        '/nomad-info/bangkok-map',
         '/nomad-info/coworking-guide',
         '/nomad-info/tax-money-guide',
         '/nomad-info/dtv-visa',

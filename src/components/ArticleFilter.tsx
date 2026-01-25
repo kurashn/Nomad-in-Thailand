@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { ArrowUpRight, Search, Tag, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 type Article = {
     id: number;
@@ -19,31 +20,59 @@ type Props = {
     articles: Article[];
 };
 
-const categories = [
-    { id: "すべて", label: "すべて" },
-    { id: "仕事・ビザ", label: "仕事・ビザ", match: ["ビザ情報", "お知らせ", "初心者ガイド", "ワークスペース", "コミュニティ", "ワークショップ", "ミートアップ"] },
-    { id: "生活・場所", label: "生活・場所", match: ["カフェ・作業場所", "住まい", "交通", "医療・健康"] },
-    { id: "お金・IT", label: "お金・IT", match: ["お金・税金", "セキュリティ", "通信・ネット"] },
-];
+// Map internal filter IDs to all possible category strings in both languages
+const CATEGORY_MATCHERS: Record<string, string[]> = {
+    workVisa: [
+        // JA
+        "ビザ情報", "お知らせ", "初心者ガイド", "ワークスペース", "コミュニティ", "ワークショップ", "ミートアップ",
+        // EN
+        "Visa Info", "Announcements", "Beginner Guide", "Workspaces", "Community", "Workshops", "Meetup"
+    ],
+    living: [
+        // JA
+        "カフェ・作業場所", "住まい", "交通", "医療・健康", "完全マップ",
+        // EN
+        "Cafes & Workspaces", "Housing", "Transport", "Health & Medical", "Ultimate Map"
+    ],
+    moneyIt: [
+        // JA
+        "お金・税金", "セキュリティ", "通信・ネット",
+        // EN
+        "Money & Tax", "Security", "Internet & SIM"
+    ]
+};
 
 export default function ArticleFilter({ articles }: Props) {
-    const [selectedCategory, setSelectedCategory] = useState("すべて");
+    const t = useTranslations('ArticleFilter');
+    const [selectedCategory, setSelectedCategory] = useState("all");
     const [searchQuery, setSearchQuery] = useState("");
+
+    const categories = [
+        { id: "all", label: t('categories.all') },
+        { id: "workVisa", label: t('categories.workVisa') },
+        { id: "living", label: t('categories.living') },
+        { id: "moneyIt", label: t('categories.moneyIt') },
+    ];
 
     // Filter logic
     const filteredArticles = useMemo(() => {
         return articles.filter((article) => {
             // Category Filter
-            const matchesCategory =
-                selectedCategory === "すべて" ||
-                categories
-                    .find((c) => c.id === selectedCategory)
-                    ?.match?.includes(article.category);
+            let matchesCategory = false;
+            if (selectedCategory === "all") {
+                matchesCategory = true;
+            } else {
+                const matchers = CATEGORY_MATCHERS[selectedCategory];
+                if (matchers?.includes(article.category)) {
+                    matchesCategory = true;
+                }
+            }
 
             // Search Filter
             const matchesSearch =
                 article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                article.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+                article.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                article.category.toLowerCase().includes(searchQuery.toLowerCase());
 
             return matchesCategory && matchesSearch;
         });
@@ -74,7 +103,7 @@ export default function ArticleFilter({ articles }: Props) {
                     <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                     <input
                         type="text"
-                        placeholder="記事を検索..."
+                        placeholder={t('searchPlaceholder')}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
                         className="w-full pl-10 pr-4 py-2 rounded-full border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 bg-slate-50 text-sm"
@@ -121,7 +150,7 @@ export default function ArticleFilter({ articles }: Props) {
                                             {article.date}
                                         </span>
                                         <div className="flex items-center text-sm font-bold text-blue-600 group-hover:underline">
-                                            読む <ArrowUpRight className="w-4 h-4 ml-1" />
+                                            {t('read')} <ArrowUpRight className="w-4 h-4 ml-1" />
                                         </div>
                                     </div>
                                 </div>
@@ -130,12 +159,12 @@ export default function ArticleFilter({ articles }: Props) {
                     ))
                 ) : (
                     <div className="col-span-full py-12 text-center text-slate-400">
-                        <p>記事が見つかりませんでした。</p>
+                        <p>{t('noResults')}</p>
                         <button
-                            onClick={() => { setSearchQuery(""); setSelectedCategory("すべて"); }}
+                            onClick={() => { setSearchQuery(""); setSelectedCategory("all"); }}
                             className="mt-4 text-blue-600 hover:underline text-sm"
                         >
-                            条件をクリア
+                            {t('clear')}
                         </button>
                     </div>
                 )}
