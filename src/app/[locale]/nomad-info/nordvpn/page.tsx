@@ -22,7 +22,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 export default function NordVPNGuidePage() {
     const t = useTranslations('NordVPNGuide');
     // Placeholder affiliate link - USER TO UPDATE
-    const AFFILIATE_LINK = "https://nordvpn.com/jp/";
+    const AFFILIATE_LINK = "https://nordvpn.com/ja/";
 
     // Structured Data (JSON-LD)
     const jsonLd = {
@@ -110,7 +110,7 @@ export default function NordVPNGuidePage() {
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t('hero.back')}
                     </Link>
@@ -127,9 +127,9 @@ export default function NordVPNGuidePage() {
 
                 {/* Introduction / Hook */}
                 <div className="prose prose-lg prose-slate max-w-none mb-16 relative">
-                    <p className="text-xl leading-loose font-medium text-slate-800 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p1') }} />
-                    <p className="text-lg leading-loose text-slate-700 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p2') }} />
-                    <p className="text-lg leading-loose text-slate-700 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p3') }} />
+                    <p className="leading-loose font-medium text-slate-800 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p1') }} />
+                    <p className="leading-loose text-slate-700 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p2') }} />
+                    <p className="leading-loose text-slate-700 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p3') }} />
 
                     <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 my-8 not-prose">
                         <h3 className="text-blue-800 font-bold text-lg mb-4 mt-0">{t('intro.boxTitle')}</h3>
@@ -484,7 +484,7 @@ export default function NordVPNGuidePage() {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <Link href="/nomad-info" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors underline">
+                    <Link href="../nomad-info" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors underline">
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         {t('hero.back')}
                     </Link>

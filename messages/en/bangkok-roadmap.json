@@ -1,0 +1,502 @@
+{
+    "BangkokRoadmap": {
+        "meta": {
+            "title": "Thailand Relocation & Nomad Life Roadmap 2026 [Bangkok Edition] Visa, Costs, Prep Guide | Nomad Thailand",
+            "desc": "[2026 Latest] Your complete guide to moving to Thailand and living the nomad life in Bangkok. From securing the DTV visa to cost of living breakdowns, recommended neighborhoods, finding work, and joining the community. A step-by-step roadmap for a successful move."
+        },
+        "hero": {
+            "back": "Back to Nomad Info",
+            "tag1": "Complete Guide",
+            "tag2": "2026 Edition",
+            "title": "Thailand Relocation & Bangkok Nomad Life Roadmap [2026 Latest]",
+            "author": "Nomatai Editorial"
+        },
+        "intro": {
+            "p1": "\"I want to live the digital nomad life overseas this year\"—is this your goal, but you're hesitating due to complex visas and procedures?",
+            "p2": "Bangkok, Thailand is one of the world's top cities for digital nomads. With a realistic monthly budget of around $1,000, you can live in a condo with a pool and enjoy delicious Thai food every day.",
+            "p3": "However, just showing up isn't enough. With the new \"DTV Visa\" introduced in 2024, strategic preparation is more critical than ever.",
+            "p4": "We wrote this article for anyone tired of fragmented information online. This is the only complete roadmap covering \"Prep, Visa, Housing, Work, and Community\" in chronological order.",
+            "p5": "By the time you finish reading, your Bangkok relocation plan will have shifted from a \"dream\" to a \"concrete schedule\".",
+            "benefits": {
+                "title": "Why Bangkok?",
+                "item1": "World-class <strong>food culture</strong> and street food heaven",
+                "item2": "Blazing fast internet (avg 200Mbps+)",
+                "item3": "Vibrant nomad community and abundant coworking spaces"
+            }
+        },
+        "visa": {
+            "title": "STEP 1: Plan Your Visa Strategy",
+            "desc": "The first hurdle is the visa. For long-term stays, the <strong>DTV (Destination Thailand Visa)</strong> is highly recommended.",
+            "comparison": {
+                "title": "Visa Comparison Table",
+                "headers": {
+                    "item": "Item",
+                    "dtv": "DTV Visa",
+                    "tourist": "Tourist Visa",
+                    "ed": "ED Visa"
+                },
+                "rows": {
+                    "cost": {
+                        "label": "Cost",
+                        "dtv": "10,000 THB<br />(~$280)",
+                        "tourist": "Free<br />(Visa Exemption)",
+                        "ed": "10,000 THB~"
+                    },
+                    "validity": {
+                        "label": "Validity",
+                        "dtv": "5 Years",
+                        "tourist": "60 Days",
+                        "ed": "1 Year"
+                    },
+                    "stay": {
+                        "label": "Stay per Entry",
+                        "dtv": "180 Days<br />(Extendable)",
+                        "tourist": "60 Days<br />(+30 ext.)",
+                        "ed": "90-day renewal"
+                    },
+                    "condition": {
+                        "label": "Requirements",
+                        "dtv": "500k THB proof<br />Freelance docs",
+                        "tourist": "None",
+                        "ed": "School enrollment"
+                    },
+                    "note": {
+                        "label": "Rating",
+                        "dtv": "★★★★★<br />Best for nomads",
+                        "tourist": "★★☆☆☆<br />Short trips",
+                        "ed": "★★★☆☆<br />Students"
+                    }
+                }
+            },
+            "dtv": {
+                "title": "DTV Visa (Recommended)",
+                "validity": "5 Years",
+                "stay": "180 Days/Entry",
+                "condition": "500k THB bank proof",
+                "cost": "10,000 THB",
+                "note": "Best for nomads",
+                "points": {
+                    "title": "Why DTV is Powerful",
+                    "p1": "~$280 for 5 years = <strong>incredible value</strong>",
+                    "p2": "<strong>Up to 180 days per entry</strong> (extendable)",
+                    "p3": "<strong>Remote work is officially recognized</strong>"
+                }
+            },
+            "tourist": {
+                "title": "Tourist Visa (Visa-free)",
+                "validity": "60 Days",
+                "stay": "60 Days",
+                "condition": "None",
+                "cost": "Free",
+                "note": "Good for short trips"
+            },
+            "conclusion": "For long-term stays, <strong>get the DTV</strong>. Preparation takes 1-2 months. <alert>Never overstay your visa.</alert>",
+            "dtvLink": {
+                "title": "Read DTV Complete Guide",
+                "desc": "Detailed explanation of application requirements, required documents, and real-world experiences.",
+                "cta": "Go to DTV Visa Guide"
+            },
+            "line": {
+                "title": "Get Application Document Samples",
+                "desc": "Send \"Visa\" to our LINE account to get PDF samples of actual DTV application documents from successful applicants.",
+                "cta": "Get Document Samples"
+            },
+            "video": {
+                "title": "Visa Explanation Video",
+                "desc": "Detailed DTV visa application guide on video."
+            }
+        },
+        "timeline": {
+            "title": "STEP 2: Pre-Departure Preparation Timeline",
+            "month1": {
+                "tag": "1-2 Months Before",
+                "title": "Finance & Visa Application",
+                "money": {
+                    "title": "Prepare Funds",
+                    "desc": "Prepare a <strong>minimum of 500k THB (~$14k USD)</strong> in savings. This is required for the DTV visa application.",
+                    "budget": {
+                        "title": "Initial Budget Guide",
+                        "visa": "Visa fee: ~$280",
+                        "flight": "Flight: ~$200-400",
+                        "deposit": "Deposit + Rent: ~$700-1,000",
+                        "initial": "First month living: ~$700-1,000",
+                        "total": "Total: ~$2,000-3,000"
+                    },
+                    "link": "Tax & Money Guide"
+                },
+                "resign": {
+                    "title": "Work Arrangements",
+                    "desc": "If employed, ensure you have remote work approval. If freelance, inform your clients of your relocation.",
+                    "tips": {
+                        "title": "Tips",
+                        "tip1": "Frame it to your employer as a 'temporary overseas stay' initially",
+                        "tip2": "Adjust work hours for the time difference (Bangkok is GMT+7)",
+                        "tip3": "Freelancers: Remember to update your billing address"
+                    }
+                },
+                "video": "Bangkok Cost of Living Video"
+            },
+            "week2": {
+                "tag": "2 Weeks Before",
+                "title": "Essential Tools Setup",
+                "desc": "Set these up before leaving your home country.",
+                "wise": {
+                    "title": "Wise (International Transfer)",
+                    "must": "Essential",
+                    "desc": "Required for cheap international transfers. <alert>Set this up before departure as you may need local bank or ID verification.</alert>",
+                    "benefit": "Fees are up to 80% cheaper than traditional banks",
+                    "link": "Wise Complete Guide"
+                },
+                "sim": {
+                    "title": "SIM Card Strategy",
+                    "detail": "Detailed Guide",
+                    "desc": "Decide whether to pre-purchase an eSIM (like Airalo) or buy a local SIM upon arrival.",
+                    "options": {
+                        "title": "Recommended Options",
+                        "esim": "eSIM (Airalo): Works immediately upon arrival",
+                        "local": "Local SIM (AIS/TrueMove): ~500 THB/month for unlimited data",
+                        "dual": "Dual SIM: Keep your home number active"
+                    },
+                    "link": "SIM Strategy Guide"
+                },
+                "insurance": {
+                    "title": "Travel Insurance",
+                    "desc": "Get nomad-friendly insurance like SafetyWing. Costs around $45/month.",
+                    "link": "SafetyWing Guide"
+                },
+                "vpn": {
+                    "title": "VPN (Security)",
+                    "desc": "Essential for security on public WiFi. NordVPN is recommended.",
+                    "link": "NordVPN Details"
+                },
+                "admin": {
+                    "title": "Administrative Tasks",
+                    "item1": "Health insurance <strong>notification</strong> (if leaving residency)",
+                    "item2": "Apartment <strong>lease termination or sublet</strong>",
+                    "item3": "Phone <strong>SIM unlock</strong> (to usage eSIM)",
+                    "item4": "Mail <strong>forwarding service</strong> setup",
+                    "item5": "Credit card <strong>international use</strong> verification"
+                }
+            },
+            "justBefore": {
+                "tag": "Just Before Departure",
+                "title": "Final Checklist",
+                "checklist": {
+                    "title": "Don't Forget",
+                    "passport": "Passport (6+ months validity)",
+                    "visa": "Visa approval (PDF printout)",
+                    "insurance": "Travel insurance certificate",
+                    "card": "Credit cards (2+ cards recommended)",
+                    "cash": "Cash (~$300-500 USD equivalent)",
+                    "adapter": "Power adapter (Thailand uses Type A/C)",
+                    "medicine": "Prescription meds (with English documentation)"
+                }
+            }
+        },
+        "arrival": {
+            "title": "STEP 3: First Week After Arrival",
+            "day1": {
+                "tag": "Day 1",
+                "title": "Immigration & First 24 Hours",
+                "immigration": {
+                    "title": "Immigration",
+                    "desc": "Enter through Suvarnabhumi (BKK) or Don Mueang (DMK) Airport. DTV holders receive a 180-day stamp."
+                },
+                "sim": {
+                    "title": "SIM Card Purchase",
+                    "desc": "Available at airport carrier counters (AIS/TrueMove). A 30-day plan is ~500 THB."
+                },
+                "money": {
+                    "title": "Money Exchange / ATM",
+                    "desc": "Use airport exchange only for small amounts. Better rates are found at SuperRich in the city."
+                },
+                "hotel": {
+                    "title": "Hotel Check-in",
+                    "desc": "Stay in a hotel or Airbnb for the first 1-2 weeks while searching for long-term housing."
+                }
+            },
+            "week1": {
+                "tag": "Week 1",
+                "title": "Setting Up Life Infrastructure",
+                "apps": {
+                    "title": "Install Essential Apps",
+                    "grab": "Grab: Taxi & Food app (Southeast Asia's Uber)",
+                    "foodpanda": "FoodPanda: Food delivery alternative",
+                    "line": "LINE: Major messaging app in Thailand",
+                    "googlemaps": "Google Maps: Essential for navigation",
+                    "translate": "Google Translate: For reading Thai menus/signs"
+                },
+                "banking": {
+                    "title": "About Bank Accounts",
+                    "desc": "Currently, opening a local bank account with a DTV or tourist visa is generally NOT possible (Work permit is usually required).",
+                    "note": "※Use your Wise debit card or credit cards for daily expenses."
+                },
+                "explore": {
+                    "title": "Explore Areas",
+                    "desc": "Walk around potential neighborhoods. Check out cafes, coworking spaces, and supermarkets."
+                }
+            }
+        },
+        "housing": {
+            "title": "STEP 4: Housing Search & Area Selection",
+            "intro": "Bangkok is massive. Where you live dramatically impacts your quality of life.",
+            "areas": {
+                "title": "Recommended Areas for Nomads",
+                "sukhumvit": {
+                    "name": "Sukhumvit",
+                    "stations": "Asoke, Phrom Phong, Thonglor",
+                    "pros": "Japanese expat area, Trendy cafes, Great coworking",
+                    "cons": "Pricier rent (15k-30k THB)",
+                    "rec": "Best for those needing Japanese food/services"
+                },
+                "silom": {
+                    "name": "Silom/Sathorn",
+                    "stations": "Sala Daeng, Chong Nonsi",
+                    "pros": "Business district, Great BTS access, Luxury condos",
+                    "cons": "Crowded on weekdays, Near nightlife areas",
+                    "rec": "For those wanting a quiet, refined city environment"
+                },
+                "ari": {
+                    "name": "Ari",
+                    "stations": "Ari Station",
+                    "pros": "Local feel, Hipster cafe heaven, Cheaper rent (8k-15k THB)",
+                    "cons": "Further from center, Less English spoken",
+                    "rec": "For budget-conscious travelers seeking a local vibe"
+                },
+                "onnut": {
+                    "name": "On Nut",
+                    "stations": "On Nut Station (E9)",
+                    "pros": "Rent is about half that of Phrom Phong (Very Cheap), Convenient Lotus/BigC at station, Street food markets",
+                    "cons": "15-20 min by BTS to center, Trains are crowded during rush hour",
+                    "rec": "Maximize quality of life on a budget, for local vibe lovers",
+                    "videoCta": "Watch On Nut Area Video"
+                },
+                "riverside": {
+                    "name": "Riverside",
+                    "stations": "Saphan Taksin, ICONSIAM",
+                    "pros": "Stunning Chao Phraya river views, Upscale, Quiet",
+                    "cons": "Transport mostly by boat/taxi, Fewer work-friendly cafes",
+                    "rec": "For those prioritizing scenery and a resort-like feel"
+                }
+            },
+            "labels": {
+                "pros": "Pros",
+                "cons": "Cons"
+            },
+            "search": {
+                "title": "How to Find Housing",
+                "steps": {
+                    "title": "Steps",
+                    "step1": "First 1-2 weeks in hotel/Airbnb",
+                    "step2": "Walk around areas to check the vibe",
+                    "step3": "Search Facebook Marketplace / DDproperty",
+                    "step4": "Contact owner or agent (LINE/WhatsApp)",
+                    "step5": "View properties (see 3-5 minimum)",
+                    "step6": "Sign Contract (1-year typical, 2-month deposit)"
+                },
+                "platforms": {
+                    "title": "Recommended Search Sites",
+                    "fb": "Facebook Marketplace: Good for direct deals",
+                    "dd": "DDproperty: Large inventory",
+                    "hipflat": "Hipflat: Foreigner-friendly interface",
+                    "renthub": "Renthub: Great photos"
+                }
+            },
+            "cost": {
+                "title": "Rent Guide",
+                "studio": "Studio (1K): 8,000-15,000 THB/month",
+                "onebr": "1 Bedroom: 15,000-25,000 THB/month",
+                "twobr": "2 Bedroom: 25,000-40,000 THB/month",
+                "note": "※Gym & pool are typically included"
+            },
+            "mapLink": {
+                "title": "Explore Bangkok Map",
+                "desc": "Check popular cafes, coworking spaces, and nomad areas on the map.",
+                "cta": "Open Bangkok Map"
+            }
+        },
+        "cost": {
+            "title": "Monthly Living Cost Simulation",
+            "intro": "Bangkok costs about 1/2 to 1/3 of what you'd pay in Tokyo or major Western cities.",
+            "table": {
+                "title": "Monthly Budget Breakdown",
+                "headers": {
+                    "item": "Category",
+                    "budget": "Budget",
+                    "standard": "Standard",
+                    "comfort": "Comfortable"
+                },
+                "rows": {
+                    "rent": {
+                        "label": "Rent",
+                        "budget": "8,000 THB",
+                        "standard": "18,000 THB",
+                        "comfort": "30,000 THB"
+                    },
+                    "food": {
+                        "label": "Food",
+                        "budget": "6,000 THB<br />(street food)",
+                        "standard": "12,000 THB<br />(cafe mix)",
+                        "comfort": "20,000 THB<br />(eat out often)"
+                    },
+                    "coworking": {
+                        "label": "Coworking",
+                        "budget": "0 THB<br />(cafes only)",
+                        "standard": "3,000 THB<br />(monthly pass)",
+                        "comfort": "6,000 THB<br />(premium)"
+                    },
+                    "transport": {
+                        "label": "Transport",
+                        "budget": "1,500 THB",
+                        "standard": "3,000 THB",
+                        "comfort": "5,000 THB"
+                    },
+                    "utilities": {
+                        "label": "Utilities",
+                        "budget": "1,500 THB",
+                        "standard": "2,000 THB",
+                        "comfort": "3,000 THB"
+                    },
+                    "others": {
+                        "label": "Others",
+                        "budget": "3,000 THB",
+                        "standard": "7,000 THB",
+                        "comfort": "15,000 THB"
+                    },
+                    "total": {
+                        "label": "Total",
+                        "budget": "~20,000 THB<br />(~$560)",
+                        "standard": "~45,000 THB<br />(~$1,260)",
+                        "comfort": "~79,000 THB<br />(~$2,210)"
+                    }
+                }
+            },
+            "note": "※Based on 1 THB = $0.028 USD"
+        },
+        "community": {
+            "title": "STEP 5: Join the Community",
+            "intro": "Bangkok has a vibrant nomad community, so you won't feel lonely.",
+            "line": {
+                "title": "Free Nomad Exchange OpenChat",
+                "desc": "Community primarily for people in their 20s and 30s. We host irregular events like sauna, Muay Thai, trips, and drinks. Free to join.",
+                "cta": "Join OpenChat",
+                "videoCta": "Watch Community Vibes Video"
+            },
+            "coworking": {
+                "title": "Coworking Communities",
+                "desc": "Coworking spaces are not just workplaces—they are networking hubs.",
+                "spaces": {
+                    "tcdc": "TCDC: For creatives, hosts many events",
+                    "hubba": "Hubba: Startup scene, active networking",
+                    "launchpad": "Launchpad: Asoke area, popular with expats",
+                    "thehive": "The Hive: Chain, access to multiple locations"
+                },
+                "link": "Coworking Guide"
+            },
+            "meetups": {
+                "title": "Meetups & Events",
+                "desc": "Join regular networking events to meet people.",
+                "events": {
+                    "nomad": "Bangkok Nomad Drinks (monthly)",
+                    "japanese": "Japanese Mixer (weekly)",
+                    "startup": "Startup Weekend Bangkok",
+                    "language": "Language Exchange"
+                }
+            },
+            "cafes": {
+                "title": "Popular Nomad Cafes",
+                "desc": "Work from cafes and naturally meet fellow nomads.",
+                "link": "See Cafe Guide"
+            }
+        },
+        "longterm": {
+            "title": "Long-term Stay Considerations",
+            "tax": {
+                "title": "Taxes",
+                "desc": "Staying 180+ days/year in Thailand may make you a tax resident.",
+                "points": {
+                    "p1": "Non-residency in home country depends on your actual residence status",
+                    "p2": "Income earned within Thailand is taxable (remote work is usually exempt)",
+                    "p3": "Consult a tax advisor for specifics"
+                },
+                "link": "Tax & Money Guide"
+            },
+            "language": {
+                "title": "Learn Thai",
+                "desc": "Learning basic Thai dramatically improves your quality of life.",
+                "basics": {
+                    "hello": "สวัสดี (Sawasdee): Hello",
+                    "thanks": "ขอบคุณ (Khop khun): Thank you",
+                    "delicious": "อร่อย (Aroi): Delicious",
+                    "howmuch": "เท่าไหร่ (Tao rai): How much?",
+                    "notspicy": "ไม่เผ็ด (Mai phet): Not spicy"
+                }
+            },
+            "healthcare": {
+                "title": "Healthcare",
+                "desc": "Bangkok is home to world-class private hospitals.",
+                "hospitals": {
+                    "bumrungrad": "Bumrungrad Hospital: Japanese support available",
+                    "samitivej": "Samitivej Hospital: Many Japanese doctors",
+                    "bdms": "BNH Hospital: Expat-friendly"
+                },
+                "insurance": "With SafetyWing or similar insurance, cashless treatment at private hospitals is possible.",
+                "link": "Medical Guide"
+            },
+            "culture": {
+                "title": "Cultural Respect",
+                "desc": "Respect Thai culture and customs for a smooth living experience.",
+                "tips": {
+                    "temple": "Cover skin at temples and remove shoes",
+                    "king": "Criticizing royalty is illegal (lèse-majesté laws)",
+                    "feet": "Don't point your feet at people or Buddha",
+                    "head": "The head is sacred; do not touch it",
+                    "smile": "Embrace the 'Mai pen rai' spirit (no worries)"
+                }
+            }
+        },
+        "faq": {
+            "title": "Frequently Asked Questions (FAQ)",
+            "q1": "Q. Is Bangkok safe?",
+            "a1": "A. Generally, yes. However, be cautious when walking alone late at night and manage your valuables. Watch out for tourist scams and overcharging taxis. Use Grab for peace of mind.",
+            "q2": "Q. Can I live with English only?",
+            "a2": "A. English works well in main areas (Sukhumvit, Silom) and coworking spaces. However, in local areas and markets, English may not be understood. The Google Translate app is very helpful.",
+            "q3": "Q. How much do I need for a comfortable life?",
+            "a3": "A. A budget of 50k THB/month (~$1,400) allows for a comfortable lifestyle. You can budget down to 20-30k THB, but 50k+ is ideal for enjoying coworking spaces and dining out.",
+            "q4": "Q. Is the internet fast enough?",
+            "a4": "A. Bangkok's internet is world-class. Condos typically have 200-1,000 Mbps fiber. Coworking spaces and cafes also offer fast and reliable WiFi.",
+            "q5": "Q. Can I make friends easily?",
+            "a5": "A. Bangkok has an active expat and nomad community. Through Facebook groups, Meetups, and coworking events, you'll quickly find friends.",
+            "q6": "Q. Can I extend my stay without a visa?",
+            "a6": "A. A Tourist visa (or visa exemption) can usually be extended once for 30 days. After that, you must exit or obtain a proper visa (like DTV). Overstaying carries risks of fines and entry bans.",
+            "q7": "Q. What about Thai taxes?",
+            "a7": "A. If you stay 180+ days/year, you become a tax resident, and Thai-sourced income becomes taxable. Remote income from your home country is usually exempt, but strictly speaking, you should consult a tax professional.",
+            "q8": "Q. Can I find Japanese food?",
+            "a8": "A. The Sukhumvit area has hundreds of Japanese restaurants offering near-Japan quality. Japanese supermarkets (Fuji Super, Donki, MaxValu) also stock Japanese products."
+        },
+        "related": {
+            "title": "Related Articles",
+            "dtv": {
+                "title": "DTV Visa Complete Guide",
+                "desc": "Detailed explanation of requirements, documents, and real experiences"
+            },
+            "map": {
+                "title": "Bangkok Nomad Map",
+                "desc": "Check cafes, coworking, and nomad spots on the map"
+            },
+            "cafe": {
+                "title": "Cafe Guide",
+                "desc": "30 best work-friendly cafes"
+            },
+            "coworking": {
+                "title": "Coworking Guide",
+                "desc": "Complete comparison of Bangkok coworking spaces"
+            }
+        },
+        "summary": {
+            "title": "Welcome to Bangkok!",
+            "desc": "Use this guide to start your fulfilling nomad life.",
+            "cta": "Back to Articles"
+        }
+    }
+}

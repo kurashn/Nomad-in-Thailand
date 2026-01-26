@@ -1,0 +1,81 @@
+{
+    "Home": {
+        "essentials": {
+            "title": "4 Essential Tools for\nDigital Nomads",
+            "subtitle": "Convenient. Affordable. Secure.\nThrive anywhere with these tools.",
+            "wise": {
+                "title": "Wise",
+                "desc": "The best way to send money internationally.\n<bold>Minimal fees, real exchange rates</bold>.",
+                "cta": "Read Guide"
+            },
+            "nordvpn": {
+                "title": "NordVPN",
+                "desc": "Stay secure on public Wi-Fi.\n<bold>Access content from anywhere</bold>.",
+                "cta": "Read Guide"
+            },
+            "airalo": {
+                "title": "Airalo",
+                "desc": "World's leading eSIM marketplace.\n<bold>Get online instantly, no SIM swap needed</bold>.",
+                "cta": "Read Guide"
+            },
+            "safetywing": {
+                "title": "SafetyWing",
+                "desc": "Travel medical insurance designed for nomads.\n<bold>Flexible monthly plans</bold>.",
+                "cta": "Read Guide"
+            }
+        },
+        "events": {
+            "title": "Latest News 2026",
+            "sponsor": {
+                "date": "2026.01.10",
+                "tag": "Recruit",
+                "title": "Sponsorship Recruitment for 'Nomad in Thailand'"
+            },
+            "launch": {
+                "date": "2026.01.01",
+                "tag": "News",
+                "title": "'Nomad in Thailand' Official Site Launched"
+            }
+        },
+        "camp": {
+            "title": "Nomad Events",
+            "comingSoon": "Coming Soon",
+            "nextDate": "2026.06",
+            "nextLabel": "Next Nomad Camp",
+            "location": "TBA (Location & Dates)",
+            "details": "Details will be announced soon",
+            "heading": "3 Days 2 Nights Nomad Camp\nRule: 'Freedom'",
+            "desc": "All we provide is a 'Luxury Villa' for an extraordinary experience.\nNo schedules, no lectures.\nWork elegantly by the pool or talk all night long.\nA camp to enjoy in your own nomad style.",
+            "history": "Past Events",
+            "historyItems": {
+                "0": {
+                    "place": "Vol.5 Phuket",
+                    "date": "2024.10"
+                },
+                "1": {
+                    "place": "Vol.4 Bali Ubud",
+                    "date": "2024.04"
+                },
+                "2": {
+                    "place": "Vol.3 Pattaya",
+                    "date": "2023.12"
+                },
+                "3": {
+                    "place": "Vol.2 Vietnam Da Nang",
+                    "date": "2023.10"
+                },
+                "4": {
+                    "place": "Vol.1 Chiang Mai",
+                    "date": "2023.05"
+                }
+            }
+        },
+        "youtube": {
+            "tag": "Main Contents",
+            "title": "Real Info on YouTube",
+            "channel": "'Nomad in Thailand'",
+            "desc": "Delivering the local atmosphere and real voices of nomads that text cannot convey.",
+            "cta": "Watch on YouTube"
+        }
+    }
+}

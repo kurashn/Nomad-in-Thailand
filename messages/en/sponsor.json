@@ -1,0 +1,109 @@
+{
+    "Sponsor": {
+        "meta": {
+            "title": "Sponsorship Recruitment | Nomad in Thailand",
+            "desc": "We are looking for individuals and corporate sponsors to support Nomad in Thailand's activities."
+        },
+        "hero": {
+            "back": "Back to Articles",
+            "tag": "Notice",
+            "title": "\"Nomad in Thailand\"\nPartner & Sponsor Recruitment",
+            "subtitle": "To all those seeking a free way of life.{br}We are recruiting partners to support and enliven our activities."
+        },
+        "intro": {
+            "title": "Introduction",
+            "p1": "\"I want to leave Japan and work abroad.\"{br}Many people dream of this, but few actually take action. Visa hurdles, language barriers, and the fear of \"Can I really make it?\"",
+            "p2": "<strong>\"We want to encourage more young people to take on challenges overseas\"</strong>",
+            "p3": "\"Nomad in Thailand\" was born from this vision. I've carved out my path as a Bangkok-based nomad through many failures. By sharing all my experiences, I want to push others to follow.",
+            "p4": "Today, like-minded people have gathered, and we've grown into a community that shares real information and experiences.",
+            "videoLink": "▶ Our Content (YouTube)",
+            "p5": "We're looking for partners who want to grow this movement with us."
+        },
+        "profile": {
+            "title": "About the Organizer",
+            "desc1": "A digital nomad based in Thailand with a DTV visa.{br}With the motto \"Give more young people the option to go overseas,\" continuing to share experiences through content.",
+            "desc2": "Not just success stories, but also failures and real struggles. Creating content that makes viewers feel \"Maybe I can do this too\" rather than thinking it's \"someone else's story.\""
+        },
+        "roadmap": {
+            "title": "Future Roadmap (2026)",
+            "desc": "Your support will be carefully used for equipment costs, editing costs, and event expenses.",
+            "goal": {
+                "title": "🏆 2026 Goals",
+                "text": "3,000 Channel Subscribers / 100 Community Members"
+            },
+            "steps": {
+                "step1": {
+                    "title": "Jan - Mar: Foundation & Community Launch",
+                    "items": [
+                        "・ Strengthen collaboration with \"Nomad in Thailand\" site",
+                        "・ Improve video/audio quality (4K recording)",
+                        "・ Community attraction & casual events (meetups)"
+                    ]
+                },
+                "step2": {
+                    "title": "Apr - Jun: Sharing Experiences & Creating Excitement",
+                    "items": [
+                        "・ 3 Days 2 Nights \"Chiang Mai Nomad Camp\"",
+                        "・ Collab talks with other nomads"
+                    ]
+                },
+                "step3": {
+                    "title": "Jul - Sep: Expanding Activity Range",
+                    "items": [
+                        "・ Planning & preparation for overseas retreat"
+                    ]
+                },
+                "step4": {
+                    "title": "Oct - Dec: Culmination of 2026",
+                    "items": [
+                        "・ \"Overseas Retreat\" to tune mind and body",
+                        "・ Achieve 3,000 subscribers / 100 members"
+                    ]
+                }
+            }
+        },
+        "stability": {
+            "title": "To Continue Activities Stably for the Long Term",
+            "p1": "Until now, we have operated on personal funds, but to improve content quality and continue responsible operation, <strong>a solid operational structure is essential.</strong>",
+            "p2": "Your support will be used carefully for production costs to create better content, coverage costs for deep local information, and operating costs for member interaction.",
+            "p3": "We want to build a \"reliable place\" together that will last 10 years, not just a passing trend."
+        },
+        "partner": {
+            "title": "Future Drawn with Partners",
+            "p1": "We want to build a <strong>partnership where we can walk in the same direction</strong>, not just place ads.",
+            "p2": "We will confidently introduce services and products that are truly useful to listeners aiming for \"new ways of working\" and \"challenges to the world\".",
+            "items": {
+                "cm": {
+                    "title": "CM & Service Intro in Program",
+                    "desc": "We will naturally introduce your service as \"one of the topics\" at the beginning/middle of YouTube videos (talk/chat format) or within Podcast audio. Possible to promote directly to the 20s-30s demographic who \"want to challenge overseas\" or \"want to change how they work\"."
+                },
+                "collab": {
+                    "title": "Collab Video & Coverage",
+                    "desc": "We will visit your office or store for coverage, or produce and publish interview videos with representatives."
+                },
+                "link": {
+                    "title": "Posting in Description",
+                    "desc": "We will permanently post your link and name as a sponsor in the description of all episodes."
+                }
+            }
+        },
+        "faq": {
+            "title": "FAQ",
+            "q1": "Q. Which is main, YouTube or Podcast?",
+            "a1": "We are currently focusing on YouTube video distribution, but we are also distributing audio-only Podcasts (Spotify only) in parallel. We can introduce you on both media.",
+            "q2": "Q. Is there posting on \"Nomad in Thailand\" site?",
+            "a2": "Yes, depending on the plan, we can propose banner posting on this site \"Nomad in Thailand\" and creation of collaborative articles as a set."
+        },
+        "conclusion": {
+            "title": "Finally",
+            "p1": "Thank you for reading to the end.{br}If you sympathize even a little with our activities and vision, please contact us once.",
+            "p2": "It''s okay if you don''t have a concrete plan yet.{br}We would be happy if you could contact us casually for consultation on whether we can work together.",
+            "p3": "Small donations (activity support) from individuals are also very encouraging."
+        },
+        "cta": {
+            "title": "Partnership Consultation",
+            "desc": "Please contact us first for consultation on collaboration or sponsorship.",
+            "button": "Go to Contact Form"
+        }
+    }
+}

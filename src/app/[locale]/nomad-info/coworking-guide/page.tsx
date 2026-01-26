@@ -33,7 +33,7 @@ export default function CoworkingGuidePage() {
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t('hero.back')}
                     </Link>
@@ -374,7 +374,7 @@ export default function CoworkingGuidePage() {
                             br: () => <br />
                         })}
                     </p>
-                    <Link href="/nomad-info" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-foreground text-background font-bold hover:bg-foreground/80 transition-colors">
+                    <Link href="../nomad-info" className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-foreground text-background font-bold hover:bg-foreground/80 transition-colors">
                         {t('summary.cta')}
                     </Link>
                 </div>

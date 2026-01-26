@@ -26,20 +26,20 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
     if (locale === 'en') {
         return (
             <article className="min-h-screen bg-slate-50 pb-20 font-sans text-slate-800">
-                {/* English Hero */}
+                {/* Standard Hero Header */}
                 <div className="relative h-[50vh] w-full">
                     <div className="absolute inset-0 bg-black/40 z-10" />
                     <div className="w-full h-full relative">
                         <Image
                             src="/images/wise_hero_v2.png"
-                            alt="Wise International Money Transfer"
+                            alt="Wise International Money Transfer & Multi-Currency Account"
                             fill
                             className="object-cover"
                             priority
                         />
                     </div>
                     <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                        <Link href="/nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                        <Link href="../nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                             <ArrowLeft className="w-4 h-4 mr-1" />
                             Back to Articles
                         </Link>
@@ -48,72 +48,324 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                             <span className="px-3 py-1 bg-amber-500/90 backdrop-blur-md text-white text-xs font-bold rounded-full border border-white/20">Essential Tool</span>
                         </div>
                         <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-white drop-shadow-xl">
-                            Wise Guide: Why It's Essential for Digital Nomads
+                            Wise Complete Guide: 2026 Edition<br />
+                            <span className="text-xl md:text-3xl font-medium mt-3 block text-white/90 leading-normal">
+                                Why It's the #1 Essential Tool for Digital Nomads
+                            </span>
                         </h1>
                     </div>
                 </div>
 
-                {/* English Content */}
+                {/* Main Content */}
                 <div className="container max-w-3xl mx-auto px-4 mt-12">
+
+                    {/* Introduction / Hook */}
                     <div className="prose prose-lg prose-slate max-w-none mb-16 relative">
-                        <p className="text-xl leading-loose font-medium text-slate-800 mb-8">
-                            "I sent money from my home bank and lost $50 in fees..."<br />
+                        <p className="leading-loose font-medium text-slate-800 mb-8">
+                            "I sent money from my home bank to Thailand and lost $50 in hidden fees..."<br />
                             "I exchanged cash at the airport and was shocked by the terrible rate..."
                         </p>
-                        <p className="text-lg leading-loose text-slate-700 mb-8">
-                            The biggest waste of money in overseas life is <strong>"Movement Costs"</strong>.
-                            Most people unknowingly lose the equivalent of several lunches every time they move money due to hidden bank fees.
+                        <p className="leading-loose text-slate-700 mb-8">
+                            The biggest waste of money in overseas nomad life is <strong>"Money Movement Costs"</strong>.
+                            Most people unknowingly lose the equivalent of several nice meals every time they move funds due to hidden bank markups.
                         </p>
-                        <p className="text-lg leading-loose text-slate-700 mb-8">
+                        <p className="leading-loose text-slate-700 mb-8">
                             The solution is <strong>Wise</strong>, used by over 16 million people worldwide.<br />
-                            Simply put, if you are a digital nomad, <strong>not having this means losing money</strong>.
+                            Simply put, if you are living in Thailand or traveling as a nomad, <strong>not having this account means you are losing money every day</strong>.
                         </p>
 
                         <div className="bg-green-50 p-6 rounded-xl border border-green-100 my-8 not-prose">
-                            <h3 className="text-green-800 font-bold text-lg mb-4 mt-0">Why use Wise?</h3>
+                            <h3 className="text-green-800 font-bold text-lg mb-4 mt-0 ml-0 flex items-center gap-2">
+                                <span className="bg-green-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">✓</span>
+                                3 Reasons Why Nomads Choose Wise
+                            </h3>
                             <ul className="space-y-3 text-slate-700">
                                 <li className="flex items-start gap-3">
-                                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                                    <span><strong>Up to 8x cheaper than banks:</strong> Save significantly on every transfer.</span>
+                                    <span className="font-bold text-green-700 min-w-[4rem]">Cheap</span>
+                                    <span><strong>Up to 8x cheaper than banks.</strong> Save significantly on every transfer.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                                    <span><strong>Real Exchange Rate:</strong> No markup rates like airports or banks.</span>
+                                    <span className="font-bold text-green-700 min-w-[4rem]">Clear</span>
+                                    <span><strong>Real Exchange Rate.</strong> No hidden markups like airports or traditional banks.</span>
                                 </li>
                                 <li className="flex items-start gap-3">
-                                    <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                                    <span><strong>Like a Local Account:</strong> Hold Thai Baht, USD, and more in one app.</span>
+                                    <span className="font-bold text-green-700 min-w-[4rem]">Easy</span>
+                                    <span><strong>Multi-currency Debit Card.</strong> Spend like a local anywhere in the world.</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    {/* How to use section (English) */}
-                    <section className="mb-20">
+                    {/* Problem: Comparison Simulation */}
+                    <section className="mb-20 scroll-mt-24" id="comparison">
                         <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
                             <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">1</span>
-                            Nomad's Best Practice Guide
+                            How much can you save? (Real Comparison)
                         </h2>
+                        <p className="text-lg mb-8 leading-relaxed text-slate-700">
+                            Let's simulate sending <strong>1,000 USD to Thailand (THB)</strong>.<br />
+                            See the difference in how much Thai Baht you actually receive in your pocket.
+                        </p>
+
+                        {/* Table Comparison to match NordVPN/Japanese style */}
+                        <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm mb-8">
+                            <table className="w-full text-sm md:text-base bg-white">
+                                <thead>
+                                    <tr className="bg-slate-100 text-slate-700 h-12">
+                                        <th className="p-4 w-1/3 text-left">Item</th>
+                                        <th className="p-4 w-1/3 text-left">Traditional Bank</th>
+                                        <th className="p-4 w-1/3 text-left text-[#2a9d8f]">Wise</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr className="border-t border-slate-100">
+                                        <td className="p-4 font-bold bg-slate-50">Transfer Fee</td>
+                                        <td className="p-4 text-red-500 font-bold">
+                                            High<br />
+                                            <span className="text-xs text-slate-400 font-normal">($30 - $50+)</span>
+                                        </td>
+                                        <td className="p-4 text-[#2a9d8f] font-bold bg-[#2a9d8f]/5">
+                                            Low<br />
+                                            <span className="text-xs text-slate-400 font-normal">(Small % fee)</span>
+                                        </td>
+                                    </tr>
+                                    <tr className="border-t border-slate-100">
+                                        <td className="p-4 font-bold bg-slate-50">Exchange Rate</td>
+                                        <td className="p-4 text-red-500 font-bold">
+                                            Bad (Hidden Markup)<br />
+                                            <span className="text-xs text-slate-400 font-normal">Bank Rate (Markup added)</span>
+                                        </td>
+                                        <td className="p-4 text-[#2a9d8f] font-bold bg-[#2a9d8f]/5">
+                                            Real Rate<br />
+                                            <span className="text-xs text-slate-400 font-normal">Mid-Market Rate (Same as Google)</span>
+                                        </td>
+                                    </tr>
+                                    <tr className="border-t border-slate-100">
+                                        <td className="p-4 font-bold bg-slate-50">You Receive</td>
+                                        <td className="p-4 font-bold text-slate-600">
+                                            Less THB<br />
+                                            <span className="text-xs text-red-500">(Significantly less)</span>
+                                        </td>
+                                        <td className="p-4 font-bold text-[#2a9d8f] bg-[#2a9d8f]/5 relative">
+                                            More THB
+                                            <span className="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded-full">WIN!</span>
+                                            <br />
+                                            <span className="text-xs text-green-600">You save money!</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    {/* Solution: Key Benefits */}
+                    <section className="mb-20 scroll-mt-24">
+                        <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
+                            <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">2</span>
+                            Why is it so cheap? (The Secret)
+                        </h2>
+
+                        <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
+                            <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                                <h3 className="font-bold text-lg mb-4 text-center text-slate-600">Old Way (SWIFT Bucket Relay)</h3>
+                                <div className="flex items-center justify-center gap-2 text-lg text-slate-400 mb-4">
+                                    <span>🇺🇸 Bank</span>
+                                    <ArrowRight className="w-4 h-4" />
+                                    <span>🏦 Relay</span>
+                                    <ArrowRight className="w-4 h-4" />
+                                    <span>🇹🇭 Bank</span>
+                                </div>
+                                <p className="text-sm text-slate-600 leading-relaxed">
+                                    Traditional banks use the SWIFT network, passing your money through multiple intermediary banks.
+                                    Each step incurs a <strong>"Relay Fee"</strong> and a poor exchange rate, eating away your funds.
+                                </p>
+                                <div className="mt-4 text-center">
+                                    <span className="inline-block bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">Slow & Expensive</span>
+                                </div>
+                            </div>
+                            <div className="bg-white rounded-2xl p-6 border-2 border-[#2a9d8f] shadow-lg shadow-[#2a9d8f]/5">
+                                <h3 className="font-bold text-lg mb-4 text-center text-[#2a9d8f]">Wise Way (Smart Matching)</h3>
+                                <div className="flex items-center justify-center gap-2 text-base md:text-lg text-[#2a9d8f] mb-4 font-bold whitespace-nowrap">
+                                    <span>🇺🇸 Wise US</span>
+                                    <ArrowRight className="w-5 h-5 flex-shrink-0" />
+                                    <span>🇹🇭 Wise Thai</span>
+                                </div>
+                                <p className="text-sm text-slate-700 leading-relaxed">
+                                    Wise doesn't actually cross borders with your money.
+                                    You send dollars to Wise US, and Wise Thailand pays out Baht to your recipient.
+                                    Since it's a domestic transfer on both ends, it's <strong>incredibly fast and cheap</strong>.
+                                </p>
+                                <div className="mt-4 text-center">
+                                    <span className="inline-block bg-[#2a9d8f] text-white text-xs font-bold px-2 py-1 rounded">Fast & Cheap</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Smart Usage Guide */}
+                    <section className="mb-20 scroll-mt-24">
+                        <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
+                            <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">3</span>
+                            Nomad's Wise Strategy Guide (Thailand Edition)
+                        </h2>
+                        <p className="text-lg mb-8 leading-relaxed text-slate-700">
+                            "I signed up, but how do I use it best?"<br />
+                            Here are the <strong>Top 3 smartest ways</strong> to use Wise as a digital nomad in Thailand.
+                        </p>
+
                         <div className="space-y-8">
-                            <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm relative overflow-hidden">
-                                <div className="absolute top-0 right-0 bg-[#2a9d8f] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">MUST</div>
+                            {/* Usage 1: Card */}
+                            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                                <div>
+                                    <span className="inline-block bg-[#2a9d8f] text-white text-xs font-bold px-2 py-1 rounded mb-2">MUST</span>
+                                    <h3 className="font-bold text-xl text-slate-800 mb-4">1. Wise Debit Card: "Tap to Pay" (Zero Exchange Fees)</h3>
+                                    <p className="text-slate-600 mb-4 leading-relaxed">
+                                        If you load your home currency into Wise, you can <strong>pay directly at 7-Eleven, supermarkets, and hotels in Thailand.</strong>
+                                        Wise automatically converts it to Thai Baht at the real rate at the moment of purchase. No need to visit money changers.
+                                    </p>
+                                    <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700">
+                                        <p className="font-bold text-slate-900 mb-2">💡 Pro Tip</p>
+                                        <ul className="list-disc pl-5 space-y-1">
+                                            <li>Just tap the card on the machine (Visa/Mastercard).</li>
+                                            <li>If asked "Currency?", <strong>ALWAYS choose THB (Local Currency)</strong>. This ensures Wise does the conversion (cheaper) instead of the bank terminal (expensive).</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Usage 2: PromptPay Warning */}
+                            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
                                 <h3 className="flex items-center gap-2 font-bold text-xl text-slate-800 mb-4">
-                                    <CreditCard className="w-6 h-6 text-[#2a9d8f]" />
-                                    The "Magic" Debit Card
+                                    <span className="text-amber-500">⚠️</span>
+                                    2. Can I use Thai QR (PromptPay)?
                                 </h3>
-                                <p className="text-slate-600 mb-4 leading-relaxed">
-                                    With the Wise card, you can spend abroad and it will <strong>automatically convert from your home currency balance</strong> at the real rate. You don't need to manually exchange beforehand.
+                                <div className="mb-4">
+                                    <p className="text-slate-600 leading-relaxed mb-3">
+                                        Short answer: <strong>No, you cannot use PromptPay directly from Wise.</strong><br />
+                                        To scan QR codes at street food stalls, you need a local Thai bank account.
+                                    </p>
+                                </div>
+                                <div className="bg-amber-50 text-amber-900 p-4 rounded-lg text-sm">
+                                    <p className="font-bold mb-2">👇 The Nomad Route</p>
+                                    <ol className="list-decimal pl-5 space-y-2">
+                                        <li><strong>First Month:</strong> Use Wise Card for ATM withdrawals and payments. Pay with cash for street food.</li>
+                                        <li><strong>Long Term:</strong> Open a Bangkok Bank account and transfer money from Wise to it. Then use the bank app for PromptPay. (Note: DTV Visa holders may find opening a bank account difficult depending on the branch, so relying on the Wise Card for ATM withdrawals is often the primary strategy.)</li>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            {/* Usage 3: ATM Strategy */}
+                            <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                                <div>
+                                    <h3 className="font-bold text-xl text-slate-800 mb-4">3. ATM Withdrawal Strategy</h3>
+                                    <p className="text-slate-600 mb-4 leading-relaxed">
+                                        Thai ATMs charge a flat fee of <strong>220 THB (approx. $6-7) per withdrawal</strong> for foreign cards.
+                                        This fee is charged by the Thai bank and Wise cannot waive it.
+                                    </p>
+                                    <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700">
+                                        <p className="font-bold text-slate-900 mb-1">💰 How to minimize loss</p>
+                                        <p>
+                                            Do not withdraw small amounts frequently. <strong>Withdraw the maximum allowed (usually 30,000 THB) once a month.</strong><br />
+                                            Keep the cash safe in your hotel safe and only carry what you need for the day.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Account Opening Guide */}
+                    <section className="mb-20 scroll-mt-24">
+                        <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
+                            <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">4</span>
+                            How to Start (Takes 5 mins)
+                        </h2>
+
+                        <div className="grid md:grid-cols-3 gap-6">
+                            <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                                <div className="w-12 h-12 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">1</div>
+                                <h3 className="font-bold mb-2">Register Online</h3>
+                                <p className="text-sm text-slate-500 mb-4">Sign up with your email. Use the link below for a free transfer offer.</p>
+                                <Link href={AFFILIATE_LINK} target="_blank" rel="sponsored noopener noreferrer" className="text-xs font-bold text-[#2a9d8f] hover:underline">
+                                    Go to Registration →
+                                </Link>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                                <div className="w-12 h-12 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">2</div>
+                                <h3 className="font-bold mb-2">Verify Identity (eKYC)</h3>
+                                <p className="text-sm text-slate-500">Upload a photo of your ID (Passport/Driver's License) and a selfie.</p>
+                            </div>
+                            <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                                <div className="w-12 h-12 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">3</div>
+                                <h3 className="font-bold mb-2">Order Card</h3>
+                                <p className="text-sm text-slate-500">Order your debit card from the app. It takes about 2 weeks to arrive, so do it before you fly!</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Trust / Safety */}
+                    <section className="bg-white p-8 rounded-2xl border border-slate-200 mb-16 shadow-sm">
+                        <div className="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
+                            <div className="bg-slate-100 p-4 rounded-full flex-shrink-0">
+                                <ShieldCheck className="w-10 h-10 text-[#2a9d8f]" />
+                            </div>
+                            <div>
+                                <h3 className="text-lg font-bold mb-2 text-slate-800">Is it safe?</h3>
+                                <p className="text-slate-600 text-sm leading-relaxed">
+                                    Yes. Wise is regulated by the FCA (UK), FinCEN (USA), and other financial authorities around the world.
+                                    They are required by law to safeguard your money in separate accounts from their own operating funds. It is as safe as a traditional bank.
                                 </p>
                             </div>
                         </div>
                     </section>
 
-                    {/* Conclusion CTA (English) */}
+                    {/* FAQ */}
+                    <section className="mb-20">
+                        <h2 className="text-2xl font-bold mb-8 flex items-center gap-2 text-slate-900">
+                            <span className="text-[#2a9d8f]">QA</span> Frequently Asked Questions
+                        </h2>
+                        <div className="space-y-4">
+                            <details className="group bg-white border border-slate-200 rounded-xl open:ring-1 open:ring-[#2a9d8f]/30 transition-all shadow-sm">
+                                <summary className="flex cursor-pointer items-center justify-between p-5 font-bold text-slate-800 hover:bg-slate-50 rounded-xl transition-colors">
+                                    Q. Can I top up with a credit card?
+                                    <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
+                                </summary>
+                                <div className="px-5 pb-5 pt-0 text-slate-600 text-sm leading-relaxed">
+                                    A. Yes, but it incurs a card processing fee. For the cheapest meaningful transfer, we recommend bank transfer (ACH/Wire) to fund your Wise account.
+                                </div>
+                            </details>
+                            <details className="group bg-white border border-slate-200 rounded-xl open:ring-1 open:ring-[#2a9d8f]/30 transition-all shadow-sm">
+                                <summary className="flex cursor-pointer items-center justify-between p-5 font-bold text-slate-800 hover:bg-slate-50 rounded-xl transition-colors">
+                                    Q. Where can I use the Wise card in Thailand?
+                                    <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
+                                </summary>
+                                <div className="px-5 pb-5 pt-0 text-slate-600 text-sm leading-relaxed">
+                                    A. Anywhere that accepts Visa/Mastercard (Malls, 7-11, Hotels, Grab App). Note that street food and local taxis often only take Cash or PromptPay, so keep some cash on hand.
+                                </div>
+                            </details>
+                            <details className="group bg-white border border-slate-200 rounded-xl open:ring-1 open:ring-[#2a9d8f]/30 transition-all shadow-sm">
+                                <summary className="flex cursor-pointer items-center justify-between p-5 font-bold text-slate-800 hover:bg-slate-50 rounded-xl transition-colors">
+                                    Q. Do I need a Thai bank account if I have Wise?
+                                    <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
+                                </summary>
+                                <div className="px-5 pb-5 pt-0 text-slate-600 text-sm leading-relaxed">
+                                    A. For short trips, Wise + Cash is enough. For long-term stays, a Thai bank account is convenient for PromptPay (QR payments). However, Wise is still essential for bringing money into Thailand cheaply.
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+
+                    {/* Conclusion CTA */}
                     <div className="text-center bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-10 md:p-16 text-white shadow-2xl">
+                        <span className="inline-block bg-[#9fe870] text-slate-900 text-xs font-bold px-3 py-1 rounded-full mb-4">Free to Register</span>
                         <h2 className="text-2xl md:text-4xl font-bold mb-6">
-                            Stop worrying about fees,<br />
+                            Stop losing money to banks.<br />
                             Start moving freely.
                         </h2>
+                        <p className="text-slate-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed">
+                            Use the money you save on fees for more Pad Thai, Massages, or another week of coworking.<br className="hidden md:inline" />
+                            Don't let banks eat your travel budget.
+                        </p>
                         <Link
                             href={AFFILIATE_LINK}
                             target="_blank"
@@ -123,13 +375,23 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                             Register Wise for Free
                             <ArrowRight className="w-6 h-6" />
                         </Link>
+                        <p className="text-sm text-slate-400 mt-6">
+                            *Registration and account maintenance are free.
+                        </p>
+                    </div>
+
+                    <div className="mt-16 text-center">
+                        <Link href="../nomad-info" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors underline">
+                            <ArrowLeft className="w-4 h-4 mr-2" />
+                            Back to Articles
+                        </Link>
                     </div>
                 </div>
             </article>
         );
     }
 
-    // Japanese Content (Original)
+    // Japanese Content
     return (
         <article className="min-h-screen bg-slate-50 pb-20 font-sans text-slate-800">
             {/* Standard Hero Header */}
@@ -145,7 +407,7 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         記事一覧に戻る
                     </Link>
@@ -154,8 +416,10 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                         <span className="px-3 py-1 bg-amber-500/90 backdrop-blur-md text-white text-xs font-bold rounded-full border border-white/20">必須ツール</span>
                     </div>
                     <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-white drop-shadow-xl">
-                        海外送金「Wise」完全ガイド。<br />
-                        <span className="text-xl md:text-3xl font-medium mt-3 block text-white/90">なぜノマドの必須ツールなのか？</span>
+                        【2026年版】Wise完全ガイド<br />
+                        <span className="text-xl md:text-3xl font-medium mt-3 block text-white/90 leading-normal">
+                            なぜノマドの必須ツールなのか？
+                        </span>
                     </h1>
                 </div>
             </div>
@@ -165,133 +429,143 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
 
                 {/* Introduction / Hook */}
                 <div className="prose prose-lg prose-slate max-w-none mb-16 relative">
-                    <p className="text-xl leading-loose font-medium text-slate-800 mb-8">
-                        「日本の銀行から海外送金したら、手数料で5,000円くらい引かれていた...」<br />
+                    <p className="leading-loose font-medium text-slate-800 mb-8">
+                        「日本の銀行からタイへ送金したら、手数料で5,000円近く引かれていた...」<br />
                         「空港で両替したら、レートが悪すぎてびっくりした...」
                     </p>
-                    <p className="text-lg leading-loose text-slate-700 mb-8">
-                        海外生活で一番の無駄遣い、それは<strong>「お金の移動コスト」</strong>です。
-                        多くの人が気づかないうちに、銀行の「隠れ手数料」で毎回ランチ数回分のお金を損しています。
+                    <p className="leading-loose text-slate-700 mb-8">
+                        海外生活で最も無駄なコスト、それは<strong>「お金の移動手数料」</strong>です。
+                        多くの人が気づかないうちに、銀行の「隠れ手数料」や「悪い為替レート」によって、毎回ランチ数回分のお金を失っています。
                     </p>
-                    <p className="text-lg leading-loose text-slate-700 mb-8">
-                        それを解決するのが、世界で1,600万人以上が使う<strong>「Wise（ワイズ）」</strong>です。<br />
-                        結論から言うと、海外ノマドをするなら<strong>これを持っていないと損</strong>です。
+                    <p className="leading-loose text-slate-700 mb-8">
+                        それを解決するのが、世界1,600万人以上が利用する<strong>「Wise（ワイズ）」</strong>です。<br />
+                        結論から言うと、タイ移住やノマド生活をするなら、<span className="bg-yellow-100 font-bold px-1">これを持っていないと確実に損をします。</span>
                     </p>
 
                     <div className="bg-green-50 p-6 rounded-xl border border-green-100 my-8 not-prose">
-                        <h3 className="text-green-800 font-bold text-lg mb-4 mt-0">Wiseを使うとこうなります</h3>
+                        <h3 className="text-green-800 font-bold text-lg mb-4 mt-0 ml-0 flex items-center gap-2">
+                            <span className="bg-green-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">✓</span>
+                            Wiseの3つの革命
+                        </h3>
                         <ul className="space-y-3 text-slate-700">
                             <li className="flex items-start gap-3">
-                                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                                <span><strong>銀行より最大8倍安い：</strong> 10万円送金で、数千円お得になることも。</span>
+                                <span className="font-bold text-green-700 min-w-[3rem]">安い</span>
+                                <span>銀行より<strong>最大8倍安い</strong>手数料（10万円送金で数千円お得）。</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                                <span><strong>本当のレートで両替：</strong> 空港や銀行のような「上乗せレート」がありません。</span>
+                                <span className="font-bold text-green-700 min-w-[3rem]">透明</span>
+                                <span>Google検索と同じ<strong>「リアルレート」</strong>で両替。隠れコスト一切なし。</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                                <span><strong>現地口座の代わりになる：</strong> タイバーツも米ドルも、アプリ1つで管理。</span>
+                                <span className="font-bold text-green-700 min-w-[3rem]">便利</span>
+                                <span><strong>デビットカード</strong>で現地決済。アプリ1つで資金管理。</span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 {/* Problem: Comparison Simulation */}
-                <section className="mb-20 scroll-mt-24">
+                <section className="mb-20 scroll-mt-24" id="comparison">
                     <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
                         <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">1</span>
-                        どれくらいお得なの？（比較シミュレーション）
+                        どれくらいお得なの？（徹底比較）
                     </h2>
                     <p className="text-lg mb-8 leading-relaxed text-slate-700">
-                        例えば、<strong>日本からタイへ「10万円」を送金する場合</strong>で比べてみましょう。<br />
-                        銀行とWiseでは、手元に残るお金にこれだけの差が出ます。
+                        例えば、<strong>日本からタイへ「10万円」を送金する場合</strong>のシミュレーションです。<br />
+                        銀行とWiseでは、最終的に現地で受け取れる金額にこれだけの差が出ます。
                     </p>
 
-                    {/* Visual Comparison Box */}
-                    <div className="bg-white rounded-3xl shadow-lg border border-slate-200 overflow-hidden mb-8">
-                        <div className="grid grid-cols-2 text-center border-b border-slate-200 bg-slate-50">
-                            <div className="p-4 border-r border-slate-200">
-                                <h3 className="font-bold text-slate-600">一般的な銀行</h3>
-                            </div>
-                            <div className="p-4 bg-[#2a9d8f]/10">
-                                <h3 className="font-bold text-[#2a9d8f] text-xl">Wise</h3>
-                            </div>
-                        </div>
-                        <div className="grid grid-cols-2 text-center text-sm md:text-base">
-                            {/* Fee Row */}
-                            <div className="p-6 border-r border-b border-slate-100">
-                                <p className="text-slate-500 text-xs mb-1">送金手数料</p>
-                                <p className="font-bold text-red-500">高い</p>
-                                <p className="text-xs text-slate-400 mt-1">（3,000円〜7,000円）</p>
-                            </div>
-                            <div className="p-6 border-b border-slate-100 bg-[#2a9d8f]/5">
-                                <p className="text-slate-500 text-xs mb-1">送金手数料</p>
-                                <p className="font-bold text-[#2a9d8f]">格安</p>
-                                <p className="text-xs text-slate-400 mt-1">（数百円〜 ※通貨による）</p>
-                            </div>
-
-                            {/* Rate Row */}
-                            <div className="p-6 border-r border-b border-slate-100">
-                                <p className="text-slate-500 text-xs mb-1">為替レート</p>
-                                <p className="font-bold text-red-500">悪い（隠れコスト）</p>
-                                <p className="text-xs text-slate-400 mt-1">1バーツ = 5.2円<br />(実際より高い)</p>
-                            </div>
-                            <div className="p-6 border-b border-slate-100 bg-[#2a9d8f]/5">
-                                <p className="text-slate-500 text-xs mb-1">為替レート</p>
-                                <p className="font-bold text-[#2a9d8f]">リアルレート</p>
-                                <p className="text-xs text-slate-400 mt-1">1バーツ = 5.0円<br />(Googleと同じ)</p>
-                            </div>
-
-                            {/* Result Row */}
-                            <div className="p-6 border-r bg-slate-50">
-                                <p className="text-slate-500 text-xs mb-2">タイでの受取額</p>
-                                <p className="text-xl font-bold text-slate-600">少なくなる...</p>
-                            </div>
-                            <div className="p-6 bg-[#2a9d8f]/10 relative overflow-hidden">
-                                <div className="absolute top-0 right-0 bg-yellow-400 text-yellow-900 text-[10px] font-bold px-2 py-1 rounded-bl-lg">WIN!</div>
-                                <p className="text-slate-500 text-xs mb-2">タイでの受取額</p>
-                                <p className="text-2xl font-bold text-[#2a9d8f]">多くなる！</p>
-                            </div>
-                        </div>
+                    {/* Table Comparison to match NordVPN style */}
+                    <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm mb-8">
+                        <table className="w-full text-sm md:text-base bg-white">
+                            <thead>
+                                <tr className="bg-slate-100 text-slate-700 h-12">
+                                    <th className="p-4 w-1/3 text-left">項目</th>
+                                    <th className="p-4 w-1/3 text-left">一般的な銀行</th>
+                                    <th className="p-4 w-1/3 text-left text-[#2a9d8f]">Wise (ワイズ)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr className="border-t border-slate-100">
+                                    <td className="p-4 font-bold bg-slate-50">送金手数料</td>
+                                    <td className="p-4 text-red-500 font-bold">
+                                        高い<br />
+                                        <span className="text-xs text-slate-400 font-normal">（3,000円〜）</span>
+                                    </td>
+                                    <td className="p-4 text-[#2a9d8f] font-bold bg-[#2a9d8f]/5">
+                                        格安<br />
+                                        <span className="text-xs text-slate-400 font-normal">（数百円〜）</span>
+                                    </td>
+                                </tr>
+                                <tr className="border-t border-slate-100">
+                                    <td className="p-4 font-bold bg-slate-50">為替レート</td>
+                                    <td className="p-4 text-red-500 font-bold">
+                                        悪い（隠れコスト）<br />
+                                        <span className="text-xs text-slate-400 font-normal">1バーツ = 5.2円</span>
+                                    </td>
+                                    <td className="p-4 text-[#2a9d8f] font-bold bg-[#2a9d8f]/5">
+                                        リアルレート<br />
+                                        <span className="text-xs text-slate-400 font-normal">1バーツ = 5.0円 (Googleと同じ)</span>
+                                    </td>
+                                </tr>
+                                <tr className="border-t border-slate-100">
+                                    <td className="p-4 font-bold bg-slate-50">受取額</td>
+                                    <td className="p-4 font-bold text-slate-600">
+                                        19,230 THB<br />
+                                        <span className="text-xs text-red-500">(-770 THB)</span>
+                                    </td>
+                                    <td className="p-4 font-bold text-[#2a9d8f] bg-[#2a9d8f]/5 relative">
+                                        20,000 THB
+                                        <span className="absolute top-2 right-2 bg-yellow-400 text-yellow-900 text-[10px] font-bold px-2 py-0.5 rounded-full">WIN!</span>
+                                        <br />
+                                        <span className="text-xs text-green-600">約3,800円お得！</span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <p className="text-sm text-slate-500 text-left md:text-right mb-12">※2026年1月時点の概算イメージです。実際の手数料は金額や通貨により異なります。</p>
                 </section>
 
                 {/* Solution: Key Benefits */}
                 <section className="mb-20 scroll-mt-24">
                     <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
                         <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">2</span>
-                        なぜそんなに安いの？
+                        なぜそんなに安いの？（仕組みの秘密）
                     </h2>
 
                     <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
-                        <div className="bg-slate-100 rounded-2xl p-6">
-                            <h3 className="font-bold text-lg mb-4 text-center text-slate-700">従来の銀行（バケツリレー）</h3>
-                            <div className="flex items-center justify-center gap-2 text-2xl text-slate-400 mb-2">
-                                <span>🏦</span>
+                        <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+                            <h3 className="font-bold text-lg mb-4 text-center text-slate-600">従来の銀行（バケツリレー方式）</h3>
+                            <div className="flex items-center justify-center gap-2 text-lg text-slate-400 mb-4">
+                                <span>🇯🇵銀行</span>
                                 <ArrowRight className="w-4 h-4" />
-                                <span>🏦</span>
+                                <span>🏦中継</span>
                                 <ArrowRight className="w-4 h-4" />
-                                <span>🏦</span>
+                                <span>🇹🇭銀行</span>
                             </div>
                             <p className="text-sm text-slate-600 leading-relaxed">
-                                銀行Aから銀行Bへ送るのに、中継銀行（CやD）を経由します。
-                                そのたびに<strong>「中継手数料」</strong>が引かれ、さらに複数の銀行が<strong>「為替スプレッド」</strong>を上乗せします。
+                                SWIFT（国際銀行間通信協会）という古い仕組みを使って、複数の銀行を経由して送金します。
+                                そのたびに<strong>「中継手数料」</strong>が引かれ、各銀行が独自の為替レートを適用して利益を抜くため、高額になります。
                             </p>
+                            <div className="mt-4 text-center">
+                                <span className="inline-block bg-red-100 text-red-600 text-xs font-bold px-2 py-1 rounded">遅くて高い</span>
+                            </div>
                         </div>
-                        <div className="bg-white rounded-2xl p-6 border border-[#2a9d8f] shadow-lg shadow-[#2a9d8f]/10">
-                            <h3 className="font-bold text-lg mb-4 text-center text-[#2a9d8f]">Wiseの仕組み</h3>
-                            <div className="flex items-center justify-center gap-2 text-base md:text-lg text-[#2a9d8f] mb-2 font-bold whitespace-nowrap">
+                        <div className="bg-white rounded-2xl p-6 border-2 border-[#2a9d8f] shadow-lg shadow-[#2a9d8f]/5">
+                            <h3 className="font-bold text-lg mb-4 text-center text-[#2a9d8f]">Wise（マッチング方式）</h3>
+                            <div className="flex items-center justify-center gap-2 text-base md:text-lg text-[#2a9d8f] mb-4 font-bold whitespace-nowrap">
                                 <span>🇯🇵 Wise日本</span>
                                 <ArrowRight className="w-5 h-5 flex-shrink-0" />
                                 <span>🇹🇭 Wiseタイ</span>
                             </div>
                             <p className="text-sm text-slate-700 leading-relaxed">
-                                実は国境を越えてお金を動かしていません。
-                                「日本国内でWiseの口座に振り込む」→「Wiseがタイ国内の口座から相手に振り込む」という仕組み。
-                                だから<strong>国内送金のように安くて速い</strong>のです。
+                                実際はお金を国境を越えて動かしていません。
+                                「あなたが日本のWise口座に振り込む」→「Wiseがタイの自分の口座から相手に振り込む」という仕組み。
+                                国内送金同士の組み合わせなので、<strong>圧倒的に安くて速い</strong>のです。
                             </p>
+                            <div className="mt-4 text-center">
+                                <span className="inline-block bg-[#2a9d8f] text-white text-xs font-bold px-2 py-1 rounded">速くて安い</span>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -300,118 +574,99 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                 <section className="mb-20 scroll-mt-24">
                     <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
                         <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">3</span>
-                        【保存版】ノマド流・Wiseの賢い使い方
+                        【保存版】タイ移住者のWise活用術
                     </h2>
                     <p className="text-lg mb-8 leading-relaxed text-slate-700">
                         「登録したけど、どうやって使うのが一番お得なの？」<br />
-                        そんな方のために、海外ノマド歴の長い私たちが実践している<strong>ベストな使い方</strong>を伝授します。
-                        <br /><br />
-                        基本は<strong>「デビットカード」</strong>と<strong>「スマホアプリ」</strong>の2つを使いこなすだけです。
+                        タイのノマドコミュニティで実践されている、<strong>最も賢い3つの使い方</strong>を伝授します。
                     </p>
 
                     <div className="space-y-8">
                         {/* Usage 1: Card */}
-                        <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm relative overflow-hidden">
-                            <div className="absolute top-0 right-0 bg-[#2a9d8f] text-white text-xs font-bold px-3 py-1 rounded-bl-lg">MUST</div>
-                            <h3 className="flex items-center gap-2 font-bold text-xl text-slate-800 mb-4">
-                                <CreditCard className="w-6 h-6 text-[#2a9d8f]" />
-                                1. デビットカードは「魔法のカード」
-                            </h3>
-                            <p className="text-slate-600 mb-4 leading-relaxed">
-                                Wiseにお金（日本円）が入っていれば、<strong>タイで買い物をしても勝手に「バーツ」に両替して決済</strong>されます。
-                                事前にアプリで両替しておく必要はありません。
-                            </p>
-                            <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700">
-                                <p className="font-bold text-slate-900 mb-2">💡 ここがポイント！</p>
-                                <ul className="list-disc pl-5 space-y-1">
-                                    <li>レジでは「カードで」と出してタッチ決済するだけ。</li>
-                                    <li>端末で「現地通貨（THB）か自国通貨（JPY）か？」と聞かれたら、<strong>必ず「現地通貨（THB）」</strong>を選んでください。銀行の悪いレートを回避できます。</li>
-                                </ul>
+                        <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                            <div>
+                                <span className="inline-block bg-[#2a9d8f] text-white text-xs font-bold px-2 py-1 rounded mb-2">MUST</span>
+                                <h3 className="font-bold text-xl text-slate-800 mb-4">1. Wiseデビットカードで「タッチ決済」（両替手数料ゼロ）</h3>
+                                <p className="text-slate-600 mb-4 leading-relaxed">
+                                    Wiseカードにお金（日本円）が入っていれば、<strong>タイのセブンイレブンやスーパー、Agodaの決済などでそのまま使えます。</strong>
+                                    勝手にリアルレートで「円→バーツ」に両替して決済されるので、いちいち両替所で並ぶ必要はありません。
+                                </p>
+                                <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700">
+                                    <p className="font-bold text-slate-900 mb-2">💡 ここがポイント</p>
+                                    <ul className="list-disc pl-5 space-y-1">
+                                        <li>支払いは端末にタッチするだけ（VISA/Mastercard）。</li>
+                                        <li>端末で「JPY or THB?」と聞かれたら、<strong>必ず「THB（現地通貨）」</strong>を選んでください。Wiseの良いレートが適用されます。</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Usage 2: App */}
-                        <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm relative overflow-hidden">
-                            <div className="absolute top-0 right-0 bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">PRO TIP</div>
+                        {/* Usage 2: PromptPay Warning */}
+                        <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
                             <h3 className="flex items-center gap-2 font-bold text-xl text-slate-800 mb-4">
-                                <Globe className="w-6 h-6 text-amber-500" />
-                                2. アプリで「円高」の時にキープする
+                                <span className="text-amber-500">⚠️</span>
+                                2. タイのQR「PromptPay」はできる？
                             </h3>
-                            <p className="text-slate-600 mb-4 leading-relaxed">
-                                基本は自動両替でOKですが、アプリを使えば<strong>「円高の時にまとめて両替して、バーツで持っておく」</strong>ことができます。
-                            </p>
-                            <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700">
-                                <p className="font-bold text-slate-900 mb-2">💡 例えば...</p>
-                                <p>
-                                    「今は1バーツ5.0円だ！今のうちに10万円分両替しておこう」とアプリ操作しておけば、
-                                    その後1バーツ5.5円になっても、あなたは5.0円のレートで生活できます。
+                            <div className="mb-4">
+                                <p className="text-slate-600 leading-relaxed mb-3">
+                                    結論：<strong>Wiseから直接PromptPay（QRスキャン払い）はできません。</strong><br />
+                                    タイの屋台支払いで普及しているPromptPayを使うには、現地の銀行口座が必要です。
                                 </p>
+                            </div>
+                            <div className="bg-amber-50 text-amber-900 p-4 rounded-lg text-sm">
+                                <p className="font-bold mb-2">👇 ノマドの正解ルート</p>
+                                <ol className="list-decimal pl-5 space-y-2">
+                                    <li><strong>到着直後 (最初の1ヶ月):</strong> WiseカードでATMから現金を引き出して、屋台は現金払い。</li>
+                                    <li><strong>長期滞在 (ビザ取得後):</strong> バンコク銀行などの口座を開設し、Wiseからそこへ送金。その銀行アプリでQR払いをする。（※DTVビザでは銀行口座開設が難しい場合があるため、その場合はWiseカードでのATM引き出しが中心になります）</li>
+                                </ol>
                             </div>
                         </div>
 
-                        {/* Usage 3: ATM */}
-                        <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
-                            <h3 className="flex items-center gap-2 font-bold text-xl text-slate-800 mb-4">
-                                <CreditCard className="w-6 h-6 text-slate-500" />
-                                3. 現金が必要な時は？
-                            </h3>
-                            <p className="text-slate-600 mb-4 leading-relaxed">
-                                屋台やローカル食堂など、現金しか使えない場所のために現金も必要です。<br />
-                                Wiseカードを使って現地のATMからバーツを引き出せます。
-                            </p>
-                            <div className="bg-red-50 text-red-800 p-4 rounded-lg text-sm">
-                                <p className="font-bold mb-1">⚠️ 注意点</p>
-                                <p>
-                                    タイのATMは利用手数料として一律「220バーツ（約1,100円）」取られることが多いです。
-                                    こまめに下ろすと損をするので、<strong>月に1回まとめて上限額まで下ろす</strong>のがノマドの鉄則です。
+                        {/* Usage 3: ATM Strategy */}
+                        <div className="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                            <div>
+                                <h3 className="font-bold text-xl text-slate-800 mb-4">3. 現金の引き出し方（ATM手数料対策）</h3>
+                                <p className="text-slate-600 mb-4 leading-relaxed">
+                                    タイのATMで日本のカードを使って現金を引き出すと、<strong>1回につき一律220バーツ（約1,100円）</strong>の手数料がかかります。
+                                    これはWiseカードでも回避できません。
                                 </p>
+                                <div className="bg-slate-50 p-4 rounded-lg text-sm text-slate-700">
+                                    <p className="font-bold text-slate-900 mb-1">💰 損しないコツ</p>
+                                    <p>
+                                        こまめに引き出すと損します。<strong>「月に1回、3万バーツ（約15万円）まとめて引き出す」</strong>のが鉄則です。<br />
+                                        引き出した現金は、ホテルの金庫などで安全に保管し、使う分だけ財布に入れましょう。
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* Account Opening */}
+                {/* Account Opening Guide */}
                 <section className="mb-20 scroll-mt-24">
                     <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
                         <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">4</span>
-                        5分で完了！始め方ステップ
+                        最短5分！Wiseの始め方
                     </h2>
 
-                    <div className="space-y-6">
-                        <div className="flex gap-4 items-start bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2a9d8f] text-white flex items-center justify-center font-bold">1</div>
-                            <div>
-                                <h3 className="font-bold text-lg text-slate-800 mb-2">公式サイトからアカウント作成</h3>
-                                <p className="text-slate-600 text-sm">
-                                    メールアドレス、Googleアカウントなどで登録します。<br />
-                                    <span className="text-xs text-slate-500">※以下のリンクから登録すると、初回の送金手数料が割引になる特典がつきます。</span>
-                                </p>
-                                <div className="mt-3">
-                                    <Link href={AFFILIATE_LINK} target="_blank" rel="sponsored noopener noreferrer" className="inline-flex items-center gap-1 text-[#2a9d8f] font-bold text-sm hover:underline">
-                                        Wise公式サイトへ <ExternalLink className="w-3 h-3" />
-                                    </Link>
-                                </div>
-                            </div>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                            <div className="w-12 h-12 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">1</div>
+                            <h3 className="font-bold mb-2">公式サイトから登録</h3>
+                            <p className="text-sm text-slate-500 mb-4">メールアドレスで登録。<br />下記リンクからだと初回手数料が無料。</p>
+                            <Link href={AFFILIATE_LINK} target="_blank" rel="sponsored noopener noreferrer" className="text-xs font-bold text-[#2a9d8f] hover:underline">
+                                登録ページへ →
+                            </Link>
                         </div>
-                        <div className="flex gap-4 items-start bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2a9d8f] text-white flex items-center justify-center font-bold">2</div>
-                            <div>
-                                <h3 className="font-bold text-lg text-slate-800 mb-2">本人確認をする</h3>
-                                <p className="text-slate-600 text-sm">
-                                    スマホで「マイナンバーカード」と「自分の顔」を撮影してアップロードします。
-                                    指示に従って自撮りをするだけなので簡単です。
-                                </p>
-                            </div>
+                        <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                            <div className="w-12 h-12 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">2</div>
+                            <h3 className="font-bold mb-2">本人確認 (eKYC)</h3>
+                            <p className="text-sm text-slate-500">マイナンバーカードと顔写真をスマホで撮影してアップロード。</p>
                         </div>
-                        <div className="flex gap-4 items-start bg-white p-6 rounded-xl border border-slate-100 shadow-sm">
-                            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2a9d8f] text-white flex items-center justify-center font-bold">3</div>
-                            <div>
-                                <h3 className="font-bold text-lg text-slate-800 mb-2">承認完了！利用開始</h3>
-                                <p className="text-slate-600 text-sm">
-                                    早ければ数分〜数時間で承認完了の通知が届きます。
-                                    その後すぐに、海外送金やマルチカレンシー口座（現地口座情報の取得）が可能になります。
-                                </p>
-                            </div>
+                        <div className="bg-white p-6 rounded-xl border border-slate-200 text-center">
+                            <div className="w-12 h-12 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full flex items-center justify-center mx-auto mb-4 font-bold text-lg">3</div>
+                            <h3 className="font-bold mb-2">カード発行</h3>
+                            <p className="text-sm text-slate-500">アプリからデビットカードを注文。届くまで2週間かかるのでお早めに。</p>
                         </div>
                     </div>
                 </section>
@@ -419,7 +674,7 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                 {/* Trust / Safety */}
                 <section className="bg-white p-8 rounded-2xl border border-slate-200 mb-16 shadow-sm">
                     <div className="flex flex-col md:flex-row gap-6 items-center md:items-start text-center md:text-left">
-                        <div className="bg-slate-100 p-4 rounded-full">
+                        <div className="bg-slate-100 p-4 rounded-full flex-shrink-0">
                             <ShieldCheck className="w-10 h-10 text-[#2a9d8f]" />
                         </div>
                         <div>
@@ -440,38 +695,29 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                     <div className="space-y-4">
                         <details className="group bg-white border border-slate-200 rounded-xl open:ring-1 open:ring-[#2a9d8f]/30 transition-all shadow-sm">
                             <summary className="flex cursor-pointer items-center justify-between p-5 font-bold text-slate-800 hover:bg-slate-50 rounded-xl transition-colors">
-                                Q. 本当に銀行より安いですか？
+                                Q. クレジットカードチャージはできますか？
                                 <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
                             </summary>
                             <div className="px-5 pb-5 pt-0 text-slate-600 text-sm leading-relaxed">
-                                A. はい、ほとんどのケースで安くなります。銀行は「送金手数料」とは別に「為替レート」に隠れコスト（スプレッド）を数円上乗せしていますが、Wiseはこれがゼロ（Google検索と同じレート）だからです。
+                                A. できますが、カード手数料がかかるため推奨しません。銀行振込（インターネットバンキング等）でWise口座に入金するのが、最も手数料が安くておすすめです。
                             </div>
                         </details>
                         <details className="group bg-white border border-slate-200 rounded-xl open:ring-1 open:ring-[#2a9d8f]/30 transition-all shadow-sm">
                             <summary className="flex cursor-pointer items-center justify-between p-5 font-bold text-slate-800 hover:bg-slate-50 rounded-xl transition-colors">
-                                Q. 英語ができなくても使えますか？
+                                Q. タイでWiseカードが使えない店はありますか？
                                 <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
                             </summary>
                             <div className="px-5 pb-5 pt-0 text-slate-600 text-sm leading-relaxed">
-                                A. はい、公式サイトもアプリも完全に日本語対応しています。サポートも日本語で受けられるので安心してください。
+                                A. カード（Visa/Master）が使える店ならどこでも使えます。ただし、タイの屋台やローカル食堂、一部のタクシーは「現金」か「PromptPay」のみの場合が多いです。そのため、WiseカードでATMから現金を引き出しておく必要があります。
                             </div>
                         </details>
                         <details className="group bg-white border border-slate-200 rounded-xl open:ring-1 open:ring-[#2a9d8f]/30 transition-all shadow-sm">
                             <summary className="flex cursor-pointer items-center justify-between p-5 font-bold text-slate-800 hover:bg-slate-50 rounded-xl transition-colors">
-                                Q. タイ以外でも使えますか？
+                                Q. 英語が苦手でも口座開設できますか？
                                 <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
                             </summary>
                             <div className="px-5 pb-5 pt-0 text-slate-600 text-sm leading-relaxed">
-                                A. もちろんです。世界160カ国、40通貨以上に対応しています。一度アカウントを作れば、欧米や他のアジア諸国への旅行でもそのまま使えます。
-                            </div>
-                        </details>
-                        <details className="group bg-white border border-slate-200 rounded-xl open:ring-1 open:ring-[#2a9d8f]/30 transition-all shadow-sm">
-                            <summary className="flex cursor-pointer items-center justify-between p-5 font-bold text-slate-800 hover:bg-slate-50 rounded-xl transition-colors">
-                                Q. 登録には何が必要ですか？
-                                <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
-                            </summary>
-                            <div className="px-5 pb-5 pt-0 text-slate-600 text-sm leading-relaxed">
-                                A. 「現住所が確認できる本人確認書類（マイナンバーカード、運転免許証など）」と「スマートフォン」があれば、オンラインですぐに手続きできます。
+                                A. はい、公式サイトもアプリも、カスタマーサポートもすべて日本語に対応しています。日本のサービスと同じ感覚で使えます。
                             </div>
                         </details>
                     </div>
@@ -479,6 +725,7 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
 
                 {/* Conclusion CTA */}
                 <div className="text-center bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-10 md:p-16 text-white shadow-2xl">
+                    <span className="inline-block bg-[#9fe870] text-slate-900 text-xs font-bold px-3 py-1 rounded-full mb-4">年会費・登録費無料</span>
                     <h2 className="text-2xl md:text-4xl font-bold mb-6">
                         お金の不安をなくして、<br />
                         もっと自由に移動しよう。
@@ -502,7 +749,7 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
                 </div>
 
                 <div className="mt-16 text-center">
-                    <Link href="/nomad-info" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors underline">
+                    <Link href="../nomad-info" className="inline-flex items-center text-muted-foreground hover:text-primary transition-colors underline">
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         記事一覧に戻る
                     </Link>

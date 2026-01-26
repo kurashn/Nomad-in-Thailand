@@ -49,7 +49,7 @@ export default function CafeGuidePage() {
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t('nav.back')}
                     </Link>
@@ -67,9 +67,9 @@ export default function CafeGuidePage() {
             <div className="container max-w-3xl mx-auto px-4 mt-12">
                 {/* Intro */}
                 <div className="prose prose-lg prose-slate max-w-none mb-16 relative">
-                    <p className="text-xl leading-loose font-medium text-foreground/90 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p1') }} />
-                    <p className="text-lg leading-loose text-foreground/80 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p2') }} />
-                    <p className="text-lg leading-loose text-foreground/80 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p3') }} />
+                    <p className="leading-loose font-medium text-foreground/90 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p1') }} />
+                    <p className="leading-loose text-foreground/80 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p2') }} />
+                    <p className="leading-loose text-foreground/80 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p3') }} />
                 </div>
 
                 {/* Selection Criteria */}
@@ -318,7 +318,7 @@ export default function CafeGuidePage() {
                 <NewsletterCTA isInline />
 
                 <div className="mt-8 text-center">
-                    <Link href="/nomad-info" className="text-sm text-muted-foreground hover:text-primary transition-colors underline">
+                    <Link href="../nomad-info" className="text-sm text-muted-foreground hover:text-primary transition-colors underline">
                         {t('nav.back')}
                     </Link>
                 </div>

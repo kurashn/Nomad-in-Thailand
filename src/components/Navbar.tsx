@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import { Link, usePathname, useRouter } from '@/i18n/routing';
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const t = useTranslations('Navbar');
     const pathname = usePathname();
     const router = useRouter();
+    const currentLocale = useLocale();
 
     const switchLocale = (locale: string) => {
         router.replace(pathname, { locale });
@@ -62,21 +63,53 @@ export default function Navbar() {
                             </Link>
                         ))}
 
-                        {/* Language Switcher Desktop */}
-                        <div className="flex items-center gap-2 border-l pl-4 ml-4">
-                            <button onClick={() => switchLocale('ja')} className="text-sm font-bold hover:text-primary transition-colors px-1">JP</button>
-                            <span className="text-muted-foreground">/</span>
-                            <button onClick={() => switchLocale('en')} className="text-sm font-bold hover:text-primary transition-colors px-1">EN</button>
+                        {/* Language Switcher Desktop - Improved Design */}
+                        <div className="flex items-center border-l pl-4 ml-4">
+                            <div className="flex items-center bg-muted/50 rounded-full p-1 gap-1">
+                                <button
+                                    onClick={() => switchLocale('ja')}
+                                    className={`px-3 py-1.5 text-sm font-bold rounded-full transition-all duration-200 ${currentLocale === 'ja'
+                                            ? 'bg-primary text-primary-foreground shadow-sm'
+                                            : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                                        }`}
+                                >
+                                    🇯🇵 JP
+                                </button>
+                                <button
+                                    onClick={() => switchLocale('en')}
+                                    className={`px-3 py-1.5 text-sm font-bold rounded-full transition-all duration-200 ${currentLocale === 'en'
+                                            ? 'bg-primary text-primary-foreground shadow-sm'
+                                            : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                                        }`}
+                                >
+                                    🇺🇸 EN
+                                </button>
+                            </div>
                         </div>
                     </div>
 
                     {/* Mobile Hamburger Button */}
-                    <div className="-mr-2 flex md:hidden items-center gap-4">
-                        {/* Language Switcher Mobile (Icon only or simple toggle) */}
-                        <div className="flex items-center gap-1">
-                            <button onClick={() => switchLocale('ja')} className="text-xs font-bold hover:text-primary p-1">JP</button>
-                            <span className="text-muted-foreground text-xs">/</span>
-                            <button onClick={() => switchLocale('en')} className="text-xs font-bold hover:text-primary p-1">EN</button>
+                    <div className="-mr-2 flex md:hidden items-center gap-3">
+                        {/* Language Switcher Mobile - Improved Design */}
+                        <div className="flex items-center bg-muted/50 rounded-full p-0.5 gap-0.5">
+                            <button
+                                onClick={() => switchLocale('ja')}
+                                className={`px-2.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLocale === 'ja'
+                                        ? 'bg-primary text-primary-foreground shadow-sm'
+                                        : 'text-muted-foreground hover:text-foreground'
+                                    }`}
+                            >
+                                🇯🇵
+                            </button>
+                            <button
+                                onClick={() => switchLocale('en')}
+                                className={`px-2.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLocale === 'en'
+                                        ? 'bg-primary text-primary-foreground shadow-sm'
+                                        : 'text-muted-foreground hover:text-foreground'
+                                    }`}
+                            >
+                                🇺🇸
+                            </button>
                         </div>
 
                         <button

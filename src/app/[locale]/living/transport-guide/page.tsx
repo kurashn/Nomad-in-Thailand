@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Car, Smartphone, Zap, Train, AlertTriangle, CheckCircle, Info } from "lucide-react";
+import { ArrowLeft, Car, Zap, Train, AlertTriangle, CheckCircle, Info, ArrowRight, MapPin, CreditCard } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import { getTranslations } from "next-intl/server";
 import { useTranslations } from "next-intl";
@@ -17,9 +17,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default function TransportGuidePage() {
     const t = useTranslations('TransportGuide');
+    const tRaw = useTranslations('TransportGuide');
 
     return (
-        <article className="min-h-screen bg-background pb-20 font-sans text-foreground/90">
+        <article className="min-h-screen bg-slate-50 font-sans text-slate-900 pb-32">
             {/* Hero Section */}
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-black/40 z-10" />
@@ -31,10 +32,14 @@ export default function TransportGuidePage() {
                     priority
                 />
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/living" className="inline-flex items-center text-sm mb-4 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../living" className="inline-flex items-center text-sm mb-4 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t('hero.back')}
                     </Link>
+                    <div className="flex flex-wrap gap-2 mb-4">
+                        <span className="bg-[#2a9d8f] text-white text-xs font-bold px-3 py-1 rounded-full">2026 Latest</span>
+                        <span className="bg-slate-800 text-white text-xs font-bold px-3 py-1 rounded-full border border-slate-600">Nomad Essential</span>
+                    </div>
                     <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-white drop-shadow-xl">
                         {t('hero.title')}
                         <span className="block mt-2 text-2xl md:text-3xl font-normal opacity-90">{t('hero.subtitle')}</span>
@@ -43,218 +48,187 @@ export default function TransportGuidePage() {
             </div>
 
             <div className="container max-w-3xl mx-auto px-4 mt-12">
-                {/* Intro */}
-                <div className="prose prose-lg prose-slate max-w-none mb-10">
-                    <p className="leading-loose font-medium text-foreground/80 mb-6 whitespace-pre-line">
-                        {t('intro.p1')}
-                    </p>
-                    <p className="leading-relaxed whitespace-pre-line">
-                        {t.rich('intro.p2', {
-                            bold: (chunks) => <strong>{chunks}</strong>
-                        })}
-                    </p>
+                {/* Introduction */}
+                <div className="prose prose-lg prose-slate max-w-none mb-16">
+                    <p className="leading-loose font-medium text-slate-800 mb-8" dangerouslySetInnerHTML={{ __html: t.raw('intro.p1') }} />
+                    <p className="leading-loose text-slate-700" dangerouslySetInnerHTML={{ __html: t.raw('intro.p2') }} />
                 </div>
 
-                {/* Section 1: Grab vs Bolt */}
+                {/* Section 1: Grab vs Bolt Table */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-                        <span className="bg-green-100 text-green-600 p-2 rounded-lg"><Car className="w-6 h-6" /></span>
+                    <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
+                        <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">1</span>
                         {t('grabBolt.title')}
                     </h2>
-
-                    <p className="mb-6 text-muted-foreground">
+                    <p className="mb-6 text-slate-600 leading-relaxed">
                         {t('grabBolt.desc')}
                     </p>
 
-                    <div className="grid md:grid-cols-2 gap-6 mb-8">
-                        {/* Grab Card */}
-                        <div className="bg-white border border-green-200 rounded-xl p-6 shadow-sm relative overflow-hidden">
-                            <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">{t('grabBolt.grab.tag')}</div>
-                            <h3 className="text-2xl font-bold text-green-600 mb-4 flex items-center gap-2">Grab</h3>
-                            <ul className="space-y-3 text-sm text-foreground/80">
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5" />
-                                    <span>{t.rich('grabBolt.grab.features.0', { bold: (chunks) => <strong>{chunks}</strong> })}</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle className="w-4 h-4 text-green-500 mt-0.5" />
-                                    <span>{t.rich('grabBolt.grab.features.1', { bold: (chunks) => <strong>{chunks}</strong> })}</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <Info className="w-4 h-4 text-slate-400 mt-0.5" />
-                                    <span>{t('grabBolt.grab.features.2')}</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* Bolt Card */}
-                        <div className="bg-white border border-green-200 rounded-xl p-6 shadow-sm relative overflow-hidden">
-                            <div className="absolute top-0 right-0 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">{t('grabBolt.bolt.tag')}</div>
-                            <h3 className="text-2xl font-bold text-green-600 mb-4 flex items-center gap-2">Bolt</h3>
-                            <ul className="space-y-3 text-sm text-foreground/80">
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle className="w-4 h-4 text-yellow-500 mt-0.5" />
-                                    <span>{t.rich('grabBolt.bolt.features.0', { bold: (chunks) => <strong>{chunks}</strong> })}</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <CheckCircle className="w-4 h-4 text-yellow-500 mt-0.5" />
-                                    <span>{t.rich('grabBolt.bolt.features.1', { bold: (chunks) => <strong>{chunks}</strong> })}</span>
-                                </li>
-                                <li className="flex items-start gap-2">
-                                    <Info className="w-4 h-4 text-slate-400 mt-0.5" />
-                                    <span>{t('grabBolt.bolt.features.2')}</span>
-                                </li>
-                            </ul>
-                        </div>
+                    <div className="overflow-x-auto rounded-xl border border-slate-200 shadow-sm mb-8">
+                        <table className="w-full text-sm md:text-base bg-white">
+                            <thead className="bg-[#2a9d8f] text-white">
+                                <tr>
+                                    <th className="p-4 text-left font-bold w-1/4">{t('grabBolt.table_header_feature')}</th>
+                                    <th className="p-4 text-left font-bold w-1/3 bg-[#238b7e]">Grab</th>
+                                    <th className="p-4 text-left font-bold w-1/3">Bolt</th>
+                                </tr>
+                            </thead>
+                            <tbody className="divide-y divide-slate-100">
+                                <tr>
+                                    <td className="p-4 font-bold text-slate-700 bg-slate-50">{t('grabBolt.price.label')}</td>
+                                    <td className="p-4 text-slate-600 bg-green-50/50">{t('grabBolt.price.grab')}</td>
+                                    <td className="p-4 text-slate-600 font-bold text-[#2a9d8f]">{t('grabBolt.price.bolt')}</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 font-bold text-slate-700 bg-slate-50">{t('grabBolt.speed.label')}</td>
+                                    <td className="p-4 text-slate-600 font-bold text-[#2a9d8f] bg-green-50/50">{t('grabBolt.speed.grab')}</td>
+                                    <td className="p-4 text-slate-600">{t('grabBolt.speed.bolt')}</td>
+                                </tr>
+                                <tr>
+                                    <td className="p-4 font-bold text-slate-700 bg-slate-50">{t('grabBolt.ux.label')}</td>
+                                    <td className="p-4 text-slate-600 bg-green-50/50">{t('grabBolt.ux.grab')}</td>
+                                    <td className="p-4 text-slate-600">{t('grabBolt.ux.bolt')}</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
 
-                    <div className="bg-muted p-4 rounded-lg flex items-start gap-3">
-                        <AlertTriangle className="w-5 h-5 text-orange-500 mt-0.5 shrink-0" />
-                        <div className="text-sm">
-                            <p className="font-bold mb-1">{t('grabBolt.advice.title')}</p>
-                            <p className="text-muted-foreground">
-                                {t.rich('grabBolt.advice.text', { bold: (chunks) => <strong>{chunks}</strong> })}
-                            </p>
+                    <div className="bg-orange-50 border border-orange-200 p-6 rounded-xl flex gap-4 items-start">
+                        <div className="bg-orange-100 p-2 rounded-full text-orange-600 shrink-0">
+                            <AlertTriangle className="w-6 h-6" />
+                        </div>
+                        <div>
+                            <h4 className="font-bold text-orange-800 mb-2">{t('grabBolt.advice.title')}</h4>
+                            <p className="text-sm text-orange-800/90 leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw('grabBolt.advice.text') }} />
                         </div>
                     </div>
                 </section>
 
                 {/* Section 2: MuvMi */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
-                        <span className="bg-blue-100 text-blue-600 p-2 rounded-lg"><Zap className="w-6 h-6" /></span>
+                    <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
+                        <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">2</span>
                         {t('muvmi.title')}
                     </h2>
 
-                    <div className="bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-2xl p-8">
-                        <div className="flex flex-col md:flex-row gap-8 items-center">
-                            <div className="flex-1">
-                                <h3 className="text-xl font-bold mb-4 text-blue-900">{t('muvmi.sub')}</h3>
-                                <p className="leading-relaxed text-foreground/80 mb-6">
-                                    {t('muvmi.desc')}
-                                </p>
-                                <div className="space-y-2">
-                                    <div className="flex items-center gap-2 text-sm font-bold text-blue-700">
-                                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                                        {t('muvmi.points.0')}
-                                    </div>
-                                    <div className="flex items-center gap-2 text-sm font-bold text-blue-700">
-                                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                                        {t('muvmi.points.1')}
-                                    </div>
-                                    <div className="flex items-center gap-2 text-sm font-bold text-blue-700">
-                                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
-                                        {t('muvmi.points.2')}
-                                    </div>
-                                </div>
-
-
+                    <div className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col md:flex-row">
+                        <div className="p-8 flex-1">
+                            <div className="inline-block bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold mb-4">
+                                {t('muvmi.tag')}
                             </div>
-                            <div className="w-full md:w-1/3 aspect-square relative rounded-xl overflow-hidden bg-white shadow-md border border-blue-100 flex items-center justify-center">
-                                {/* Would be an image of MuvMi, using an icon for now */}
-                                <div className="text-center">
-                                    <Zap className="w-16 h-16 text-blue-500 mx-auto mb-2" />
-                                    <span className="text-xs text-muted-foreground">MuvMi App Icon</span>
-                                </div>
-                            </div>
+                            <p className="text-slate-600 mb-6 leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw('muvmi.desc') }} />
+                            <ul className="space-y-3">
+                                <li className="flex items-center gap-3 text-slate-700">
+                                    <CheckCircle className="w-5 h-5 text-[#2a9d8f]" />
+                                    {t('muvmi.points.0')}
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700">
+                                    <CheckCircle className="w-5 h-5 text-[#2a9d8f]" />
+                                    {t('muvmi.points.1')}
+                                </li>
+                                <li className="flex items-center gap-3 text-slate-700">
+                                    <CheckCircle className="w-5 h-5 text-[#2a9d8f]" />
+                                    {t('muvmi.points.2')}
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="bg-blue-50 p-8 flex items-center justify-center md:w-1/3">
+                            <Zap className="w-24 h-24 text-blue-500 opacity-80" />
                         </div>
                     </div>
                 </section>
 
                 {/* Section 3: Trains */}
                 <section className="mb-20">
-                    <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
-                        <span className="bg-purple-100 text-purple-600 p-2 rounded-lg"><Train className="w-6 h-6" /></span>
+                    <h2 className="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900">
+                        <span className="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base">3</span>
                         {t('train.title')}
                     </h2>
-                    <p className="mb-6 text-muted-foreground leading-relaxed">
-                        {t.rich('train.desc', {
-                            bold: (chunks) => <strong>{chunks}</strong>,
-                            br: () => <br />
-                        })}
-                    </p>
+                    <p className="mb-8 text-slate-600 leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw('train.desc') }} />
 
-                    <div className="bg-card border border-muted rounded-xl divide-y divide-muted">
-                        <div className="p-4 flex items-start gap-4">
-                            <div className="bg-blue-100 text-blue-700 px-3 py-1 rounded font-bold text-sm shrink-0 w-16 text-center" dangerouslySetInnerHTML={{ __html: t.raw('train.mrt.label') }} />
-                            <div>
-                                <p className="font-bold mb-1">{t('train.mrt.status')}</p>
-                                <p className="text-sm text-muted-foreground">{t('train.mrt.desc')}</p>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        {/* MRT */}
+                        <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm relative overflow-hidden">
+                            <div className="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">METRO</div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="bg-blue-100 p-3 rounded-full text-blue-600">
+                                    <CreditCard className="w-6 h-6" />
+                                </div>
+                                <h3 className="font-bold text-xl text-slate-800">{t('train.mrt.name')}</h3>
                             </div>
-                        </div>
-                        <div className="p-4 flex items-start gap-4">
-                            <div className="bg-green-100 text-green-700 px-3 py-1 rounded font-bold text-sm shrink-0 w-16 text-center" dangerouslySetInnerHTML={{ __html: t.raw('train.bts.label') }} />
-                            <div>
-                                <p className="font-bold mb-1">{t('train.bts.status')}</p>
-                                <p className="text-sm text-muted-foreground">
-                                    {t.rich('train.bts.desc', { bold: (chunks) => <strong>{chunks}</strong> })}
+                            <div className="mb-4">
+                                <span className="bg-green-100 text-green-700 text-sm font-bold px-2 py-1 rounded inline-block mb-2">
+                                    {t('train.mrt.tag')}
+                                </span>
+                                <p className="text-sm text-slate-600 leading-relaxed dark:text-slate-400">
+                                    {t('train.mrt.desc')}
                                 </p>
                             </div>
+                            <p className="text-xs text-slate-500 italic mt-auto border-t pt-3">
+                                {t('train.mrt.tips')}
+                            </p>
+                        </div>
+
+                        {/* BTS */}
+                        <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm relative overflow-hidden">
+                            <div className="absolute top-0 right-0 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">SKYTRAIN</div>
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="bg-green-100 p-3 rounded-full text-green-600">
+                                    <Train className="w-6 h-6" />
+                                </div>
+                                <h3 className="font-bold text-xl text-slate-800">{t('train.bts.name')}</h3>
+                            </div>
+                            <div className="mb-4">
+                                <span className="bg-red-100 text-red-700 text-sm font-bold px-2 py-1 rounded inline-block mb-2">
+                                    {t('train.bts.tag')}
+                                </span>
+                                <p className="text-sm text-slate-600 leading-relaxed dark:text-slate-400">
+                                    {t('train.bts.desc')}
+                                </p>
+                            </div>
+                            <p className="text-xs text-slate-500 italic mt-auto border-t pt-3">
+                                {t('train.bts.tips')}
+                            </p>
                         </div>
                     </div>
                 </section>
 
-                {/* Schema.org JSON-LD */}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            "mainEntity": [
-                                {
-                                    "@type": "Question",
-                                    "name": t('faq.q1'),
-                                    "acceptedAnswer": {
-                                        "@type": "Answer",
-                                        "text": t('faq.a1').replace(/<bold>|<\/bold>/g, "")
-                                    }
-                                },
-                                {
-                                    "@type": "Question",
-                                    "name": t('faq.q2'),
-                                    "acceptedAnswer": {
-                                        "@type": "Answer",
-                                        "text": t('faq.a2').replace(/<bold>|<\/bold>/g, "")
-                                    }
-                                }
-                            ]
-                        })
-                    }}
-                />
-
                 {/* FAQ Section */}
-                <section className="mb-16 mt-12">
-                    <h2 className="text-2xl font-bold mb-6">{t('faq.title')}</h2>
+                <section className="mb-20">
+                    <h2 className="text-2xl font-bold mb-8 text-slate-900">{t('faq.title')}</h2>
                     <div className="space-y-4">
-                        <details className="group bg-white border border-muted rounded-xl p-4 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-                            <summary className="flex items-center justify-between font-bold text-foreground">
-                                {t('faq.q1')}
-                                <span className="ml-2 transition-transform group-open:rotate-180">▼</span>
-                            </summary>
-                            <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
-                                {t.rich('faq.a1', { bold: (chunks) => <strong>{chunks}</strong> })}
-                            </p>
-                        </details>
-                        <details className="group bg-white border border-muted rounded-xl p-4 [&_summary::-webkit-details-marker]:hidden cursor-pointer">
-                            <summary className="flex items-center justify-between font-bold text-foreground">
-                                {t('faq.q2')}
-                                <span className="ml-2 transition-transform group-open:rotate-180">▼</span>
-                            </summary>
-                            <p className="mt-3 text-muted-foreground text-sm leading-relaxed">
-                                {t.rich('faq.a2', { bold: (chunks) => <strong>{chunks}</strong> })}
-                            </p>
-                        </details>
+                        {[1, 2, 3].map((num) => (
+                            <details key={num} className="group bg-white border border-slate-200 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                                <summary className="flex items-center justify-between p-6 font-bold text-slate-800 cursor-pointer hover:bg-slate-50 transition-colors">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-[#2a9d8f]">Q.</span>
+                                        {t(`faq.q${num}`)}
+                                    </div>
+                                    <span className="transition-transform group-open:rotate-180 text-slate-400">▼</span>
+                                </summary>
+                                <div className="px-6 pb-6 text-slate-600 leading-relaxed bg-slate-50/50">
+                                    <span className="font-bold text-[#2a9d8f] mr-2">A.</span>
+                                    {t(`faq.a${num}`)}
+                                </div>
+                            </details>
+                        ))}
                     </div>
                 </section>
 
-                <NewsletterCTA isInline />
-
-                <div className="mt-8 text-center">
-                    <Link href="/living" className="text-sm text-muted-foreground hover:text-primary transition-colors underline">
-                        {t('hero.back')}
+                {/* Bottom CTA */}
+                <div className="text-center bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-10 md:p-16 text-white shadow-2xl mb-20">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-6" dangerouslySetInnerHTML={{ __html: t.raw('cta.title') }} />
+                    <p className="text-slate-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw('cta.desc') }} />
+                    <Link
+                        href="../living"
+                        className="inline-flex items-center gap-2 bg-[#2a9d8f] text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white hover:text-[#2a9d8f] hover:scale-105 transition-all shadow-lg shadow-[#2a9d8f]/20"
+                    >
+                        {t('cta.button')}
+                        <ArrowRight className="w-5 h-5" />
                     </Link>
                 </div>
+
+                <NewsletterCTA isInline />
             </div>
         </article>
     );

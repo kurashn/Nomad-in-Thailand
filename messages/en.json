@@ -41,7 +41,7 @@
             "sponsor": {
                 "date": "2026.01.10",
                 "tag": "Recruit",
-                "title": "Sponsorship Recruitment for 'Overseas Nomad Podcast'"
+                "title": "Sponsorship Recruitment for 'Nomad in Thailand'"
             },
             "launch": {
                 "date": "2026.01.01",
@@ -50,7 +50,7 @@
             }
         },
         "camp": {
-            "title": "Nomad Place",
+            "title": "Nomad Events",
             "comingSoon": "Coming Soon",
             "nextDate": "2026.06",
             "nextLabel": "Next Nomad Camp",
@@ -85,7 +85,7 @@
         "youtube": {
             "tag": "Main Contents",
             "title": "Real Info on YouTube",
-            "channel": "'Overseas Nomad Podcast'",
+            "channel": "'Nomad in Thailand'",
             "desc": "Delivering the local atmosphere and real voices of nomads that text cannot convey.",
             "cta": "Watch on YouTube"
         }
@@ -104,7 +104,7 @@
         },
         "links": {
             "title": "Links",
-            "youtube": "YouTube: Overseas Nomad Podcast",
+            "youtube": "YouTube: Nomad in Thailand",
             "contact": "Contact",
             "newsletter": "Newsletter (Coming Soon)"
         },
@@ -124,7 +124,7 @@
         }
     },
     "Contact": {
-        "title": "Contact | Overseas Nomad Podcast",
+        "title": "Contact | Nomad in Thailand",
         "header": {
             "title": "Contact Us",
             "subtitle": "We accept requests for interviews, questions about the community,\nand other inquiries here."
@@ -345,7 +345,7 @@
             "tag1": "Complete Guide",
             "tag2": "2026 Latest",
             "title": "[2026] Bangkok Digital Nomad Roadmap\n<subtag>From Zero to Your First Month</subtag>",
-            "author": "By the Overseas Nomad Podcast Team"
+            "author": "By the Nomad in Thailand Team"
         },
         "intro": {
             "p1": "\"Someday I want to work remotely from abroad.\"\nWhy not make that \"someday\" happen in 2026?",
@@ -380,11 +380,6 @@
                 "note": "💡 For those who want to \"try it for 3 months\". Extension is done at Immigration."
             },
             "conclusion": "<strong>Bottom Line:</strong> If you're serious about relocating, get your DTV in your home country before departure. If you're \"testing the waters\", enter visa-free first, and if you like it, make a quick trip to a neighboring country to apply for DTV.\n<alert>※ Extended stays without proper visas and frequent visa runs (repeated entry/exit) face increasing scrutiny. Avoid these approaches.</alert>",
-            "line": {
-                "title": "Official LINE Exclusive\nGet DTV Reference Application Documents!",
-                "desc": "See actual documents (portfolios, etc.) submitted by 3 people who obtained DTV.",
-                "cta": "Send \"Visa\" on LINE"
-            },
             "video": {
                 "title": "Watch Breakdown Video",
                 "desc": "Real experience-based DTV acquisition guide"
@@ -641,15 +636,168 @@
             "list1": "Credit card travel insurance (check coverage conditions)",
             "list2": "<strong>SafetyWing</strong> (Nomad subscription insurance)",
             "note": "Arrange insurance before traveling. Cashless insurance means zero out-of-pocket at the hospital."
+        }
+    },
+    "SimGuide": {
+        "meta": {
+            "title": "[2026 Guide] SIM Card & SMS Reception in Thailand | Nomad in Thailand",
+            "desc": "Complete guide to the best SIM strategy (AIS/True) and maintaining a Japanese phone number (SMS authentication). Covering Rakuten Mobile vs povo 2.0, dual SIM setup, and essential connectivity for nomads."
+        },
+        "hero": {
+            "title": "[2026 Guide] Thailand SIM Strategy\n<subtag>Best Solutions for Local SIM & Japan SMS</subtag>",
+            "subtitle": "AIS, True, and Rakuten Mobile.\nBuild the strongest connectivity environment.",
+            "back": "Back to Life Info"
+        },
+        "intro": {
+            "p1": "\"Which local SIM has the best signal?\"\n\"I can't receive SMS authentication to log in to my Japanese accounts...\"",
+            "p2": "These are common troubles digital nomad beginners face. The stress of no internet is immeasurable, and losing access to Japanese banking or credit card sites can threaten your livelihood.",
+            "p3": "In conclusion, the strongest lineup in Thailand is <strong>\"Dual SIM\"</strong>.<br>A local high-speed line and a SIM for maintaining your Japanese number. Managing these two on one smartphone is the smart standard for 2026.",
+            "related": "Related",
+            "checklist": "See Pre-departure Checklist"
+        },
+        "basics": {
+            "title": "Basic Terms: Know This First",
+            "sim": {
+                "term": "SIM Card / eSIM",
+                "desc": "The communication card you put in your phone. Recently, \"eSIM\" (no physical card) is mainstream. Super convenient as you just download it."
+            },
+            "roaming": {
+                "term": "International Roaming",
+                "desc": "Using your home carrier's signal abroad.<br><strong>Warning:</strong> Often extremely expensive (e.g., ~$20/day), so keep it off basically."
+            },
+            "dual": {
+                "term": "Dual SIM",
+                "desc": "Putting two communication contracts in one phone (e.g., Local eSIM + Home Physical SIM)."
+            }
+        },
+        "cost": {
+            "title": "Cost Comparison: Local SIM Wins",
+            "headers": {
+                "method": "Method",
+                "cost": "Est. Cost (Monthly)",
+                "feature": "Feature"
+            },
+            "roaming": {
+                "method": "Carrier Roaming",
+                "price": "~$600+",
+                "desc": "$20/day x 30 days. Outrageously expensive. Don't use except in emergencies."
+            },
+            "wifi": {
+                "method": "Pocket Wi-Fi Rental",
+                "price": "~$100+",
+                "desc": "Bulky and requires charging. Also expensive. Outdated."
+            },
+            "local": {
+                "method": "Local SIM (AIS/True)",
+                "price": "~$7+",
+                "desc": "Overwhelmingly cheap. Buy at airports or city shops. Speeds often faster than home."
+            }
+        },
+        "dualSim": {
+            "title": "2026 Correct Answer: \"Strongest Dual SIM Setup\"",
+            "desc": "This is the optimal solution for living comfortably in Thailand.<br>Combine <strong>\"Local High-Speed Data\"</strong> and <strong>\"Home Number Maintenance\"</strong>.",
+            "sim1": {
+                "label": "SIM 1 (For Data)",
+                "name": "Thai Local SIM",
+                "carrier": "AIS or True",
+                "data": {
+                    "label": "Data",
+                    "value": "Unlimited / 50GB+"
+                },
+                "usage": {
+                    "label": "Main Use",
+                    "value": "Daily Internet"
+                },
+                "price": {
+                    "value": "200-300 THB",
+                    "unit": "/mo (~$7-10)"
+                }
+            },
+            "sim2": {
+                "label": "SIM 2 (SMS/Backup)",
+                "name": "Japan SIM",
+                "carrier": "Rakuten Mobile / povo",
+                "data": {
+                    "label": "Data",
+                    "value": "2GB / 0GB"
+                },
+                "usage": {
+                    "label": "Main Use",
+                    "value": "SMS Auth / Emergency"
+                },
+                "price": {
+                    "prefix": "Mo",
+                    "value": "$0 - $7",
+                    "unit": ""
+                }
+            }
+        },
+        "thaiSim": {
+            "title": "[1st SIM] Which Thai SIM is Best?",
+            "warning": {
+                "title": "[Warning] Airports are Expensive!",
+                "desc": "Counters at the airport often sell expensive \"Tourist SIM\" packages (e.g., 299 THB for 8 days).<br>If you need internet from day one, get 1GB via <strong>Airalo</strong> beforehand, then contract a monthly plan (e.g., 200 THB for 30 days) at a city shop for the cheapest route."
+            },
+            "desc": "Thailand has two major carriers: \"AIS\" and \"True\". Neither is a bad choice, but here are the distinctions.",
+            "ais": {
+                "badge": "No.1 Reliability",
+                "name": "AIS",
+                "sub": "Like AT&T/Docomo",
+                "features": {
+                    "0": "Widest coverage, connects easily even on islands/rural areas",
+                    "1": "Stable 5G speeds",
+                    "2": "App is user-friendly (Perfect English support)"
+                }
+            },
+            "true": {
+                "name": "True",
+                "sub": "Popular with Youth",
+                "features": {
+                    "0": "Many plans include free access to city Wi-Fi spots (True Wi-Fi)",
+                    "1": "Easy to buy/top-up at 7-Eleven",
+                    "2": "Frequent promotions/discounts"
+                }
+            }
+        },
+        "japanSim": {
+            "title": "[2nd SIM] How to Receive SMS?",
+            "desc": "Even abroad, you'll be asked for \"SMS Authentication\" to log in to home sites (banks, credit cards, gov services). If you cancel your home number, you'll be stuck.<br>The following two services with free (or cheap) roaming are strongest for Japanese nomads.",
+            "rakuten": {
+                "name": "1. Rakuten Mobile",
+                "badges": {
+                    "rec": "Top Pick",
+                    "price": "~$7/mo"
+                },
+                "desc": "<strong>Using \"Rakuten Link App\" makes calls to Japan free.</strong> This is a massive benefit. You can call clients or family with your number. It also comes with 2GB free roaming, serving as a lifeline upon landing."
+            },
+            "povo": {
+                "name": "2. povo 2.0 (au)",
+                "badges": {
+                    "cheap": "Cheapest Upkeep",
+                    "price": "Base $0"
+                },
+                "desc": "Hold a number for $0 base fee. However, you must top-up once every 180 days to avoid cancellation. For those who \"just want to keep the number cheaply\"."
+            }
+        },
+        "setup": {
+            "title": "Pre-departure Setup Guide",
+            "step1": {
+                "title": "Unlock SIM",
+                "desc": "Smartphones bought from carriers may be \"SIM Locked\". Be sure to unlock it via your account page before leaving. If not, local SIMs won't work."
+            },
+            "step2": {
+                "title": "APN Settings (If needed)",
+                "desc": "If internet doesn't connect after inserting the SIM, \"APN Settings\" are needed. Enter settings found on the SIM package (most modern phones set this automatically)."
+            }
         },
         "faq": {
             "title": "FAQ",
-            "q1": "Q. Number for Ambulance?",
-            "a1": "<strong>1669</strong>. But if you can't speak Thai/English well, call the private hospital emergency line directly (e.g. Samitivej) for Japanese support.",
-            "q2": "Q. Can I buy antibiotics at pharmacies?",
-            "a2": "Yes, pharmacists can sell them without prescription. But consult them first.",
-            "q3": "Q. Can I use Japanese Health Insurance?",
-            "a3": "Not directly. You can apply for refund later (Overseas Medical Expenses), but travel insurance is recommended for cashless experience."
+            "q1": "Q. Will my LINE data be lost if I swap SIMs?",
+            "a1": "No, it won't. LINE account and chat history are saved on the phone (app), so you can use it as is. However, you need to transfer if changing devices.",
+            "q2": "Q. Is a Thai phone number necessary?",
+            "a2": "Yes, essential. It's needed for Grab (taxi app), food delivery, and condo contracts. Choose a SIM with voice capability, not just data.",
+            "q3": "Q. Can I use 5G?",
+            "a3": "Yes, 5G coverage in central Bangkok is wider than many other cities and blazing fast. Often faster than cafe Wi-Fi."
         }
     },
     "DtvVisa": {
@@ -802,11 +950,6 @@
                 "desc": "You will receive the visa as a PDF via email. Print it out and keep it with your passport."
             }
         },
-        "line": {
-            "title": "Need Examples?",
-            "desc": "Get free access to actual portfolio samples and successful application documents<responsiveBr />on our Official LINE.",
-            "cta": "Type \"Visa\" on LINE"
-        },
         "faq": {
             "title": "FAQ",
             "q1": "Q. Can I apply from within Thailand?",
@@ -925,168 +1068,6 @@
             "title": "If in doubt, go to 'True Digital Park'",
             "desc": "We recommend starting with the free area at True Digital Park.<br></br>From there, try The Hive for community or NapLab for late nights. That's the smart Bangkok Nomad style.",
             "cta": "Back to Articles"
-        }
-    },
-    "SimGuide": {
-        "meta": {
-            "title": "Thailand SIM Card Guide 2026: Dual SIM Setup + SMS Solution for Nomads",
-            "desc": "Complete guide to staying connected in Thailand. Learn the dual SIM strategy to keep your home number for banking SMS while using affordable Thai 5G data (AIS/True). Perfect for digital nomads."
-        },
-        "hero": {
-            "back": "Back to Life Info",
-            "title": "[2026] Thailand SIM Strategy",
-            "subtitle": "+ SMS Solution Complete Guide"
-        },
-        "intro": {
-            "p1": "One of the most frustrating moments as a digital nomad: <br /><strong>\"I need to log into my bank, but I can't receive the SMS code!\"</strong>",
-            "p2": "Many nomads make the mistake of canceling their home phone number completely.<br />But in today's digital world, keeping your home number (for SMS verification) is essential.",
-            "p3": "In this guide, we'll show you the <strong>\"Dual SIM\"</strong> strategy: keep your home number active for cheap while enjoying Thailand's ultra-fast 5G data. Simple to set up, even for beginners.",
-            "related": "Related",
-            "checklist": "Full preparation checklist before relocating"
-        },
-        "basics": {
-            "title": "Basic Terms in 3 Minutes",
-            "sim": {
-                "term": "What is a SIM?",
-                "desc": "A small card like an \"ID card\" inside your phone. Without this, you cannot use internet or calls outside."
-            },
-            "roaming": {
-                "term": "What is Roaming?",
-                "desc": "Using your home country SIM abroad. Convenient, but <bold>extremely expensive</bold> (e.g., 2,980 JPY/day) because it goes through your home carrier."
-            },
-            "dual": {
-                "term": "What is Dual SIM?",
-                "desc": "Inserting \"2 SIMs\" into one phone. We will introduce how to use both \"Japanese\" and \"Thai\" SIMs to get the best of both worlds."
-            }
-        },
-        "cost": {
-            "title": "Conclusion: How much do you save?",
-            "headers": {
-                "method": "Method",
-                "cost": "Monthly Cost (Est.)",
-                "feature": "Feature"
-            },
-            "roaming": {
-                "method": "Int'l Roaming",
-                "price": "~90,000 JPY",
-                "desc": "2,980 JPY/day * 30 days. You will go bankrupt."
-            },
-            "wifi": {
-                "method": "Rental WiFi",
-                "price": "~20,000 JPY",
-                "desc": "Extra baggage & charging is a hassle. Expensive."
-            },
-            "local": {
-                "method": "Local SIM (Dual SIM)",
-                "price": "~1,000 JPY",
-                "desc": "<strong>Overwhelming Value.</strong> The only choice."
-            }
-        },
-        "dualSim": {
-            "title": "Strongest Formation: Dual SIM",
-            "desc": "Recent phones (iPhone XS onwards) can standby 2 SIMs.<br />By putting \"Japanese\" and \"Thai\" SIMs in one device, you enjoy benefits of both.",
-            "sim1": {
-                "label": "Sub Line (SIM 1)",
-                "name": "Japanese SIM",
-                "carrier": "Rakuten Mobile / povo",
-                "data": {
-                    "label": "Data",
-                    "value": "OFF"
-                },
-                "usage": {
-                    "label": "Main Use",
-                    "value": "SMS Only"
-                },
-                "price": {
-                    "value": "0",
-                    "unit": "JPY~ / mo"
-                }
-            },
-            "sim2": {
-                "label": "Main Line (SIM 2)",
-                "name": "Thai SIM",
-                "carrier": "AIS / True",
-                "data": {
-                    "label": "Data",
-                    "value": "ON (5G)"
-                },
-                "usage": {
-                    "label": "Main Use",
-                    "value": "Net/Video/SNS"
-                },
-                "price": {
-                    "prefix": "Approx",
-                    "value": "1,000",
-                    "unit": "JPY / mo"
-                }
-            }
-        },
-        "thaiSim": {
-            "title": "1. Data in Thailand (SIM 2)",
-            "warning": {
-                "title": "Do NOT buy at the airport!",
-                "desc": "Airport kiosks sell expensive \"Tourist SIM\" packages (e.g., 8 days 299 THB).<br />For long stays, buy a <strong>\"Regular SIM\"</strong> at city shops (AIS/True Shop) or 7-Eleven. You can get large data for 200-300 THB/month."
-            },
-            "desc": "Thai connectivity is advanced. 5G is everywhere and cheap.<br />Two major carriers are <strong>AIS</strong> and <strong>True (includes dtac)</strong>.",
-            "ais": {
-                "badge": "Top Choice",
-                "name": "AIS",
-                "sub": "No.1 Coverage King",
-                "features": {
-                    "0": "Connects in rural areas and islands",
-                    "1": "Stable 5G speed",
-                    "2": "Easy top-up via app"
-                }
-            },
-            "true": {
-                "name": "True / dtac",
-                "sub": "Value & Promos",
-                "features": {
-                    "0": "City speed comparable to AIS",
-                    "1": "Available at many convenience stores",
-                    "2": "Lots of discount campaigns"
-                }
-            }
-        },
-        "japanSim": {
-            "title": "2. Receiving Japanese SMS (SIM 1)",
-            "desc": "The rule is to choose a carrier that allows free SMS reception abroad.<br />We only recommend these two.",
-            "rakuten": {
-                "name": "Rakuten Mobile",
-                "badges": {
-                    "rec": "No.1 Recommend",
-                    "price": "980 JPY~"
-                },
-                "desc": "The \"God SIM\" for overseas use. Using the app (Rakuten Link), <strong>calls to Japan are free</strong>. SMS receipt is also free.<br />Plus, 2GB overseas data is free, so you have internet immediately upon landing (before buying a local SIM)."
-            },
-            "povo": {
-                "name": "povo 2.0 (by au)",
-                "badges": {
-                    "cheap": "Cheapest to keep",
-                    "price": "0 JPY/mo"
-                },
-                "desc": "0 base fee makes it popular as a sub-line. Turn on roaming to receive SMS.<br /><red>* Must buy a paid topping once every 180 days (Beware of cancellation).</red>"
-            }
-        },
-        "setup": {
-            "title": "Pre-departure Checklist",
-            "step1": {
-                "title": "Unlock SIM",
-                "desc": "Local SIMs won't work if locked. Must do this in Japan."
-            },
-            "step2": {
-                "title": "Change Japanese SIM to \"eSIM\" (Recommended)",
-                "desc": "Local tourist SIMs are usually \"Physical SIMs\". Changing your Japanese SIM to eSIM frees up the slot for a smooth transition."
-            }
-        },
-        "faq": {
-            "title": "FAQ",
-            "q1": "Q. Is SIM unlock necessary?",
-            "a1": "<strong>Absolutely.</strong> Locked phones won't accept Thai SIMs. Be sure to unlock via your carrier (usually free online) before leaving Japan.",
-            "q2": "Q. What about LINE or WhatsApp accounts?",
-            "a2": "Even if you change SIMs, your LINE/WhatsApp registered with your Japanese number <strong>remain usable.</strong><br />However, you may need SMS auth when re-logging in on a new device, which is when your Japanese SIM helps.",
-            "q3": "Q. Does Dual SIM drain battery?",
-            "a3": "It might drain slightly faster searching for two signals. You can save battery by temporarily turning off your Japanese SIM when you don't need to receive SMS."
         }
     },
     "AiraloGuide": {
@@ -1783,14 +1764,14 @@
         "hero": {
             "back": "Back to Articles",
             "tag": "Notice",
-            "title": "\"Overseas Nomad Podcast\"\nPartner & Sponsor Recruitment",
+            "title": "\"Nomad in Thailand\"\nPartner & Sponsor Recruitment",
             "subtitle": "To all those seeking a free way of life.{br}We are recruiting partners to support and enliven our activities."
         },
         "intro": {
             "title": "Introduction",
             "p1": "\"A life unbound by location\".{br}Even if you yearn for this lifestyle, typically there are many hurdles such as visas, living environment, and local connections.",
             "p2": "<strong>\"We want to build a foundation where challengers abroad can operate with peace of mind\"</strong>",
-            "p3": "\"Overseas Nomad Podcast\" started from such a simple thought. It has now grown into an important community based in Bangkok where many Japanese gather to share real information and experiences.",
+            "p3": "\"Nomad in Thailand\" started from such a simple thought. It has now grown into an important community based in Bangkok where many Japanese gather to share real information and experiences.",
             "p4": "To further expand this activity and make it a \"base\" that Japanese nomads around the world can rely on.",
             "videoLink": "▶ Our Content (YouTube)",
             "p5": "We are looking for partners who sympathize with our vision and can support us."

@@ -1,0 +1,83 @@
+{
+    "TransportGuide": {
+        "meta": {
+            "title": "Bangkok Transport Guide 2026: Grab, Bolt, Trains & MuvMi Explained",
+            "desc": "Complete guide to getting around Bangkok in 2026. Grab vs Bolt comparison table, MuvMi electric tuk-tuks, and train payment guide (BTS/MRT credit card touch). Avoid scams like a local."
+        },
+        "hero": {
+            "title": "Bangkok Transport Guide",
+            "subtitle": "Master the City Like a Local",
+            "back": "Back to Life Info"
+        },
+        "intro": {
+            "p1": "\"Taxi won't use the meter\" \"Tuk-tuk driver wants 300 baht for a 2-minute ride...\"<br />Transport stress can be eliminated with the right apps and knowledge.",
+            "p2": "Bangkok is actually <strong>the most app-advanced city in Southeast Asia</strong> for transport.<br />Book rides at fair prices, skip traffic jams with trains, and use electric tuk-tuks for short hops.<br />Master the <strong>'3 Essential Tools (Grab/Bolt/MuvMi)'</strong> and <strong>'train payment tricks'</strong> used by residents, and your Bangkok life will become truly liberated."
+        },
+        "grabBolt": {
+            "title": "Ride Apps: Grab vs Bolt",
+            "desc": "No more flagging down street taxis. With these two apps, you can get anywhere safely—even without speaking the language or carrying cash.",
+            "table_header_feature": "Feature",
+            "table_header_grab": "Grab",
+            "table_header_bolt": "Bolt",
+            "price": {
+                "label": "Price",
+                "grab": "Higher (premium service)",
+                "bolt": "Cheaper (20-30% less)"
+            },
+            "speed": {
+                "label": "Availability",
+                "grab": "◎ Fast (more cars)",
+                "bolt": "△ Slow during rush/rain"
+            },
+            "ux": {
+                "label": "Features",
+                "grab": "Multi-use (food, delivery)",
+                "bolt": "Simple (transport only)"
+            },
+            "advice": {
+                "title": "Pro Strategy",
+                "text": "【Best Practice】Start with cheap \"Bolt.\" If no cars available, switch to \"Grab.\" This \"dual-app\" approach is optimal."
+            }
+        },
+        "muvmi": {
+            "title": "Short Distance MVP: MuvMi",
+            "tag": "Limited Areas",
+            "desc": "\"Too hot to walk from the station to my condo...\"<br />This is where MuvMi, an electric tuk-tuk share service, shines. It covers major areas like Phrom Phong and Ari.",
+            "points": {
+                "0": "Cheap (from 10 THB)",
+                "1": "App-based cashless payment",
+                "2": "Feel the breeze (attraction vibes)"
+            }
+        },
+        "train": {
+            "title": "Traffic-Free Trains (BTS / MRT)",
+            "desc": "To avoid Bangkok's infamous traffic, trains are your best bet.<br />However, <strong>\"payment methods differ by line\"</strong>—important to know.",
+            "mrt": {
+                "name": "MRT (Subway)",
+                "tag": "Credit Card OK",
+                "desc": "Tap your VISA/Mastercard directly at the gate. Zero wait at ticket counters.",
+                "tips": "※ Just tap your VISA Touch-enabled card"
+            },
+            "bts": {
+                "name": "BTS (Skytrain)",
+                "tag": "Credit Card NG",
+                "desc": "Unfortunately, no direct credit card payment. Buying tickets every time is annoying, so get the \"Rabbit Card\" IC card.",
+                "tips": "※ Say \"Rabbit Card, please\" at the station counter (passport required, 100B fee + top-up)"
+            }
+        },
+        "faq": {
+            "title": "FAQ",
+            "q1": "Q. Do I need to tip taxi drivers?",
+            "a1": "A. Generally no, but rounding up a few baht or giving 20 THB for helping with luggage is polite.",
+            "q2": "Q. Can I ride public buses?",
+            "a2": "A. Yes, but routes are complex and many buses have no AC—challenging for beginners. Master trains and ride apps first.",
+            "q3": "Q. Are motorcycle taxis (orange vests) safe?",
+            "a3": "A. Great for beating traffic but higher accident risk. Always wear a helmet and book via Grab/Bolt bike feature to avoid fare disputes."
+        },
+        "cta": {
+            "title": "Prepare Before You Leave Home.",
+            "desc": "Grab and Bolt require SMS verification, so <strong>download and register in your home country</strong>.<br />Then enjoy seamless transport from day one in Bangkok.",
+            "button": "Back to Life Info"
+        }
+    }
+}

@@ -25,7 +25,7 @@ export default function DtvVisaPage() {
         "@graph": [
             {
                 "@type": "Article",
-                "headline": t('hero.title'),
+                "headline": t('meta.title'),
                 "image": "https://nomad-th.com/images/dtv-visa-thumbnail.png",
                 "datePublished": "2024-06-01",
                 "dateModified": new Date().toISOString(),
@@ -93,7 +93,7 @@ export default function DtvVisaPage() {
                     priority
                 />
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/nomad-info" className="inline-flex items-center text-sm mb-4 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../nomad-info" className="inline-flex items-center text-sm mb-4 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t('hero.back')}
                     </Link>
@@ -108,16 +108,14 @@ export default function DtvVisaPage() {
             <div className="container max-w-3xl mx-auto px-4 mt-12">
                 {/* Intro */}
                 <div className="prose prose-lg prose-slate max-w-none mb-10">
-                    <p className="leading-loose font-medium text-foreground/80 mb-6">
+                    <p className="leading-loose font-medium text-foreground/80 mb-6 whitespace-pre-line">
                         {t.rich('intro.p1', {
-                            strong: (chunks) => <strong>{chunks}</strong>,
-                            br: () => <br />
+                            strong: (chunks) => <strong>{chunks}</strong>
                         })}
                     </p>
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed whitespace-pre-line">
                         {t.rich('intro.p2', {
-                            strong: (chunks) => <strong>{chunks}</strong>,
-                            br: () => <br />
+                            strong: (chunks) => <strong>{chunks}</strong>
                         })}
                     </p>
 
@@ -138,10 +136,8 @@ export default function DtvVisaPage() {
                         {t('sec1.title')}
                     </h2>
 
-                    <p className="mb-6 text-muted-foreground leading-relaxed">
-                        {t.rich('sec1.desc', {
-                            br: () => <br />
-                        })}
+                    <p className="mb-6 text-muted-foreground leading-relaxed whitespace-pre-line">
+                        {t('sec1.desc')}
                     </p>
 
                     <div className="bg-white border rounded-2xl overflow-hidden shadow-sm mb-8">
@@ -156,23 +152,23 @@ export default function DtvVisaPage() {
                                         <th className="px-4 py-3">{t('sec1.table.headers.tourist')}</th>
                                     </tr>
                                 </thead>
-                                <tbody className="divide-y divide-slate-100">
+                                <tbody className="divide-y divide-slate-100 [&_td]:whitespace-pre-line">
                                     <tr>
                                         <td className="px-4 py-3 font-bold text-left">{t('sec1.table.rows.cost.label')}</td>
                                         <td className="px-4 py-3 bg-primary/5 font-bold text-primary border-x border-primary/20">
-                                            {t.rich('sec1.table.rows.cost.dtv', { br: () => <br /> })}
+                                            {t('sec1.table.rows.cost.dtv')}
                                         </td>
                                         <td className="px-4 py-3">
-                                            {t.rich('sec1.table.rows.cost.elite', { br: () => <br /> })}
+                                            {t('sec1.table.rows.cost.elite')}
                                         </td>
                                         <td className="px-4 py-3">
-                                            {t.rich('sec1.table.rows.cost.tourist', { br: () => <br /> })}
+                                            {t('sec1.table.rows.cost.tourist')}
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="px-4 py-3 font-bold text-left">{t('sec1.table.rows.validity.label')}</td>
                                         <td className="px-4 py-3 bg-primary/5 font-bold text-primary border-x border-primary/20">
-                                            {t.rich('sec1.table.rows.validity.dtv', { br: () => <br /> })}
+                                            {t('sec1.table.rows.validity.dtv')}
                                         </td>
                                         <td className="px-4 py-3">{t('sec1.table.rows.validity.elite')}</td>
                                         <td className="px-4 py-3">{t('sec1.table.rows.validity.tourist')}</td>
@@ -180,17 +176,17 @@ export default function DtvVisaPage() {
                                     <tr>
                                         <td className="px-4 py-3 font-bold text-left">{t('sec1.table.rows.stay.label')}</td>
                                         <td className="px-4 py-3 bg-primary/5 font-bold text-primary border-x border-primary/20">
-                                            {t.rich('sec1.table.rows.stay.dtv', { br: () => <br /> })}
+                                            {t('sec1.table.rows.stay.dtv')}
                                         </td>
                                         <td className="px-4 py-3">{t('sec1.table.rows.stay.elite')}</td>
                                         <td className="px-4 py-3">
-                                            {t.rich('sec1.table.rows.stay.tourist', { br: () => <br /> })}
+                                            {t('sec1.table.rows.stay.tourist')}
                                         </td>
                                     </tr>
                                     <tr>
                                         <td className="px-4 py-3 font-bold text-left">{t('sec1.table.rows.condition.label')}</td>
                                         <td className="px-4 py-3 bg-primary/5 font-bold text-primary border-x border-primary/20">
-                                            {t.rich('sec1.table.rows.condition.dtv', { br: () => <br /> })}
+                                            {t('sec1.table.rows.condition.dtv')}
                                         </td>
                                         <td className="px-4 py-3">{t('sec1.table.rows.condition.elite')}</td>
                                         <td className="px-4 py-3">{t('sec1.table.rows.condition.tourist')}</td>
@@ -483,7 +479,7 @@ export default function DtvVisaPage() {
                 <NewsletterCTA isInline />
 
                 <div className="mt-12 text-center">
-                    <Link href="/nomad-info" className="text-sm text-muted-foreground hover:text-primary transition-colors underline">
+                    <Link href="../nomad-info" className="text-sm text-muted-foreground hover:text-primary transition-colors underline">
                         {t('hero.back')}
                     </Link>
                 </div>

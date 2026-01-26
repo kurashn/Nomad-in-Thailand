@@ -1,0 +1,91 @@
+{
+    "MedicalGuide": {
+        "meta": {
+            "title": "Healthcare in Bangkok 2026: Hospitals, Pharmacies & Insurance Guide",
+            "desc": "Complete guide to medical care in Bangkok for Nomads. Top international hospitals (Samitivej, Bumrungrad), essential pharmacy medicines, and SafetyWing insurance tips."
+        },
+        "hero": {
+            "back": "Back to Life Info",
+            "title": "Healthcare in Thailand"
+        },
+        "intro": {
+            "p1": "Fever, food poisoning, or dengue...<br />Getting sick in a foreign country is the <strong>biggest anxiety</strong> for nomads.",
+            "p2": "But don't panic.<br />Bangkok is a <strong>world-class medical hub</strong>. The hospitals here often surpass Western standards in service and facility quality, with English spoken fluently everywhere.<br />Here is your essential guide to surviving health issues in Thailand."
+        },
+        "emergency": {
+            "title": "Emergency Contacts (Save This)",
+            "note": "For surest help, call the hospitals below directly.",
+            "ambulance": "Ambulance",
+            "police": "Tourist Police"
+        },
+        "hospitals": {
+            "title": "Top 3 International Hospitals",
+            "desc": "Bangkok's private hospitals are like 5-star hotels. With a passport and insurance, you'll get premium care with zero wait times.",
+            "samitivej": {
+                "name": "Samitivej Sukhumvit Hospital",
+                "tag": "Expat Favorite",
+                "desc": " Located in the heart of Thong Lo. Extremely popular with Japanese and Western expats. 24/7 English/Japanese interpreters available.",
+                "address": "Sukhumvit Soi 49 (Thong Lo)"
+            },
+            "bangkok": {
+                "name": "Bangkok Hospital",
+                "desc": "The flagship of Thailand's largest hospital group. Known for specialized centers (heart, cancer) and top-tier medical technology.",
+                "address": "Phetchaburi Road"
+            },
+            "bumrungrad": {
+                "name": "Bumrungrad International",
+                "desc": "One of the world's best medical tourism destinations. Luxurious atmosphere. Treats over 1.1 million patients annually from 190 countries.",
+                "address": "Sukhumvit Soi 3 (Nana)"
+            }
+        },
+        "pharmacy": {
+            "title": "Essential Pharmacy Medicines",
+            "desc": "For minor ailments, local pharmacies ('Pharmacy' with green cross) are excellent. Pharmacists are highly trained and speak English.\nSave this list:",
+            "table_header_symptom": "Symptom",
+            "table_header_drug": "Product Name",
+            "table_header_note": "Note",
+            "painkiller": {
+                "name": "Headache / Fever",
+                "drug": "Tylenol",
+                "note": "Paracetamol. Gentle on the stomach. Available at 7-11."
+            },
+            "stomach": {
+                "name": "Food Poisoning",
+                "drug": "Carbon",
+                "note": "Activated charcoal. Absorbs toxins. First choice for 'Thai Belly'."
+            },
+            "throat": {
+                "name": "Sore Throat",
+                "drug": "Strepsils / Kamillosan",
+                "note": "Lozenges or spray. Available at every convenience store."
+            },
+            "sickness": {
+                "name": "Motion Sickness",
+                "drug": "Dimenhydrinate",
+                "note": "Great for long bus rides or ferries."
+            },
+            "alert": "Antibiotics are available OTC, but always consult the pharmacist first."
+        },
+        "insurance": {
+            "title": "Travel Insurance is MANDATORY",
+            "desc": "Thai private healthcare is excellent but <strong>expensive</strong>.<br />A simple ER visit can cost hundreds of dollars; surgery can cost thousands.<br />If you are a nomad, you need one of these:",
+            "list1": "<strong>Credit Card Insurance</strong> (Check if it covers 90+ days)",
+            "list2": "<strong>SafetyWing</strong> (Nomad Insurance. ~$56 USD / 4 weeks)",
+            "note": "*With 'Cashless Direct Billing', you don't pay anything upfront at the hospital."
+        },
+        "faq": {
+            "title": "FAQ",
+            "q1": "Q. Do I need an appointment?",
+            "a1": "A. Walk-ins are fine for general practice, but booking an appointment is recommended for specialists to avoid waiting.",
+            "q2": "Q. Can I use credit cards?",
+            "a2": "A. Yes, all major private hospitals accept VISA, Mastercard, and Amex.",
+            "q3": "Q. How do I call an ambulance?",
+            "a3": "A. The public number is 1669, but for faster English service, call the hospital's emergency line directly."
+        },
+        "cta": {
+            "title": "Better Safe Than Sorry.<br />Enjoy Thailand with Peace of Mind.",
+            "desc": "SafetyWing covers you for ~$56 USD/4 weeks (Age 10-39).<br className=\"hidden md:inline\" />You can sign up even after you've left your home country.",
+            "button": "Check Price (Official Site)"
+        }
+    }
+}

@@ -11,7 +11,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: "TransportGuide.BangkokMap.meta" });
+    const t = await getTranslations({ locale, namespace: "BangkokMap.meta" });
 
     return {
         title: t("title"),
@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default function BangkokMapPage() {
-    const t = useTranslations("TransportGuide.BangkokMap");
+    const t = useTranslations("BangkokMap");
 
     return (
         <article className="min-h-screen bg-background pb-20 font-sans text-foreground/90">
@@ -30,7 +30,7 @@ export default function BangkokMapPage() {
                 <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/50 to-background" />
 
                 <div className="relative container max-w-4xl mx-auto px-4 pt-24 pb-12 text-center">
-                    <Link href="/nomad-info" className="inline-flex items-center text-sm mb-6 text-slate-300 hover:text-white transition-colors border border-white/20 px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm">
+                    <Link href="../nomad-info" className="inline-flex items-center text-sm mb-6 text-slate-300 hover:text-white transition-colors border border-white/20 px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t("hero.back")}
                     </Link>

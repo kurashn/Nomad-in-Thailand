@@ -1,0 +1,162 @@
+{
+    "DtvVisa": {
+        "meta": {
+            "title": "Thailand DTV Visa Guide 2026: Requirements, Cost & Application (Approved)",
+            "desc": "Everything you need to know about Thailand's DTV (Destination Thailand Visa) for 2026. Step-by-step requirements, costs, timeline, and approved application examples from real digital nomads."
+        },
+        "hero": {
+            "back": "Back to Articles",
+            "title": "[2026 Guide] Thailand DTV Visa: Complete Guide\n<subtag>Requirements, Costs & Real Application Documents</subtag>"
+        },
+        "intro": {
+            "p1": "\"I want to live in Thailand long-term, but visas are complicated...\"\nThe <strong>DTV (Destination Thailand Visa)</strong> is the game-changer digital nomads have been waiting for.",
+            "p2": "Launched in 2024, the DTV is truly <strong>\"The Digital Nomad Visa\"</strong>.\nValid for 5 years with stays up to 180 days per entry, it officially permits remote work for international clients.\n\nIn this guide, we break down everything you need to know: requirements, documents, costs, and approval tips based on real successful applications.",
+            "videoNote": "Watch the video breakdown (includes actual approved documents)"
+        },
+        "sec1": {
+            "title": "1. What is the DTV Visa?",
+            "desc": "Official Name: \"Destination Thailand Visa\".\nIt offers unbeatable value and freedom, setting it apart from Tourist or Elite visas.",
+            "table": {
+                "title": "Visa Comparison",
+                "headers": {
+                    "item": "Feature",
+                    "dtv": "DTV Visa",
+                    "elite": "Elite Visa",
+                    "tourist": "Tourist Visa"
+                },
+                "rows": {
+                    "cost": {
+                        "label": "Cost",
+                        "dtv": "10,000 THB\n(~290 USD)",
+                        "elite": "900k THB+\n(~26k USD+)",
+                        "tourist": "Free\n(Extension: 1,900 THB)"
+                    },
+                    "validity": {
+                        "label": "Validity",
+                        "dtv": "5 Years",
+                        "elite": "5-20 Years",
+                        "tourist": "60 Days"
+                    },
+                    "stay": {
+                        "label": "Stay / Entry",
+                        "dtv": "180 Days\n(+180 days extendable)",
+                        "elite": "1 Year",
+                        "tourist": "60 Days\n(+30 days extendable)"
+                    },
+                    "condition": {
+                        "label": "Requirement",
+                        "dtv": "500k THB Savings\nProof of Freelance/Remote Work",
+                        "elite": "Membership Fee",
+                        "tourist": "None"
+                    }
+                }
+            },
+            "points": {
+                "title": "Why DTV is a Game-Changer",
+                "p1": "<strong>Unbeatable Value:</strong> At just 1/90th the cost of the Elite Visa, it's incredibly affordable.",
+                "p2": "<strong>Family-Friendly:</strong> Spouses and children qualify for DTV (Dependent) status too.",
+                "p3": "<strong>Work Legally:</strong> Digital nomad remote work, previously a gray area, is now officially recognized."
+            }
+        },
+        "sec2": {
+            "title": "2. Who Can Apply?",
+            "desc": "To qualify for the DTV, you must fall into one of three categories.\nMost digital nomads apply under <strong>(1) Workcation</strong>.",
+            "cats": {
+                "c1": {
+                    "title": "1. Workcation",
+                    "desc": "Remote workers, freelancers, etc.",
+                    "badge": "Recommended"
+                },
+                "c2": {
+                    "title": "2. Soft Power",
+                    "desc": "Muay Thai, Cooking, Music events, etc.",
+                    "badge": ""
+                },
+                "c3": {
+                    "title": "3. Medical",
+                    "desc": "Long-term medical treatment.",
+                    "badge": ""
+                }
+            },
+            "checklist": {
+                "title": "Requirements (Workcation)",
+                "item1": {
+                    "title": "Passport Validity",
+                    "desc": "Must have at least 6 months remaining."
+                },
+                "item2": {
+                    "title": "Financial Proof (500k THB+)",
+                    "desc": "Bank statement in English showing ~15k USD.\n<red>* \"Current balance\" is sufficient; no need to maintain it for months.</red>"
+                },
+                "item3": {
+                    "title": "Employment Contract / Portfolio",
+                    "desc": "The most critical part.\n<strong>Employees:</strong> Contract or letter allowing remote work.\n<strong>Freelancers:</strong> Service contracts or a professional portfolio."
+                }
+            }
+        },
+        "sec3": {
+            "title": "3. [Case Study] Vietnam Application (June 2025)",
+            "report": {
+                "label": "Application Data",
+                "badge": "Approved",
+                "place": "Location: Da Nang, Vietnam",
+                "submit": "Embassy: Royal Thai Consulate-General, Ho Chi Minh City",
+                "date": "Applied: May 28, 2025",
+                "approve": "Approved: June 6, 2025 (~9 days)",
+                "note": "*Applied online via the Ho Chi Minh consulate while staying in Da Nang."
+            },
+            "docs": {
+                "title": "Submitted Documents (English)",
+                "item1": {
+                    "title": "Basic Documents (JPEG)",
+                    "desc": "Passport Bio Page, Photo (4.5x3.5cm)"
+                },
+                "item2": {
+                    "title": "Career Proof (PDF)",
+                    "desc": "Resume (1 page), Portfolio (1 page), Service Contract"
+                },
+                "item3": {
+                    "title": "Financial Proof (PDF)",
+                    "desc": "Bank Statement (500k THB+ eqv), 6-month transaction history"
+                },
+                "item4": {
+                    "title": "Location Proof (PDF)",
+                    "desc": "Vietnam entry stamp, Hotel booking confirmation"
+                }
+            }
+        },
+        "sec4": {
+            "title": "4. Application Steps",
+            "desc": "If applying outside Thailand, the process is fully online (E-Visa). No embassy visit required.",
+            "step1": {
+                "title": "STEP 1: Prepare Documents",
+                "desc": "Convert all files to PDF or JPG. Use English filenames (e.g., `Bank_Statement.pdf`)."
+            },
+            "step2": {
+                "title": "STEP 2: Create Account",
+                "desc": "Register at the <link>Official E-Visa Website</link>."
+            },
+            "step3": {
+                "title": "STEP 3: Fill & Upload",
+                "desc": "Complete the forms.\nSelect \"Destination Thailand Visa\" as the visa type."
+            },
+            "step4": {
+                "title": "STEP 4: Payment",
+                "desc": "Pay the 10,000 THB fee via credit card.\nProcessing takes <strong>3 days to 2-3 weeks</strong>. Apply well in advance."
+            },
+            "step5": {
+                "title": "STEP 5: Approval",
+                "desc": "You will receive the visa as a PDF via email. Print it out and keep it with your passport."
+            }
+        },
+        "faq": {
+            "title": "FAQ",
+            "q1": "Q. Can I apply from within Thailand?",
+            "a1": "A. No. You must be outside Thailand to apply. If you're currently in Thailand on a visa exemption, you'll need to travel to a neighboring country (e.g., Laos, Malaysia, Vietnam) to submit your application.",
+            "q2": "Q. What are the tax implications?",
+            "a2": "A. Staying over 180 days in a calendar year makes you a Thai tax resident. Under the new 2024 rules, foreign income brought into Thailand is taxable. Consult a tax professional for specifics.",
+            "q3": "Q. What happens after 180 days?",
+            "a3": "A. You have two options: extend for another 180 days at a local Immigration Office (10,000 THB fee), or leave Thailand and re-enter. Re-entering grants a fresh 180-day stay (repeatable for 5 years)."
+        }
+    }
+}

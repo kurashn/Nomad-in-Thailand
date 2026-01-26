@@ -33,7 +33,7 @@ export default function TaxMoneyGuidePage() {
                     />
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../nomad-info" className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t('hero.back')}
                     </Link>
@@ -48,13 +48,14 @@ export default function TaxMoneyGuidePage() {
             <div className="container max-w-3xl mx-auto px-4 mt-12">
 
                 {/* Intro */}
-                <div className="prose prose-lg prose-slate max-w-none mb-16">
-                    <p className="lead text-xl leading-relaxed font-medium text-foreground/80 whitespace-pre-line">
+                {/* Intro */}
+                <div className="mb-16 max-w-3xl mx-auto">
+                    <p className="leading-relaxed text-lg text-foreground/80 mb-6 font-medium whitespace-pre-line">
                         {t('intro.p1')}
                     </p>
-                    <p className="text-base text-muted-foreground whitespace-pre-line">
-                        {t('intro.p2')}
-                    </p>
+                    <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
+                        <p className="whitespace-pre-line">{t('intro.p2')}</p>
+                    </div>
                 </div>
 
                 {/* Section 1: Cost of Living */}
@@ -109,6 +110,22 @@ export default function TaxMoneyGuidePage() {
                                             <td className="px-6 py-4">{t('cost.breakdown.transport.economy')}</td>
                                             <td className="px-6 py-4">{t('cost.breakdown.transport.standard')}</td>
                                             <td className="px-6 py-4">{t('cost.breakdown.transport.luxury')}</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="px-6 py-4 font-bold flex items-center gap-2">
+                                                <AlertTriangle className="w-4 h-4 text-green-600" /> {t('cost.breakdown.insurance.label')}
+                                            </td>
+                                            <td className="px-6 py-4">{t('cost.breakdown.insurance.economy')}<br /><span className="text-xs text-muted-foreground">{t('cost.breakdown.insurance.economyDesc')}</span></td>
+                                            <td className="px-6 py-4">{t('cost.breakdown.insurance.standard')}<br /><span className="text-xs text-muted-foreground">{t('cost.breakdown.insurance.standardDesc')}</span></td>
+                                            <td className="px-6 py-4">{t('cost.breakdown.insurance.luxury')}<br /><span className="text-xs text-muted-foreground">{t('cost.breakdown.insurance.luxuryDesc')}</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td className="px-6 py-4 font-bold flex items-center gap-2">
+                                                <Utensils className="w-4 h-4 text-pink-500" /> {t('cost.breakdown.entertainment.label')}
+                                            </td>
+                                            <td className="px-6 py-4">{t('cost.breakdown.entertainment.economy')}<br /><span className="text-xs text-muted-foreground">{t('cost.breakdown.entertainment.economyDesc')}</span></td>
+                                            <td className="px-6 py-4">{t('cost.breakdown.entertainment.standard')}<br /><span className="text-xs text-muted-foreground">{t('cost.breakdown.entertainment.standardDesc')}</span></td>
+                                            <td className="px-6 py-4">{t('cost.breakdown.entertainment.luxury')}<br /><span className="text-xs text-muted-foreground">{t('cost.breakdown.entertainment.luxuryDesc')}</span></td>
                                         </tr>
                                         <tr className="bg-primary/5 font-bold">
                                             <td className="px-6 py-4 text-primary">{t('cost.breakdown.totalThb.label')}</td>
@@ -171,7 +188,7 @@ export default function TaxMoneyGuidePage() {
                                 <h3 className="text-xl font-bold mb-3 text-red-600">{t('tax.question')}</h3>
                                 <p className="leading-relaxed text-foreground/80 mb-4">
                                     {t.rich('tax.answer', {
-                                        span: (chunks) => <span className="font-bold underline decoration-red-400 decoration-2">{chunks}</span>
+                                        highlight: (chunks) => <span className="font-bold underline decoration-red-400 decoration-2">{chunks}</span>
                                     })}
                                 </p>
                                 <div className="space-y-2 text-sm text-foreground/70">
@@ -326,7 +343,7 @@ export default function TaxMoneyGuidePage() {
                 <NewsletterCTA isInline />
 
                 <div className="mt-8 text-center">
-                    <Link href="/nomad-info" className="text-sm text-muted-foreground hover:text-primary transition-colors underline">
+                    <Link href="../nomad-info" className="text-sm text-muted-foreground hover:text-primary transition-colors underline">
                         {t('back')}
                     </Link>
                 </div>

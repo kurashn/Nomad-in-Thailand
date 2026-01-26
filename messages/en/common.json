@@ -1,0 +1,87 @@
+{
+    "Navbar": {
+        "top": "Home",
+        "nomadGuide": "Nomad Guide",
+        "sponsor": "Sponsorship",
+        "contact": "Contact"
+    },
+    "Hero": {
+        "title": "Nomad in Thailand",
+        "subtitle": "All you need is a laptop to connect you to the world.\nChoose how you work, choose where you live.",
+        "description": "Your ideal lifestyle starts here.",
+        "cta": "Start Your Nomad Journey"
+    },
+    "Footer": {
+        "logoAlt": "Nomad in Thailand Logo",
+        "contents": {
+            "title": "Contents",
+            "guide": "Nomad Guide"
+        },
+        "links": {
+            "title": "Links",
+            "youtube": "YouTube: Nomad in Thailand",
+            "contact": "Contact",
+            "newsletter": "Newsletter (Coming Soon)"
+        },
+        "copyright": "© 2026 Nomad in Thailand. All rights reserved."
+    },
+    "NomadInfo": {
+        "title": "Nomad Info Guide",
+        "description": "From visa and coworking to transport and hospitals. A complete roadmap for a successful nomad life in Thailand.",
+        "heading": "Thailand Nomad Guide",
+        "intro": "From 'Work & Visa' like taxes and permits to 'Life & Places' like transport and hospitals.\nWe've gathered all the truly useful information selected by local nomads right here."
+    },
+    "Contact": {
+        "title": "Contact | Nomad in Thailand",
+        "header": {
+            "title": "Contact Us",
+            "subtitle": "We accept requests for interviews, questions about the community,\nand other inquiries here."
+        },
+        "general": {
+            "title": "General Inquiries",
+            "desc": "For feedback on the Podcast or questions about joining the community.",
+            "items": {
+                "0": "Podcast Feedback / Requests",
+                "1": "Consultation before joining",
+                "2": "Other casual questions"
+            },
+            "cta": "Go to Contact Form"
+        },
+        "business": {
+            "title": "Business / Media / Sponsor",
+            "desc": "Partnerships to expand our activities.",
+            "items": {
+                "0": "Application for Podcast Sponsorship",
+                "1": "Interviews on Thailand/Nomad topics",
+                "2": "Speaking/Co-hosting requests",
+                "3": "Promotion planning consultation"
+            },
+            "cta": "Go to Contact Form"
+        }
+    },
+    "ArticleFilter": {
+        "searchPlaceholder": "Search articles...",
+        "read": "Read",
+        "noResults": "No articles found.",
+        "clear": "Clear filters",
+        "categories": {
+            "all": "All",
+            "workVisa": "Work & Visa",
+            "living": "Living & Places",
+            "moneyIt": "Money & IT"
+        }
+    },
+    "Newsletter": {
+        "inline": {
+            "title": "Get the Latest Bangkok Nomad Info",
+            "desc": "Get exclusive guidebooks and <bold>hidden spots</bold> delivered to your inbox. (Coming Soon)",
+            "cta": "Subscribe (Coming Soon)"
+        },
+        "section": {
+            "title": "Free Gift:\nBangkok Nomad Complete Guide",
+            "desc": "Get the <bold>Bangkok Nomad Cheat Sheet (PDF)</bold> for free.",
+            "cta": "Get the Guide",
+            "note": "*Currently preparing. Please stay tuned."
+        }
+    }
+}

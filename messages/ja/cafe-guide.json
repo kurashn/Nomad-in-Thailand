@@ -1,0 +1,123 @@
+{
+    "CafeGuide": {
+        "meta": {
+            "title": "【2026年最新】バンコクの作業カフェ7選！電源・Wi-Fi完備・無料スポットも",
+            "desc": "On Nut〜Siam周辺でおすすめの「作業が捗るカフェ」を厳選。Samyan CO-OPなどの無料スポットから、眺めの良いPaper Plane Projectまで、Wi-Fi速度や電源の有無を徹底比較。"
+        },
+        "hero": {
+            "back": "記事一覧に戻る",
+            "freeSpot": "無料スポットあり",
+            "latest": "2026年最新",
+            "title": "【2026年最新】バンコクの作業カフェ7選！",
+            "subtitle": "電源・Wi-Fi完備、コーヒー1杯で長居できる楽園"
+        },
+        "intro": {
+            "p1": "「今日はコワーキングスペースに行くほどではないけど、家では集中できない...」<br />そんな日に最適なのが、バンコクの<strong>作業カフェ（Nomad Cafes）</strong>です。",
+            "p2": "バンコクは世界でも有数の「カフェ天国」。<br />日本のカフェのように「PC作業禁止」の張り紙に怯える必要はありません。多くのカフェが電源と高速Wi-Fiを完備し、ノマドワーカーを歓迎しています。",
+            "p3": "今回は、On Nut〜SiamのBTS沿線を中心に、<strong>「実際にPCを開いて作業しても怒られない（むしろ快適な）」</strong>7つのスポットを厳選しました。<br />登録不要で使える「無料のコワーキングスペース」も紹介します！"
+        },
+        "criteria": {
+            "title": "選定基準",
+            "wifi": "<strong>Wi-Fi速度:</strong> 下り30Mbps以上で安定",
+            "power": "<strong>電源:</strong> 各席または壁際に豊富にある",
+            "comfort": "<strong>居心地:</strong> 2時間以上滞在しても気まずくない",
+            "access": "<strong>アクセス:</strong> BTS駅から徒歩圏内"
+        },
+        "spots": {
+            "samyan": {
+                "name": "Samyan CO-OP (サムヤーン コープ)",
+                "tag": "完全無料",
+                "desc": "<strong>「え、ここ無料でいいの？」</strong>と誰もが驚く公共コワーキングスペース。<br />商業施設Samyan Mitrtownの中にあり、専用アプリ（Mitr App）で無料会員登録するだけで利用できます。<br />電源・Wi-Fi完備はもちろん、集中ゾーンや会議室（要予約）まであります。学生が多いですが、ノマドにとっても最強の節約スポットです。",
+                "access": "MRT Sam Yan 直結",
+                "hours": "24時間営業",
+                "wifi": "高速 (要ログイン)",
+                "food": "飲食持込不可(カフェ併設)",
+                "note": "<strong>注意:</strong> パスポートを持参して、インフォメーションカウンターで登録が必要です。かなり混雑するので朝イチか深夜がおすすめ。"
+            },
+            "paperplane": {
+                "name": "Paper Plane Project",
+                "tag": "絶景カフェ",
+                "desc": "T-One Buildingの40階にある、<strong>コワーキング×カフェバー</strong>。<br />昼間はドロップイン無料のカフェとして開放されており、コーヒー1杯で利用できます。<br />天井が高く、全面ガラス張りの窓からはバンコクの摩天楼が一望できます。クリエイティブな仕事をするのに最高の環境です。",
+                "access": "BTS Thong Lo 徒歩3分",
+                "hours": "9:00 - 17:00 (カフェ利用)",
+                "power": "全席に電源あり",
+                "cost": "120 THB〜"
+            },
+            "openhouse": {
+                "name": "Open House (Central Embassy)",
+                "tag": "ラグジュアリー",
+                "desc": "<strong>「世界一美しい書店」</strong>とも称される、Central Embassy上階の巨大ライブラリー空間。<br />Co-Livingエリア（有料）もありますが、カフェエリア（無料）でも十分快適に作業できます。<br />高級デパート内なので客層が良く、静かで洗練されています。",
+                "access": "BTS Phloen Chit 直結",
+                "hours": "10:00 - 22:00"
+            },
+            "others": {
+                "title": "おすすめの穴場カフェ 4選",
+                "4": {
+                    "title": "4. True Digital Park (Punnawithi)",
+                    "desc": "1F・2Fのフリースペースは誰でも利用可能。電源も多く、まさにノマドのための施設。"
+                },
+                "5": {
+                    "title": "5. Tilleke & Gibbins 1F (Chit Lom)",
+                    "desc": "法律事務所ビルの1階にある穴場カフェ（Au Bon Painなど）。ビジネスマンが多く静か。"
+                },
+                "6": {
+                    "title": "6. CLASS Cafe (Pathum Wan)",
+                    "desc": "Samyanエリアにある24時間営業カフェ。学生向けでコスパが良い。"
+                },
+                "7": {
+                    "title": "7. Let's Say Cafe (Victory Monument)",
+                    "desc": "24時間営業。3階が無料のボードゲーム/作業スペースになっており非常に自由な雰囲気。"
+                }
+            }
+        },
+        "comparison": {
+            "title": "スペック比較表",
+            "headers": {
+                "name": "店名",
+                "wifi": "Wi-Fi",
+                "power": "電源",
+                "cost": "コスパ",
+                "quiet": "静かさ"
+            },
+            "samyan": {
+                "name": "Samyan CO-OP",
+                "cost": "神",
+                "quiet": "△ (学生多)"
+            },
+            "paperplane": {
+                "name": "Paper Plane",
+                "cost": "◯",
+                "quiet": "◯"
+            },
+            "openhouse": {
+                "name": "Open House",
+                "power": "△ (席による)",
+                "cost": "△",
+                "quiet": "◎ (高級)"
+            },
+            "true": {
+                "name": "True Digital",
+                "cost": "◎ (無料)",
+                "quiet": "◯"
+            }
+        },
+        "faq": {
+            "title": "よくある質問",
+            "longstay": {
+                "q": "Q. カフェで長居しても大丈夫ですか？",
+                "a": "A. タイの作業カフェ文化は日本より寛容です。一般的に、ドリンク1杯で2〜3時間程度の滞在は問題ありません。それ以上居る場合は、食事や2杯目を注文するのがマナーです。"
+            },
+            "valuables": {
+                "q": "Q. 貴重品の管理はどうしていますか？",
+                "a": "A. トイレなどで席を立つ際は、PCや財布は必ず持って行きましょう。タイは治安が良いですが、カフェでの置き引き事例はゼロではありません。"
+            },
+            "ac": {
+                "q": "Q. 冷房は寒いですか？",
+                "a": "A. <strong>はい、極寒です。</strong> タイのカフェやモールは冷蔵庫並みに冷やされています。長袖のパーカーや羽織るものは必須アイテムです。"
+            }
+        },
+        "nav": {
+            "back": "記事一覧に戻る"
+        }
+    }
+}

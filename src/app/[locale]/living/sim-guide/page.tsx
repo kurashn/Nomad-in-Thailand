@@ -28,7 +28,7 @@ export default function SimGuidePage() {
                     priority
                 />
                 <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
-                    <Link href="/living" className="inline-flex items-center text-sm mb-4 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
+                    <Link href="../living" className="inline-flex items-center text-sm mb-4 text-white/90 hover:text-primary transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20">
                         <ArrowLeft className="w-4 h-4 mr-1" />
                         {t('hero.back')}
                     </Link>
@@ -49,7 +49,7 @@ export default function SimGuidePage() {
                     </p>
 
                     <div className="mt-8">
-                        <Link href="/nomad-info/bangkok-roadmap" className="inline-flex items-center text-sm font-medium text-primary hover:underline gap-1">
+                        <Link href="../nomad-info/bangkok-roadmap" className="inline-flex items-center text-sm font-medium text-primary hover:underline gap-1">
                             <span className="bg-primary/10 px-2 py-1 rounded">{t('intro.related')}</span>
                             {t('intro.checklist')} <ArrowRight className="w-3 h-3" />
                         </Link>

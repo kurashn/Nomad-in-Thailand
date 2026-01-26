@@ -1,0 +1,81 @@
+{
+    "Home": {
+        "essentials": {
+            "title": "海外ノマドを支える\n「4種の神器」",
+            "subtitle": "便利で、安くて、安心。\nこれさえあれば、どこでも生きていける。",
+            "wise": {
+                "title": "Wise (ワイズ)",
+                "desc": "海外送金・現地決済の必須ツール。\n<bold>手数料が圧倒的に安い</bold>。",
+                "cta": "解説記事を読む"
+            },
+            "nordvpn": {
+                "title": "NordVPN",
+                "desc": "フリーWi-Fiのセキュリティ対策。\n<bold>日本の動画も見れる</bold>。",
+                "cta": "解説記事を読む"
+            },
+            "airalo": {
+                "title": "Airalo (エアアロ)",
+                "desc": "世界定番のeSIMアプリ。\n<bold>アプリで即時開通</bold>。",
+                "cta": "解説記事を読む"
+            },
+            "safetywing": {
+                "title": "SafetyWing",
+                "desc": "ノマド専用の医療保険。\n<bold>月額サブスク型で安心</bold>。",
+                "cta": "解説記事を読む"
+            }
+        },
+        "events": {
+            "title": "2026年 最新のお知らせ",
+            "sponsor": {
+                "date": "2026.01.10",
+                "tag": "募集",
+                "title": "ノマタイのパートナー・スポンサー募集"
+            },
+            "launch": {
+                "date": "2026.01.01",
+                "tag": "お知らせ",
+                "title": "「Nomad in Thailand -ノマタイ-」公式サイトを公開しました"
+            }
+        },
+        "camp": {
+            "title": "ノマドイベント情報",
+            "comingSoon": "Coming Soon",
+            "nextDate": "2026.06",
+            "nextLabel": "Next ノマド合宿",
+            "location": "場所・日程調整中",
+            "details": "詳細が決まり次第お知らせします",
+            "heading": "2泊3日のノマド合宿\nルールは「自由」",
+            "desc": "運営が用意するのは、非日常を味わえる「豪華ヴィラ」だけ。\nスケジュールも講義もありません。\nプールサイドで優雅に仕事をするもよし、夜通し語り合うもよし。\nノマドらしく、それぞれのスタイルで楽しむ合宿です。",
+            "history": "これまでの開催実績",
+            "historyItems": {
+                "0": {
+                    "place": "Vol.5 プーケット",
+                    "date": "2024.10"
+                },
+                "1": {
+                    "place": "Vol.4 バリ島 ウブド",
+                    "date": "2024.04"
+                },
+                "2": {
+                    "place": "Vol.3 パタヤ",
+                    "date": "2023.12"
+                },
+                "3": {
+                    "place": "Vol.2 ベトナム ダナン",
+                    "date": "2023.10"
+                },
+                "4": {
+                    "place": "Vol.1 チェンマイ",
+                    "date": "2023.05"
+                }
+            }
+        },
+        "youtube": {
+            "tag": "Main Contents",
+            "title": "YouTubeでリアルな情報を発信中",
+            "channel": "「公式YouTube」",
+            "desc": "文章だけでは伝わらない、現地の空気感やノマドの生の声をお届けします。",
+            "cta": "YouTubeを見る"
+        }
+    }
+}

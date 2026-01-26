@@ -1,0 +1,118 @@
+{
+    "AreaGuide": {
+        "meta": {
+            "title": "Bangkok Neighborhood Guide 2026: Phrom Phong, On Nut, Ari | Nomad in Thailand",
+            "desc": "An in-depth comparison of Bangkok's top 3 neighborhoods for expats and nomads. Find the perfect area for your budget and lifestyle, with rent prices and local insights."
+        },
+        "hero": {
+            "back": "Back to Lifestyle",
+            "title": "Bangkok Living Guide 2026",
+            "subtitle": "Phrom Phong • On Nut • Ari"
+        },
+        "intro": {
+            "p1": "Your choice of neighborhood will completely define your Bangkok experience.",
+            "p2": "Will you spend hours stuck in traffic, or start your day with a coffee in a leafy garden?<br />Bangkok has developed around the BTS Skytrain, but each station has a distinct personality.",
+            "p3": "In this guide, we deep-dive into the **top 3 areas** for digital nomads and expats, comparing budgets, vibes, and suitability."
+        },
+        "summary": {
+            "title": "The Big 3 at a Glance",
+            "phromPhong": {
+                "name": "Phrom Phong",
+                "budget": "Budget: 30,000 THB+",
+                "desc": "Just like living in Tokyo. High-end, expat-heavy."
+            },
+            "onNut": {
+                "name": "On Nut",
+                "budget": "Budget: 15,000 THB+",
+                "desc": "Best value. Nomad-favorite with great amenities."
+            },
+            "ari": {
+                "name": "Ari",
+                "budget": "Budget: 20,000 THB+",
+                "desc": "Hipster cafe haven. Quiet and leafy."
+            }
+        },
+        "transport": {
+            "text": "For last-mile transport, Grab and MuvMi are your best friends."
+        },
+        "areas": {
+            "common": {
+                "target": "Best For",
+                "rent": "Rent"
+            },
+            "phromPhong": {
+                "tag": "AREA 01",
+                "name": "Phrom Phong / Thong Lo",
+                "enName": "",
+                "targetDesc": "High Budget / Want Japanese Convenience",
+                "rentDesc": "30,000 THB+ (~$850+)",
+                "title": "The \"Beverly Hills\" of Bangkok",
+                "desc": "This is the epicenter of the Japanese expat community. With Japanese-speaking hospitals, supermarkets (Fuji Super), and restaurants everywhere, **you can live exactly as you do in Japan**.<br />It's the only area where you could technically survive without English or Thai, but be warned: rent and living costs are the highest in the city.",
+                "feature1": "Luxury condos and high-rise apartments",
+                "feature2": "Connected to luxury malls like EmQuartier"
+            },
+            "onNut": {
+                "tag": "AREA 02",
+                "name": "On Nut / Phra Khanong",
+                "enName": "",
+                "targetDesc": "Digital Nomads / Value Seekers",
+                "rentDesc": "15,000 THB+ (~$420+)",
+                "title": "The Nomad's Value Paradise",
+                "desc": "With easy access to the city center (15-20 mins by BTS), On Nut offers a comfortable life at a fraction of the cost.<br />Major supermarkets (Lotus’s, Big C) are right at the station making life incredibly convenient. It's teeming with coworking spaces and diverse digital nomads from around the globe.",
+                "feature1": "Affordable, modern, and stylish condos",
+                "feature2": "Local markets nearby keep food costs low"
+            },
+            "ari": {
+                "tag": "AREA 03",
+                "name": "Ari",
+                "enName": "",
+                "targetDesc": "Creatives / Lovers of Quiet",
+                "rentDesc": "20,000 THB+ (~$560+)",
+                "title": "The Green Cafe & Culture Hub",
+                "desc": "Often called the \"Brooklyn of Bangkok,\" Ari is a maze of leafy sois hiding chic cafes and restaurants.<br />With fewer high-rises and more trees, it has a laid-back village vibe. It's perfect if you want to escape the chaos of the red-light districts and focus on your craft.",
+                "feature1": "Countless unique cafes perfect for working",
+                "feature2": "Sophisticated vibe with many western expats"
+            }
+        },
+        "comparison": {
+            "title": "Comparison Summary",
+            "headers": {
+                "area": "Area",
+                "rent": "Rent",
+                "food": "Japanese Food",
+                "quiet": "Quietness"
+            },
+            "rows": {
+                "phromPhong": {
+                    "name": "Phrom Phong",
+                    "rent": "High",
+                    "food": "◎",
+                    "quiet": "△"
+                },
+                "onNut": {
+                    "name": "On Nut",
+                    "rent": "Low",
+                    "food": "○",
+                    "quiet": "○"
+                },
+                "ari": {
+                    "name": "Ari",
+                    "rent": "Mid",
+                    "food": "△",
+                    "quiet": "◎"
+                }
+            }
+        },
+        "faq": {
+            "title": "FAQ",
+            "area": {
+                "q": "Q. Which area is best for a first-time nomad?",
+                "a": "For first-timers, **On Nut** is unbeatable. It balances low cost with high convenience, has supermarkets right at the station, and a strong foreigner-friendly community."
+            },
+            "rent": {
+                "q": "Q. Is rent in Phrom Phong really that high?",
+                "a": "Yes, it's one of the most expensive zones. Expect to pay at least 30,000 THB ($850) for a decent studio. If you want to save money but stay close, look at Phra Khanong or On Nut just a few stops away."
+            }
+        }
+    }
+}

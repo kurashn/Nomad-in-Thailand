@@ -1,0 +1,142 @@
+{
+    "CheatSheet": {
+        "meta": {
+            "title": "Bangkok Nomad Cheat Sheet 2026 PRO (Print Optimized)",
+            "desc": "The ultimate cheat sheet for Bangkok nomads (Complete Edition)."
+        },
+        "nav": {
+            "back": "Back to Map",
+            "printHint": "Rec: A4 Portrait / Color"
+        },
+        "header": {
+            "edition": "2026 EDITION",
+            "official": "OFFICIAL GUIDE",
+            "title1": "BANGKOK NOMAD",
+            "title2": "CHEAT SHEET"
+        },
+        "visa": {
+            "title": "Visa Strategy (2026)",
+            "dtv": {
+                "name": "DTV Visa (5 Years)",
+                "badge": "Recommended",
+                "desc": "Requires 500k THB (~$15k) proof. 180 days per stay. Freelancers/Remote workers should aim for this."
+            },
+            "tourist": {
+                "name": "Tourist Visa (60+30 Days)",
+                "desc": "60 days on arrival. Extend +30 days at immigration (1,900 THB) for total 90 days."
+            }
+        },
+        "apps": {
+            "title": "3 Essential Apps",
+            "transport": {
+                "label": "Move",
+                "name": "Grab / Bolt",
+                "sub": "Ride Hailing",
+                "desc": "Grab is reliable. Bolt is cheap. Bike (Win) is fastest."
+            },
+            "short": {
+                "label": "Short",
+                "name": "MuvMi",
+                "sub": "EV Tuk-Tuk",
+                "desc": "For short trips in Phrom Phong/Ari areas. Very cheap."
+            },
+            "pay": {
+                "label": "Pay",
+                "name": "Wise",
+                "sub": "Transfer/Pay",
+                "desc": "Scan to pay is the standard. Don't rely on cash."
+            }
+        },
+        "medical": {
+            "title": "Medical & Safety",
+            "samitivej": {
+                "name": "Samitivej Hospital",
+                "badge": "Japanese/English Support"
+            },
+            "blez": {
+                "name": "Blez Pharmacy",
+                "badge": "Asoke / English Speaking"
+            },
+            "ambulance": "🚑 Ambulance: 1669",
+            "police": "👮‍♀️ Tourist Police: 1155"
+        },
+        "thai": {
+            "title": "Survival Thai",
+            "items": {
+                "0": {
+                    "th": "Mai Phet",
+                    "ja": "No spicy please"
+                },
+                "1": {
+                    "th": "Mai Sai Pak Chee",
+                    "ja": "No coriander"
+                },
+                "2": {
+                    "th": "Ao An Nee",
+                    "ja": "This one please"
+                },
+                "3": {
+                    "th": "Check Bin",
+                    "ja": "Bill please"
+                }
+            }
+        },
+        "budget": {
+            "title": "Monthly Budget (Rent+Living)",
+            "economy": {
+                "name": "🔰 Saver: ~$700",
+                "desc": "On Nut (10k THB) + Street Food"
+            },
+            "standard": {
+                "name": "💻 Standard: ~$1,400",
+                "desc": "Rama 9/Ari (20k THB) + Cafes"
+            },
+            "luxury": {
+                "name": "👑 Luxury: ~$2,000+",
+                "desc": "Phrom Phong (30k THB) + JP Food + Gym"
+            }
+        },
+        "workflow": {
+            "title": "Ideal Workflow",
+            "morning": {
+                "time": "09:00 Morning Cafe",
+                "desc": "Rolling Roasters / Factory Coffee are best at this time."
+            },
+            "lunch": {
+                "time": "12:00 Food Court Lunch",
+                "desc": "Terminal 21 (Pier 21) is clean & cheap. 50 THB."
+            },
+            "afternoon": {
+                "time": "13:30 Deep Work (Coworking)",
+                "items": {
+                    "0": "<strong>Samyan CO-OP</strong> (Free/Booking)",
+                    "1": "<strong>True Digital Park</strong> (Tech Hub)",
+                    "2": "<strong>Tilleke & Gibbins</strong> (Hidden Gem)"
+                }
+            }
+        },
+        "season": {
+            "title": "Seasons & Hidden Gems",
+            "season": {
+                "label": "Season",
+                "items": {
+                    "0": "<span class=\"font-bold text-orange-500\">Dry</span>: Nov-Feb (Best)",
+                    "1": "<span class=\"font-bold text-red-500\">Hot</span>: Mar-May (Very Hot)",
+                    "2": "<span class=\"font-bold text-blue-500\">Rainy</span>: Jun-Oct (Squall)"
+                }
+            },
+            "spot": {
+                "label": "Hidden",
+                "items": {
+                    "0": "Benjakitti Forest Park",
+                    "1": "Bang Krachao (Green Lung)",
+                    "2": "TCDC (Design Center)"
+                }
+            }
+        },
+        "qr": {
+            "desc": "Latest info & events on Web",
+            "scan": "nomad-th.com<br />Scan for more"
+        }
+    }
+}

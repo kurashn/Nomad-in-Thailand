@@ -1,0 +1,142 @@
+{
+    "CheatSheet": {
+        "meta": {
+            "title": "バンコクノマド カンニングペーパー 2026 PRO (印刷用)",
+            "desc": "バンコクノマドのための究極のカンニングペーパー（完全版）。"
+        },
+        "nav": {
+            "back": "マップに戻る",
+            "printHint": "A4縦・カラー印刷推奨"
+        },
+        "header": {
+            "edition": "2026 EDITION",
+            "official": "OFFICIAL GUIDE",
+            "title1": "BANGKOK NOMAD",
+            "title2": "CHEAT SHEET"
+        },
+        "visa": {
+            "title": "ビザ戦略 (2026最新)",
+            "dtv": {
+                "name": "DTVビザ (5年)",
+                "badge": "最強推奨",
+                "desc": "50万B(約250万円)の残高証明が必要。1回180日滞在可。フリーランス・リモートワーカーはまずこれを狙え。"
+            },
+            "tourist": {
+                "name": "観光ビザ (60日+30日)",
+                "desc": "到着時に60日付与。イミグレで+30日延長(1,900B)して計90日。"
+            }
+        },
+        "apps": {
+            "title": "必須アプリ \"三種の神器\"",
+            "transport": {
+                "label": "移動",
+                "name": "Grab / Bolt",
+                "sub": "タクシー配車",
+                "desc": "Grabは確実。Boltは安い。バイク(Win)が最速。"
+            },
+            "short": {
+                "label": "近距離",
+                "name": "MuvMi (ムーブミー)",
+                "sub": "電動トゥクトゥク",
+                "desc": "プロンポン・アーリー等のエリア内移動に。格安。"
+            },
+            "pay": {
+                "label": "決済",
+                "name": "Wise",
+                "sub": "海外送金・決済",
+                "desc": "現金を下ろさず「スキャン払い」が今の常識。"
+            }
+        },
+        "medical": {
+            "title": "医療・安全",
+            "samitivej": {
+                "name": "サミティヴェート病院",
+                "badge": "日本人専用窓口あり"
+            },
+            "blez": {
+                "name": "ブレズ薬局",
+                "badge": "アソーク・日本語通訳"
+            },
+            "ambulance": "🚑 救急車: 1669",
+            "police": "👮‍♀️ 観光警察: 1155"
+        },
+        "thai": {
+            "title": "サバイバル・タイ語",
+            "items": {
+                "0": {
+                    "th": "マイ・ペッ(ト)",
+                    "ja": "辛くしないで"
+                },
+                "1": {
+                    "th": "マイ・サイ・パクチー",
+                    "ja": "パクチー抜き"
+                },
+                "2": {
+                    "th": "アオ・アンニー",
+                    "ja": "これください（指差し）"
+                },
+                "3": {
+                    "th": "チェックビン",
+                    "ja": "お会計"
+                }
+            }
+        },
+        "budget": {
+            "title": "月予算の目安 (家賃+生活費)",
+            "economy": {
+                "name": "🔰 節約派: ~10万円",
+                "desc": "オンヌット(1万B) + 屋台飯"
+            },
+            "standard": {
+                "name": "💻 標準派: ~20万円",
+                "desc": "ラマ9/アーリー(2万B) + カフェ"
+            },
+            "luxury": {
+                "name": "👑 貴族派: 30万円~",
+                "desc": "プロンポン(3万B) + 日本食毎日 + ジム"
+            }
+        },
+        "workflow": {
+            "title": "理想の作業ルート",
+            "morning": {
+                "time": "09:00 朝活カフェ",
+                "desc": "Rolling Roasters / Factory Coffee等の人気店はこの時間が至高。"
+            },
+            "lunch": {
+                "time": "12:00 フードコートでランチ",
+                "desc": "Terminal 21 (Pier 21) がコスパ・清潔さ共に最強。50B。"
+            },
+            "afternoon": {
+                "time": "13:30 ガチ作業 (コワーキング)",
+                "items": {
+                    "0": "<strong>Samyan CO-OP</strong> (無料/要予約)",
+                    "1": "<strong>True Digital Park</strong> (テックハブ)",
+                    "2": "<strong>Tilleke & Gibbins</strong> (穴場)"
+                }
+            }
+        },
+        "season": {
+            "title": "季節と穴場スポット",
+            "season": {
+                "label": "季節",
+                "items": {
+                    "0": "<span class=\"font-bold text-orange-500\">乾季</span>: 11-2月 (最高)",
+                    "1": "<span class=\"font-bold text-red-500\">暑季</span>: 3-5月 (酷暑)",
+                    "2": "<span class=\"font-bold text-blue-500\">雨季</span>: 6-10月 (スコール)"
+                }
+            },
+            "spot": {
+                "label": "穴場",
+                "items": {
+                    "0": "ベンジャキティ森林公園",
+                    "1": "バンカチャオ (緑の肺)",
+                    "2": "TCDC (デザインセンター)"
+                }
+            }
+        },
+        "qr": {
+            "desc": "最新情報・イベントはWebで",
+            "scan": "nomad-th.com<br />Scan for more"
+        }
+    }
+}

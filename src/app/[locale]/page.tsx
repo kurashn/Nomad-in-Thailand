@@ -286,8 +286,7 @@ export default function Home() {
               {tHome('youtube.tag')}
             </span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-2">{tHome('youtube.title')}</h2>
-          <p className="text-lg md:text-xl text-primary font-bold mb-6 whitespace-nowrap">{tHome('youtube.channel')}</p>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6">{tHome('youtube.title')}</h2>
           <p className="text-lg text-muted-foreground mb-8">
             {tHome('youtube.desc')}
           </p>

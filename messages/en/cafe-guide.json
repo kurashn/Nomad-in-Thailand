@@ -1,0 +1,123 @@
+{
+    "CafeGuide": {
+        "meta": {
+            "title": "[2026] 7 Best Work-Friendly Cafes in Bangkok with Wi-Fi & Power",
+            "desc": "A curated selection of the best work cafes from On Nut to Siam. We compare free coworking spots like Samyan CO-OP and scenic cafes like Paper Plane Project on Wi-Fi speed and power availability."
+        },
+        "hero": {
+            "back": "Back to Articles",
+            "freeSpot": "Free Spots",
+            "latest": "2026 Update",
+            "title": "[2026] 7 Best Work Cafes in Bangkok!",
+            "subtitle": "Your work paradise with reliable power and Wi-Fi—stay all day for the price of a coffee."
+        },
+        "intro": {
+            "p1": "\"I don't need a full coworking space today, but I can't look at my own walls anymore...\"<br />For days like that, Bangkok's **Nomad Cafes** are the perfect solution.",
+            "p2": "Bangkok is a true \"Cafe Paradise\".<br />Unlike in some countries, you generally don't need to worry about \"No Laptop\" policies here. Many cafes offer abundant power outlets and lightning-fast Wi-Fi, welcoming digital nomads with open arms.",
+            "p3": "We've curated 7 spots, mainly along the BTS line from On Nut to Siam, where it's **not just okay, but comfortable to open your laptop**.<br />We also feature some \"Free Coworking Spaces\" that you can use without a membership!"
+        },
+        "criteria": {
+            "title": "Selection Criteria",
+            "wifi": "<strong>Wi-Fi:</strong> Stable connection (30Mbps+ DL)",
+            "power": "<strong>Power:</strong> Plentiful outlets at seats or along walls",
+            "comfort": "<strong>Comfort:</strong> Comfortable for long stays (2+ hours)",
+            "access": "<strong>Access:</strong> Walking distance from BTS stations"
+        },
+        "spots": {
+            "samyan": {
+                "name": "Samyan CO-OP",
+                "tag": "Completely Free",
+                "desc": "<strong>\"Wait, is this seriously free?\"</strong> That's the first reaction everyone has.<br />Located in Samyan Mitrtown, this is a public coworking space you can access just by registering via the Mitr App.<br />It has everything: power, Wi-Fi, focus zones, and meeting rooms (booking required). It's popular with students, but it's the ultimate budget-friendly spot for nomads.",
+                "access": "Direct access from MRT Sam Yan",
+                "hours": "24 Hours",
+                "wifi": "Fast (Login required)",
+                "food": "No outside food (Cafe inside)",
+                "note": "<strong>Note:</strong> Bring your passport to the info counter to register. It gets very crowded, so early morning or late night is best."
+            },
+            "paperplane": {
+                "name": "Paper Plane Project",
+                "tag": "Great View",
+                "desc": "A <strong>Coworking Space x Cafe Bar</strong> on the 40th floor of the T-One Building.<br />During the day, it operates as a drop-in cafe you can use for the price of a coffee.<br />With high ceilings and glass walls, it offers a panoramic view of the Bangkok skyline. It's an inspiring environment for creative work.",
+                "access": "3 min walk from BTS Thong Lo",
+                "hours": "9:00 - 17:00 (Cafe hours)",
+                "power": "Power at all seats",
+                "cost": "120 THB~"
+            },
+            "openhouse": {
+                "name": "Open House (Central Embassy)",
+                "tag": "Luxury",
+                "desc": "A massive library space atop Central Embassy, often called the <strong>\"Most Beautiful Bookstore in the World\"</strong>.<br />While there is a paid Co-Living area, the free Cafe area is more than comfortable enough for work.<br />Located in a luxury mall, the atmosphere is sophisticated and quiet—perfect for deep focus.",
+                "access": "Direct access from BTS Phloen Chit",
+                "hours": "10:00 - 22:00"
+            },
+            "others": {
+                "title": "4 Hidden Gems",
+                "4": {
+                    "title": "4. True Digital Park (Punnawithi)",
+                    "desc": "Free spaces on 1F/2F open to everyone. Abundant power outlets—truly a facility built for nomads."
+                },
+                "5": {
+                    "title": "5. Tilleke & Gibbins 1F (Chit Lom)",
+                    "desc": "A hidden cafe (Au Bon Pain, etc.) on the ground floor of a law firm building. Quiet, professional atmosphere."
+                },
+                "6": {
+                    "title": "6. CLASS Cafe (Pathum Wan)",
+                    "desc": "24-hour cafe in the Samyan area. Targeted at students, offering great value."
+                },
+                "7": {
+                    "title": "7. Let's Say Cafe (Victory Monument)",
+                    "desc": "Open 24 hours. The 3rd floor is a free board game/work space with a very relaxed vibe."
+                }
+            }
+        },
+        "comparison": {
+            "title": "Specs Comparison",
+            "headers": {
+                "name": "Name",
+                "wifi": "Wi-Fi",
+                "power": "Power",
+                "cost": "Value",
+                "quiet": "Quiet"
+            },
+            "samyan": {
+                "name": "Samyan CO-OP",
+                "cost": "Unbeatable",
+                "quiet": "Fair (Students)"
+            },
+            "paperplane": {
+                "name": "Paper Plane",
+                "cost": "Good",
+                "quiet": "Good"
+            },
+            "openhouse": {
+                "name": "Open House",
+                "power": "Fair (Depends)",
+                "cost": "Fair",
+                "quiet": "Excellent"
+            },
+            "true": {
+                "name": "True Digital",
+                "cost": "Unbeatable (Free)",
+                "quiet": "Good"
+            }
+        },
+        "faq": {
+            "title": "FAQ",
+            "longstay": {
+                "q": "Q. Is it really okay to stay for a long time?",
+                "a": "A. Thai cafe culture is quite tolerant. Generally, staying 2-3 hours for a single drink is acceptable. If you plan to stay longer, ordering a meal or a second drink is good etiquette."
+            },
+            "valuables": {
+                "q": "Q. How do you manage valuables?",
+                "a": "A. Always take your laptop and wallet with you when going to the restroom. Thailand is safe, but theft in cafes does happen."
+            },
+            "ac": {
+                "q": "Q. Is the AC cold?",
+                "a": "A. <strong>Yes, freezing.</strong> Thai cafes and malls are often cooled to refrigerator temperatures. Bringing a hoodie or light jacket is essential."
+            }
+        },
+        "nav": {
+            "back": "Back to Articles"
+        }
+    }
+}

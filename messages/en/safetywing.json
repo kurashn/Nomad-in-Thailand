@@ -1,0 +1,129 @@
+{
+    "SafetyWingGuide": {
+        "meta": {
+            "title": "[2026 Update] Best Nomad Insurance: 'SafetyWing' Review.",
+            "desc": "Perfect for nomads with undefined plans. Monthly subscription travel/medical insurance. Why it's the top choice globally after credit card insurance expires."
+        },
+        "hero": {
+            "back": "Back to Articles",
+            "title": "No Fixed Return Date Needed.<br />'Subscription' Insurance for Nomads"
+        },
+        "intro": {
+            "p1": "The biggest worry for overseas nomads. Isn't it <strong>\"Insurance\"</strong>?",
+            "p2": "Credit card insurance expires in the \"first 90 days\".<br />But Japanese travel insurance often requires a fixed return date or a large lump-sum payment...<br /><br /><strong>\"I want insurance that is freer and more flexible.\"</strong>",
+            "p3": "Born from the voices of nomads worldwide is the Norwegian startup <strong>\"SafetyWing\"</strong>.<br />Pay monthly like Netflix, cancel anytime. Truly insurance for digital nomads.",
+            "checkTitle": "What you'll learn",
+            "check1": "3 reasons SafetyWing is best for nomads",
+            "check2": "Decisive difference from credit card insurance",
+            "check3": "Are motorbike accidents or dental covered? Detailed coverage FAQ"
+        },
+        "affiliate": "Get a Quote on SafetyWing",
+        "comparison": {
+            "title": "Comparison: How is it different?",
+            "headers": {
+                "type": "Type",
+                "safetywing": "SafetyWing",
+                "credit": "Credit Card",
+                "japan": "Traditional Ins."
+            },
+            "duration": {
+                "label": "Duration",
+                "safetywing": "Unlimited (Sub)",
+                "credit": "Within 90 days",
+                "japan": "Fixed period only"
+            },
+            "apply": {
+                "label": "Apply",
+                "safetywing": "From Abroad OK",
+                "credit": "Auto/Usage",
+                "japan": "Must be in Japan"
+            },
+            "cost": {
+                "label": "Cost",
+                "safetywing": "Cheap (~$56/mo)",
+                "credit": "Free (Annual fee)",
+                "japan": "Expensive ($100~/mo)"
+            },
+            "home": {
+                "label": "Home Visit",
+                "safetywing": "Covered",
+                "credit": "Not Covered",
+                "japan": "Not Covered"
+            }
+        },
+        "benefits": {
+            "title": "Deep Dive: 3 Amazing Features",
+            "1": {
+                "title": "Full Subscription. Cancel Anytime.",
+                "desc": "Auto-renewal every 4 weeks. If you decide \"I'm going home next month\", just turn off auto-renewal in your dashboard.<br />No penalties, no fees. For nomads with flexible schedules, this is the biggest benefit."
+            },
+            "2": {
+                "title": "Not just Medical. Covers Travel Troubles too.",
+                "desc": "Covers medical expenses, plus lost checked luggage, travel delays, and emergency evacuation.<br />Though called \"Nomad Insurance\", it functions as solid \"Comprehensive Travel Insurance\"."
+            },
+            "3": {
+                "title": "Covers \"Home Visits\" too",
+                "desc": "For every 90 days, you get up to 30 days of medical coverage in your home country (Japan, etc. except USA).<br />Safe if you catch a cold or get injured during a temporary return. A rare feature among international insurances."
+            }
+        },
+        "coverage": {
+            "title": "Is this covered? Detailed FAQ",
+            "bike": {
+                "q": "Q. Motorbike accidents?",
+                "a": "A. Covered with conditions.",
+                "desc": "Covered if you have a valid license for the engine size (e.g., IDP) and wear a helmet. Unlicensed driving is not covered."
+            },
+            "dental": {
+                "q": "Q. Dental treatment?",
+                "a": "A. Limited.",
+                "desc": "Only for emergency pain relief or accidental injury to sound natural teeth. Checkups and cleanings are not covered."
+            },
+            "covid": {
+                "q": "Q. COVID-19?",
+                "a": "A. Covered.",
+                "desc": "Treated like any other illness. Testing and treatment are covered if deemed medically necessary by a physician."
+            },
+            "laptop": {
+                "q": "Q. Laptop theft?",
+                "a": "A. Optional.",
+                "desc": "Not in standard plan, but for +$10/month, you can add theft coverage up to $1000/item (max $3000/year)."
+            }
+        },
+        "pricing": {
+            "title": "Surprisingly Low Price",
+            "price": "$56.28",
+            "period": " / 4 weeks",
+            "note": "(Age 10-39, excluding US coverage)",
+            "desc": "For about $2/day, you get up to $250,000 medical coverage.<br />Considering Japanese travel insurance costs $100-200/month, the value is overwhelming.",
+            "included": {
+                "title": "Main Inclusions",
+                "1": "$250,000 max limit",
+                "2": "Emergency Evacuation ($100k)",
+                "3": "Travel Delay & Lost Luggage",
+                "4": "COVID-19 Treatment"
+            }
+        },
+        "deductible": {
+            "title": "Important! About Deductible",
+            "desc": "One thing you MUST know before signing up is the <strong>\"Deductible\"</strong>.",
+            "boxTitle": "There is a $250 Deductible",
+            "boxDesc": "You pay the first $250 of medical costs; SafetyWing pays the rest.<br />So, \"Saw a doctor for a cold ($50)\" is not reimbursed. Think of it as insurance for major troubles like \"Hospitalization & Surgery ($3000)\".",
+            "boxNote": "* The $250 is \"per policy period\", not \"per incident\". Once you pass $250, subsequent claims are covered from dollar one."
+        },
+        "cta": {
+            "title": "Buy Peace of Mind. Start the Adventure.",
+            "desc": "Don't know when you'll return?<br />SafetyWing supports your free journey.",
+            "button": "Check SafetyWing"
+        },
+        "faq": {
+            "q1": "Are motorbike accidents covered?",
+            "a1": "Yes, with conditions. You must have a valid license (IDP) and wear a helmet. Unlicensed driving is excluded.",
+            "q2": "Is dental covered?",
+            "a2": "Limited. Only emergency pain relief or accidental injury to sound natural teeth. Routine checkups are excluded.",
+            "q3": "Is COVID-19 covered?",
+            "a3": "Yes. It is treated the same as any other illness. Testing and treatment are covered if medically necessary.",
+            "q4": "Is laptop theft covered?",
+            "a4": "Not in the standard plan. You can add the electronics theft add-on for +$10/month to cover up to $1000/item."
+        }
+    }
+}

@@ -13,7 +13,7 @@ export default function SponsorPage() {
         <article className="max-w-4xl mx-auto px-4 py-12 md:py-20">
             {/* Breadcrumb */}
             <div className="mb-8">
-                <Link href="/nomad-info" className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors">
+                <Link href="../nomad-info" className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors">
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     {t('hero.back')}
                 </Link>
