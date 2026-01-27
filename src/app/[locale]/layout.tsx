@@ -108,7 +108,7 @@ export default async function RootLayout({
         "sameAs": [
           "https://x.com/nomad_place",
           "https://instagram.com/nomad_place",
-          "https://www.youtube.com/@T78community"
+          "https://www.youtube.com/@nomad-thai"
         ]
       },
       {

@@ -249,7 +249,7 @@ export default function Home() {
             <YouTubeEmbed videoId="B_HkXPiv7ow" />
           </div>
           <a
-            href="https://www.youtube.com/@T78community"
+            href="https://www.youtube.com/@nomad-thai"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-red-600 text-white font-bold hover:bg-red-700 transition-colors shadow-lg shadow-red-600/20"

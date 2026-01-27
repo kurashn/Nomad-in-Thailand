@@ -37,7 +37,7 @@ export default function Footer() {
                         <h3 className="font-bold text-lg mb-4 text-slate-800">{t('links.title')}</h3>
                         <ul className="space-y-3">
                             <li>
-                                <a href="https://www.youtube.com/@T78community" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-red-600 transition-colors">
+                                <a href="https://www.youtube.com/@nomad-thai" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-red-600 transition-colors">
                                     {t('links.youtube')}
                                 </a>
                             </li>

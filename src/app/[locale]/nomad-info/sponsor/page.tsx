@@ -70,7 +70,7 @@ export default function SponsorPage() {
                         {t('intro.p4')}
                     </p>
                     <p className="mb-6">
-                        <a href="https://www.youtube.com/@T78community" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#2a9d8f] font-bold hover:underline">
+                        <a href="https://www.youtube.com/@nomad-thai" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-[#2a9d8f] font-bold hover:underline">
                             <span>{t('intro.videoLink')}</span>
                             <ExternalLink className="w-4 h-4" />
                         </a>
