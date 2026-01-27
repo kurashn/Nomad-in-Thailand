@@ -33,7 +33,7 @@ export default function Navbar() {
                         <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity" onClick={() => setIsOpen(false)}>
                             <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
                                 <Image
-                                    src="/character/nomad-dog-hero-white.png"
+                                    src="/character/nomad-dog-hero-transparent.png"
                                     alt="Nomad in Thailand Logo"
                                     fill
                                     className="object-contain"
@@ -69,8 +69,8 @@ export default function Navbar() {
                                 <button
                                     onClick={() => switchLocale('ja')}
                                     className={`px-3 py-1.5 text-sm font-bold rounded-full transition-all duration-200 ${currentLocale === 'ja'
-                                            ? 'bg-primary text-primary-foreground shadow-sm'
-                                            : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                                        ? 'bg-primary text-primary-foreground shadow-sm'
+                                        : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                                         }`}
                                 >
                                     🇯🇵 JP
@@ -78,8 +78,8 @@ export default function Navbar() {
                                 <button
                                     onClick={() => switchLocale('en')}
                                     className={`px-3 py-1.5 text-sm font-bold rounded-full transition-all duration-200 ${currentLocale === 'en'
-                                            ? 'bg-primary text-primary-foreground shadow-sm'
-                                            : 'text-muted-foreground hover:text-foreground hover:bg-muted'
+                                        ? 'bg-primary text-primary-foreground shadow-sm'
+                                        : 'text-muted-foreground hover:text-foreground hover:bg-muted'
                                         }`}
                                 >
                                     🇺🇸 EN
@@ -95,8 +95,8 @@ export default function Navbar() {
                             <button
                                 onClick={() => switchLocale('ja')}
                                 className={`px-2.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLocale === 'ja'
-                                        ? 'bg-primary text-primary-foreground shadow-sm'
-                                        : 'text-muted-foreground hover:text-foreground'
+                                    ? 'bg-primary text-primary-foreground shadow-sm'
+                                    : 'text-muted-foreground hover:text-foreground'
                                     }`}
                             >
                                 🇯🇵
@@ -104,8 +104,8 @@ export default function Navbar() {
                             <button
                                 onClick={() => switchLocale('en')}
                                 className={`px-2.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLocale === 'en'
-                                        ? 'bg-primary text-primary-foreground shadow-sm'
-                                        : 'text-muted-foreground hover:text-foreground'
+                                    ? 'bg-primary text-primary-foreground shadow-sm'
+                                    : 'text-muted-foreground hover:text-foreground'
                                     }`}
                             >
                                 🇺🇸

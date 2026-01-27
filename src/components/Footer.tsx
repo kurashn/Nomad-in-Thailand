@@ -15,7 +15,7 @@ export default function Footer() {
                     <div className="flex flex-col items-center md:items-start">
                         <div className="relative w-24 h-24 mb-4">
                             <Image
-                                src="/character/nomad-dog-hero-white.png"
+                                src="/character/nomad-dog-hero-transparent.png"
                                 alt={t('logoAlt')}
                                 fill
                                 className="object-contain"

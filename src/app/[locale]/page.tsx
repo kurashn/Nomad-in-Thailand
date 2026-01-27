@@ -4,63 +4,18 @@ import Image from "next/image";
 import { ArrowRight, MapPin, Users, Wallet, Shield, Smartphone, Heart } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import Hero from "@/components/Hero";
 
 
 export default function Home() {
-  const t = useTranslations('Hero');
+  // const t = useTranslations('Hero'); // Moved to Hero component
   const tHome = useTranslations('Home');
 
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/bangkok_nomad_lifestyle_hero.png"
-            alt="Digital Nomad Workspace in Bangkok"
-            fill
-            className="object-cover"
-            priority
-          />
-          {/* Overlay for readability - darker as requested */}
-          <div className="absolute inset-0 bg-black/60" />
-        </div>
-
-        <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-10">
-          <div className="flex justify-center mb-6">
-            <div className="relative w-28 h-28 md:w-36 md:h-36 animate-bounce-slow">
-              <Image
-                src="/character/nomad-dog-hero-white.png"
-                alt="Nomad Dog"
-                fill
-                className="object-contain drop-shadow-[0_4px_10px_rgba(0,0,0,0.5)]"
-                priority
-              />
-            </div>
-          </div>
-
-          <h1 className="text-4xl md:text-7xl font-extrabold tracking-tight mb-6 text-white drop-shadow-lg font-serif">
-            {t('title')}
-          </h1>
-
-          <p className="text-lg md:text-2xl text-slate-100 mb-10 max-w-3xl mx-auto leading-relaxed font-medium drop-shadow-md whitespace-pre-line">
-            {t('subtitle')}
-            <span className="text-base md:text-xl mt-6 block leading-relaxed opacity-90">
-              {t('description')}
-            </span>
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <Link
-              href="/nomad-info"
-              className="px-10 py-4 rounded-full bg-[#2a9d8f] text-white font-bold text-lg hover:bg-[#21867a] transition-all hover:scale-105 flex items-center gap-2 shadow-lg shadow-teal-500/20 backdrop-blur-sm border border-teal-400/30"
-            >
-              {t('cta')} <ArrowRight className="w-5 h-5" />
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <Hero />
 
       {/* Nomad Essentials Section */}
       <section className="py-20 bg-slate-50 border-b border-slate-200">
