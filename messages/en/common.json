@@ -5,6 +5,9 @@
         "sponsor": "Sponsorship",
         "contact": "Contact"
     },
+    "Common": {
+        "promotion": "*This page contains promotion."
+    },
     "Hero": {
         "title": "Nomad in Thailand",
         "subtitle": "All you need is a laptop to connect you to the world.\nChoose how you work, choose where you live.",

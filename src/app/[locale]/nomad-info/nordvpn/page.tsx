@@ -21,6 +21,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function NordVPNGuidePage() {
     const t = useTranslations('NordVPNGuide');
+    const tCommon = useTranslations('Common');
     // Affiliate link for NordVPN (A8.net)
     const AFFILIATE_LINK = "https://px.a8.net/svt/ejp?a8mat=3HOR91+AZXD5E+3YFI+66OZ6";
     const TRACKING_PIXEL = "https://www11.a8.net/0.gif?a8mat=3HOR91+AZXD5E+3YFI+66OZ6";
@@ -125,6 +126,7 @@ export default function NordVPNGuidePage() {
 
             {/* Main Content */}
             <div className="container max-w-3xl mx-auto px-4 mt-12">
+                <div className="text-xs text-muted-foreground text-center mt-2 mb-4">{tCommon('promotion')}</div>
 
                 {/* Introduction / Hook */}
                 <div className="prose prose-lg prose-slate max-w-none mb-16 relative">

@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function WiseGuidePage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
+    const tCommon = await getTranslations({ locale, namespace: 'Common' });
     const AFFILIATE_LINK = "https://wise.com/invite/ihpc/shunk138";
 
     if (locale === 'en') {
@@ -58,6 +59,7 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
 
                 {/* Main Content */}
                 <div className="container max-w-3xl mx-auto px-4 mt-12">
+                    <div className="text-xs text-muted-foreground text-center mt-2 mb-4">{tCommon('promotion')}</div>
 
                     {/* Introduction / Hook */}
                     <div className="prose prose-lg prose-slate max-w-none mb-16 relative">
@@ -426,6 +428,7 @@ export default async function WiseGuidePage({ params }: { params: Promise<{ loca
 
             {/* Main Content */}
             <div className="container max-w-3xl mx-auto px-4 mt-12">
+                <div className="text-xs text-muted-foreground text-center mt-2 mb-4">{tCommon('promotion')}</div>
 
                 {/* Introduction / Hook */}
                 <div className="prose prose-lg prose-slate max-w-none mb-16 relative">

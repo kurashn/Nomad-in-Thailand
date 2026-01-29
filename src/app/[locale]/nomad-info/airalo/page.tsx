@@ -14,6 +14,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function AiraloPage() {
     const t = useTranslations('AiraloGuide');
+    const tCommon = useTranslations('Common');
 
     return (
         <article className="min-h-screen bg-background pb-20 font-sans text-foreground/90">
@@ -37,6 +38,7 @@ export default function AiraloPage() {
             </div>
 
             <div className="container max-w-3xl mx-auto px-4 mt-12">
+                <div className="text-xs text-muted-foreground text-center mt-2 mb-4">{tCommon('promotion')}</div>
                 {/* Intro (PAS Framework) */}
                 <div className="prose prose-lg prose-slate max-w-none mb-10">
                     <p className="leading-loose font-medium text-foreground/80 mb-6" dangerouslySetInnerHTML={{ __html: t.raw('intro.p1') }} />

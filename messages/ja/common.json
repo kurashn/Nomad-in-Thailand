@@ -5,6 +5,9 @@
         "sponsor": "スポンサー募集",
         "contact": "お問い合わせ"
     },
+    "Common": {
+        "promotion": "※本ページはプロモーションが含まれています"
+    },
     "Hero": {
         "title": "Nomad in Thailand",
         "subtitle": "PC1台で、世界はもっと近くなる。\n働き方も、住む場所も、自分で選ぶ自由を。",
