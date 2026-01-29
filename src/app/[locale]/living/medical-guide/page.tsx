@@ -253,7 +253,7 @@ export default function MedicalGuidePage() {
                     <h2 className="text-2xl md:text-3xl font-bold mb-6" dangerouslySetInnerHTML={{ __html: t.raw('cta.title') }} />
                     <p className="text-slate-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw('cta.desc') }} />
                     <a
-                        href="https://safetywing.com/nomad-insurance"
+                        href="https://safetywing.com/?referenceID=26468067&utm_source=26468067&utm_medium=Ambassador"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 bg-[#2a9d8f] text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-white hover:text-[#2a9d8f] hover:scale-105 transition-all shadow-lg shadow-[#2a9d8f]/20"

@@ -21,8 +21,9 @@ export async function generateMetadata({ params: { locale } }: { params: { local
 
 export default function NordVPNGuidePage() {
     const t = useTranslations('NordVPNGuide');
-    // Placeholder affiliate link - USER TO UPDATE
-    const AFFILIATE_LINK = "https://nordvpn.com/ja/";
+    // Affiliate link for NordVPN (A8.net)
+    const AFFILIATE_LINK = "https://px.a8.net/svt/ejp?a8mat=3HOR91+AZXD5E+3YFI+66OZ6";
+    const TRACKING_PIXEL = "https://www11.a8.net/0.gif?a8mat=3HOR91+AZXD5E+3YFI+66OZ6";
 
     // Structured Data (JSON-LD)
     const jsonLd = {
@@ -478,6 +479,8 @@ export default function NordVPNGuidePage() {
                         {t('summary.ctaButton')}
                         <ArrowRight className="w-6 h-6" />
                     </Link>
+                    {/* Tracking Pixel */}
+                    <img src={TRACKING_PIXEL} width={1} height={1} alt="" style={{ border: 0, display: 'inline', position: 'absolute' }} />
                     <p className="text-xs text-blue-400 mt-6">
                         {t('summary.ctaNote')}
                     </p>

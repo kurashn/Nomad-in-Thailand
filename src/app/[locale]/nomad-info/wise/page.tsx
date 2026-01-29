@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function WiseGuidePage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
-    const AFFILIATE_LINK = "https://wise.com/jp/";
+    const AFFILIATE_LINK = "https://wise.com/invite/ihpc/shunk138";
 
     if (locale === 'en') {
         return (

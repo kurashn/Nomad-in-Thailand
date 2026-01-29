@@ -65,7 +65,7 @@ export default function SafetyWingPage() {
                 {/* Affiliate Button (Top) */}
                 <div className="flex justify-center mb-16">
                     <a
-                        href="https://safetywing.com/nomad-insurance"
+                        href="https://safetywing.com/?referenceID=26468067&utm_source=26468067&utm_medium=Ambassador"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gradient-to-r from-teal-600 to-teal-700 rounded-full hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-700"
@@ -257,7 +257,7 @@ export default function SafetyWingPage() {
                     </h2>
                     <p className="text-slate-600 mb-8 max-w-lg mx-auto" dangerouslySetInnerHTML={{ __html: t.raw('cta.desc') }} />
                     <a
-                        href="https://safetywing.com/nomad-insurance"
+                        href="https://safetywing.com/?referenceID=26468067&utm_source=26468067&utm_medium=Ambassador"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-teal-600 rounded-full hover:bg-teal-700 hover:shadow-lg hover:scale-105"
