@@ -3,6 +3,15 @@
 
 export const nomadArticlesJa = [
     {
+        id: 111,
+        title: "【2026年最新】海外・タイ移住におすすめな最強クレジットカード3選｜自動付帯保険で数万円節約！",
+        excerpt: "タイ移住・ノマド生活に必須の「海外旅行保険が自動付帯するクレジットカード」を3つ厳選。年会費無料で90日間保険適用されるエポスカードから、空港ラウンジが使える楽天プレミアムカードまで徹底比較。",
+        category: "お金・税金",
+        date: "2026-01-11",
+        image: "/images/credit_card_hero.png",
+        link: "/nomad-info/credit-card"
+    },
+    {
         id: 110,
         title: "【保存版】バンコクノマド完全マップ2026 | カフェ・コワーキング・居住エリア網羅",
         excerpt: "バンコクの「作業できるカフェ」「最強コワーキング」「住みやすいエリア」を1枚のマップ（リスト）にまとめました。PDFダウンロード可能。",
@@ -104,6 +113,15 @@ export const nomadArticlesJa = [
 ];
 
 export const nomadArticlesEn = [
+    {
+        id: 111,
+        title: "Top 3 Credit Cards for Thailand Nomads (2026) | Save $300+ on Insurance",
+        excerpt: "Essential guide for Digital Nomads in Thailand. We compare the best credit cards with free overseas travel insurance. From the free Epos Card to the premium Marriott Amex.",
+        category: "Money & Tax",
+        date: "2026-01-11",
+        image: "/images/credit_card_hero.png",
+        link: "/nomad-info/credit-card"
+    },
     {
         id: 110,
         title: "Bangkok Nomad Map 2026 | Ultimate Guide to Cafes, Coworking & Living Areas",
