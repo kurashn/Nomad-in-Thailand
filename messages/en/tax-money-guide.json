@@ -107,6 +107,12 @@
                 "desc": "Opening a local bank account without a work permit is increasingly difficult. Wise (formerly TransferWise) is essential. It lets you hold THB, spend with a debit card like a local, and avoid terrible bank exchange rates.",
                 "tag": "Low Fees"
             },
+            "credit_card": {
+                "title": "Epos Card (Free Insurance)",
+                "desc": "Essential card for free insurance coverage for the first 90 days. Must apply before leaving Japan. Insurance activates just by holding it.",
+                "tag": "Free Annual Fee",
+                "link": "See Details"
+            },
             "bank": {
                 "title": "Banking in Thailand: What to Expect",
                 "desc": "A local bank account (like Bangkok Bank) is convenient for QR payments (Scan to Pay), but strict KYC rules make it hard for DTV holders without an agent. We recommend relying on Wise + Credit Cards initially while trying your luck at head offices with your embassy's residence certificate.",

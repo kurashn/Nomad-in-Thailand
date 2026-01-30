@@ -118,6 +118,11 @@ export default function SafetyWingPage() {
                             </tbody>
                         </table>
                     </div>
+                    <div className="mt-4 text-right">
+                        <Link href="../nomad-info/credit-card" className="text-sm font-bold text-teal-600 hover:text-teal-700 hover:underline inline-flex items-center gap-1">
+                            {t('comparison.credit_link')} <ArrowRight className="w-4 h-4" />
+                        </Link>
+                    </div>
                 </section>
 
                 {/* Why SafetyWing? (3 Benefits) */}

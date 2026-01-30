@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, CheckCircle2, Shield, Calendar, FileText, ArrowRight, Wallet, Wifi, Users, Globe, BookOpen, Stethoscope, Building2, MessageCircle, Heart, Plane, MapPin, Youtube } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Shield, Calendar, FileText, ArrowRight, Wallet, Wifi, Users, Globe, BookOpen, Stethoscope, Building2, MessageCircle, Heart, Plane, MapPin, Youtube, CreditCard } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -254,6 +254,20 @@ export default function BangkokRoadmapPage() {
                                         </p>
                                         <Link href={`/${locale}/nomad-info/tax-money-guide`} className="text-sm font-medium text-primary hover:underline flex items-center gap-1">
                                             {t('timeline.month1.money.link')} <ArrowRight className="w-3 h-3" />
+                                        </Link>
+                                    </div>
+                                    <div className="pt-4 border-t border-border">
+                                        <h4 className="font-bold text-base mb-2 flex items-center gap-2">
+                                            <CreditCard className="w-4 h-4 text-muted-foreground" />
+                                            {t('timeline.month1.credit_card.title')}
+                                        </h4>
+                                        <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                                            {t.rich('timeline.month1.credit_card.desc', {
+                                                strong: (chunks) => <strong className="font-bold text-foreground">{chunks}</strong>
+                                            })}
+                                        </p>
+                                        <Link href={`/${locale}/nomad-info/credit-card`} className="text-sm font-medium text-primary hover:underline flex items-center gap-1">
+                                            {t('timeline.month1.credit_card.link')} <ArrowRight className="w-3 h-3" />
                                         </Link>
                                     </div>
                                     <div className="pt-4 border-t border-border">

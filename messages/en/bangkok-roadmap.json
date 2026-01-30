@@ -134,7 +134,12 @@
                         "tip3": "Freelancers: Remember to update your billing address"
                     }
                 },
-                "video": "Bangkok Cost of Living Video"
+                "video": "Bangkok Cost of Living Video",
+                "credit_card": {
+                    "title": "Credit Card (Free Insurance)",
+                    "desc": "Get a <strong>credit card with automatic overseas insurance</strong> to save costs for the first 90 days.",
+                    "link": "See Recommended Cards (Free)"
+                }
             },
             "week2": {
                 "tag": "2 Weeks Before",

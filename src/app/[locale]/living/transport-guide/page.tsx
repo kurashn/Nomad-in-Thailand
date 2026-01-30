@@ -164,6 +164,16 @@ export default function TransportGuidePage() {
                                     {t('train.mrt.desc')}
                                 </p>
                             </div>
+
+                            <div className="mb-4 mt-2 bg-amber-50 p-3 rounded-lg border border-amber-100 flex gap-2">
+                                <div className="text-amber-500 shrink-0 mt-0.5"><Info className="w-4 h-4" /></div>
+                                <div className="text-xs text-amber-900">
+                                    <span className="font-bold block mb-1">{t('train.mrt.insurance_tip')}</span>
+                                    <Link href="../nomad-info/credit-card" className="text-amber-700 underline hover:text-amber-800 font-bold inline-flex items-center gap-1">
+                                        {t('train.mrt.insurance_link')} <ArrowRight className="w-3 h-3" />
+                                    </Link>
+                                </div>
+                            </div>
                             <p className="text-xs text-slate-500 italic mt-auto border-t pt-3">
                                 {t('train.mrt.tips')}
                             </p>

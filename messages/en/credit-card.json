@@ -1,0 +1,131 @@
+{
+    "CreditCard": {
+        "meta": {
+            "title": "Top 3 Credit Cards for Thailand Nomads (2026) | Save $300+ on Insurance",
+            "desc": "Essential guide for Digital Nomads in Thailand. We compare the best credit cards with free overseas travel insurance. From the free Epos Card to the premium Marriott Amex.",
+            "keywords": "Thailand Nomad, Digital Nomad Insurance, Credit Card Travel Insurance, Epos Card, Rakuten Premium, Marriott Bonvoy Amex, Free Medical Care Thailand"
+        },
+        "hero": {
+            "back": "Back to Guides",
+            "title": "Must-Haves for Thailand Nomads\n<subtag>Top 3 Credit Cards with Free Overseas Insurance</subtag>",
+            "update": "Updated Jan 2026"
+        },
+        "intro": {
+            "p1": "\"Travel insurance is too expensive...\"\n\"I just want coverage for minor sickness and accidents.\"",
+            "p2": "Heading to Thailand soon? One item you simply cannot leave Japan without is the right **Credit Card**.\nDid you know that you can get **90 days of overseas medical insurance** for free, just by using your card for airport transport?",
+            "p3": "In this guide, we've hand-picked the **3 essential cards** that every Digital Nomad in Thailand should carry.\nHaving these cards alone can save you roughly **30,000 to 50,000 JPY ($200-$350)** in insurance premiums per trip."
+        },
+        "insurance_system": {
+            "title": "Critical: \"Automatic\" vs. \"Utilization\" Coverage",
+            "desc": "Not all card insurance is the same. Since late 2023, many cards have switched to \"Utilization-based\" coverage. Knowing the difference is crucial to ensure you are covered.",
+            "automatic": {
+                "label": "Automatic Coverage (e.g. Rakuten Premium)",
+                "desc": "The insurance is active just by **holding** the card. No action needed. Most common in Gold/Platinum cards."
+            },
+            "utilization": {
+                "label": "Utilization Coverage (e.g. Epos Card)",
+                "desc": "The insurance activates ONLY if you **pay for travel transport** (like the train/bus to the airport) with the card. This is now the industry standard."
+            },
+            "conclusion": "Pro Tip: Use a \"Utilization\" card to pay for your train to Narita/Haneda to activate the insurance before you fly."
+        },
+        "insurance_flow_detail": {
+            "title": "Beginner's Guide: How to Use Free Card Insurance",
+            "lead": "Worried strictly about the \"Utilization\" rule? Don't be.\nIt's as simple as buying a train ticket. Here is the 4-step process from departure to seeing a doctor.",
+            "steps": {
+                "step1": {
+                    "title": "Step 1: Activate Before You Fly",
+                    "desc": "Pay for your **Airport Train (Skyliner, NEX)** or **Limousine Bus** with your card. Even a few hundred yen bus ticket counts.\n*Tip: Buy at the ticket machine or counter directly. Suica top-ups often don't count.*",
+                    "pro_tip": "💡 For Epos Card, simply paying for the train to the airport activates your full insurance coverage!"
+                },
+                "step2": {
+                    "title": "Step 2: If You Get Sick in Thailand",
+                    "desc": "Before going to a hospital, call the **24/7 Emergency Desk** (number on back of card).\nAsk for a **\"Cashless Treatment\"** appointment. They will find a nearby hospital and handle the billing directly.",
+                    "note": "⚠️ Always call first! If you go directly, you might have to pay upfront and claim later."
+                },
+                "step3": {
+                    "title": "Step 3: At the Hospital",
+                    "desc": "Show your **Passport** and **Credit Card** (plus insurance certificate if you printed it) at reception.\nSince billing is handled between the insurance and the hospital, you simply receive treatment and medicine for **Free**. Just sign the receipt."
+                },
+                "step4": {
+                    "title": "Step 4: After Returning Home",
+                    "desc": "If you used Cashless Treatment, there is usually no paperwork needed after you return.\n*If you paid upfront, you will need to mail the receipts to claim your refund.*"
+                }
+            },
+            "cta_text": "If you don't have a reliable card yet, the Epos Card is the safest bet for high coverage."
+        },
+        "cards": {
+            "title": "Top 3 Cards for Thailand Nomads",
+            "epos": {
+                "name": "Epos Card",
+                "catch": "[Essential] Free for Life & High Coverage",
+                "points": [
+                    "Annual Fee: Free Forever",
+                    "Insurance: Utilization (Pay-to-Activate)",
+                    "Medical Limit: Max 2.7 Million JPY (Gold-tier level)",
+                    "Speed: Same-day issuance available"
+                ],
+                "desc": "The single best free card for travel insurance. Although it requires \"Utilization\" (paying for transport), the **2.7 Million JPY** medical coverage is incredibly high for a free card. A must-have for every nomad.",
+                "cta": "Apply for Epos Card (Official)"
+            },
+            "rakuten": {
+                "name": "Rakuten Premium Card",
+                "catch": "[Comfort] Airport Lounges & Priority Pass",
+                "points": [
+                    "Annual Fee: 11,000 JPY",
+                    "Benefit: Free Priority Pass (Lounge Access)",
+                    "Note: Limited to 5 lounge visits/year (from 2025)",
+                    "Insurance: Automatic + Utilization"
+                ],
+                "desc": "The cheapest way to get a **Priority Pass** for airport lounge access. While visits are now limited to 5 times/year, the comfort of free food, drinks, and Wi-Fi in lounges makes it easily worth the 11,000 JPY fee for any regular traveler.",
+                "cta": "Apply for Rakuten Card (Official)"
+            },
+            "marriott": {
+                "name": "Marriott Bonvoy Amex",
+                "catch": "[Luxury] Best for Miles & Free Hotel Stays",
+                "points": [
+                    "Annual Fee: 82,500 JPY (Premium)",
+                    "Benefit: Annual Free Night Award (Luxury Hotels)",
+                    "Miles: High transfer rate to 40+ airlines (JAL/ANA/United)",
+                    "Insurance: Top-tier Utilization Coverage"
+                ],
+                "desc": "The ultimate card for travel hackers. The fee is high, but the **Free Night Award** and exceptional mile accumulation rate make it efficient for those who fly frequently or love staying at Ritz-Carlton/Marriott hotels.",
+                "cta": "View Amex Official Site"
+            }
+        },
+        "comparison": {
+            "title": "Quick Spec Comparison",
+            "col_card": "Card Name",
+            "col_fee": "Annual Fee",
+            "col_insurance": "Insurance Type",
+            "col_perk": "Key Benefit",
+            "epos_fee": "Free",
+            "epos_ins": "Utilization",
+            "epos_perk": "Pay-to-Activate",
+            "rakuten_fee": "11,000 JPY",
+            "rakuten_ins": "Automatic*",
+            "rakuten_perk": "Lounge (5x/yr)",
+            "marriott_fee": "82,500 JPY",
+            "marriott_ins": "Utilization",
+            "marriott_perk": "Miles & Hotels"
+        },
+        "cta": {
+            "title": "Start with the Epos Card",
+            "desc": "Zero annual fee. Zero risk. High coverage.\nIt is the perfect \"Guardian Charm\" for your travels. Apply now and activate your insurance with your train ticket.",
+            "button": "Apply for Epos Card Now"
+        },
+        "warning": {
+            "title": "Important: 90-Day Limit",
+            "desc": "Credit card insurance typically covers you for **90 days** from departure.\nIf you plan to stay in Thailand longer than 3 months, you MUST switch to a nomad insurance like **SafetyWing**. Staying uninsured is a major financial risk.",
+            "link": "Learn about SafetyWing (Post-90 Days)"
+        },
+        "faq": {
+            "title": "FAQ",
+            "q1": "Q. Is it hard to get approved?",
+            "a1": "A. Epos and Rakuten are known for being relatively foreigner and freelancer-friendly. However, it is always safest to apply while you still have employment status in Japan.",
+            "q2": "Q. Do I need an Insurance Certificate?",
+            "a2": "A. Yes. While the card itself is proof, downloading the **English Insurance Certificate (PDF)** from the card's website and printing it is highly recommended for smoother hospital acceptance.",
+            "q3": "Q. Should I avoid 'Revolving Payment' cards?",
+            "a3": "A. Yes. Some cards default to 'Revo' (Revolving) payments which incur high interest. Make sure to set your payment method to **\"One-time payment\" (Ikkatsu)** in the card settings."
+        }
+    }
+}

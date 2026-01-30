@@ -3,7 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowLeft, Wallet, Building2, Utensils, Train, AlertTriangle, CheckCircle, CreditCard, Banknote } from "lucide-react";
+import { ArrowLeft, Wallet, Building2, Utensils, Train, AlertTriangle, CheckCircle, CreditCard, Banknote, ShieldCheck, ArrowRight } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -238,6 +238,23 @@ export default function TaxMoneyGuidePage() {
                                 {t('money.wise.desc')}
                             </p>
                             <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">{t('money.wise.tag')}</span>
+                        </div>
+
+                        {/* Credit Card */}
+                        <div className="bg-card border border-muted p-6 rounded-xl">
+                            <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center mb-4 text-amber-600">
+                                <ShieldCheck className="w-6 h-6" />
+                            </div>
+                            <h3 className="text-xl font-bold mb-3">{t('money.credit_card.title')}</h3>
+                            <p className="text-foreground/70 text-sm leading-relaxed mb-4">
+                                {t('money.credit_card.desc')}
+                            </p>
+                            <div className="flex items-center justify-between">
+                                <span className="text-xs text-amber-700 bg-amber-100 px-2 py-1 rounded">{t('money.credit_card.tag')}</span>
+                                <Link href="../nomad-info/credit-card" className="text-sm font-bold text-primary hover:underline flex items-center gap-1">
+                                    {t('money.credit_card.link')} <ArrowRight className="w-4 h-4" />
+                                </Link>
+                            </div>
                         </div>
 
                         {/* Bangkok Bank */}

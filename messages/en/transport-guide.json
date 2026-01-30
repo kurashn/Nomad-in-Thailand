@@ -56,7 +56,9 @@
                 "name": "MRT (Subway)",
                 "tag": "Credit Card OK",
                 "desc": "Tap your VISA/Mastercard directly at the gate. Zero wait at ticket counters.",
-                "tips": "※ Just tap your VISA Touch-enabled card"
+                "tips": "※ Just tap your VISA Touch-enabled card",
+                "insurance_tip": "Pro Tip: Paying with certain cards can activate free travel insurance (Utilization-based).",
+                "insurance_link": "See Card Hack"
             },
             "bts": {
                 "name": "BTS (Skytrain)",
