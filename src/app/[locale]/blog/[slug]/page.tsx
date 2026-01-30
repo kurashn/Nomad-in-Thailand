@@ -1,0 +1,272 @@
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import Image from 'next/image';
+import fs from 'fs/promises';
+import path from 'path';
+import { ArrowLeft } from 'lucide-react';
+import { reader } from '@/lib/reader';
+
+interface Props {
+    params: Promise<{ slug: string }>;
+}
+
+export async function generateStaticParams() {
+    const posts = await reader.collections.posts.all();
+    return posts.map((post) => ({ slug: post.slug }));
+}
+
+// Professional markdown to HTML conversion matching existing article styles
+function markdownToHtml(markdown: string): string {
+    let sectionNumber = 0;
+
+    let html = markdown
+        // H2 headers - numbered section style like Wise article
+        .replace(/^## (.+)$/gm, () => {
+            sectionNumber++;
+            return `<h2 class="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900 mt-16">
+                <span class="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base flex-shrink-0">${sectionNumber}</span>
+                <span>$1</span>
+            </h2>`;
+        })
+        // H3 headers
+        .replace(/^### (.+)$/gm, '<h3 class="font-bold text-xl text-slate-800 mt-10 mb-4">$1</h3>')
+        // Bold text
+        .replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
+        // Italic
+        .replace(/\*(.+?)\*/g, '<em>$1</em>')
+        // Inline code
+        .replace(/`(.+?)`/g, '<code class="bg-slate-100 text-[#2a9d8f] px-1.5 py-0.5 rounded text-sm font-mono">$1</code>');
+
+    // Process list blocks - convert them to styled cards
+    html = html.replace(/^(- .+\n?)+/gm, (match) => {
+        const items = match.trim().split('\n').map(line => {
+            const content = line.replace(/^- /, '');
+            return `<li class="flex items-start gap-3">
+                <span class="flex items-center justify-center w-5 h-5 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full text-xs mt-0.5 flex-shrink-0">✓</span>
+                <span class="text-slate-700">${content}</span>
+            </li>`;
+        }).join('\n');
+        return `<ul class="bg-white rounded-xl p-6 border border-slate-200 space-y-3 mb-8 shadow-sm">${items}</ul>`;
+    });
+
+    // Paragraphs - professional styling
+    html = html.replace(/^(?!<[holu]|<li|<span|<code)(.+)$/gm, (match, content) => {
+        if (content.trim() && !content.startsWith('<')) {
+            return `<p class="text-lg leading-loose text-slate-700 mb-6">${content}</p>`;
+        }
+        return match;
+    });
+
+    // Fix the H2 replacement to actually work
+    sectionNumber = 0;
+    html = html.replace(/<h2 class="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900 mt-16">\s*<span class="flex items-center justify-center w-8 h-8 bg-\[#2a9d8f\] text-white rounded-full text-base flex-shrink-0">\d+<\/span>\s*<span>\$1<\/span>\s*<\/h2>/g, (match) => {
+        sectionNumber++;
+        return match;
+    });
+
+    return html;
+}
+
+// Better markdown parser
+function parseMarkdown(markdown: string): string {
+    const lines = markdown.split('\n');
+    const result: string[] = [];
+    let sectionNumber = 0;
+    let inList = false;
+    let listItems: string[] = [];
+
+    const flushList = () => {
+        if (listItems.length > 0) {
+            result.push(`<div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-8">
+                <ul class="space-y-3">
+                    ${listItems.join('\n')}
+                </ul>
+            </div>`);
+            listItems = [];
+        }
+        inList = false;
+    };
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i].trim();
+
+        if (!line) {
+            if (inList) flushList();
+            continue;
+        }
+
+        // H2 - Numbered section header
+        if (line.startsWith('## ')) {
+            if (inList) flushList();
+            sectionNumber++;
+            const title = line.slice(3);
+            result.push(`
+                <h2 class="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900 mt-16">
+                    <span class="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base flex-shrink-0">${sectionNumber}</span>
+                    <span>${formatInline(title)}</span>
+                </h2>
+            `);
+            continue;
+        }
+
+        // H3
+        if (line.startsWith('### ')) {
+            if (inList) flushList();
+            const title = line.slice(4);
+            result.push(`<h3 class="font-bold text-xl text-slate-800 mt-10 mb-4">${formatInline(title)}</h3>`);
+            continue;
+        }
+
+        // List item
+        if (line.startsWith('- ')) {
+            inList = true;
+            const content = line.slice(2);
+
+            // Check if the content starts with a link (likely a related article or resource)
+            // In this case, use a simple bullet instead of a checkmark
+            const isLink = content.trim().startsWith('[');
+
+            if (isLink) {
+                listItems.push(`
+                    <li class="flex items-start gap-3">
+                        <span class="flex items-center justify-center w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 ml-1 flex-shrink-0"></span>
+                        <span class="text-slate-700 leading-relaxed hover:text-[#2a9d8f] transition-colors">${formatInline(content)}</span>
+                    </li>
+                `);
+            } else {
+                listItems.push(`
+                    <li class="flex items-start gap-3">
+                        <span class="flex items-center justify-center w-5 h-5 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full text-xs mt-1 flex-shrink-0">✓</span>
+                        <span class="text-slate-700 leading-relaxed">${formatInline(content)}</span>
+                    </li>
+                `);
+            }
+            continue;
+        }
+
+        // Paragraph
+        if (inList) flushList();
+        result.push(`<p class="text-lg leading-loose text-slate-700 mb-6">${formatInline(line)}</p>`);
+    }
+
+    if (inList) flushList();
+
+    return result.join('\n');
+}
+
+function formatInline(text: string): string {
+    return text
+        // Links: [text](url) -> <a href="url">text</a>
+        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors inline-flex items-center gap-1">$1<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>')
+        // Bold text
+        .replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
+        // Italic
+        .replace(/\*(.+?)\*/g, '<em>$1</em>')
+        // Inline code
+        .replace(/`(.+?)`/g, '<code class="bg-slate-100 text-[#2a9d8f] px-1.5 py-0.5 rounded text-sm font-mono">$1</code>');
+}
+
+export default async function BlogPostPage({ params }: Props) {
+    const { slug } = await params;
+
+    // Read the MDX file directly
+    const filePath = path.join(process.cwd(), 'src/content/posts', `${slug}.mdx`);
+
+    let fileContent: string;
+    try {
+        fileContent = await fs.readFile(filePath, 'utf-8');
+    } catch {
+        notFound();
+    }
+
+    // Parse frontmatter and content
+    const frontmatterMatch = fileContent.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
+
+    if (!frontmatterMatch) {
+        notFound();
+    }
+
+    const frontmatter = frontmatterMatch[1];
+    const content = frontmatterMatch[2].trim();
+
+    // Parse frontmatter fields
+    const titleMatch = frontmatter.match(/title:\s*(.+)/);
+    const dateMatch = frontmatter.match(/publishedDate:\s*(.+)/);
+    const categoryMatch = frontmatter.match(/category:\s*(.+)/);
+    const thumbnailMatch = frontmatter.match(/thumbnail:\s*(.+)/);
+
+    const title = titleMatch ? titleMatch[1].trim() : 'Untitled';
+    const publishedDate = dateMatch ? dateMatch[1].trim() : null;
+    const category = categoryMatch ? categoryMatch[1].trim() : null;
+    const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.jpg';
+
+    const htmlContent = parseMarkdown(content);
+
+    return (
+        <article className="min-h-screen bg-slate-50 pb-20 font-sans text-slate-800">
+            {/* Hero Header */}
+            <div className="relative h-[50vh] w-full">
+                <div className="absolute inset-0 bg-black/40 z-10" />
+                <div className="w-full h-full relative">
+                    <Image
+                        src={thumbnail}
+                        alt={title}
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
+                    <Link
+                        href="/blog"
+                        className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20"
+                    >
+                        <ArrowLeft className="w-4 h-4 mr-1" />
+                        記事一覧に戻る
+                    </Link>
+
+                    {category && (
+                        <div className="flex gap-2 mb-4">
+                            <span className="px-3 py-1 bg-[#2a9d8f]/90 backdrop-blur-md text-white text-xs font-bold rounded-full border border-white/20">
+                                {category}
+                            </span>
+                        </div>
+                    )}
+
+                    <h1 className="text-3xl md:text-5xl font-bold leading-tight mb-4 text-white drop-shadow-xl">
+                        {title}
+                    </h1>
+
+                    {publishedDate && (
+                        <time className="text-white/80 text-sm">
+                            {new Date(publishedDate).toLocaleDateString('ja-JP', {
+                                year: 'numeric',
+                                month: 'long',
+                                day: 'numeric'
+                            })}
+                        </time>
+                    )}
+                </div>
+            </div>
+
+            {/* Main Content */}
+            <div className="container max-w-3xl mx-auto px-4 mt-12">
+                {/* Introduction styling */}
+                <div className="prose prose-lg prose-slate max-w-none">
+                    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+                </div>
+
+                {/* Footer */}
+                <div className="mt-16 text-center">
+                    <Link
+                        href="/blog"
+                        className="inline-flex items-center text-slate-500 hover:text-[#2a9d8f] transition-colors"
+                    >
+                        <ArrowLeft className="w-4 h-4 mr-2" />
+                        記事一覧に戻る
+                    </Link>
+                </div>
+            </div>
+        </article>
+    );
+}

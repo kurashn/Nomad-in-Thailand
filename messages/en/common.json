@@ -2,6 +2,7 @@
     "Navbar": {
         "top": "Home",
         "nomadGuide": "Nomad Guide",
+        "column": "Column",
         "sponsor": "Sponsorship",
         "contact": "Contact"
     },

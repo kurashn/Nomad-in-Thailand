@@ -21,6 +21,7 @@ export default function Navbar() {
     const menuItems = [
         { href: "/", label: t('top') },
         { href: "/nomad-info", label: t('nomadGuide') },
+        { href: "/blog", label: t('column') },
         { href: "/nomad-info/sponsor", label: t('sponsor') },
         { href: "/contact", label: t('contact') },
     ];
