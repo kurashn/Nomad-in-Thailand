@@ -2,10 +2,14 @@
 import { config, fields, collection } from '@keystatic/core';
 
 export default config({
-    storage: {
-        kind: 'github',
-        repo: 'kurashn/Nomad-in-Thailand',
-    },
+    storage: process.env.NODE_ENV === 'development' || !process.env.KEYSTATIC_GITHUB_CLIENT_ID
+        ? {
+            kind: 'local',
+        }
+        : {
+            kind: 'github',
+            repo: 'kurashn/Nomad-in-Thailand',
+        },
     collections: {
         posts: collection({
             label: 'Posts',

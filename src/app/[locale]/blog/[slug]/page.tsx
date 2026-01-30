@@ -90,6 +90,55 @@ function parseMarkdown(markdown: string): string {
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i].trim();
 
+        // Table processing
+        if (line.startsWith('|')) {
+            if (inList) flushList();
+
+            // Collect table rows
+            const tableLines = [line];
+            let j = i + 1;
+            while (j < lines.length && lines[j].trim().startsWith('|')) {
+                tableLines.push(lines[j].trim());
+                j++;
+            }
+
+            // Only process as table if it looks like one (header + separator + data)
+            if (tableLines.length >= 2) {
+                const headers = tableLines[0].split('|').filter(c => c.trim()).map(c => c.trim());
+                // Skip separator line (index 1) which is |---|---|
+                const rows = tableLines.slice(2).map(rowLine =>
+                    rowLine.split('|').filter(c => c.trim()).map(c => c.trim())
+                );
+
+                const headerHtml = headers.map(h =>
+                    `<th class="px-6 py-4 text-left text-sm font-bold text-slate-700 bg-slate-50 border-b border-slate-200 whitespace-nowrap">${formatInline(h)}</th>`
+                ).join('');
+
+                const rowsHtml = rows.map((row, rowIndex) => {
+                    const cells = row.map(cell =>
+                        `<td class="px-6 py-4 text-sm text-slate-600 border-b border-slate-100">${formatInline(cell)}</td>`
+                    ).join('');
+                    return `<tr class="${rowIndex % 2 === 0 ? 'bg-white' : 'bg-slate-50/30'} hover:bg-slate-50 transition-colors">${cells}</tr>`;
+                }).join('');
+
+                result.push(`
+                    <div class="overflow-x-auto my-8 rounded-xl border border-slate-200 shadow-sm">
+                        <table class="w-full border-collapse bg-white">
+                            <thead>
+                                <tr>${headerHtml}</tr>
+                            </thead>
+                            <tbody>
+                                ${rowsHtml}
+                            </tbody>
+                        </table>
+                    </div>
+                `);
+
+                i = j - 1; // Advance main loop
+                continue;
+            }
+        }
+
         if (!line) {
             if (inList) flushList();
             continue;
@@ -149,9 +198,47 @@ function parseMarkdown(markdown: string): string {
         result.push(`<p class="text-lg leading-loose text-slate-700 mb-6">${formatInline(line)}</p>`);
     }
 
+    // Table processing
+    let processedHtml = result.join('\n');
+
+    // Convert markdown tables to styled HTML tables
+    // Match headers: | Header | Header |
+    // Match separator: | --- | --- |
+    // Match rows: | Row | Row |
+    processedHtml = processedHtml.replace(/\|(.+)\|\n\|([-:| ]+)\|\n((?:\|.*\|\n?)+)/g, (match, headerStr, separatorStr, rowsStr) => {
+        const headers = headerStr.split('|').filter((h: string) => h.trim()).map((h: string) => h.trim());
+        const rows = rowsStr.trim().split('\n').map((row: string) =>
+            row.split('|').filter(c => c.trim() !== '').map(c => c.trim())
+        );
+
+        const headerHtml = headers.map((h: string) =>
+            `<th class="px-6 py-4 text-left text-sm font-bold text-slate-700 bg-slate-50 border-b border-slate-200">${formatInline(h)}</th>`
+        ).join('');
+
+        const rowsHtml = rows.map((row: string[]) => {
+            const cells = row.map((cell: string) =>
+                `<td class="px-6 py-4 text-sm text-slate-600 border-b border-slate-100">${formatInline(cell)}</td>`
+            ).join('');
+            return `<tr class="hover:bg-slate-50/50 transition-colors">${cells}</tr>`;
+        }).join('');
+
+        return `
+            <div class="overflow-x-auto my-8 rounded-xl border border-slate-200 shadow-sm">
+                <table class="w-full border-collapse bg-white">
+                    <thead>
+                        <tr>${headerHtml}</tr>
+                    </thead>
+                    <tbody>
+                        ${rowsHtml}
+                    </tbody>
+                </table>
+            </div>
+        `;
+    });
+
     if (inList) flushList();
 
-    return result.join('\n');
+    return processedHtml;
 }
 
 function formatInline(text: string): string {
