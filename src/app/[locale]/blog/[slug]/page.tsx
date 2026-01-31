@@ -237,6 +237,33 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
+        // Accordion Component Parsing
+        // <Accordion question="...">
+        const accordionStart = line.match(/^<Accordion question="(.+?)">/);
+        if (accordionStart) {
+            if (inList) flushList();
+            const question = accordionStart[1];
+            result.push(`
+                <details class="group bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-4">
+                    <summary class="flex items-center justify-between font-bold text-lg cursor-pointer text-slate-800 list-none">
+                        ${formatInline(question)}
+                        <span class="transition-transform group-open:rotate-180 text-[#2a9d8f]">▼</span>
+                    </summary>
+                    <div class="mt-4 text-slate-700 leading-relaxed border-t pt-4 border-slate-100">
+            `);
+            continue;
+        }
+
+        // </Accordion>
+        if (line.trim() === '</Accordion>') {
+            if (inList) flushList();
+            result.push(`
+                    </div>
+                </details>
+            `);
+            continue;
+        }
+
         // List item - use regex to match * or - with simpler whitespace handling
         const listMatch = line.match(/^([-*])\s+(.+)$/);
         if (listMatch) {

@@ -1,5 +1,6 @@
 // keystatic.config.ts
 import { config, fields, collection } from '@keystatic/core';
+import { HelpCircle } from 'lucide-react';
 
 export default config({
     storage: process.env.NODE_ENV === 'development'
@@ -41,6 +42,16 @@ export default config({
                 }),
                 content: fields.mdx({
                     label: 'Content',
+                    components: {
+                        Accordion: {
+                            label: 'FAQ Accordion',
+                            icon: HelpCircle,
+                            schema: {
+                                question: fields.text({ label: 'Question' }),
+                                answer: fields.child({ kind: 'block', placeholder: 'Answer...' }),
+                            },
+                        },
+                    },
                 }),
             },
         }),
