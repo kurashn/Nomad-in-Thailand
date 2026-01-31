@@ -44,15 +44,7 @@ export default config({
                 content: fields.mdx({
                     label: 'Content',
                     components: {
-                        FAQItem: {
-                            label: 'FAQ Item',
-                            kind: 'block',
-                            icon: React.createElement(HelpCircle),
-                            schema: {
-                                question: fields.text({ label: 'Question' }),
-                                content: fields.child({ kind: 'block', placeholder: 'Answer...' }),
-                            },
-                        },
+
                     },
                 }),
             },
