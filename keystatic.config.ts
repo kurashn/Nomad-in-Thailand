@@ -50,7 +50,7 @@ export default config({
                             icon: React.createElement(HelpCircle),
                             schema: {
                                 question: fields.text({ label: 'Question' }),
-                                answer: fields.child({ kind: 'block', placeholder: 'Answer...' }),
+                                children: fields.child({ kind: 'block', placeholder: 'Answer...' }),
                             },
                         },
                     },
