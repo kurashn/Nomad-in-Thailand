@@ -44,7 +44,42 @@ export default config({
                 content: fields.mdx({
                     label: 'Content',
                     components: {
-
+                        details: fields.component({
+                            label: 'Details (Accordion)',
+                            schema: {
+                                children: fields.child({
+                                    kind: 'block',
+                                    placeholder: 'Content inside accordion',
+                                    formatting: 'inherit',
+                                    dividers: 'inherit',
+                                    links: 'inherit',
+                                }),
+                            },
+                        }),
+                        summary: fields.component({
+                            label: 'Summary (Header)',
+                            schema: {
+                                children: fields.child({
+                                    kind: 'inline',
+                                    placeholder: 'Accordion title',
+                                    formatting: 'inherit',
+                                    links: 'inherit',
+                                }),
+                            },
+                        }),
+                        FAQItem: fields.component({
+                            label: 'FAQ Item',
+                            schema: {
+                                question: fields.text({ label: 'Question' }),
+                                answer: fields.child({
+                                    kind: 'block',
+                                    placeholder: 'Answer',
+                                    formatting: 'inherit',
+                                    dividers: 'inherit',
+                                    links: 'inherit',
+                                }),
+                            },
+                        }),
                     },
                 }),
             },

@@ -238,14 +238,14 @@ function parseMarkdown(markdown: string): string {
         }
 
         // Standard HTML <details> -> Styled Accordion
-        if (line.trim() === '<details>') {
+        if (line === '<details>' || line.startsWith('<details ')) {
             if (inList) flushList();
             result.push(`
                 <details class="group bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-4">
             `);
             continue;
         }
-        if (line.trim() === '</details>') {
+        if (line === '</details>') {
             if (inList) flushList();
             result.push(`
                     </div>
@@ -255,14 +255,39 @@ function parseMarkdown(markdown: string): string {
         }
 
         // Standard HTML <summary> -> Styled Summary
-        // Matches <summary>Text</summary>
+        // Matches <summary>Text</summary> or <summary> with separate closing tag
         const summaryMatch = line.match(/^<summary>(.+?)<\/summary>$/);
         if (summaryMatch) {
             if (inList) flushList();
             const summaryText = summaryMatch[1];
             result.push(`
-                <summary class="flex items-center justify-between font-bold text-lg cursor-pointer text-slate-800 list-none">
+                <summary class="flex items-center justify-between font-bold text-lg cursor-pointer text-slate-800 list-none outline-none">
                     ${formatInline(summaryText)}
+                    <span class="transition-transform group-open:rotate-180 text-[#2a9d8f]">▼</span>
+                </summary>
+                <div class="mt-4 text-slate-700 leading-relaxed border-t pt-4 border-slate-100">
+            `);
+            continue;
+        }
+
+        if (line === '<summary>') {
+            if (inList) flushList();
+            // Handle multiline or simple <summary> starts
+            let summaryContent = '';
+            let j = i + 1;
+            while (j < lines.length && !lines[j].includes('</summary>')) {
+                summaryContent += lines[j].trim() + ' ';
+                j++;
+            }
+            if (j < lines.length && lines[j].includes('</summary>')) {
+                const closingMatch = lines[j].match(/(.*?)<\/summary>/);
+                if (closingMatch) summaryContent += closingMatch[1].trim();
+                i = j;
+            }
+
+            result.push(`
+                <summary class="flex items-center justify-between font-bold text-lg cursor-pointer text-slate-800 list-none outline-none">
+                    ${formatInline(summaryContent.trim())}
                     <span class="transition-transform group-open:rotate-180 text-[#2a9d8f]">▼</span>
                 </summary>
                 <div class="mt-4 text-slate-700 leading-relaxed border-t pt-4 border-slate-100">
