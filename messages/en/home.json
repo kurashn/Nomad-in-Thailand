@@ -24,6 +24,12 @@
                 "cta": "Read Guide"
             }
         },
+        "column": {
+            "title": "Latest Columns",
+            "subtitle": "Latest info on Thailand migration\nand nomad life",
+            "read": "Read",
+            "noArticles": "No articles yet"
+        },
         "events": {
             "title": "Latest News 2026",
             "sponsor": {

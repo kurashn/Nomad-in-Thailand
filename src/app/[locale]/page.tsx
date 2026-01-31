@@ -1,15 +1,28 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import Image from "next/image";
-import { ArrowRight, MapPin, Users, Wallet, Shield, Smartphone, Heart } from "lucide-react";
+import { ArrowRight, MapPin, Users, Wallet, Shield, Smartphone, Heart, ArrowUpRight, Tag, Clock } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import Hero from "@/components/Hero";
+import { reader } from '@/lib/reader';
 
 
-export default function Home() {
+export default async function Home() {
   // const t = useTranslations('Hero'); // Moved to Hero component
-  const tHome = useTranslations('Home');
+  const tHome = await getTranslations('Home');
+
+  // Fetch latest posts
+  const posts = await reader.collections.posts.all();
+
+  // Sort by date, newest first and take top 3
+  const latestPosts = [...posts]
+    .sort((a, b) => {
+      const dateA = a.entry.publishedDate ? new Date(a.entry.publishedDate).getTime() : 0;
+      const dateB = b.entry.publishedDate ? new Date(b.entry.publishedDate).getTime() : 0;
+      return dateB - dateA;
+    })
+    .slice(0, 3);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -104,6 +117,94 @@ export default function Home() {
               <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-red-500 text-red-600 bg-white group-hover:bg-red-500 group-hover:text-white group-hover:shadow-md">
                 {tHome('essentials.safetywing.cta')}
               </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Column Section (New) */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex items-center justify-center gap-3 mb-12">
+            <div className="h-[1px] w-8 bg-slate-300"></div>
+            <div className="text-center">
+              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 tracking-tight mb-2">
+                {tHome('column.title')}
+              </h2>
+              <p className="text-slate-500 text-sm whitespace-pre-line">
+                {tHome('column.subtitle')}
+              </p>
+            </div>
+            <div className="h-[1px] w-8 bg-slate-300"></div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {latestPosts.length > 0 ? (
+              latestPosts.map((post) => (
+                <Link
+                  href={`/blog/${post.slug}`}
+                  key={post.slug}
+                  className="block group h-full"
+                >
+                  <article className="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full flex flex-col overflow-hidden">
+                    {/* Thumbnail */}
+                    <div className="h-48 w-full relative overflow-hidden bg-slate-100">
+                      <Image
+                        src={post.entry.thumbnail || '/images/blog-default.jpg'}
+                        alt={post.entry.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      {/* Category Tag */}
+                      {post.entry.category && (
+                        <div className="absolute top-3 left-3">
+                          <span className="inline-flex items-center px-2.5 py-1 rounded-lg bg-white/90 backdrop-blur-sm text-xs font-bold text-slate-700 shadow-sm">
+                            <Tag className="w-3 h-3 mr-1 text-blue-500" />
+                            {post.entry.category}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Content */}
+                    <div className="p-6 flex flex-col flex-grow">
+                      <h3 className="text-lg font-bold mb-3 text-slate-800 group-hover:text-blue-600 transition-colors line-clamp-2 leading-snug">
+                        {post.entry.title}
+                      </h3>
+
+                      <div className="flex items-center justify-between pt-4 border-t border-slate-100 mt-auto">
+                        {post.entry.publishedDate && (
+                          <span className="text-xs text-slate-400 flex items-center">
+                            <Clock className="w-3 h-3 mr-1" />
+                            {new Date(post.entry.publishedDate).toLocaleDateString('ja-JP', {
+                              year: 'numeric',
+                              month: 'short',
+                              day: 'numeric'
+                            })}
+                          </span>
+                        )}
+                        <div className="flex items-center text-sm font-bold text-blue-600 group-hover:underline">
+                          {tHome('column.read')} <ArrowUpRight className="w-4 h-4 ml-1" />
+                        </div>
+                      </div>
+                    </div>
+                  </article>
+                </Link>
+              ))
+            ) : (
+              <div className="col-span-full text-center text-slate-400 py-12">
+                {tHome('column.noArticles')}
+              </div>
+            )}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/blog"
+              className="inline-flex items-center justify-center px-8 py-3 rounded-full border-2 border-slate-200 text-slate-600 font-bold hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 group"
+            >
+              {tHome('column.title')}をもっと見る
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
