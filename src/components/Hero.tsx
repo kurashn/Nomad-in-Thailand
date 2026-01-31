@@ -65,7 +65,7 @@ export default function Hero() {
                         }}
                     >
                         <Image
-                            src="/character/nomad-dog-hero-transparent.png"
+                            src="/character/nomad-dog-hero-fixed.png"
                             alt="Nomad Dog"
                             fill
                             className="object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]"
