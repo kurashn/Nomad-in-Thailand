@@ -230,10 +230,43 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // HTML Pass-through for details/summary/div (for accordion)
-        if (line.match(/^<\/?(details|summary|div)(>| .*?>)/)) {
+        // HTML Pass-through for div (bypass details/summary as we handle them explicitly below)
+        if (line.match(/^<\/?div(>| .*?>)/)) {
             if (inList) flushList();
             result.push(line);
+            continue;
+        }
+
+        // Standard HTML <details> -> Styled Accordion
+        if (line.trim() === '<details>') {
+            if (inList) flushList();
+            result.push(`
+                <details class="group bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-4">
+            `);
+            continue;
+        }
+        if (line.trim() === '</details>') {
+            if (inList) flushList();
+            result.push(`
+                    </div>
+                </details>
+            `);
+            continue;
+        }
+
+        // Standard HTML <summary> -> Styled Summary
+        // Matches <summary>Text</summary>
+        const summaryMatch = line.match(/^<summary>(.+?)<\/summary>$/);
+        if (summaryMatch) {
+            if (inList) flushList();
+            const summaryText = summaryMatch[1];
+            result.push(`
+                <summary class="flex items-center justify-between font-bold text-lg cursor-pointer text-slate-800 list-none">
+                    ${formatInline(summaryText)}
+                    <span class="transition-transform group-open:rotate-180 text-[#2a9d8f]">▼</span>
+                </summary>
+                <div class="mt-4 text-slate-700 leading-relaxed border-t pt-4 border-slate-100">
+            `);
             continue;
         }
 
