@@ -44,13 +44,13 @@ export default config({
                 content: fields.mdx({
                     label: 'Content',
                     components: {
-                        Accordion: {
-                            label: 'FAQ Accordion',
+                        FAQItem: {
+                            label: 'FAQ Item',
                             kind: 'block',
                             icon: React.createElement(HelpCircle),
                             schema: {
                                 question: fields.text({ label: 'Question' }),
-                                children: fields.child({ kind: 'block', placeholder: 'Answer...' }),
+                                content: fields.child({ kind: 'block', placeholder: 'Answer...' }),
                             },
                         },
                     },

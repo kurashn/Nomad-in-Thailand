@@ -237,12 +237,12 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // Accordion Component Parsing
-        // <Accordion question="...">
-        const accordionStart = line.match(/^<Accordion question="(.+?)">/);
-        if (accordionStart) {
+        // Accordion Component Parsing (using FAQItem tag from Keystatic)
+        // <FAQItem question="...">
+        const faqMatch = line.match(/^<FAQItem question="(.+?)">/);
+        if (faqMatch) {
             if (inList) flushList();
-            const question = accordionStart[1];
+            const question = faqMatch[1];
             result.push(`
                 <details class="group bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-4">
                     <summary class="flex items-center justify-between font-bold text-lg cursor-pointer text-slate-800 list-none">
@@ -254,8 +254,8 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // </Accordion>
-        if (line.trim() === '</Accordion>') {
+        // </FAQItem>
+        if (line.trim() === '</FAQItem>') {
             if (inList) flushList();
             result.push(`
                     </div>
