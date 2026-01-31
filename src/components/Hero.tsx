@@ -30,7 +30,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
             {/* Background Image with Parallax-like effect (simplest via fixed/absolute) */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -46,7 +46,7 @@ export default function Hero() {
             </div>
 
             <motion.div
-                className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-10"
+                className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-10 pb-10"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
@@ -99,7 +99,7 @@ export default function Hero() {
                 >
                     <Link href="/nomad-info" className="group">
                         <motion.div
-                            className="px-10 py-5 rounded-full bg-gradient-to-r from-teal-500 to-emerald-500 text-white font-bold text-xl flex items-center gap-3 shadow-[0_10px_40px_-10px_rgba(45,212,191,0.5)] border border-white/20 backdrop-blur-md"
+                            className="px-10 py-5 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold text-xl flex items-center gap-3 shadow-[0_10px_40px_-10px_rgba(45,212,191,0.5)] border border-white/20 backdrop-blur-md"
                             whileHover={{
                                 scale: 1.05,
                                 boxShadow: "0 20px 50px -10px rgba(45,212,191,0.6)"
