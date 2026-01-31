@@ -1,5 +1,5 @@
-// keystatic.config.ts
 import { config, fields, collection } from '@keystatic/core';
+import { wrapper, block } from '@keystatic/core/content-components';
 import { HelpCircle } from 'lucide-react';
 import React from 'react';
 
@@ -44,40 +44,18 @@ export default config({
                 content: fields.mdx({
                     label: 'Content',
                     components: {
-                        details: fields.component({
+                        details: wrapper({
                             label: 'Details (Accordion)',
-                            schema: {
-                                children: fields.child({
-                                    kind: 'block',
-                                    placeholder: 'Content inside accordion',
-                                    formatting: 'inherit',
-                                    dividers: 'inherit',
-                                    links: 'inherit',
-                                }),
-                            },
+                            schema: {}, // children is handled automatically for wrapper
                         }),
-                        summary: fields.component({
+                        summary: wrapper({
                             label: 'Summary (Header)',
-                            schema: {
-                                children: fields.child({
-                                    kind: 'inline',
-                                    placeholder: 'Accordion title',
-                                    formatting: 'inherit',
-                                    links: 'inherit',
-                                }),
-                            },
+                            schema: {},
                         }),
-                        FAQItem: fields.component({
+                        FAQItem: wrapper({
                             label: 'FAQ Item',
                             schema: {
                                 question: fields.text({ label: 'Question' }),
-                                answer: fields.child({
-                                    kind: 'block',
-                                    placeholder: 'Answer',
-                                    formatting: 'inherit',
-                                    dividers: 'inherit',
-                                    links: 'inherit',
-                                }),
                             },
                         }),
                     },
