@@ -23,6 +23,10 @@ export default config({
                     label: 'Category',
                     description: 'e.g. お金・税金, ビザ, 生活情報',
                 }),
+                description: fields.text({
+                    label: 'Description',
+                    multiline: true,
+                }),
                 tags: fields.array(
                     fields.text({ label: 'Tag' }),
                     {

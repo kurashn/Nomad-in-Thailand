@@ -15,6 +15,50 @@ export async function generateStaticParams() {
     return posts.map((post) => ({ slug: post.slug }));
 }
 
+export async function generateMetadata({ params }: Props) {
+    const { slug } = await params;
+    const filePath = path.join(process.cwd(), 'src/content/posts', `${slug}.mdx`);
+
+    try {
+        const fileContent = await fs.readFile(filePath, 'utf-8');
+        const frontmatterMatch = fileContent.match(/^---\n([\s\S]*?)\n---\n/);
+
+        if (frontmatterMatch) {
+            const frontmatter = frontmatterMatch[1];
+            const titleMatch = frontmatter.match(/title:\s*(.+)/);
+            const descriptionMatch = frontmatter.match(/description:\s*(.+)/);
+            const thumbnailMatch = frontmatter.match(/thumbnail:\s*(.+)/);
+
+            const title = titleMatch ? titleMatch[1].trim() : 'Nomad in Thailand';
+            const description = descriptionMatch ? descriptionMatch[1].trim() : 'タイ在住の日本人ノマドのためのコミュニティメディア';
+            const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.jpg';
+
+            return {
+                title,
+                description,
+                openGraph: {
+                    title,
+                    description,
+                    images: [thumbnail],
+                    type: 'article',
+                },
+                twitter: {
+                    card: 'summary_large_image',
+                    title,
+                    description,
+                    images: [thumbnail],
+                },
+            };
+        }
+    } catch (e) {
+        console.error('Failed to generate metadata:', e);
+    }
+
+    return {
+        title: 'Nomad in Thailand',
+    };
+}
+
 // Professional markdown to HTML conversion matching existing article styles
 function markdownToHtml(markdown: string): string {
     let sectionNumber = 0;
@@ -38,15 +82,15 @@ function markdownToHtml(markdown: string): string {
         .replace(/`(.+?)`/g, '<code class="bg-slate-100 text-[#2a9d8f] px-1.5 py-0.5 rounded text-sm font-mono">$1</code>');
 
     // Process list blocks - convert them to styled cards
-    html = html.replace(/^(- .+\n?)+/gm, (match) => {
+    html = html.replace(/^([-*] .+\n?)+/gm, (match) => {
         const items = match.trim().split('\n').map(line => {
-            const content = line.replace(/^- /, '');
+            const content = line.replace(/^[-*] /, '');
             return `<li class="flex items-start gap-3">
                 <span class="flex items-center justify-center w-5 h-5 bg-[#2a9d8f]/10 text-[#2a9d8f] rounded-full text-xs mt-0.5 flex-shrink-0">✓</span>
                 <span class="text-slate-700">${content}</span>
             </li>`;
         }).join('\n');
-        return `<ul class="bg-white rounded-xl p-6 border border-slate-200 space-y-3 mb-8 shadow-sm">${items}</ul>`;
+        return `<ul class="bg-white rounded-xl p-6 border border-slate-200 space-y-1 mb-6 shadow-sm">${items}</ul>`;
     });
 
     // Paragraphs - professional styling
@@ -78,7 +122,7 @@ function parseMarkdown(markdown: string): string {
     const flushList = () => {
         if (listItems.length > 0) {
             result.push(`<div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-8">
-                <ul class="space-y-3">
+                <ul class="space-y-1">
                     ${listItems.join('\n')}
                 </ul>
             </div>`);
@@ -166,20 +210,49 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // List item
-        if (line.startsWith('- ')) {
+        // YouTube Embed Shortcode: [YOUTUBE:videoId]
+        const youtubeMatch = line.match(/^\[YOUTUBE:(.+?)\]$/);
+        if (youtubeMatch) {
+            if (inList) flushList();
+            const videoId = youtubeMatch[1];
+            result.push(`
+                <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg mb-10 mt-8">
+                    <iframe
+                        class="w-full h-full"
+                        src="https://www.youtube.com/embed/${videoId}"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            `);
+            continue;
+        }
+
+        // HTML Pass-through for details/summary/div (for accordion)
+        if (line.match(/^<\/?(details|summary|div)(>| .*?>)/)) {
+            if (inList) flushList();
+            result.push(line);
+            continue;
+        }
+
+        // List item - use regex to match * or - with simpler whitespace handling
+        const listMatch = line.match(/^([-*])\s+(.+)$/);
+        if (listMatch) {
             inList = true;
-            const content = line.slice(2);
+            const content = listMatch[2];
 
             // Check if the content starts with a link (likely a related article or resource)
             // In this case, use a simple bullet instead of a checkmark
+            // Allow for potential spaces like [ Link ]
             const isLink = content.trim().startsWith('[');
 
             if (isLink) {
                 listItems.push(`
                     <li class="flex items-start gap-3">
                         <span class="flex items-center justify-center w-1.5 h-1.5 bg-slate-400 rounded-full mt-2.5 ml-1 flex-shrink-0"></span>
-                        <span class="text-slate-700 leading-relaxed hover:text-[#2a9d8f] transition-colors">${formatInline(content)}</span>
+                        <span class="text-slate-700 leading-relaxed hover:text-[#2a9d8f] transition-colors w-full">${formatInline(content)}</span>
                     </li>
                 `);
             } else {
@@ -197,6 +270,9 @@ function parseMarkdown(markdown: string): string {
         if (inList) flushList();
         result.push(`<p class="text-lg leading-loose text-slate-700 mb-6">${formatInline(line)}</p>`);
     }
+
+    // Flush any remaining list at the end of the file
+    if (inList) flushList();
 
     // Table processing
     let processedHtml = result.join('\n');
@@ -236,15 +312,13 @@ function parseMarkdown(markdown: string): string {
         `;
     });
 
-    if (inList) flushList();
-
     return processedHtml;
 }
 
 function formatInline(text: string): string {
     return text
         // Links: [text](url) -> <a href="url">text</a>
-        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors inline-flex items-center gap-1">$1<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>')
+        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-[#4682B4] hover:text-blue-800 hover:underline font-medium transition-colors inline-flex items-center gap-1">$1<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>')
         // Bold text
         .replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
         // Italic
