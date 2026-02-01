@@ -426,7 +426,8 @@ export default function DtvVisaPage() {
                 </section>
 
 
-                {locale === 'ja' && (
+                {/* LINE Call to Action - Hidden for compliance */}
+                {/* {locale === 'ja' && (
                     <div className="bg-[#06C755]/5 border border-[#06C755]/20 p-8 rounded-2xl text-center mb-16">
                         <h3 className="text-xl font-bold text-[#06C755] mb-2">
                             {t('line.title')}
@@ -436,11 +437,11 @@ export default function DtvVisaPage() {
                                 responsiveBr: () => <br className="hidden sm:inline" />
                             })}
                         </p>
-                        <a href="https://lin.ee/Qm46nCA" target="_blank" className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#06C755]/90 text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 shadow-md">
+                        <a href="https://lin.ee/E1QFFRn" target="_blank" className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#06C755]/90 text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 shadow-md">
                             {t('line.cta')} <ArrowRight className="w-4 h-4" />
                         </a>
                     </div>
-                )}
+                )} */}
 
                 {/* FAQ */}
                 <section className="mb-20">

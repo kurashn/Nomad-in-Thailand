@@ -230,6 +230,23 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
+        // LineCTA Component: <LineCTA text="..." url="..." />
+        const lineCtaMatch = line.match(/^<LineCTA\s+text="(.+?)"\s+url="(.+?)"\s*\/>$/);
+        if (lineCtaMatch) {
+            if (inList) flushList();
+            const ctaText = lineCtaMatch[1];
+            const ctaUrl = lineCtaMatch[2];
+            result.push(`
+                <div class="flex flex-col items-center mt-6 mb-10">
+                    <a href="${ctaUrl}" target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center justify-center px-8 py-3 font-bold text-white transition-all duration-200 bg-gradient-to-r from-[#06C755] to-[#00B900] rounded-full hover:scale-105 hover:shadow-lg shadow-md">
+                        <span>${ctaText}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    </a>
+                </div>
+            `);
+            continue;
+        }
+
         // HTML Pass-through for div and complex structures (bypass details/summary handling below)
         // Allow common block/visual tags including lists
         if (line.match(/^\s*<\/?(div|h3|h4|span|p|svg|path|ul|ol|li)(>| .*?>)/)) {
@@ -456,9 +473,10 @@ export default async function BlogPostPage({ params }: Props) {
     return (
         <article className="min-h-screen bg-slate-50 pb-20 font-sans text-slate-800">
             {/* Hero Header */}
-            <div className="relative h-[50vh] w-full">
+            {/* Hero Header */}
+            <div className="relative min-h-[50vh] w-full flex flex-col justify-end">
                 <div className="absolute inset-0 bg-black/40 z-10" />
-                <div className="w-full h-full relative">
+                <div className="absolute inset-0 w-full h-full">
                     <Image
                         src={thumbnail}
                         alt={title}
@@ -467,7 +485,7 @@ export default async function BlogPostPage({ params }: Props) {
                         priority
                     />
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 z-20 container max-w-4xl mx-auto px-4 pb-12">
+                <div className="relative z-20 container max-w-4xl mx-auto px-4 pb-12 pt-24">
                     <Link
                         href="/blog"
                         className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20"

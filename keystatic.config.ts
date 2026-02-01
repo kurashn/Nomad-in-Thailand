@@ -58,6 +58,19 @@ export default config({
                                 question: fields.text({ label: 'Question' }),
                             },
                         }),
+                        LineCTA: block({
+                            label: 'LINE CTA Button',
+                            schema: {
+                                text: fields.text({
+                                    label: 'Button Text',
+                                    defaultValue: 'LINEで相談する',
+                                }),
+                                url: fields.text({
+                                    label: 'LINE URL',
+                                    defaultValue: 'https://lin.ee/E1QFFRn',
+                                }),
+                            },
+                        }),
                     },
                 }),
             },
