@@ -20,9 +20,9 @@ export default function Navbar() {
 
     const menuItems = [
         { href: "/", label: t('top') },
+        { href: "/blog/thailand-migration-guide", label: t('migrationGuide') },
         { href: "/nomad-info", label: t('nomadGuide') },
         { href: "/blog", label: t('column') },
-        { href: "/nomad-info/sponsor", label: t('sponsor') },
         { href: "/contact", label: t('contact') },
     ];
 
@@ -53,12 +53,12 @@ export default function Navbar() {
                     </div>
 
                     {/* Desktop Menu */}
-                    <div className="hidden md:flex items-center space-x-8 ml-10">
+                    <div className="hidden lg:flex items-center space-x-8 ml-10">
                         {menuItems.map((item) => (
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium"
+                                className="hover:text-primary transition-colors px-3 py-2 rounded-md text-sm font-medium whitespace-nowrap"
                             >
                                 {item.label}
                             </Link>
@@ -90,7 +90,7 @@ export default function Navbar() {
                     </div>
 
                     {/* Mobile Hamburger Button */}
-                    <div className="-mr-2 flex md:hidden items-center gap-3">
+                    <div className="-mr-2 flex lg:hidden items-center gap-3">
                         {/* Language Switcher Mobile - Improved Design */}
                         <div className="flex items-center bg-muted/50 rounded-full p-0.5 gap-0.5">
                             <button
@@ -126,7 +126,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden border-t border-muted bg-background">
+                <div className="lg:hidden border-t border-muted bg-background">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         {menuItems.map((item) => (
                             <Link

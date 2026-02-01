@@ -1,8 +1,9 @@
 {
     "Navbar": {
         "top": "Home",
-        "nomadGuide": "Nomad Guide",
-        "column": "Column",
+        "nomadGuide": "Nomad Resources",
+        "migrationGuide": "Migration Guide",
+        "column": "Latest",
         "sponsor": "Sponsorship",
         "contact": "Contact"
     },
@@ -20,7 +21,8 @@
         "logoAlt": "Nomad in Thailand Logo",
         "contents": {
             "title": "Contents",
-            "guide": "Nomad Guide"
+            "guide": "Nomad Guide",
+            "sponsor": "Sponsorship"
         },
         "links": {
             "title": "Links",
@@ -31,9 +33,9 @@
         "copyright": "© 2026 Nomad in Thailand. All rights reserved."
     },
     "NomadInfo": {
-        "title": "Nomad Info Guide",
+        "title": "Nomad Resources",
         "description": "From visa and coworking to transport and hospitals. A complete roadmap for a successful nomad life in Thailand.",
-        "heading": "Thailand Nomad Guide",
+        "heading": "Nomad Resources",
         "intro": "From 'Work & Visa' like taxes and permits to 'Life & Places' like transport and hospitals.\nWe've gathered all the truly useful information selected by local nomads right here."
     },
     "Contact": {

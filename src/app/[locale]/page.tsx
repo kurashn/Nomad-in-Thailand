@@ -30,6 +30,77 @@ export default async function Home() {
       {/* Hero Section */}
       <Hero />
 
+      {/* Feature Section (Thailand Migration Guide) */}
+      <section className="py-16 px-4 bg-[#FFFBF7] border-b border-slate-200">
+        <div className="max-w-6xl mx-auto">
+          <Link href="/blog/thailand-migration-guide" className="block group">
+            <div className="relative overflow-hidden rounded-[2rem] bg-[#2C3E50] shadow-2xl transition-all duration-500 hover:shadow-[#2C3E50]/20 hover:-translate-y-1">
+              {/* Background Image with Overlay */}
+              <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 bg-[#2C3E50]/70 z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-[#2C3E50] via-[#2C3E50]/90 to-transparent z-10"></div>
+                <Image
+                  src="/images/posts/thailand-migration-guide/thumbnail.jpg"
+                  alt="Thailand Migration Guide"
+                  fill
+                  className="object-cover opacity-50 group-hover:scale-105 transition-transform duration-1000 ease-out"
+                />
+              </div>
+
+              <div className="relative z-20 flex flex-col md:flex-row items-center min-h-[400px]">
+                {/* Text Content */}
+                <div className="p-8 md:p-16 flex-1 w-full md:w-2/3">
+                  <div className="inline-flex items-center gap-3 mb-8 px-4 py-2 rounded-full bg-[#e9c46a]/10 border border-[#e9c46a]/20 backdrop-blur-sm">
+                    <span className="flex h-2 w-2 relative">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e9c46a] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e9c46a]"></span>
+                    </span>
+                    <span className="text-sm font-bold text-[#e9c46a] tracking-widest uppercase">
+                      {tHome('feature.tag')}
+                    </span>
+                  </div>
+
+                  <h2 className="text-3xl md:text-5xl font-black font-serif text-white mb-8 leading-tight tracking-tight drop-shadow-lg whitespace-pre-line">
+                    {tHome('feature.title')}
+                  </h2>
+
+                  <p className="text-slate-100/90 text-lg md:text-xl mb-10 leading-relaxed font-medium max-w-2xl border-l-4 border-[#e9c46a] pl-6">
+                    {tHome('feature.subtitle')}
+                  </p>
+
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <div className="inline-flex items-center justify-center px-8 py-4 bg-[#2a9d8f] text-white font-bold text-lg rounded-xl hover:bg-[#268c7f] transition-all duration-300 shadow-lg shadow-[#2a9d8f]/30 group-hover:pl-10">
+                      {tHome('feature.cta')}
+                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* Visual Decoration (Desktop only) */}
+                <div className="hidden md:block w-1/3 h-full relative p-12">
+                  {/* Book/Magazine cover effect */}
+                  <div className="absolute right-12 top-1/2 -translate-y-1/2 w-64 aspect-[3/4] bg-white rounded-r-2xl rounded-l-sm shadow-[10px_10px_30px_rgba(0,0,0,0.3)] rotate-6 group-hover:rotate-3 transition-transform duration-500 overflow-hidden border-l-8 border-[#1a2530]">
+                    <div className="absolute inset-0 bg-[#2C3E50] p-6 flex flex-col justify-between">
+                      <div className="border border-[#e9c46a]/30 h-full w-full p-4 flex flex-col items-center justify-center text-center">
+                        <div className="w-16 h-16 bg-[#e9c46a] rounded-full flex items-center justify-center mb-6 shadow-md">
+                          <ArrowUpRight className="w-8 h-8 text-[#2C3E50]" />
+                        </div>
+                        <h3 className="font-serif text-3xl text-[#e9c46a] mb-4 leading-tight font-bold">タイ移住<br />完全ガイド</h3>
+                        <div className="w-10 h-1 bg-white/20 my-2"></div>
+                        <p className="text-white/60 text-xs font-serif tracking-widest mt-2">MIGRATION GUIDE</p>
+                        <p className="text-white/40 text-[10px] mt-8">2026 EDITION</p>
+                      </div>
+                    </div>
+                    {/* Gloss effect */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       {/* Nomad Essentials Section */}
       <section className="py-20 bg-slate-50 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4">

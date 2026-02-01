@@ -1,5 +1,11 @@
 {
     "Home": {
+        "feature": {
+            "tag": "Must Read",
+            "title": "Planning Your Move\nto Thailand?",
+            "subtitle": "2026 Edition. Visa, Cost of Living, Jobs, Locations.\nEverything you need to know for a successful migration.",
+            "cta": "Read the Complete Guide"
+        },
         "essentials": {
             "title": "4 Essential Tools for\nDigital Nomads",
             "subtitle": "Convenient. Affordable. Secure.\nThrive anywhere with these tools.",
@@ -25,7 +31,7 @@
             }
         },
         "column": {
-            "title": "Latest Columns",
+            "title": "Latest Articles",
             "subtitle": "Latest info on Thailand migration\nand nomad life",
             "read": "Read",
             "noArticles": "No articles yet"

@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next'
+import { reader } from '@/lib/reader'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://nomad-th.com' // Actual domain
 
     // Core pages
@@ -8,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '',
         '/nomad-info',
         '/living',
-
+        '/blog',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -16,10 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 1.0,
     }))
 
-    // Articles - Nomad Info
+    // Articles - Nomad Info (Static content)
     const nomadInfoArticles = [
         '/nomad-info/bangkok-roadmap',
-        '/nomad-info/bangkok-map',
+
         '/nomad-info/coworking-guide',
         '/nomad-info/tax-money-guide',
         '/nomad-info/dtv-visa',
@@ -37,7 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }))
 
-    // Articles - Living Guide
+    // Articles - Living Guide (Static content)
     const livingArticles = [
         '/living/area-guide',
         '/living/medical-guide',
@@ -50,5 +51,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
     }))
 
-    return [...routes, ...nomadInfoArticles, ...livingArticles]
+    // Dynamic Blog Posts from Keystatic
+    const posts = await reader.collections.posts.all()
+    const blogPosts = posts.map((post) => ({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: post.entry.publishedDate ? new Date(post.entry.publishedDate) : new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
+    }))
+
+    return [...routes, ...nomadInfoArticles, ...livingArticles, ...blogPosts]
 }

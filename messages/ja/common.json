@@ -1,8 +1,9 @@
 {
     "Navbar": {
         "top": "TOP",
-        "nomadGuide": "タイノマド攻略ガイド",
-        "column": "コラム",
+        "nomadGuide": "ノマド生活情報",
+        "migrationGuide": "タイ移住ガイド",
+        "column": "新着記事",
         "sponsor": "スポンサー募集",
         "contact": "お問い合わせ"
     },
@@ -20,7 +21,8 @@
         "logoAlt": "Nomad in Thailand ロゴ",
         "contents": {
             "title": "コンテンツ",
-            "guide": "タイノマド攻略ガイド"
+            "guide": "タイノマド攻略ガイド",
+            "sponsor": "スポンサー募集"
         },
         "links": {
             "title": "関連リンク",
@@ -31,9 +33,9 @@
         "copyright": "© 2026 Nomad in Thailand -ノマタイ-. All rights reserved."
     },
     "NomadInfo": {
-        "title": "タイノマド攻略ガイド",
+        "title": "ノマド生活情報",
         "description": "ビザ、コワーキングから移動手段、病院まで。タイでのノマド生活を成功させるための完全ロードマップ。",
-        "heading": "タイノマド攻略ガイド",
+        "heading": "ノマド生活情報",
         "intro": "ビザや税金などの「仕事・実務」から、移動や病院などの「生活情報」まで。\n現地在住ノマドが厳選した、本当に役立つ全情報をここに集約しました。"
     },
     "Contact": {

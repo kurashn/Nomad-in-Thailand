@@ -13,7 +13,7 @@ async function loadMessages(locale: string) {
         ...(await import(`../../messages/${locale}/cafe-guide.json`)).default,
         ...(await import(`../../messages/${locale}/coworking-guide.json`)).default,
         ...(await import(`../../messages/${locale}/bangkok-roadmap.json`)).default,
-        ...(await import(`../../messages/${locale}/bangkok-map.json`)).default,
+
         ...(await import(`../../messages/${locale}/tax-money-guide.json`)).default,
         ...(await import(`../../messages/${locale}/area-guide.json`)).default,
         ...(await import(`../../messages/${locale}/cheat-sheet.json`)).default,

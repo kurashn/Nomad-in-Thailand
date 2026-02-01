@@ -11,15 +11,7 @@ export const nomadArticlesJa = [
         image: "/images/credit_card_hero.png",
         link: "/nomad-info/credit-card"
     },
-    {
-        id: 110,
-        title: "【保存版】バンコクノマド完全マップ2026 | カフェ・コワーキング・居住エリア網羅",
-        excerpt: "バンコクの「作業できるカフェ」「最強コワーキング」「住みやすいエリア」を1枚のマップ（リスト）にまとめました。PDFダウンロード可能。",
-        category: "完全マップ",
-        date: "2026-01-10",
-        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
-        link: "/nomad-info/bangkok-map"
-    },
+
     {
         id: 100,
         title: "「公式YouTube」パートナー・スポンサー募集",
@@ -122,15 +114,7 @@ export const nomadArticlesEn = [
         image: "/images/credit_card_hero.png",
         link: "/nomad-info/credit-card"
     },
-    {
-        id: 110,
-        title: "Bangkok Nomad Map 2026 | Ultimate Guide to Cafes, Coworking & Living Areas",
-        excerpt: "A comprehensive map of Bangkok's best work-friendly cafes, top coworking spaces, and livable areas. PDF download available.",
-        category: "Ultimate Map",
-        date: "2026-01-10",
-        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
-        link: "/nomad-info/bangkok-map"
-    },
+
     {
         id: 100,
         title: "Partner & Sponsor Recruitment for 'Overseas Nomad Podcast'",

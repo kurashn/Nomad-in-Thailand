@@ -206,7 +206,7 @@ function parseMarkdown(markdown: string): string {
         if (line.startsWith('### ')) {
             if (inList) flushList();
             const title = line.slice(4);
-            result.push(`<h3 class="font-bold text-xl text-slate-800 mt-10 mb-4">${formatInline(title)}</h3>`);
+            result.push(`<h3 class="flex items-center text-xl font-bold text-slate-800 mt-10 mb-4 border-l-4 border-[#2a9d8f] pl-4">${formatInline(title)}</h3>`);
             continue;
         }
 
@@ -230,8 +230,9 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // HTML Pass-through for div (bypass details/summary as we handle them explicitly below)
-        if (line.match(/^<\/?div(>| .*?>)/)) {
+        // HTML Pass-through for div and complex structures (bypass details/summary handling below)
+        // Allow common block/visual tags including lists
+        if (line.match(/^\s*<\/?(div|h3|h4|span|p|svg|path|ul|ol|li)(>| .*?>)/)) {
             if (inList) flushList();
             result.push(line);
             continue;
@@ -403,7 +404,11 @@ function parseMarkdown(markdown: string): string {
 function formatInline(text: string): string {
     return text
         // Links: [text](url) -> <a href="url">text</a>
-        .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2" class="text-[#4682B4] hover:text-blue-800 hover:underline font-medium transition-colors inline-flex items-center gap-1">$1<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>')
+        .replace(/\[(.+?)\]\((.+?)\)/g, (match, text, url) => {
+            const isExternal = url.startsWith('http');
+            const targetAttr = isExternal ? ' target="_blank" rel="noopener noreferrer"' : '';
+            return `<a href="${url}"${targetAttr} class="text-[#4682B4] hover:text-blue-800 hover:underline font-medium transition-colors inline-flex items-center gap-1">${text}<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline-block"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>`;
+        })
         // Bold text
         .replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
         // Italic
