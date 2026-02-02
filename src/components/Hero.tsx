@@ -85,10 +85,14 @@ export default function Hero() {
                 {/* Subtitle & Description */}
                 <motion.div variants={itemVariants} className="mb-12">
                     <p className="text-xl md:text-3xl text-slate-100 font-bold drop-shadow-lg whitespace-pre-line leading-relaxed">
-                        {t('subtitle')}
+                        {t.rich('subtitle', {
+                            nowrap: (chunks) => <span className="inline-block whitespace-nowrap">{chunks}</span>
+                        })}
                     </p>
                     <p className="text-base md:text-xl text-slate-200/90 mt-6 max-w-3xl mx-auto leading-relaxed font-medium">
-                        {t('description')}
+                        {t.rich('description', {
+                            nowrap: (chunks) => <span className="inline-block whitespace-nowrap">{chunks}</span>
+                        })}
                     </p>
                 </motion.div>
 

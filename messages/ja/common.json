@@ -13,8 +13,8 @@
     },
     "Hero": {
         "title": "Nomad in Thailand",
-        "subtitle": "PC1台で、世界はもっと近くなる。\n働き方も、住む場所も、自分で選ぶ自由を。",
-        "description": "あなたの理想のライフスタイルが、\nここから始まります。",
+        "subtitle": "PC1台で、世界はもっと近くなる。\n働き方も、住む場所も、<nowrap>自分で選ぶ自由を。</nowrap>",
+        "description": "あなたの理想のライフスタイルが、\n<nowrap>ここから始まります。</nowrap>",
         "cta": "ノマド生活を始める"
     },
     "Footer": {
