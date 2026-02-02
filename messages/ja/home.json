@@ -2,9 +2,9 @@
     "Home": {
         "feature": {
             "tag": "Must Read",
-            "title": "これからタイ移住を目指す\nあなたへ。",
+            "title": "これからタイ移住を<nowrap>目指すあなたへ。</nowrap>",
             "subtitle": "2026年最新版。ビザ、生活費、仕事、エリア選び。\n失敗しないための全知識をこの1記事に。",
-            "cta": "タイ移住完全ガイドを読む"
+            "cta": "タイ移住<nowrap>完全ガイドを読む</nowrap>"
         },
         "essentials": {
             "title": "海外ノマドを支える\n「4種の神器」",
@@ -84,7 +84,7 @@
         },
         "youtube": {
             "tag": "Main Contents",
-            "title": "YouTubeでリアルな情報を発信中",
+            "title": "YouTubeで\nリアルな情報を発信中",
             "channel": "「公式YouTube」",
             "desc": "文章だけでは伝わらない、現地の空気感やノマドの生の声をお届けします。",
             "cta": "YouTubeを見る"

@@ -61,7 +61,9 @@ export default async function Home() {
                   </div>
 
                   <h2 className="text-3xl md:text-5xl font-black font-serif text-white mb-8 leading-tight tracking-tight drop-shadow-lg whitespace-pre-line">
-                    {tHome('feature.title')}
+                    {tHome.rich('feature.title', {
+                      nowrap: (chunks) => <span className="whitespace-nowrap">{chunks}</span>
+                    })}
                   </h2>
 
                   <p className="text-slate-100/90 text-lg md:text-xl mb-10 leading-relaxed font-medium max-w-2xl border-l-4 border-[#e9c46a] pl-6">
@@ -70,7 +72,9 @@ export default async function Home() {
 
                   <div className="flex flex-col sm:flex-row gap-4">
                     <div className="inline-flex items-center justify-center px-8 py-4 bg-[#2a9d8f] text-white font-bold text-lg rounded-xl hover:bg-[#268c7f] transition-all duration-300 shadow-lg shadow-[#2a9d8f]/30 group-hover:pl-10">
-                      {tHome('feature.cta')}
+                      {tHome.rich('feature.cta', {
+                        nowrap: (chunks) => <span className="whitespace-nowrap">{chunks}</span>
+                      })}
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </div>
                   </div>
@@ -413,7 +417,7 @@ export default async function Home() {
               {tHome('youtube.tag')}
             </span>
           </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">{tHome('youtube.title')}</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 whitespace-pre-line">{tHome('youtube.title')}</h2>
           <p className="text-lg text-muted-foreground mb-8">
             {tHome('youtube.desc')}
           </p>
