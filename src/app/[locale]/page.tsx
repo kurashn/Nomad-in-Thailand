@@ -71,11 +71,11 @@ export default async function Home() {
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="inline-flex items-center justify-center px-8 py-4 bg-[#2a9d8f] text-white font-bold text-lg rounded-xl hover:bg-[#268c7f] transition-all duration-300 shadow-lg shadow-[#2a9d8f]/30 group-hover:pl-10">
+                    <div className="inline-flex items-center justify-center px-6 md:px-8 py-4 bg-[#2a9d8f] text-white font-bold text-base md:text-lg rounded-xl hover:bg-[#268c7f] transition-all duration-300 shadow-lg shadow-[#2a9d8f]/30 group-hover:pl-10">
                       {tHome.rich('feature.cta', {
                         nowrap: (chunks) => <span className="whitespace-nowrap">{chunks}</span>
                       })}
-                      <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
+                      <ArrowRight className="ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
                     </div>
                   </div>
                 </div>
