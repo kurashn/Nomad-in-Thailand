@@ -115,20 +115,23 @@ function markdownToHtml(markdown: string): string {
 function parseMarkdown(markdown: string): string {
     const lines = markdown.split('\n');
     const result: string[] = [];
-    let sectionNumber = 0;
-    let inList = false;
+    let currentListType: 'ul' | 'ol' | null = null;
     let listItems: string[] = [];
 
     const flushList = () => {
         if (listItems.length > 0) {
-            result.push(`<div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-8">
-                <ul class="space-y-1">
+            const containerClass = "bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-8";
+            const listTag = currentListType === 'ul' ? 'ul' : 'ol';
+            const spacingClass = currentListType === 'ul' ? 'space-y-1' : 'space-y-4';
+
+            result.push(`<div class="${containerClass}">
+                <${listTag} class="${spacingClass}">
                     ${listItems.join('\n')}
-                </ul>
+                </${listTag}>
             </div>`);
             listItems = [];
         }
-        inList = false;
+        currentListType = null;
     };
 
     for (let i = 0; i < lines.length; i++) {
@@ -136,7 +139,7 @@ function parseMarkdown(markdown: string): string {
 
         // Table processing
         if (line.startsWith('|')) {
-            if (inList) flushList();
+            if (currentListType) flushList();
 
             // Collect table rows
             const tableLines = [line];
@@ -184,19 +187,17 @@ function parseMarkdown(markdown: string): string {
         }
 
         if (!line) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             continue;
         }
 
-        // H2 - Numbered section header
+        // H2 - Section header
         if (line.startsWith('## ')) {
-            if (inList) flushList();
-            sectionNumber++;
+            if (currentListType) flushList();
             const title = line.slice(3);
             result.push(`
-                <h2 class="flex items-center gap-3 text-2xl font-bold border-b pb-4 mb-8 text-slate-900 mt-16">
-                    <span class="flex items-center justify-center w-8 h-8 bg-[#2a9d8f] text-white rounded-full text-base flex-shrink-0">${sectionNumber}</span>
-                    <span>${formatInline(title)}</span>
+                <h2 class="flex items-center text-2xl font-bold text-slate-900 mt-16 mb-8 p-4 bg-white border-l-4 border-[#2a9d8f] shadow-sm rounded-r-lg">
+                    ${formatInline(title)}
                 </h2>
             `);
             continue;
@@ -204,7 +205,7 @@ function parseMarkdown(markdown: string): string {
 
         // H3
         if (line.startsWith('### ')) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             const title = line.slice(4);
             result.push(`<h3 class="flex items-center text-xl font-bold text-slate-800 mt-10 mb-4 border-l-4 border-[#2a9d8f] pl-4">${formatInline(title)}</h3>`);
             continue;
@@ -213,7 +214,7 @@ function parseMarkdown(markdown: string): string {
         // YouTube Embed Shortcode: [YOUTUBE:videoId]
         const youtubeMatch = line.match(/^\[YOUTUBE:(.+?)\]$/);
         if (youtubeMatch) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             const videoId = youtubeMatch[1];
             result.push(`
                 <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg mb-10 mt-8">
@@ -233,7 +234,7 @@ function parseMarkdown(markdown: string): string {
         // LineCTA Component: <LineCTA text="..." url="..." />
         const lineCtaMatch = line.match(/^<LineCTA\s+text="(.+?)"\s+url="(.+?)"\s*\/>$/);
         if (lineCtaMatch) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             const ctaText = lineCtaMatch[1];
             const ctaUrl = lineCtaMatch[2];
             result.push(`
@@ -247,24 +248,23 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // HTML Pass-through for div and complex structures (bypass details/summary handling below)
-        // Allow common block/visual tags including lists
+        // HTML Pass-through
         if (line.match(/^\s*<\/?(div|h3|h4|span|p|svg|path|ul|ol|li)(>| .*?>)/)) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             result.push(line);
             continue;
         }
 
-        // Standard HTML <details> -> Styled Accordion
+        // Standard HTML <details>
         if (line === '<details>' || line.startsWith('<details ')) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             result.push(`
                 <details class="group bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-4">
             `);
             continue;
         }
         if (line === '</details>') {
-            if (inList) flushList();
+            if (currentListType) flushList();
             result.push(`
                     </div>
                 </details>
@@ -272,11 +272,10 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // Standard HTML <summary> -> Styled Summary
-        // Matches <summary>Text</summary> or <summary> with separate closing tag
+        // Standard HTML <summary>
         const summaryMatch = line.match(/^<summary>(.+?)<\/summary>$/);
         if (summaryMatch) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             const summaryText = summaryMatch[1];
             result.push(`
                 <summary class="flex items-center justify-between font-bold text-lg cursor-pointer text-slate-800 list-none outline-none">
@@ -289,7 +288,7 @@ function parseMarkdown(markdown: string): string {
         }
 
         if (line === '<summary>') {
-            if (inList) flushList();
+            if (currentListType) flushList();
             // Handle multiline or simple <summary> starts
             let summaryContent = '';
             let j = i + 1;
@@ -313,11 +312,10 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // Accordion Component Parsing (using FAQItem tag from Keystatic)
-        // <FAQItem question="...">
+        // FAQItem
         const faqMatch = line.match(/^<FAQItem question="(.+?)">/);
         if (faqMatch) {
-            if (inList) flushList();
+            if (currentListType) flushList();
             const question = faqMatch[1];
             result.push(`
                 <details class="group bg-white rounded-xl p-6 border border-slate-200 shadow-sm mb-4">
@@ -332,7 +330,7 @@ function parseMarkdown(markdown: string): string {
 
         // </FAQItem>
         if (line.trim() === '</FAQItem>') {
-            if (inList) flushList();
+            if (currentListType) flushList();
             result.push(`
                     </div>
                 </details>
@@ -340,15 +338,35 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // List item - use regex to match * or - with simpler whitespace handling
+        // Ordered List (1. item)
+        const olMatch = line.match(/^(\d+)\.\s+(.+)$/);
+        if (olMatch) {
+            // If checking switching from ul to ol or vice versa, flush
+            if (currentListType === 'ul') flushList();
+
+            currentListType = 'ol';
+            const number = olMatch[1];
+            const content = olMatch[2];
+
+            listItems.push(`
+                <li class="flex items-start gap-3">
+                    <span class="flex items-center justify-center w-6 h-6 bg-[#2a9d8f] text-white rounded-full text-xs flex-shrink-0 font-bold mt-0.5">${number}</span>
+                    <span class="text-slate-700 leading-relaxed pt-0.5">${formatInline(content)}</span>
+                </li>
+            `);
+            continue;
+        }
+
+        // Unordered List item (- or *)
         const listMatch = line.match(/^([-*])\s+(.+)$/);
         if (listMatch) {
-            inList = true;
+            // If checking switching from ol to ul, flush
+            if (currentListType === 'ol') flushList();
+
+            currentListType = 'ul';
             const content = listMatch[2];
 
-            // Check if the content starts with a link (likely a related article or resource)
-            // In this case, use a simple bullet instead of a checkmark
-            // Allow for potential spaces like [ Link ]
+            // Check if the content starts with a link (likely a related article)
             const isLink = content.trim().startsWith('[');
 
             if (isLink) {
@@ -369,13 +387,50 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
+        // Blockquote
+        // Matches > Text
+        const blockquoteMatch = line.match(/^>\s?(.*)$/);
+        if (blockquoteMatch) {
+            if (currentListType) flushList();
+            const content = blockquoteMatch[1];
+
+            // Check if the previous line was also a blockquote to merge them?
+            // For simplicity in this parser, we might just render individual blockquotes 
+            // or we need a state to merge them.
+            // Let's implement a simple state for blockquotes similar to lists if we want them in one container.
+
+            // Actually, simpler implementation for now: 
+            // If the parser sees `> `, it opens a blockquote. If the next line is also `> `, it's part of the same one.
+            // But my current loop is line-by-line. 
+            // Let's look ahead to capture the full blockquote.
+
+            let blockquoteContent = content;
+            let j = i + 1;
+            while (j < lines.length && lines[j].trim().startsWith('>')) {
+                const nextLineMatch = lines[j].trim().match(/^>\s?(.*)$/);
+                if (nextLineMatch) {
+                    blockquoteContent += '<br/>' + nextLineMatch[1];
+                }
+                j++;
+            }
+            i = j - 1;
+
+            result.push(`
+                <blockquote class="relative pl-10 pr-4 py-4 my-8 mx-0 text-slate-600 italic leading-relaxed border-l-4 border-slate-300 bg-slate-50/30 rounded-r-lg">
+                    <span class="absolute top-2 left-3 text-4xl text-slate-300 font-serif leading-none">“</span>
+                    ${formatInline(blockquoteContent)}
+                </blockquote>
+            `);
+            continue;
+        }
+
         // Paragraph
-        if (inList) flushList();
+        if (currentListType) flushList();
         result.push(`<p class="text-lg leading-loose text-slate-700 mb-6">${formatInline(line)}</p>`);
     }
 
     // Flush any remaining list at the end of the file
-    if (inList) flushList();
+    if (currentListType) flushList();
 
     // Table processing
     let processedHtml = result.join('\n');
