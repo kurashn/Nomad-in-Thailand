@@ -231,6 +231,76 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
+        // NoteSalesCTA Shortcode: [NOTE_CTA]
+        if (line.trim() === '[NOTE_CTA]') {
+            if (currentListType) flushList();
+
+            // Render the CTA HTML structure directly
+            result.push(`
+                <div class="group relative overflow-hidden rounded-2xl border-2 border-[#2a9d8f] bg-white shadow-lg transition-all hover:shadow-xl my-10 max-w-2xl mx-auto">
+                    <!-- Badge -->
+                    <div class="absolute right-0 top-0 z-10 rounded-bl-xl bg-[#e76f51] px-4 py-1 text-sm font-bold text-white shadow-md">
+                        実際の提出書類
+                    </div>
+
+                    <div class="flex flex-col md:flex-row">
+                        <!-- Image Section -->
+                        <div class="relative h-48 w-full md:h-auto md:w-2/5 overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 md:hidden"></div>
+                            <img
+                                src="/images/dtv-visa-thumbnail.png"
+                                alt="DTV Visa Note"
+                                class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                style="object-fit: cover;"
+                            />
+                            <div class="absolute bottom-3 left-3 z-20 md:hidden">
+                                <span class="inline-block rounded bg-[#2a9d8f] px-2 py-0.5 text-xs font-bold text-white">
+                                    合格実績あり
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="flex flex-1 flex-col justify-center p-6 md:p-8">
+                            <div class="mb-2 hidden md:block">
+                                <span class="inline-flex items-center gap-1 rounded bg-[#2a9d8f]/10 px-2 py-1 text-xs font-bold text-[#2a9d8f]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-3 w-3"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                                    DTVビザ申請サポート
+                                </span>
+                            </div>
+
+                            <h3 class="mb-2 text-xl font-bold leading-tight text-slate-900 md:text-2xl">
+                                <span class="inline-block">申請料5万円が没収される前に。</span>
+                                <br class="hidden md:block" />
+                                <span class="inline-block">
+                                    <span class="text-[#e76f51]">「審査通過」した提出書類</span>を全公開
+                                </span>
+                            </h3>
+
+                            <p class="mb-6 text-sm leading-relaxed text-slate-600">
+                                不備で却下されると履歴が傷つきます。ノマド・フリーランスの2名が実際に通過した「ポートフォリオ」と「英文履歴書」をそのまま真似して、確実にビザを勝ち取りませんか？
+                            </p>
+
+                            <a
+                                href="https://note.com/nomad_dayo/n/neee79f24c62b"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#2a9d8f] px-6 py-3.5 font-bold text-white transition-all hover:bg-[#268c80] hover:scale-[1.02] shadow-md md:w-auto"
+                            >
+                                <span>合格書類テンプレートを見る</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                            </a>
+
+                            <p class="mt-3 text-center text-xs text-slate-500 md:text-left">
+                                <span class="font-bold text-[#e76f51]">※現在リリース記念価格 (¥2,980→1,980)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            `);
+            continue;
+        }
+
         // LineCTA Component: <LineCTA text="..." url="..." />
         const lineCtaMatch = line.match(/^<LineCTA\s+text="(.+?)"\s+url="(.+?)"\s*\/>$/);
         if (lineCtaMatch) {

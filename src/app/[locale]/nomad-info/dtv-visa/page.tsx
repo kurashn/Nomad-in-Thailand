@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowLeft, CheckCircle2, Shield, Calendar, FileText, ArrowRight } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import NoteSalesCTA from "@/components/NoteSalesCTA";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
@@ -372,6 +373,8 @@ export default function DtvVisaPage() {
                 </section>
 
                 {/* Section 3: Step-by-Step Guide */}
+                <NoteSalesCTA />
+
                 <section className="mb-20">
                     <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
                         <span className="bg-green-100 text-green-600 p-2 rounded-lg"><Calendar className="w-6 h-6" /></span>
