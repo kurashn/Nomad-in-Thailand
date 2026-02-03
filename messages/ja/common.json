@@ -11,6 +11,15 @@
         "ad_disclosure": "※本ページはプロモーションが含まれています",
         "promotion": "プロモーション"
     },
+    "Breadcrumb": {
+        "home": "TOP",
+        "blog": "記事一覧",
+        "nomad-info": "ノマド生活情報",
+        "contact": "お問い合わせ",
+        "sponsor": "スポンサー募集",
+        "privacy-policy": "プライバシーポリシー",
+        "terms": "利用規約"
+    },
     "Hero": {
         "title": "Nomad in Thailand",
         "subtitle": "PC1台で、世界はもっと近くなる。\n働き方も、住む場所も、<nowrap>自分で選ぶ自由を。</nowrap>",

@@ -11,6 +11,15 @@
         "ad_disclosure": "*This page contains promotion.",
         "promotion": "Promotion"
     },
+    "Breadcrumb": {
+        "home": "Home",
+        "blog": "Articles",
+        "nomad-info": "Nomad Resources",
+        "contact": "Contact",
+        "sponsor": "Sponsorship",
+        "privacy-policy": "Privacy Policy",
+        "terms": "Terms of Service"
+    },
     "Hero": {
         "title": "Nomad in Thailand",
         "subtitle": "All you need is a laptop to connect you to the world.\nChoose how you work, choose where you live.",

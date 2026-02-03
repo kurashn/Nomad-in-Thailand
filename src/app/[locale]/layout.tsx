@@ -9,6 +9,7 @@ import { routing } from '@/i18n/routing';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
+import Breadcrumb from "@/components/Breadcrumb";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -184,6 +185,7 @@ export default async function RootLayout({
           <BreadcrumbJsonLd />
           <Navbar />
           <main className="flex-1 pt-16">
+            <Breadcrumb />
             {children}
           </main>
           <Footer />
