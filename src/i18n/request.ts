@@ -21,6 +21,7 @@ async function loadMessages(locale: string) {
         ...(await import(`../../messages/${locale}/transport-guide.json`)).default,
         ...(await import(`../../messages/${locale}/medical-guide.json`)).default,
         ...(await import(`../../messages/${locale}/credit-card.json`)).default,
+        ...(await import(`../../messages/${locale}/community.json`)).default,
     };
 
     return messages;
