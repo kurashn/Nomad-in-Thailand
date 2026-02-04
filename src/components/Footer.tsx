@@ -2,10 +2,11 @@
 
 import { Link } from '@/i18n/routing';
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Footer() {
     const t = useTranslations('Footer');
+    const locale = useLocale();
 
     return (
         <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
@@ -29,6 +30,9 @@ export default function Footer() {
                         <ul className="space-y-3">
 
                             <li><Link href="/nomad-info" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.guide')}</Link></li>
+                            {locale === 'ja' && (
+                                <li><Link href="/nomad-info/community" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.community')}</Link></li>
+                            )}
                             <li><Link href="/nomad-info/sponsor" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.sponsor')}</Link></li>
                         </ul>
                     </div>

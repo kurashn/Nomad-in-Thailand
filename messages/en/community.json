@@ -1,72 +1,116 @@
 {
-    "meta": {
-        "title": "Nomad in Thailand Community - Meet Friends, Have Fun.",
-        "desc": "Join 'Nomad in Thailand', a community for digital nomads living in Thailand. Find friends through sauna, co-working, and casual meetups. Everyone is welcome!"
-    },
-    "hero": {
-        "tag1": "Community",
-        "tag2": "Events",
-        "title": "No More Lonely\nNomad Life.",
-        "subtitle": "Nomad in Thailand is a casual community\nfor digital nomads living in Thailand\nto connect and share.",
-        "cta": "Join LINE OpenChat"
-    },
-    "intro": {
-        "title": "Do you have these problems?",
-        "p1": "You finally got your freedom and came to Thailand, but it's surprisingly lonely...",
-        "problems": {
-            "item1": "Working alone all day, not speaking to anyone",
-            "item2": "No casual friends nearby to grab dinner with",
-            "item3": "Hard to get real, local information",
-            "item4": "Want to go to sauna or gym, but not alone"
+    "Community": {
+        "meta": {
+            "title": "Nomad in Thailand Community - The Best Place for Nomads",
+            "desc": "A digital nomad community mainly for 20s. Completely free. Find lifelong friends through sauna, co-working, and casual meetups."
         },
-        "solution": "Solve these problems with<br><strong>Nomad in Thailand</strong>."
-    },
-    "activities": {
-        "title": "Main Activities",
-        "desc": "In 'Nomad in Thailand', various club-like gatherings happen naturally within our LINE OpenChat. No obligation to join. Come when you want, stay casual.",
-        "items": {
-            "sauna": {
-                "title": "Sauna & Ice Bath",
-                "desc": "Touring sauna and ice bath facilities around Bangkok to share the 'Totono' experience."
+        "hero": {
+            "tag1": "Completely Free",
+            "tag2": "Mainly 20s (30s too)",
+            "title": "The Era of Struggling Alone\nIs Over.",
+            "subtitle": "Connect through casual events.\nCommunity of same-generation friends.\nNomad in Thailand accelerates your life in Thailand.",
+            "cta": "Join the Crew Now (Free)",
+            "note": "*Password is \"Pakchee\""
+        },
+        "intro": {
+            "title": "Do you have these 'uneasy' feelings?",
+            "p1": "You came to Thailand for freedom, but found yourself just facing your PC every day...",
+            "problems": {
+                "item1": "Feeling lonely in unexpected moments",
+                "item2": "No friends nearby to invite for dinner or sauna",
+                "item3": "Wanting real, local info not found on Google",
+                "item4": "Simply wanting to speak Japanese sometimes"
             },
-            "muaythai": {
-                "title": "Muay Thai & Workout",
-                "desc": "Let's move our bodies. Gym sessions and running that even beginners can enjoy."
-            },
-            "coworking": {
-                "title": "Co-working Sessions",
-                "desc": "Our most popular event. Simply gathering at cafes or co-working spaces to focus on work."
-            },
-            "party": {
-                "title": "Casual Drinks",
-                "desc": "Quick drinks after work. A relaxed place for exchanging info and venting."
+            "solution": "Solve these worries instantly with<br><strong>Nomad in Thailand</strong> events."
+        },
+        "benefits": {
+            "title": "3 Benefits of Joining",
+            "items": {
+                "info": {
+                    "title": "Attractive Events",
+                    "desc": "Sauna, co-working sessions, drinking parties.\nReceive notifications for casual events held irregularly."
+                },
+                "friends": {
+                    "title": "Same Generation",
+                    "desc": "Mainly digital nomads in their 20s (30s also present).\nWith similar values, you can talk like old friends instantly."
+                },
+                "business": {
+                    "title": "Accelerate Your Business",
+                    "desc": "Engineers, marketers, founders, investors.\nNew projects often spark from this diverse gathering of talent."
+                }
             }
+        },
+        "activities": {
+            "title": "Casual Meetups",
+            "desc": "Events are announced in the OpenChat. No fixed schedule, just gathering when we feel like it. That's the charm.",
+            "items": {
+                "sauna": {
+                    "title": "Sauna & Ice Bath Gatherings",
+                    "desc": "Not just getting \"Totono\". The chat with fresh smoothie after the sauna is the best part."
+                },
+                "muaythai": {
+                    "title": "Muay Thai & Workout Sessions",
+                    "desc": "Lack of exercise is a nomad's enemy. Let's sweat together in beginner-friendly gym sessions."
+                },
+                "coworking": {
+                    "title": "Co-working Sessions",
+                    "desc": "Afternoons can be lazy alone, but productive together. Just gathering at cafes or co-working spaces to work."
+                },
+                "party": {
+                    "title": "Behind-the-Scenes Drinks",
+                    "desc": "From business talks to dating stories. Lots of talks you can't hear or say in public."
+                }
+            }
+        },
+        "members": {
+            "title": "Who is in the community?",
+            "desc": "Mainly active nomads in their 20s. 30s members are also active.",
+            "list": [
+                "20s Web Engineers",
+                "20s Marketers / Writers",
+                "30s Individual Investors",
+                "30s YouTuber",
+                "20s Founders / Entrepreneurs",
+                "Those planning to move soon"
+            ]
+        },
+        "safety": {
+            "title": "Safety & Quality",
+            "desc": "Everyone is welcome, but not \"anyone\".\nWe strive to maintain a high-quality community.",
+            "features": {
+                "item1": "Approval Required",
+                "desc1": "Admins check every profile.",
+                "item2": "Zero Tolerance",
+                "desc2": "Solicitation or spam results in an immediate ban.",
+                "item3": "Anon OK",
+                "desc3": "No real name/face needed."
+            }
+        },
+        "atmosphere": {
+            "title": "Laid-back Vibe",
+            "desc": "No pressure. Main posts are admin-only to keep it clean. Conversations happen in threads.",
+            "features": {
+                "item1": "Read-only OK",
+                "item2": "Notifications OFF Recommended",
+                "item3": "Chat in Threads (Admin Post Only)"
+            }
+        },
+        "cta": {
+            "title": "Your Place is Here.",
+            "desc": "It's free to join. Free to leave.<br>If you're hesitant, just take a peek.",
+            "button": "Join LINE OpenChat",
+            "note": "*Approval required. Please answer \"Pakchee\" (Cilantro) to the question (password)! 🌱"
+        },
+        "faq": {
+            "title": "FAQ",
+            "q1": "Is it really free? Is there a catch?",
+            "a1": "It is completely free. It's run by volunteers who wanted to create \"the place I wished existed when I came to Thailand\". No suspicious sales.",
+            "q2": "Can I join if I'm in my late 30s or 40s?",
+            "a2": "Of course! While the majority are in their 20s, age doesn't matter if you have a young spirit and enjoy the nomad lifestyle.",
+            "q3": "Can I ask questions in the chat?",
+            "a3": "This community is mainly for event announcements. Please note that we do not provide Q&A support. Enjoy the interaction at our events!",
+            "q4": "What do you check for approval?",
+            "a4": "We mainly check if it's a spam account. If you have a normal icon and name, you'll be approved quickly."
         }
-    },
-    "atmosphere": {
-        "title": "What's the vibe?",
-        "desc": "We differ from 'hustle culture'. We respect each other's lifestyle with a mature sense of distance.",
-        "features": {
-            "item1": "Any job/age welcome",
-            "item2": "Lurking (read-only) OK",
-            "item3": "Come & go as you please"
-        }
-    },
-    "cta": {
-        "title": "Why not join us?",
-        "desc": "Participation is free. You are welcome just to browse info.<br>Your life in Thailand will surely become more fun.",
-        "button": "Join LINE OpenChat (Free)",
-        "note": "*Opens LINE app"
-    },
-    "faq": {
-        "title": "FAQ",
-        "q1": "Is there a fee?",
-        "a1": "No, joining the community is completely free. You only pay for your own expenses (food, facility fees) when attending events.",
-        "q2": "Can I join if I'm still in Japan?",
-        "a2": "Yes, absolutely! Many members use it to gather information before moving.",
-        "q3": "Is it okay for nomad beginners?",
-        "a3": "Of course. We have members with diverse backgrounds, including aspiring nomads and those who simply love Thailand.",
-        "q4": "Will I be solicited for anything?",
-        "a4": "Solicitation for network businesses, suspicious investments, or aggressive sales is prohibited. Admins will deal with it immediately if found, so please join with peace of mind."
     }
 }

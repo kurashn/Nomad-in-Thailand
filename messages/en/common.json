@@ -2,6 +2,7 @@
     "Navbar": {
         "top": "Home",
         "nomadGuide": "Nomad Resources",
+        "community": "Community",
         "migrationGuide": "Migration Guide",
         "column": "Latest",
         "sponsor": "Sponsorship",
@@ -31,6 +32,7 @@
         "contents": {
             "title": "Contents",
             "guide": "Nomad Guide",
+            "community": "Community",
             "sponsor": "Sponsorship"
         },
         "links": {

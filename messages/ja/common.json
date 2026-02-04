@@ -2,6 +2,7 @@
     "Navbar": {
         "top": "TOP",
         "nomadGuide": "ノマド生活情報",
+        "community": "コミュニティ",
         "migrationGuide": "タイ移住ガイド",
         "column": "新着記事",
         "sponsor": "スポンサー募集",
@@ -31,6 +32,7 @@
         "contents": {
             "title": "コンテンツ",
             "guide": "タイノマド攻略ガイド",
+            "community": "コミュニティ",
             "sponsor": "スポンサー募集"
         },
         "links": {

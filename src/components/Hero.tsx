@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
     const t = useTranslations('Hero');
+    const locale = useLocale();
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -101,7 +102,7 @@ export default function Hero() {
                     variants={itemVariants}
                     className="flex flex-col sm:flex-row items-center justify-center gap-5"
                 >
-                    <Link href="/nomad-info" className="group">
+                    <Link href={locale === 'ja' ? "/nomad-info/community" : "/nomad-info"} className="group">
                         <motion.div
                             className="px-10 py-5 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold text-xl flex items-center gap-3 shadow-[0_10px_40px_-10px_rgba(45,212,191,0.5)] border border-white/20 backdrop-blur-md"
                             whileHover={{
