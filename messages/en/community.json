@@ -1,0 +1,72 @@
+{
+    "meta": {
+        "title": "Nomad in Thailand Community - Meet Friends, Have Fun.",
+        "desc": "Join 'Nomad in Thailand', a community for digital nomads living in Thailand. Find friends through sauna, co-working, and casual meetups. Everyone is welcome!"
+    },
+    "hero": {
+        "tag1": "Community",
+        "tag2": "Events",
+        "title": "No More Lonely\nNomad Life.",
+        "subtitle": "Nomad in Thailand is a casual community\nfor digital nomads living in Thailand\nto connect and share.",
+        "cta": "Join LINE OpenChat"
+    },
+    "intro": {
+        "title": "Do you have these problems?",
+        "p1": "You finally got your freedom and came to Thailand, but it's surprisingly lonely...",
+        "problems": {
+            "item1": "Working alone all day, not speaking to anyone",
+            "item2": "No casual friends nearby to grab dinner with",
+            "item3": "Hard to get real, local information",
+            "item4": "Want to go to sauna or gym, but not alone"
+        },
+        "solution": "Solve these problems with<br><strong>Nomad in Thailand</strong>."
+    },
+    "activities": {
+        "title": "Main Activities",
+        "desc": "In 'Nomad in Thailand', various club-like gatherings happen naturally within our LINE OpenChat. No obligation to join. Come when you want, stay casual.",
+        "items": {
+            "sauna": {
+                "title": "Sauna & Ice Bath",
+                "desc": "Touring sauna and ice bath facilities around Bangkok to share the 'Totono' experience."
+            },
+            "muaythai": {
+                "title": "Muay Thai & Workout",
+                "desc": "Let's move our bodies. Gym sessions and running that even beginners can enjoy."
+            },
+            "coworking": {
+                "title": "Co-working Sessions",
+                "desc": "Our most popular event. Simply gathering at cafes or co-working spaces to focus on work."
+            },
+            "party": {
+                "title": "Casual Drinks",
+                "desc": "Quick drinks after work. A relaxed place for exchanging info and venting."
+            }
+        }
+    },
+    "atmosphere": {
+        "title": "What's the vibe?",
+        "desc": "We differ from 'hustle culture'. We respect each other's lifestyle with a mature sense of distance.",
+        "features": {
+            "item1": "Any job/age welcome",
+            "item2": "Lurking (read-only) OK",
+            "item3": "Come & go as you please"
+        }
+    },
+    "cta": {
+        "title": "Why not join us?",
+        "desc": "Participation is free. You are welcome just to browse info.<br>Your life in Thailand will surely become more fun.",
+        "button": "Join LINE OpenChat (Free)",
+        "note": "*Opens LINE app"
+    },
+    "faq": {
+        "title": "FAQ",
+        "q1": "Is there a fee?",
+        "a1": "No, joining the community is completely free. You only pay for your own expenses (food, facility fees) when attending events.",
+        "q2": "Can I join if I'm still in Japan?",
+        "a2": "Yes, absolutely! Many members use it to gather information before moving.",
+        "q3": "Is it okay for nomad beginners?",
+        "a3": "Of course. We have members with diverse backgrounds, including aspiring nomads and those who simply love Thailand.",
+        "q4": "Will I be solicited for anything?",
+        "a4": "Solicitation for network businesses, suspicious investments, or aggressive sales is prohibited. Admins will deal with it immediately if found, so please join with peace of mind."
+    }
+}

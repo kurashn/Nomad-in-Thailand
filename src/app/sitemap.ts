@@ -22,6 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/nomad-info/nordvpn',
         '/nomad-info/safetywing',
         '/nomad-info/sponsor',
+        '/nomad-info/community',
         // Living Guide
         '/living/area-guide',
         '/living/medical-guide',
