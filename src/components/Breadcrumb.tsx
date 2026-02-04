@@ -40,7 +40,7 @@ export default function Breadcrumb() {
             // However, strictly checking keys in client component with t() is tricky if keys are dynamic.
             // But we know the keys we added: home, blog, nomad-info, contact, sponsor, privacy-policy, terms.
 
-            if (['blog', 'nomad-info', 'contact', 'sponsor', 'privacy-policy', 'terms'].includes(segment)) {
+            if (['blog', 'nomad-info', 'contact', 'sponsor', 'privacy-policy', 'terms', 'essential-tools'].includes(segment)) {
                 label = t(segment as any);
             } else {
                 // Fallback format: replace dashes with spaces and capitalize

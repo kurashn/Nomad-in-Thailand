@@ -140,7 +140,7 @@ export default function CommunityPage() {
                     </div>
 
                     <div className="text-center">
-                        <p className="text-3xl md:text-4xl text-foreground font-black leading-snug" dangerouslySetInnerHTML={{ __html: t.raw('intro.solution') }} />
+                        <p className="text-xl md:text-4xl text-foreground font-black leading-snug" dangerouslySetInnerHTML={{ __html: t.raw('intro.solution') }} />
                     </div>
                 </div>
 

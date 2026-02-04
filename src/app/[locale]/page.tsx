@@ -194,6 +194,16 @@ export default async function Home() {
               </div>
             </Link>
           </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/nomad-info/essential-tools"
+              className="inline-flex items-center justify-center px-8 py-3 rounded-full border-2 border-slate-200 text-slate-600 font-bold hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 group"
+            >
+              {tHome('essentials.viewAll')}
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
         </div>
       </section>
 

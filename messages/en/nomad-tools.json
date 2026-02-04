@@ -1,0 +1,41 @@
+{
+    "NomadTools": {
+        "title": "Nomad Essential Tools",
+        "subtitle": "Pro-selected tools to dramatically improve\nyour quality of life abroad.",
+        "description": "The optimal solutions for security, money transfer, and connectivity for nomad life in Bangkok.",
+        "officialSite": "Visit Official Site",
+        "disclaimer": "*This page contains affiliate links. We only recommend tools we personally use and trust.",
+        "tools": {
+            "wise": {
+                "title": "Wise (formerly TransferWise)",
+                "desc": "Up to 8x cheaper than banks and incredibly fast. Supports local QR payments.",
+                "cta": "See Details",
+                "feature": "Essential"
+            },
+            "nordvpn": {
+                "title": "NordVPN",
+                "desc": "Cafe Wi-Fi can be risky. Protect your security and watch home content from abroad.",
+                "cta": "See Details",
+                "feature": "Security"
+            },
+            "airalo": {
+                "title": "Airalo (eSIM)",
+                "desc": "Connect the moment you land. No more swapping physical SIM cards.",
+                "cta": "See Details",
+                "feature": "Connectivity"
+            },
+            "safetywing": {
+                "title": "SafetyWing",
+                "desc": "Subscription-based travel insurance. Perfect for nomads with indefinite plans.",
+                "cta": "See Details",
+                "feature": "Insurance"
+            },
+            "creditcard": {
+                "title": "Recommended Credit Cards",
+                "desc": "Save hundreds on insurance by choosing cards with automatic travel coverage.",
+                "cta": "See Details",
+                "feature": "Savings"
+            }
+        }
+    }
+}
