@@ -171,16 +171,20 @@ export default async function RootLayout({
       <body
         className={`${inter.variable} ${notoSansJP.variable} ${merriweather.variable} ${zenOldMincho.variable} antialiased bg-background text-foreground font-sans flex flex-col min-h-screen`}
       >
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-WVPS6MH1M3" strategy="afterInteractive" />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+        {process.env.NODE_ENV === 'production' && (
+          <>
+            <Script src="https://www.googletagmanager.com/gtag/js?id=G-WVPS6MH1M3" strategy="afterInteractive" />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-            gtag('config', 'G-WVPS6MH1M3');
-          `}
-        </Script>
+                gtag('config', 'G-WVPS6MH1M3');
+              `}
+            </Script>
+          </>
+        )}
         <NextIntlClientProvider messages={messages}>
           <BreadcrumbJsonLd />
           <Navbar />
