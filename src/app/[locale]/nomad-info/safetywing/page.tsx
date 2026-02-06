@@ -77,6 +77,66 @@ export default function SafetyWingPage() {
                     </a>
                 </div>
 
+                {/* Diagnosis Section (NEW) */}
+                <section className="mb-20">
+                    <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 text-white relative overflow-hidden shadow-xl">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl -mr-16 -mt-32 pointer-events-none"></div>
+
+                        <div className="text-center mb-10 relative z-10">
+                            <span className="bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">Diagnosis</span>
+                            <h2 className="text-2xl md:text-3xl font-bold mb-3">{t('diagnosis.title')}</h2>
+                            <p className="text-slate-300 max-w-xl mx-auto">{t('diagnosis.desc')}</p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-6 relative z-10">
+                            {/* Short Trip */}
+                            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors flex flex-col items-center text-center group">
+                                <div className="w-14 h-14 bg-slate-700 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                                    <Plane className="w-7 h-7 text-slate-300" />
+                                </div>
+                                <h3 className="text-slate-300 font-bold mb-2">{t('diagnosis.type1.label')}</h3>
+                                <div className="text-2xl font-bold text-white mb-4 bg-slate-700/50 px-4 py-2 rounded-lg w-full">
+                                    {t('diagnosis.type1.result')}
+                                </div>
+                                <p className="text-slate-400 text-sm mb-6 leading-relaxed flex-grow">
+                                    {t('diagnosis.type1.desc')}
+                                </p>
+                                <Link
+                                    href={t('diagnosis.type1.linkUrl')}
+                                    className="w-full py-3 rounded-xl border border-white/20 text-white font-bold hover:bg-white hover:text-slate-900 transition-all flex items-center justify-center gap-2"
+                                >
+                                    {t('diagnosis.type1.linkText')} <ArrowRight className="w-4 h-4" />
+                                </Link>
+                            </div>
+
+                            {/* Long Term */}
+                            <div className="bg-gradient-to-br from-teal-600/20 to-teal-900/40 border-2 border-teal-500/50 rounded-2xl p-6 hover:border-teal-400 transition-colors flex flex-col items-center text-center relative group">
+                                <div className="absolute -top-3 bg-teal-500 text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                                    RECOMMENDED
+                                </div>
+                                <div className="w-14 h-14 bg-teal-500 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg shadow-teal-500/30">
+                                    <ShieldCheck className="w-7 h-7 text-white" />
+                                </div>
+                                <h3 className="text-teal-200 font-bold mb-2">{t('diagnosis.type2.label')}</h3>
+                                <div className="text-2xl font-bold text-white mb-4 bg-teal-500 px-4 py-2 rounded-lg w-full shadow-lg">
+                                    {t('diagnosis.type2.result')}
+                                </div>
+                                <p className="text-teal-100/80 text-sm mb-6 leading-relaxed flex-grow">
+                                    {t('diagnosis.type2.desc')}
+                                </p>
+                                <a
+                                    href={t('diagnosis.type2.linkUrl')}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full py-3 rounded-xl bg-teal-500 text-white font-bold hover:bg-teal-400 hover:shadow-lg hover:shadow-teal-500/30 transition-all flex items-center justify-center gap-2"
+                                >
+                                    {t('diagnosis.type2.linkText')} <ArrowRight className="w-4 h-4" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 {/* Comparison Table */}
                 <section className="mb-20">
                     <h2 className="text-2xl font-bold mb-6">{t('comparison.title')}</h2>

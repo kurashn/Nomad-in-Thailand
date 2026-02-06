@@ -5,6 +5,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { ArrowLeft } from 'lucide-react';
 import { reader } from '@/lib/reader';
+import BlogSidebar from '@/components/blog/BlogSidebar';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -643,24 +644,39 @@ export default async function BlogPostPage({ params }: Props) {
                 </div>
             </div>
 
-            {/* Main Content */}
-            <div className="container max-w-3xl mx-auto px-4 mt-12">
-                {/* Introduction styling */}
-                <div className="prose prose-lg prose-slate max-w-none">
-                    <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
-                </div>
+            {/* Main Content Layout */}
+            <div className="container max-w-6xl mx-auto px-4 mt-12">
+                <div className="lg:flex lg:gap-12 items-start">
+                    {/* Article Content (Left) */}
+                    <div className="w-full lg:flex-1 min-w-0">
+                        <div className="prose prose-lg prose-slate max-w-none">
+                            <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+                        </div>
 
-                {/* Footer */}
-                <div className="mt-16 text-center">
-                    <Link
-                        href="/blog"
-                        className="inline-flex items-center text-slate-500 hover:text-[#2a9d8f] transition-colors"
-                    >
-                        <ArrowLeft className="w-4 h-4 mr-2" />
-                        記事一覧に戻る
-                    </Link>
+                        {/* Footer Link */}
+                        <div className="mt-16 text-center lg:text-left border-t pt-10 border-slate-100">
+                            <Link
+                                href="/blog"
+                                className="inline-flex items-center text-slate-500 hover:text-[#2a9d8f] transition-colors"
+                            >
+                                <ArrowLeft className="w-4 h-4 mr-2" />
+                                記事一覧に戻る
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* Sidebar (Right) - Desktop Only for now (or make it appear below on mobile) */}
+                    <aside className="hidden lg:block w-[340px] shrink-0 space-y-8">
+                        {/* Profile/Author Card could go here too */}
+
+                        {/* Tools Widget */}
+                        <BlogSidebar />
+
+                        {/* Newsletter or other widgets */}
+                    </aside>
                 </div>
             </div>
+
         </article>
     );
 }

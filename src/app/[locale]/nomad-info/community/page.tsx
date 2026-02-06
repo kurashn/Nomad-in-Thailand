@@ -144,6 +144,27 @@ export default function CommunityPage() {
                     </div>
                 </div>
 
+                {/* YouTube Video Section */}
+                <section className="mb-24 max-w-4xl mx-auto">
+                    <div className="text-center mb-10">
+                        <span className="text-primary font-bold tracking-widest uppercase text-sm mb-3 block">VIDEO</span>
+                        <h2 className="text-2xl md:text-3xl font-bold text-foreground">{t('video.title')}</h2>
+                    </div>
+                    <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/Ak4-4HWnNLU?si=wKoAyrdbgeVQFZAY"
+                            title="Nomad Community Introduction"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerPolicy="strict-origin-when-cross-origin"
+                            allowFullScreen
+                            className="absolute inset-0"
+                        ></iframe>
+                    </div>
+                </section>
+
                 {/* Benefits */}
                 <section className="mb-24">
                     <div className="text-center mb-12">

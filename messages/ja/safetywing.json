@@ -18,6 +18,24 @@
             "check3": "バイク事故や歯科治療は対象？細かい補償内容の疑問"
         },
         "affiliate": "SafetyWingで保険料を見積もる",
+        "diagnosis": {
+            "title": "【30秒診断】あなたに合う保険はどっち？",
+            "desc": "滞在期間やスタイルによって、最適な保険は変わります。無駄な保険料を払わないための選び方ガイド。",
+            "type1": {
+                "label": "1ヶ月以内の短期旅行",
+                "result": "クレジットカード保険",
+                "desc": "90日以内の旅行なら、年会費無料のエポスカード等の付帯保険で十分カバーできます。追加費用は不要です。",
+                "linkText": "おすすめカードを見る",
+                "linkUrl": "../nomad-info/credit-card"
+            },
+            "type2": {
+                "label": "長期滞在・デジタルノマド",
+                "result": "SafetyWing",
+                "desc": "帰国日が未定、または90日を超える場合はSafetyWingが最適。必要な月だけ契約でき、いつでも解約可能です。",
+                "linkText": "公式サイトで料金確認",
+                "linkUrl": "https://safetywing.com/?referenceID=26468067&utm_source=26468067&utm_medium=Ambassador"
+            }
+        },
         "comparison": {
             "title": "比較：他の保険となにが違う？",
             "headers": {

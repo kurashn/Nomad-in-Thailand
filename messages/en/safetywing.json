@@ -18,6 +18,24 @@
             "check3": "Are motorbike accidents or dental covered? Detailed coverage FAQ"
         },
         "affiliate": "Get a Quote on SafetyWing",
+        "diagnosis": {
+            "title": "30-Second Diagnosis: Which is for you?",
+            "desc": "The best insurance depends on your stay duration. Check how to choose without wasting money.",
+            "type1": {
+                "label": "Short Trip (< 1 Month)",
+                "result": "Credit Card Insurance",
+                "desc": "For trips under 90 days, free credit card insurance (like EPOS) is sufficient. No extra cost needed.",
+                "linkText": "Check Best Cards",
+                "linkUrl": "../nomad-info/credit-card"
+            },
+            "type2": {
+                "label": "Long Term / Digital Nomad",
+                "result": "SafetyWing",
+                "desc": "If your return date is undefined or stay > 90 days, SafetyWing is best. Pay only for months you need, cancel anytime.",
+                "linkText": "Check Price on Official Site",
+                "linkUrl": "https://safetywing.com/?referenceID=26468067&utm_source=26468067&utm_medium=Ambassador"
+            }
+        },
         "comparison": {
             "title": "Comparison: How is it different?",
             "headers": {
