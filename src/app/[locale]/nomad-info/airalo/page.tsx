@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight, Smartphone, CheckCircle, AlertTriangle, Plane } from "lucide-react";
+import { AFFILIATE_LINKS } from "@/config/affiliate";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
     const t = await getTranslations({ locale, namespace: 'AiraloGuide.meta' });
@@ -67,7 +68,7 @@ export default function AiraloPage() {
                 {/* Affiliate Button (Top) */}
                 <div className="flex justify-center mb-16">
                     <a
-                        href="https://www.airalo.com/ja"
+                        href={AFFILIATE_LINKS.airalo}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-gradient-to-r from-slate-800 to-slate-900 rounded-full hover:scale-105 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900"
@@ -316,7 +317,7 @@ export default function AiraloPage() {
                     </h2>
                     <p className="text-slate-600 mb-8 max-w-lg mx-auto" dangerouslySetInnerHTML={{ __html: t.raw('cta.desc') }} />
                     <a
-                        href="https://www.airalo.com/ja"
+                        href={AFFILIATE_LINKS.airalo}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-8 py-4 font-bold text-white transition-all duration-200 bg-blue-600 rounded-full hover:bg-blue-700 hover:shadow-lg hover:scale-105"

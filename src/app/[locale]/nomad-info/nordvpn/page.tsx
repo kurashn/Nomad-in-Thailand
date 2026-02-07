@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, Shield, Globe, Zap, Check, Lock, Tv, Smartphone, ArrowRight, ExternalLink, AlertTriangle, HelpCircle } from "lucide-react";
+import { AFFILIATE_LINKS } from "@/config/affiliate";
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 
@@ -23,8 +24,8 @@ export default function NordVPNGuidePage() {
     const t = useTranslations('NordVPNGuide');
     const tCommon = useTranslations('Common');
     // Affiliate link for NordVPN (A8.net)
-    const AFFILIATE_LINK = "https://px.a8.net/svt/ejp?a8mat=3HOR91+AZXD5E+3YFI+66OZ6";
-    const TRACKING_PIXEL = "https://www11.a8.net/0.gif?a8mat=3HOR91+AZXD5E+3YFI+66OZ6";
+    const AFFILIATE_LINK = AFFILIATE_LINKS.nordvpn;
+    const TRACKING_PIXEL = AFFILIATE_LINKS.nordvpn_pixel;
 
     // Structured Data (JSON-LD)
     const jsonLd = {

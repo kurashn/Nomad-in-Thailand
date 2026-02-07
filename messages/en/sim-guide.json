@@ -48,6 +48,11 @@
                 "price": "~$100+",
                 "desc": "Bulky and requires charging. Also expensive. Outdated."
             },
+            "esim": {
+                "method": "Travel eSIM (Airalo)",
+                "price": "~$4.50+",
+                "desc": "No queuing at the airport. Buy in app and connect immediately upon landing. Best for short stays."
+            },
             "local": {
                 "method": "Local SIM (AIS/True)",
                 "price": "~$7+",

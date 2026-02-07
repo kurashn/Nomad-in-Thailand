@@ -2,7 +2,8 @@ import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, Smartphone, Wifi, MessageSquare, Globe, CheckCircle, AlertTriangle } from "lucide-react";
+import { ArrowLeft, ArrowRight, Smartphone, Wifi, MessageSquare, Globe, CheckCircle, AlertTriangle, Plane } from "lucide-react";
+import { AFFILIATE_LINKS } from "@/config/affiliate";
 
 export async function generateMetadata({ params: { locale } }: { params: { locale: string } }) {
     const t = await getTranslations({ locale, namespace: 'SimGuide.meta' });
@@ -104,6 +105,19 @@ export default function SimGuidePage() {
                                     <td className="px-6 py-4 font-bold text-slate-600">{t('cost.wifi.price')}</td>
                                     <td className="px-6 py-4 text-slate-600">{t('cost.wifi.desc')}</td>
                                 </tr>
+                                <tr className="bg-blue-50/50">
+                                    <td className="px-6 py-4 font-bold text-blue-900 flex items-center gap-2">
+                                        <Plane className="w-4 h-4 text-blue-600" />
+                                        {t('cost.esim.method')}
+                                    </td>
+                                    <td className="px-6 py-4 font-bold text-blue-600">{t('cost.esim.price')}</td>
+                                    <td className="px-6 py-4 text-slate-600">
+                                        {t('cost.esim.desc')}{" "}
+                                        <a href={AFFILIATE_LINKS.airalo} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold inline-flex items-center gap-1">
+                                            Airalo <ArrowRight className="w-3 h-3" />
+                                        </a>
+                                    </td>
+                                </tr>
                                 <tr className="bg-green-50/50 border-l-4 border-green-500">
                                     <td className="px-6 py-4 font-bold text-green-900 flex items-center gap-2">
                                         <CheckCircle className="w-4 h-4 text-green-600" />
@@ -196,7 +210,10 @@ export default function SimGuidePage() {
                         <AlertTriangle className="w-6 h-6 text-orange-600 shrink-0 mt-1" />
                         <div>
                             <h3 className="font-bold text-orange-800 mb-1">{t('thaiSim.warning.title')}</h3>
-                            <p className="text-sm text-orange-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: t.raw('thaiSim.warning.desc') }} />
+                            <p className="text-sm text-orange-700 leading-relaxed mb-3" dangerouslySetInnerHTML={{ __html: t.raw('thaiSim.warning.desc') }} />
+                            <a href={AFFILIATE_LINKS.airalo} target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-orange-600 hover:text-orange-800 hover:underline inline-flex items-center gap-1 bg-white/50 px-2 py-1 rounded">
+                                Check Airalo (eSIM) <ArrowRight className="w-3 h-3" />
+                            </a>
                         </div>
                     </div>
 

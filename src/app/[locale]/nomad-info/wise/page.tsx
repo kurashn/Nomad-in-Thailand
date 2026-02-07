@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Link } from '@/i18n/routing';
 import { ArrowLeft, Check, ArrowRight, ExternalLink, Globe, CreditCard, ShieldCheck } from "lucide-react";
+import { AFFILIATE_LINKS } from "@/config/affiliate";
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function WiseGuidePage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const tCommon = await getTranslations({ locale, namespace: 'Common' });
-    const AFFILIATE_LINK = "https://wise.com/invite/ihpc/shunk138";
+    const AFFILIATE_LINK = AFFILIATE_LINKS.wise;
 
     if (locale === 'en') {
         return (

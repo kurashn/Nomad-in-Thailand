@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
 import AdDisclosure from "@/components/AdDisclosure";
+import { AFFILIATE_LINKS } from "@/config/affiliate";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
@@ -182,9 +183,10 @@ export default function CreditCardPage() {
                         <div className="mt-8 text-center bg-primary/5 p-6 rounded-xl border border-primary/10">
                             <p className="mb-4 font-bold text-foreground">{t('insurance_flow_detail.cta_text')}</p>
                             <div className="text-center">
-                                <a href="https://www.eposcard.co.jp/index.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:shadow-amber-500/25 transition-all w-full md:w-auto transform hover:-translate-y-0.5">
+                                <a href={AFFILIATE_LINKS.epos} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-amber-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:shadow-amber-500/25 transition-all w-full md:w-auto transform hover:-translate-y-0.5">
                                     {t('cards.epos.cta')} <ArrowRight className="w-4 h-4" />
                                 </a>
+                                <img width={1} height={1} src={AFFILIATE_LINKS.epos_pixel} alt="" className="border-0" />
                             </div>
                         </div>
                     </div>
@@ -224,7 +226,7 @@ export default function CreditCardPage() {
                                     {t('cards.epos.desc')}
                                 </p>
                                 <div className="text-center">
-                                    <a href="https://www.eposcard.co.jp/index.html" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-yellow-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-yellow-600 hover:shadow-yellow-500/25 transition-all w-full md:w-auto transform hover:-translate-y-0.5">
+                                    <a href={AFFILIATE_LINKS.epos} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-yellow-500 text-white px-8 py-3 rounded-xl font-bold shadow-lg hover:bg-yellow-600 hover:shadow-yellow-500/25 transition-all w-full md:w-auto transform hover:-translate-y-0.5">
                                         {t('cards.epos.cta')} <ArrowRight className="w-4 h-4" />
                                     </a>
                                 </div>
