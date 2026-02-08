@@ -1,13 +1,14 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "@/i18n/routing";
 import Image from "next/image";
 import { ArrowUpRight, Search, Tag, Clock } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { useSearchParams } from "next/navigation";
 
 type Article = {
-    id: number;
+    id: string | number;
     title: string;
     excerpt: string;
     category: string;
@@ -24,34 +25,52 @@ type Props = {
 const CATEGORY_MATCHERS: Record<string, string[]> = {
     workVisa: [
         // JA
-        "ビザ情報", "お知らせ", "初心者ガイド", "ワークスペース", "コミュニティ", "ワークショップ", "ミートアップ",
+        "ビザ情報", "お知らせ", "初心者ガイド", "ワークスペース", "コミュニティ", "ワークショップ", "ミートアップ", "ビザ・手続き",
         // EN
-        "Visa Info", "Announcements", "Beginner Guide", "Workspaces", "Community", "Workshops", "Meetup"
+        "Visa Info", "Announcements", "Beginner Guide", "Workspaces", "Community", "Workshops", "Meetup", "Visa & Procedures"
     ],
     living: [
         // JA
-        "カフェ・作業場所", "住まい", "交通", "医療・健康", "完全マップ",
+        "カフェ・作業場所", "住まい", "交通", "医療・健康", "完全マップ", "生活・場所", "生活情報",
         // EN
-        "Cafes & Workspaces", "Housing", "Transport", "Health & Medical", "Ultimate Map"
+        "Cafes & Workspaces", "Housing", "Transport", "Health & Medical", "Ultimate Map", "Living & Life"
     ],
     moneyIt: [
         // JA
-        "お金・税金", "セキュリティ", "通信・ネット",
+        "お金・税金", "セキュリティ", "通信・ネット", "お金・仕事",
         // EN
-        "Money & Tax", "Security", "Internet & SIM"
+        "Money & Tax", "Security", "Internet & SIM", "Money & Work"
+    ],
+    interviews: [
+        // JA
+        "ノマドインタビュー", "インタビュー",
+        // EN
+        "Nomad Interview", "Interviews"
     ]
 };
 
 export default function ArticleFilter({ articles }: Props) {
     const t = useTranslations('ArticleFilter');
-    const [selectedCategory, setSelectedCategory] = useState("all");
+    const searchParams = useSearchParams();
+    const initialCategory = searchParams.get('category') || "all";
+
+    const [selectedCategory, setSelectedCategory] = useState(initialCategory);
     const [searchQuery, setSearchQuery] = useState("");
+
+    // Update state if URL parameter changes
+    useEffect(() => {
+        const categoryParam = searchParams.get('category');
+        if (categoryParam) {
+            setSelectedCategory(categoryParam);
+        }
+    }, [searchParams]);
 
     const categories = [
         { id: "all", label: t('categories.all') },
         { id: "workVisa", label: t('categories.workVisa') },
         { id: "living", label: t('categories.living') },
         { id: "moneyIt", label: t('categories.moneyIt') },
+        { id: "interviews", label: t('categories.interviews') },
     ];
 
     // Filter logic
@@ -78,6 +97,18 @@ export default function ArticleFilter({ articles }: Props) {
         });
     }, [articles, selectedCategory, searchQuery]);
 
+    const handleCategoryClick = (id: string) => {
+        setSelectedCategory(id);
+        // Optional: Update URL without refresh
+        const url = new URL(window.location.href);
+        if (id === 'all') {
+            url.searchParams.delete('category');
+        } else {
+            url.searchParams.set('category', id);
+        }
+        window.history.pushState({}, '', url);
+    };
+
     return (
         <div className="space-y-8">
             {/* Controls */}
@@ -87,7 +118,7 @@ export default function ArticleFilter({ articles }: Props) {
                     {categories.map((cat) => (
                         <button
                             key={cat.id}
-                            onClick={() => setSelectedCategory(cat.id)}
+                            onClick={() => handleCategoryClick(cat.id)}
                             className={`px-4 py-2 rounded-full text-sm font-bold transition-all ${selectedCategory === cat.id
                                 ? "bg-slate-800 text-white shadow-md"
                                 : "bg-slate-100 text-slate-600 hover:bg-slate-200"

@@ -19,11 +19,9 @@ export default function Navbar() {
     };
 
     const menuItems = [
-        { href: "/", label: t('top') },
-        { href: "/nomad-info", label: t('nomadGuide') },
         { href: "/blog/thailand-migration-guide", label: t('migrationGuide') },
+        { href: "/nomad-info/essential-tools", label: t('nomadTools') },
         { href: "/blog", label: t('column') },
-        { href: "/contact", label: t('contact') },
     ];
 
     return (

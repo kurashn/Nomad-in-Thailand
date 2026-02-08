@@ -2,9 +2,11 @@
     "Navbar": {
         "top": "Home",
         "nomadGuide": "Nomad Resources",
+        "nomadTools": "Nomad Tools",
         "community": "Community",
-        "migrationGuide": "Migration Guide",
-        "column": "Latest",
+        "migrationGuide": "Starter Guide",
+        "column": "Articles",
+        "interviews": "Interviews",
         "sponsor": "Sponsorship",
         "contact": "Contact"
     },
@@ -95,9 +97,10 @@
         "clear": "Clear filters",
         "categories": {
             "all": "All",
-            "workVisa": "Work & Visa",
-            "living": "Living & Places",
-            "moneyIt": "Money & IT"
+            "workVisa": "Visa & Work",
+            "living": "Living & Place",
+            "moneyIt": "Money & IT",
+            "interviews": "Interviews"
         }
     },
     "Newsletter": {

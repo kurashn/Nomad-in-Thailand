@@ -1,9 +1,6 @@
-import { getArticles } from "@/data/mockData";
-import { ArrowUpRight, ShieldCheck, CreditCard, Smartphone, ArrowRight, Lock } from "lucide-react";
+import { ShieldCheck, CreditCard, Smartphone, ArrowRight, Lock } from "lucide-react";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import ArticleFilter from "@/components/ArticleFilter";
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -19,12 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function NomadInfoPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'NomadInfo' });
-    const { nomad, living } = getArticles(locale);
 
-    // Combine all articles
-    const allArticles = [...nomad, ...living].sort((a, b) => {
-        return new Date(b.date).getTime() - new Date(a.date).getTime();
-    });
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -112,7 +104,7 @@ export default async function NomadInfoPage({ params }: { params: Promise<{ loca
                 </div>
             </div>
 
-            <ArticleFilter articles={allArticles} />
+
 
         </div >
     );

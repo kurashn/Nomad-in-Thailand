@@ -2,9 +2,11 @@
     "Navbar": {
         "top": "TOP",
         "nomadGuide": "ノマド生活情報",
+        "nomadTools": "ノマドツール",
         "community": "コミュニティ",
         "migrationGuide": "タイ移住ガイド",
-        "column": "新着記事",
+        "column": "ブログ一覧",
+        "interviews": "インタビュー",
         "sponsor": "スポンサー募集",
         "contact": "お問い合わせ"
     },
@@ -97,7 +99,8 @@
             "all": "すべて",
             "workVisa": "仕事・ビザ",
             "living": "生活・場所",
-            "moneyIt": "お金・IT"
+            "moneyIt": "お金・IT",
+            "interviews": "インタビュー"
         }
     },
     "Newsletter": {
