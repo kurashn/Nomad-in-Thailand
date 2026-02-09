@@ -60,6 +60,30 @@
             "esim": "eSIM Connectivity",
             "vpn": "VPN Security",
             "checkReview": "Check Review"
+        },
+        "guides": {
+            "label": "Guide Articles",
+            "title": "Thailand Nomad & Migration Guides",
+            "subtitle": "From visa to neighborhoods, connectivity to healthcare. Everything you need for nomad life in Thailand.",
+            "dtvVisa": "DTV Visa Complete Guide",
+            "dtvVisaDesc": "Requirements, costs & documents from real experience",
+            "bangkokRoadmap": "Bangkok Migration Roadmap",
+            "bangkokRoadmapDesc": "Complete timeline from pre-departure to settling in",
+            "cafeGuide": "Top 7 Work Cafes in Bangkok",
+            "cafeGuideDesc": "Power outlets & Wi-Fi ready cafes for nomads",
+            "coworkingGuide": "Coworking Space Guide",
+            "coworkingGuideDesc": "Top 3 picks for Japanese nomads compared",
+            "taxMoneyGuide": "Money & Tax Guide",
+            "taxMoneyGuideDesc": "Living costs, 180-day rule & foreign income",
+            "areaGuide": "Bangkok Area Guide",
+            "areaGuideDesc": "Best neighborhoods for nomads explained",
+            "medicalGuide": "Medical & Hospital Guide",
+            "medicalGuideDesc": "Healthcare in Thailand & Japanese-speaking hospitals",
+            "simGuide": "SIM & Connectivity Guide",
+            "simGuideDesc": "Local SIM vs eSIM comparison",
+            "transportGuide": "Transport & Getting Around",
+            "transportGuideDesc": "BTS, MRT & Grab usage guide",
+            "readMore": "Read More"
         }
     },
     "Contact": {
@@ -97,9 +121,10 @@
         "clear": "Clear filters",
         "categories": {
             "all": "All",
-            "workVisa": "Visa & Work",
-            "living": "Living & Place",
-            "moneyIt": "Money & IT",
+            "career": "Career & Migration",
+            "visa": "Visa & Procedures",
+            "living": "Living & Stories",
+            "money": "Money & Tax",
             "interviews": "Interviews"
         }
     },

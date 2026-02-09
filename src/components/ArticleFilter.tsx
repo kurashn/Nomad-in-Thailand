@@ -21,32 +21,13 @@ type Props = {
     articles: Article[];
 };
 
-// Map internal filter IDs to all possible category strings in both languages
+// Map filter IDs to actual category strings used in article frontmatter
 const CATEGORY_MATCHERS: Record<string, string[]> = {
-    workVisa: [
-        // JA
-        "ビザ情報", "お知らせ", "初心者ガイド", "ワークスペース", "コミュニティ", "ワークショップ", "ミートアップ", "ビザ・手続き",
-        // EN
-        "Visa Info", "Announcements", "Beginner Guide", "Workspaces", "Community", "Workshops", "Meetup", "Visa & Procedures"
-    ],
-    living: [
-        // JA
-        "カフェ・作業場所", "住まい", "交通", "医療・健康", "完全マップ", "生活・場所", "生活情報",
-        // EN
-        "Cafes & Workspaces", "Housing", "Transport", "Health & Medical", "Ultimate Map", "Living & Life"
-    ],
-    moneyIt: [
-        // JA
-        "お金・税金", "セキュリティ", "通信・ネット", "お金・仕事",
-        // EN
-        "Money & Tax", "Security", "Internet & SIM", "Money & Work"
-    ],
-    interviews: [
-        // JA
-        "ノマドインタビュー", "インタビュー",
-        // EN
-        "Nomad Interview", "Interviews"
-    ]
+    career: ["キャリア・移住"],
+    visa: ["ビザ・手続き"],
+    living: ["生活情報", "体験談"],
+    money: ["お金・税金・仮想通貨"],
+    interviews: ["ノマドインタビュー"],
 };
 
 export default function ArticleFilter({ articles }: Props) {
@@ -67,9 +48,10 @@ export default function ArticleFilter({ articles }: Props) {
 
     const categories = [
         { id: "all", label: t('categories.all') },
-        { id: "workVisa", label: t('categories.workVisa') },
+        { id: "career", label: t('categories.career') },
+        { id: "visa", label: t('categories.visa') },
         { id: "living", label: t('categories.living') },
-        { id: "moneyIt", label: t('categories.moneyIt') },
+        { id: "money", label: t('categories.money') },
         { id: "interviews", label: t('categories.interviews') },
     ];
 

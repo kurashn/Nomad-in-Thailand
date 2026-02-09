@@ -20,6 +20,7 @@ export default function Navbar() {
 
     const menuItems = [
         { href: "/blog/thailand-migration-guide", label: t('migrationGuide') },
+        { href: "/nomad-info", label: t('nomadGuide') },
         { href: "/nomad-info/essential-tools", label: t('nomadTools') },
         { href: "/blog", label: t('column') },
     ];

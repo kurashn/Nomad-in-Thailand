@@ -60,6 +60,30 @@
             "esim": "eSIM・通信",
             "vpn": "VPNセキュリティ",
             "checkReview": "レビューを見る"
+        },
+        "guides": {
+            "label": "ガイド記事",
+            "title": "タイ移住・ノマド生活ガイド",
+            "subtitle": "ビザ・エリア・通信・医療まで。タイノマドに必要な情報を完全網羅。",
+            "dtvVisa": "DTVビザ完全ガイド",
+            "dtvVisaDesc": "申請条件・費用・書類を実体験から徹底解説",
+            "bangkokRoadmap": "バンコク移住ロードマップ",
+            "bangkokRoadmapDesc": "渡航前〜到着後の完全タイムライン",
+            "cafeGuide": "バンコク作業カフェ7選",
+            "cafeGuideDesc": "電源・Wi-Fi完備のノマド向けカフェ",
+            "coworkingGuide": "コワーキングスペースガイド",
+            "coworkingGuideDesc": "日本人ノマドおすすめ3選を徹底比較",
+            "taxMoneyGuide": "お金・税金ガイド",
+            "taxMoneyGuideDesc": "生活費・180日ルール・国外源泉所得",
+            "areaGuide": "バンコクエリアガイド",
+            "areaGuideDesc": "ノマドにおすすめのエリアを徹底解説",
+            "medicalGuide": "医療・病院ガイド",
+            "medicalGuideDesc": "タイの医療事情と日本語対応病院",
+            "simGuide": "SIM・通信ガイド",
+            "simGuideDesc": "現地SIM vs eSIMの選び方",
+            "transportGuide": "交通・移動ガイド",
+            "transportGuideDesc": "BTS・MRT・Grabの使い方",
+            "readMore": "詳しく見る"
         }
     },
     "Contact": {
@@ -97,9 +121,10 @@
         "clear": "条件をクリア",
         "categories": {
             "all": "すべて",
-            "workVisa": "仕事・ビザ",
-            "living": "生活・場所",
-            "moneyIt": "お金・IT",
+            "career": "キャリア・移住",
+            "visa": "ビザ・手続き",
+            "living": "生活・体験談",
+            "money": "お金・税金",
             "interviews": "インタビュー"
         }
     },

@@ -9,9 +9,11 @@ export default function SidebarCategories() {
     const tCommon = useTranslations('SidebarCategories');
 
     const categories = [
-        { id: 'workVisa', href: '/blog?category=Work+%26+Visa' },
-        { id: 'living', href: '/blog?category=Living+%26+Places' },
-        { id: 'moneyIt', href: '/blog?category=Money+%26+IT' },
+        { id: 'career', href: '/blog?category=career' },
+        { id: 'visa', href: '/blog?category=visa' },
+        { id: 'living', href: '/blog?category=living' },
+        { id: 'money', href: '/blog?category=money' },
+        { id: 'interviews', href: '/blog?category=interviews' },
     ];
 
     return (

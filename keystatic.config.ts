@@ -21,9 +21,17 @@ export default config({
             schema: {
                 title: fields.slug({ name: { label: 'Title' } }),
                 publishedDate: fields.date({ label: 'Published Date' }),
-                category: fields.text({
+                category: fields.select({
                     label: 'Category',
-                    description: 'e.g. お金・税金, ビザ, 生活情報',
+                    options: [
+                        { label: 'キャリア・移住', value: 'キャリア・移住' },
+                        { label: 'ビザ・手続き', value: 'ビザ・手続き' },
+                        { label: '生活情報', value: '生活情報' },
+                        { label: '体験談', value: '体験談' },
+                        { label: 'お金・税金・仮想通貨', value: 'お金・税金・仮想通貨' },
+                        { label: 'ノマドインタビュー', value: 'ノマドインタビュー' },
+                    ],
+                    defaultValue: '生活情報',
                 }),
                 description: fields.text({
                     label: 'Description',
