@@ -12,46 +12,56 @@
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @page {
-            size: A4;
-            margin: 0;
-        }
-
-        body {
-            font-family: 'Noto Sans JP', sans-serif;
-            -webkit-print-color-adjust: exact;
-            print-color-adjust: exact;
-        }
-
         .font-en {
             font-family: 'Outfit', sans-serif;
         }
 
+        /* Default: Mobile / Web View */
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+        }
+
         .page {
-            width: 210mm;
-            height: 296.6mm;
-            /* Slight adjustment for browser rendering */
+            width: 100%;
+            max-width: 800px;
+            /* Webb view max width */
+            min-height: 100vh;
+            margin: 0 auto;
+            background: white;
             position: relative;
             overflow: hidden;
-            background: white;
-            page-break-after: always;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
-        .page:last-child {
-            page-break-after: avoid;
+        @media (min-width: 800px) {
+            .page {
+                margin: 40px auto;
+                border-radius: 8px;
+            }
         }
 
+        /* Print Styles (A4) */
         @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
             body {
                 background: none;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
 
             .page {
-                box-shadow: none;
+                width: 210mm;
+                height: 296.6mm;
                 margin: 0;
-                height: 297mm;
+                box-shadow: none;
+                border-radius: 0;
                 page-break-after: always;
             }
 
@@ -62,10 +72,10 @@
     </style>
 </head>
 
-<body class="bg-gray-100 py-10">
+<body class="bg-gray-100 text-slate-800">
 
     <!-- PAGE 1: Cover Page -->
-    <div class="page flex flex-col relative overflow-hidden bg-[#1a2530] text-white">
+    <div class="page flex flex-col relative overflow-hidden bg-[#1a2530] text-white h-screen md:h-auto">
         <!-- Decorative Background Elements -->
         <div
             class="absolute top-0 right-0 w-[500px] h-[500px] bg-[#e9c46a] rounded-full opacity-5 blur-3xl -translate-y-1/2 translate-x-1/2">
@@ -78,7 +88,7 @@
         </div>
 
         <!-- Content Container -->
-        <div class="relative z-10 flex-1 flex flex-col justify-between p-16 text-white h-full">
+        <div class="relative z-10 flex-1 flex flex-col justify-between p-8 md:p-16 text-white h-full">
 
             <!-- Header Badge -->
             <div class="flex justify-between items-start border-b border-white/10 pb-6">
@@ -95,14 +105,14 @@
                 <h2 class="font-en text-[#e9c46a] font-bold text-2xl tracking-[0.4em] mb-8 pl-1 uppercase opacity-90">
                     The Ultimate Blueprint
                 </h2>
-                <h1 class="text-8xl font-black leading-[1.1] mb-10 tracking-tight">
+                <h1 class="text-5xl md:text-8xl font-black leading-[1.1] mb-6 md:mb-10 tracking-tight">
                     失敗しない<br>
                     <span
                         class="text-transparent bg-clip-text bg-gradient-to-r from-[#e9c46a] to-[#f4a261]">タイ移住</span><br>
                     完全ガイド
                 </h1>
-                <div class="w-24 h-3 bg-[#e9c46a] mb-10"></div>
-                <p class="text-xl text-slate-300 font-medium max-w-2xl leading-relaxed">
+                <div class="w-16 h-2 md:w-24 md:h-3 bg-[#e9c46a] mb-6 md:mb-10"></div>
+                <p class="text-lg md:text-xl text-slate-300 font-medium max-w-2xl leading-relaxed">
                     ビザ取得から生活費、エリア選びまで。<br>
                     バンコクで「理想の暮らし」を実現するための<br>
                     全てがここに。
@@ -151,19 +161,19 @@
             </div>
 
             <!-- Footer Decorative -->
-            <div class="absolute bottom-0 right-0 p-10 opacity-10">
+            <div class="absolute bottom-0 right-0 p-4 md:p-10 opacity-10">
                 <div class="text-[120px] leading-none font-black text-white font-en tracking-tighter">NOMAD</div>
             </div>
         </div>
     </div>
 
     <!-- PAGE 2: Introduction (New) -->
-    <div class="page p-12 bg-white flex flex-col justify-center">
+    <div class="page p-6 md:p-12 bg-white flex flex-col justify-center">
         <div class="max-w-2xl mx-auto text-center">
-            <h2 class="text-3xl font-bold text-slate-800 mb-8 leading-relaxed">
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 md:mb-8 leading-relaxed">
                 環境を変えれば、<br>人生は自動的に変わる。
             </h2>
-            <p class="text-slate-600 leading-8 mb-12 text-justify">
+            <p class="text-sm md:text-base text-slate-600 leading-7 md:leading-8 mb-8 md:mb-12 text-justify">
                 「いつか海外で暮らしてみたい」<br>
                 そう思いながら、日本の満員電車に揺られ、消耗していく日々。<br><br>
                 しかし、今や「海外移住」は特別な人の特権ではありません。<br>
@@ -229,13 +239,13 @@
     </div>
 
     <!-- PAGE 3: Visa Strategy -->
-    <div class="page p-10 bg-[#FFFBF7]">
+    <div class="page p-6 md:p-10 bg-[#FFFBF7]">
         <div class="border-b-2 border-slate-200 pb-2 mb-4 flex justify-between items-end">
             <h2 class="text-3xl font-black text-slate-800">01. ビザ戦略</h2>
             <span class="font-en text-[#2a9d8f] font-bold">VISA STRATEGY</span>
         </div>
 
-        <div class="flex gap-8 mb-4">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 mb-8 md:mb-4">
             <div class="w-full">
                 <h3 class="text-xl font-bold mb-4 text-[#2a9d8f] flex items-center gap-2">
                     <span class="bg-[#2a9d8f]/10 p-2 rounded text-2xl">🇹🇭</span>
@@ -246,7 +256,7 @@
                     2024年に新設された、フリーランス・リモートワーカーのための最強ビザ。
                     条件を満たすなら、迷わずこれを取得してください。50万バーツ（約250万円）の残高証明と、1万バーツの申請料で5年間滞在可能です。
                 </p>
-                <div class="grid grid-cols-3 gap-4 text-sm">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
                     <div
                         class="bg-white p-4 rounded-lg border border-slate-100 shadow-sm flex flex-col items-center text-center">
                         <span class="text-[#2a9d8f] font-bold text-xs uppercase tracking-wider mb-1">Duration</span>
@@ -369,7 +379,7 @@
     </div>
 
     <!-- PAGE 4: Cost of Living -->
-    <div class="page p-12 bg-white">
+    <div class="page p-6 md:p-12 bg-white">
         <div class="border-b-2 border-slate-200 pb-4 mb-8 flex justify-between items-end">
             <h2 class="text-3xl font-black text-slate-800">02. 生活費シミュレーション</h2>
             <span class="font-en text-[#2a9d8f] font-bold">COST OF LIVING</span>
@@ -382,7 +392,7 @@
 
         <div class="space-y-6">
             <!-- Plan A: Saver -->
-            <div class="flex border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <div class="flex flex-col md:flex-row border border-slate-200 rounded-xl overflow-hidden shadow-sm">
                 <div
                     class="w-1/3 bg-slate-50 p-6 flex flex-col justify-center items-center text-center border-r border-slate-100">
                     <div class="text-4xl mb-2">🔰</div>
@@ -391,7 +401,7 @@
                     <div class="mt-4 text-[#2a9d8f] font-black text-2xl">~15<span
                             class="text-sm text-slate-500 font-normal">万円/月</span></div>
                 </div>
-                <div class="w-2/3 p-6">
+                <div class="w-full md:w-2/3 p-6">
                     <div class="space-y-3 mb-4">
                         <div class="flex items-start gap-3">
                             <div class="text-xl w-6 text-center">🏠</div>
@@ -422,16 +432,17 @@
             </div>
 
             <!-- Plan B: Standard -->
-            <div class="flex border-2 border-[#2a9d8f] bg-[#2a9d8f]/5 rounded-xl overflow-hidden shadow-md">
+            <div
+                class="flex flex-col md:flex-row border-2 border-[#2a9d8f] bg-[#2a9d8f]/5 rounded-xl overflow-hidden shadow-md">
                 <div
-                    class="w-1/3 bg-[#2a9d8f]/10 p-6 flex flex-col justify-center items-center text-center border-r border-[#2a9d8f]/20">
+                    class="w-full md:w-1/3 bg-[#2a9d8f]/10 p-6 flex flex-col justify-center items-center text-center border-b md:border-b-0 md:border-r border-[#2a9d8f]/20">
                     <div class="text-4xl mb-2">💻</div>
                     <h3 class="font-bold text-slate-800">標準派</h3>
                     <p class="text-xs text-slate-500 mt-2">ノマドワーカー標準</p>
                     <div class="mt-4 text-[#2a9d8f] font-black text-2xl">~20<span
                             class="text-sm text-slate-500 font-normal">万円/月</span></div>
                 </div>
-                <div class="w-2/3 p-6">
+                <div class="w-full md:w-2/3 p-6">
                     <div class="space-y-3 mb-4">
                         <div class="flex items-start gap-3">
                             <div class="text-xl w-6 text-center">🏢</div>
@@ -466,7 +477,7 @@
             </div>
 
             <!-- Plan C: Premium -->
-            <div class="flex border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+            <div class="flex flex-col md:flex-row border border-slate-200 rounded-xl overflow-hidden shadow-sm">
                 <div
                     class="w-1/3 bg-slate-50 p-6 flex flex-col justify-center items-center text-center border-r border-slate-100">
                     <div class="text-4xl mb-2">👑</div>
@@ -475,7 +486,7 @@
                     <div class="mt-4 text-[#2a9d8f] font-black text-2xl">30<span
                             class="text-sm text-slate-500 font-normal">万円~/月</span></div>
                 </div>
-                <div class="w-2/3 p-6">
+                <div class="w-full md:w-2/3 p-6">
                     <div class="space-y-3 mb-4">
                         <div class="flex items-start gap-3">
                             <div class="text-xl w-6 text-center">🏰</div>
@@ -508,7 +519,7 @@
     </div>
 
     <!-- PAGE 5: Area Guide -->
-    <div class="page p-12 bg-white flex flex-col">
+    <div class="page p-6 md:p-12 bg-white flex flex-col">
         <div class="border-b-2 border-slate-200 pb-4 mb-6 flex justify-between items-end">
             <h2 class="text-3xl font-black text-slate-800">03. エリアガイド</h2>
             <span class="font-en text-[#2a9d8f] font-bold">AREA GUIDE</span>
@@ -521,7 +532,7 @@
         </p>
 
         <!-- Quick Matrix -->
-        <div class="mb-8 grid grid-cols-4 gap-2 text-center">
+        <div class="mb-8 grid grid-cols-2 md:grid-cols-4 gap-2 text-center">
             <div class="bg-indigo-50 p-3 rounded-lg border border-indigo-100">
                 <div class="text-xs text-indigo-400 font-bold mb-1">JAPANESE</div>
                 <div class="font-bold text-slate-700 text-sm">プロンポン</div>
@@ -540,7 +551,7 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-6 flex-1">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1">
             <!-- Area 1: Phrom Phong -->
             <div
                 class="bg-white p-6 rounded-xl border border-indigo-100 shadow-sm flex flex-col relative overflow-hidden group">
@@ -690,7 +701,7 @@
     </div>
 
     <!-- PAGE 6: Checklist & CTA -->
-    <div class="page p-12 bg-[#1a2530] text-white flex flex-col">
+    <div class="page p-6 md:p-12 bg-[#1a2530] text-white flex flex-col">
         <div class="border-b border-white/20 pb-4 mb-8 flex justify-between items-end">
             <h2 class="text-3xl font-black">04. 出国前チェックリスト</h2>
             <span class="font-en text-[#e9c46a] font-bold">FIXED CHECKLIST</span>
@@ -698,7 +709,7 @@
 
         <div class="bg-white/5 p-8 rounded-2xl border border-white/10 mb-8">
             <h3 class="text-xl font-bold mb-6 text-[#e9c46a]">これだけは忘れないで！</h3>
-            <div class="grid grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                     <h4 class="font-bold text-[#e9c46a] mb-4 border-b border-[#e9c46a]/30 pb-2">手続き・お金</h4>
                     <ul class="space-y-4">
