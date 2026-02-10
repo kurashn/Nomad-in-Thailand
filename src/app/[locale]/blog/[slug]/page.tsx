@@ -137,8 +137,6 @@ function parseMarkdown(markdown: string): string {
 
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i].trim();
-
-        // Table processing
         if (line.startsWith('|')) {
             if (currentListType) flushList();
 
@@ -213,10 +211,10 @@ function parseMarkdown(markdown: string): string {
         }
 
         // YouTube Embed Shortcode: [YOUTUBE:videoId] or \[YOUTUBE:videoId] (Keystatic escapes brackets)
-        const youtubeMatch = line.match(/^\\\\?\[YOUTUBE:(.+?)\]$/);
+        const youtubeMatch = line.match(/^(\\)?\[YOUTUBE:(.+?)\]$/);
         if (youtubeMatch) {
             if (currentListType) flushList();
-            const videoId = youtubeMatch[1];
+            const videoId = youtubeMatch[2];
             result.push(`
                 <div class="aspect-video w-full rounded-xl overflow-hidden shadow-lg mb-10 mt-8">
                     <iframe
