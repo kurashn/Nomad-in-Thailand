@@ -212,8 +212,8 @@ function parseMarkdown(markdown: string): string {
             continue;
         }
 
-        // YouTube Embed Shortcode: [YOUTUBE:videoId]
-        const youtubeMatch = line.match(/^\[YOUTUBE:(.+?)\]$/);
+        // YouTube Embed Shortcode: [YOUTUBE:videoId] or \[YOUTUBE:videoId] (Keystatic escapes brackets)
+        const youtubeMatch = line.match(/^\\\\?\[YOUTUBE:(.+?)\]$/);
         if (youtubeMatch) {
             if (currentListType) flushList();
             const videoId = youtubeMatch[1];
