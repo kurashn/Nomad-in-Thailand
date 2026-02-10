@@ -99,7 +99,7 @@ export default function SidebarTools() {
                 <div className="text-[10px] text-slate-400 mb-2 text-center">{t('ad')}</div>
 
                 {/* Community Banner - Custom Image */}
-                <Link href="/nomad-info/community" className="block group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all">
+                <a href="https://lin.ee/E1QFFRn" target="_blank" rel="noopener noreferrer" className="block group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all">
                     <div className="relative overflow-hidden rounded-xl">
                         <Image
                             src="/images/community_banner_custom.jpg"
@@ -115,7 +115,7 @@ export default function SidebarTools() {
                             </div>
                         </div>
                     </div>
-                </Link>
+                </a>
 
                 {/* THE RESET Retreat Banner */}
                 <a href="https://www.the-reset-th.com/" target="_blank" rel="noopener noreferrer" className="block group relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all">

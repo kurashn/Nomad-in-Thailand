@@ -47,7 +47,11 @@ export default function Footer() {
                                 </a>
                             </li>
                             <li><Link href="/contact" className="text-slate-500 hover:text-blue-600 transition-colors">{t('links.contact')}</Link></li>
-                            <li><span className="text-slate-400">{t('links.newsletter')}</span></li>
+                            <li>
+                                <a href="https://lin.ee/E1QFFRn" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#06C755] transition-colors font-bold">
+                                    {t('links.newsletter')}
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>

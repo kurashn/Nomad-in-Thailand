@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>失敗しないタイ移住完全ガイド 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .font-en {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .page {
+            width: 210mm;
+            height: 296.6mm;
+            /* Slight adjustment for browser rendering */
+            position: relative;
+            overflow: hidden;
+            background: white;
+            page-break-after: always;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        .page:last-child {
+            page-break-after: avoid;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+
+            .page {
+                box-shadow: none;
+                margin: 0;
+                height: 297mm;
+                page-break-after: always;
+            }
+
+            .page:last-child {
+                page-break-after: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 py-10">
+
+    <!-- PAGE 1: Cover Page -->
+    <div class="page flex flex-col relative overflow-hidden">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="/images/area_guide_hero_photo_optimized.jpg" alt="Cover" class="w-full h-full object-cover">
+            <!-- Modern Gradient Overlay for Readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172a]/70 to-[#0f172a]/40"></div>
+            <!-- Radial Gradient for depth -->
+            <div class="absolute inset-0 bg-gradient-to-r from-[#0f172a]/90 via-transparent to-transparent"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="relative z-10 flex-1 flex flex-col justify-between p-16 text-white h-full">
+
+            <!-- Header Badge -->
+            <div class="flex justify-between items-start">
+                <div
+                    class="bg-[#e9c46a] text-[#1a2530] px-4 py-1 font-en font-black tracking-widest text-xs uppercase flex items-center gap-2">
+                    <span class="w-2 h-2 bg-[#1a2530] rounded-full"></span>
+                    Official Guide 2026
+                </div>
+                <div class="text-white/80 font-en tracking-[0.2em] text-xs font-bold">NOMAD IN THAILAND</div>
+            </div>
+
+            <!-- Main Title Section -->
+            <div class="mt-10">
+                <h2 class="font-en text-[#e9c46a] font-bold text-xl tracking-[0.3em] mb-4 pl-1">THE ULTIMATE BLUEPRINT
+                </h2>
+                <h1 class="text-7xl font-black leading-tight mb-6" style="text-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+                    失敗しない<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-300">タイ移住</span><br>
+                    完全ガイド
+                </h1>
+                <div class="w-32 h-2 bg-[#e9c46a] mb-8"></div>
+                <p class="text-lg text-slate-300 font-medium max-w-md leading-relaxed">
+                    ビザ取得から生活費、エリア選びまで。<br>
+                    バンコクで「理想の暮らし」を実現するための<br>
+                    全てがここに。
+                </p>
+            </div>
+
+            <!-- Features / Footer -->
+            <div class="mt-auto pt-12">
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- Feature 1 -->
+                    <div class="flex items-center gap-5 group">
+                        <div
+                            class="w-12 h-12 rounded-full border border-[#e9c46a]/50 flex items-center justify-center bg-[#e9c46a]/10 text-[#e9c46a] font-en font-bold text-lg">
+                            01
+                        </div>
+                        <div>
+                            <div class="text-[#e9c46a] text-xs font-bold tracking-wider mb-0.5">VISA STRATEGY</div>
+                            <div class="text-xl font-bold">最強のDTVビザ戦略</div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="flex items-center gap-5 group">
+                        <div
+                            class="w-12 h-12 rounded-full border border-[#e9c46a]/50 flex items-center justify-center bg-[#e9c46a]/10 text-[#e9c46a] font-en font-bold text-lg">
+                            02
+                        </div>
+                        <div>
+                            <div class="text-[#e9c46a] text-xs font-bold tracking-wider mb-0.5">COST SIMULATION</div>
+                            <div class="text-xl font-bold">リアルな生活費シミュレーション</div>
+                        </div>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="flex items-center gap-5 group">
+                        <div
+                            class="w-12 h-12 rounded-full border border-[#e9c46a]/50 flex items-center justify-center bg-[#e9c46a]/10 text-[#e9c46a] font-en font-bold text-lg">
+                            03
+                        </div>
+                        <div>
+                            <div class="text-[#e9c46a] text-xs font-bold tracking-wider mb-0.5">AREA GUIDE</div>
+                            <div class="text-xl font-bold">住むべきエリア診断</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Decorative -->
+            <!-- Site Logo at Bottom Right -->
+            <div class="absolute bottom-0 right-0 p-10 opacity-90">
+                <img src="/character/nomad-dog-hero-transparent.png" alt="Nomad in Thailand Logo"
+                    class="w-32 h-32 object-contain drop-shadow-2xl">
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 2: Introduction (New) -->
+    <div class="page p-12 bg-white flex flex-col justify-center">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="text-3xl font-bold text-slate-800 mb-8 leading-relaxed">
+                環境を変えれば、<br>人生は自動的に変わる。
+            </h2>
+            <p class="text-slate-600 leading-8 mb-12 text-justify">
+                「いつか海外で暮らしてみたい」<br>
+                そう思いながら、日本の満員電車に揺られ、消耗していく日々。<br><br>
+                しかし、今や「海外移住」は特別な人の特権ではありません。<br>
+                PC1台あればどこでも働ける時代。<br>
+                そして、世界で最もノマドワーカーに選ばれている国、タイ。<br><br>
+                温暖な気候、美味しい食事、親日的な人々、そして驚くほど快適な生活環境。<br>
+                東京の半分の生活費で、2倍豊かな暮らしが手に入ります。<br><br>
+                このガイドは、ただの観光案内ではありません。<br>
+                あなたの人生のステージを変えるための「戦略書」です。<br>
+                準備はいいですか？
+            </p>
+            <div class="w-full h-px bg-slate-200 mb-12"></div>
+            <!-- Improved Future Section -->
+            <div
+                class="relative overflow-hidden bg-gradient-to-br from-[#2a9d8f]/10 to-[#264653]/10 p-8 rounded-2xl border border-[#2a9d8f]/20 shadow-lg">
+                <div class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-[#2a9d8f]/20 rounded-full blur-2xl"></div>
+
+                <h3 class="font-bold text-[#2a9d8f] text-xl mb-6 flex items-center gap-3">
+                    <span class="bg-[#2a9d8f] text-white p-1.5 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </span>
+                    このガイドで得られる未来
+                </h3>
+
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-4">
+                        <div class="mt-1 w-6 h-6 rounded-full bg-[#2a9d8f] flex items-center justify-center shrink-0">
+                            <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-slate-700 font-medium leading-relaxed">ビザの心配なく、<span
+                                class="text-[#2a9d8f] font-bold border-b-2 border-[#2a9d8f]/30">5年以上の長期滞在</span>を実現</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="mt-1 w-6 h-6 rounded-full bg-[#2a9d8f] flex items-center justify-center shrink-0">
+                            <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-slate-700 font-medium leading-relaxed">予算15万円〜で叶える、<span
+                                class="text-[#2a9d8f] font-bold border-b-2 border-[#2a9d8f]/30">ストレスフリーな海外生活</span></span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="mt-1 w-6 h-6 rounded-full bg-[#2a9d8f] flex items-center justify-center shrink-0">
+                            <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                                    d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </div>
+                        <span class="text-slate-700 font-medium leading-relaxed">失敗しないエリア選びと、<span
+                                class="text-[#2a9d8f] font-bold border-b-2 border-[#2a9d8f]/30">理想の住環境</span>の確保</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 3: Visa Strategy -->
+    <div class="page p-10 bg-[#FFFBF7]">
+        <div class="border-b-2 border-slate-200 pb-2 mb-4 flex justify-between items-end">
+            <h2 class="text-3xl font-black text-slate-800">01. ビザ戦略</h2>
+            <span class="font-en text-[#2a9d8f] font-bold">VISA STRATEGY</span>
+        </div>
+
+        <div class="flex gap-8 mb-4">
+            <div class="w-1/2">
+                <h3 class="text-xl font-bold mb-2 text-[#2a9d8f]">DTVビザ (Destination Thailand Visa)</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                    2024年に新設された、フリーランス・リモートワーカーのための最強ビザ。<br>
+                    条件を満たすなら、迷わずこれを取得してください。
+                </p>
+                <ul class="space-y-3 text-sm">
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg border border-slate-100 shadow-sm">
+                        <span class="text-[#2a9d8f] font-bold w-12 shrink-0">期間</span>
+                        <span>5年 (1回あたり180日滞在可 × 延長可)</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg border border-slate-100 shadow-sm">
+                        <span class="text-[#2a9d8f] font-bold w-12 shrink-0">条件</span>
+                        <span>50万バーツ（約250万円）の残高証明</span>
+                    </li>
+                    <li class="flex items-start gap-3 bg-white p-3 rounded-lg border border-slate-100 shadow-sm">
+                        <span class="text-[#2a9d8f] font-bold w-12 shrink-0">費用</span>
+                        <span>10,000バーツ（約4〜5万円）</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="w-1/2 flex items-center justify-center">
+                <img src="/images/lead-magnet/visa.png" alt="Visa" class="w-full object-contain max-h-60">
+            </div>
+        </div>
+
+        <h3 class="text-lg font-bold text-slate-800 mb-2">ビザ比較表</h3>
+        <table class="w-full text-sm text-left mb-8 border-collapse bg-white shadow-sm rounded-lg overflow-hidden">
+            <thead class="bg-slate-100 text-slate-700">
+                <tr>
+                    <th class="p-3 border-b">種類</th>
+                    <th class="p-3 border-b">滞在可能期間</th>
+                    <th class="p-3 border-b">費用</th>
+                    <th class="p-3 border-b">おすすめな人</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b hover:bg-slate-50">
+                    <td class="p-3 font-bold text-[#2a9d8f]">DTVビザ</td>
+                    <td class="p-3">5年 (180日毎)</td>
+                    <td class="p-3">1万バーツ</td>
+                    <td class="p-3">フリーランス、会社経営者</td>
+                </tr>
+                <tr class="border-b hover:bg-slate-50">
+                    <td class="p-3 font-bold text-slate-700">観光ビザ</td>
+                    <td class="p-3">60日 (+30日延長)</td>
+                    <td class="p-3">1,000バーツ</td>
+                    <td class="p-3">短期滞在、お試し移住</td>
+                </tr>
+                <tr class="hover:bg-slate-50">
+                    <td class="p-3 font-bold text-[#e9c46a]">エリート</td>
+                    <td class="p-3">5年〜20年</td>
+                    <td class="p-3">65万バーツ〜</td>
+                    <td class="p-3">資金に余裕がある投資家</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="p-3 bg-red-50 border border-red-100 rounded-xl flex gap-3 mb-4">
+            <div class="text-red-500 mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div>
+                <h4 class="font-bold text-red-800 text-sm mb-1">注意: ノービザ入国について</h4>
+                <p class="text-xs text-red-700 leading-relaxed">
+                    現在、日本パスポート保有者はビザなしで基本30日（現在は緩和措置で60日の場合あり）滞在可能ですが、頻繁な入出国は厳しく制限されています。本格移住なら必ずビザを取得しましょう。
+                </p>
+            </div>
+        </div>
+
+        <!-- Plan B: ED Visa -->
+        <div class="mb-4 bg-indigo-50 border border-indigo-100 p-4 rounded-xl flex gap-4 items-start">
+            <div class="bg-white p-2 rounded-full shadow-sm text-xl">🎓</div>
+            <div>
+                <h3 class="font-bold text-indigo-900 text-sm mb-1">プランB：教育ビザ (EDビザ) で滞在</h3>
+                <p class="text-[10px] text-indigo-800 leading-relaxed mb-1">
+                    DTVの条件が難しい場合は、語学学校やムエタイジムに通うことで取得できるEDビザがおすすめ。
+                    学びながら合法的に長期滞在できます。
+                </p>
+                <div class="flex gap-2 text-[10px] font-bold text-indigo-600">
+                    <span class="bg-white px-2 py-0.5 rounded border border-indigo-100">費用: 年間約3〜5万バーツ</span>
+                    <span class="bg-white px-2 py-0.5 rounded border border-indigo-100">期間: 3ヶ月毎に延長</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- DTV Roadmap -->
+        <div class="pt-2 border-t border-slate-200">
+            <h3 class="font-bold text-slate-800 mb-2 text-sm flex items-center gap-2">
+                <span class="text-[#2a9d8f]">STEP BY STEP</span>
+                DTVビザ取得ロードマップ
+            </h3>
+            <div class="grid grid-cols-3 gap-3">
+                <div class="bg-white p-3 rounded-lg border border-slate-200 text-center relative">
+                    <div class="text-xl mb-1">💰</div>
+                    <div class="font-bold text-slate-700 text-xs mb-0.5">01. 資金準備</div>
+                    <div class="text-[10px] text-slate-500">50万バーツ以上の<br>残高を作る</div>
+                    <div
+                        class="absolute top-1/2 -right-2.5 w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 z-10 text-[10px]">
+                        ▶</div>
+                </div>
+                <div class="bg-white p-3 rounded-lg border border-slate-200 text-center relative">
+                    <div class="text-xl mb-1">📄</div>
+                    <div class="font-bold text-slate-700 text-xs mb-0.5">02. 書類手配</div>
+                    <div class="text-[10px] text-slate-500">残高証明・PFを<br>英語で用意</div>
+                    <div
+                        class="absolute top-1/2 -right-2.5 w-5 h-5 bg-slate-100 rounded-full flex items-center justify-center text-slate-400 z-10 text-[10px]">
+                        ▶</div>
+                </div>
+                <div class="bg-white p-3 rounded-lg border-2 border-[#2a9d8f] text-center shadow-sm">
+                    <div class="text-xl mb-1">✈️</div>
+                    <div class="font-bold text-[#2a9d8f] text-xs mb-0.5">03. 申請</div>
+                    <div class="text-[10px] text-slate-500">E-Visa公式サイト<br>から申請</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 4: Cost of Living -->
+    <div class="page p-12 bg-white">
+        <div class="border-b-2 border-slate-200 pb-4 mb-8 flex justify-between items-end">
+            <h2 class="text-3xl font-black text-slate-800">02. 生活費シミュレーション</h2>
+            <span class="font-en text-[#2a9d8f] font-bold">COST OF LIVING</span>
+        </div>
+
+        <p class="text-slate-600 mb-8">
+            タイの物価は日本の約3分の1と言われますが、ライフスタイルによって大きく異なります。
+            3つの典型的なパターンでシミュレーションしてみましょう。
+        </p>
+
+        <div class="space-y-6">
+            <!-- Plan A: Saver -->
+            <div class="flex border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <div
+                    class="w-1/3 bg-slate-50 p-6 flex flex-col justify-center items-center text-center border-r border-slate-100">
+                    <div class="text-4xl mb-2">🔰</div>
+                    <h3 class="font-bold text-slate-800">節約派</h3>
+                    <p class="text-xs text-slate-500 mt-2">現地採用・学生レベル</p>
+                    <div class="mt-4 text-[#2a9d8f] font-black text-2xl">~15<span
+                            class="text-sm text-slate-500 font-normal">万円/月</span></div>
+                </div>
+                <div class="w-2/3 p-6">
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🏠</div>
+                            <div>
+                                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">RENT</div>
+                                <div class="text-sm font-bold text-slate-700">1万~1.5万バーツ (ワンルーム)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🍛</div>
+                            <div>
+                                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">FOOD</div>
+                                <div class="text-sm font-bold text-slate-700">屋台・フードコート中心</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🚌</div>
+                            <div>
+                                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">MOVE</div>
+                                <div class="text-sm font-bold text-slate-700">バス・電車・徒歩</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 bg-slate-50 p-3 rounded leading-relaxed border border-slate-100">
+                        贅沢はその都度考えますが、プール・ジム付きのコンドミニアムには住めます。日本では考えられないコスパです。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Plan B: Standard -->
+            <div
+                class="flex border-2 border-[#2a9d8f] bg-[#2a9d8f]/5 rounded-xl overflow-hidden shadow-md transform scale-105 origin-left z-10">
+                <div
+                    class="w-1/3 bg-[#2a9d8f]/10 p-6 flex flex-col justify-center items-center text-center border-r border-[#2a9d8f]/20">
+                    <div class="text-4xl mb-2">💻</div>
+                    <h3 class="font-bold text-slate-800">標準派</h3>
+                    <p class="text-xs text-slate-500 mt-2">ノマドワーカー標準</p>
+                    <div class="mt-4 text-[#2a9d8f] font-black text-2xl">~20<span
+                            class="text-sm text-slate-500 font-normal">万円/月</span></div>
+                </div>
+                <div class="w-2/3 p-6">
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🏢</div>
+                            <div>
+                                <div class="text-[10px] text-[#2a9d8f] font-bold uppercase tracking-wider mb-0.5">RENT
+                                </div>
+                                <div class="text-sm font-bold text-slate-800">2万バーツ (1LDK・築浅)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">☕️</div>
+                            <div>
+                                <div class="text-[10px] text-[#2a9d8f] font-bold uppercase tracking-wider mb-0.5">FOOD
+                                </div>
+                                <div class="text-sm font-bold text-slate-800">カフェ、外食、たまに自炊</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🛵</div>
+                            <div>
+                                <div class="text-[10px] text-[#2a9d8f] font-bold uppercase tracking-wider mb-0.5">MOVE
+                                </div>
+                                <div class="text-sm font-bold text-slate-800">BTS・Grabバイク</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p
+                        class="text-xs text-slate-600 bg-white/60 p-3 rounded leading-relaxed border border-[#2a9d8f]/10">
+                        ストレスフリーな生活。毎日カフェで作業し、週1回マッサージに行き、日本食も週2-3回楽しめます。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Plan C: Premium -->
+            <div class="flex border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                <div
+                    class="w-1/3 bg-slate-50 p-6 flex flex-col justify-center items-center text-center border-r border-slate-100">
+                    <div class="text-4xl mb-2">👑</div>
+                    <h3 class="font-bold text-slate-800">貴族派</h3>
+                    <p class="text-xs text-slate-500 mt-2">駐在員・富裕層レベル</p>
+                    <div class="mt-4 text-[#2a9d8f] font-black text-2xl">30<span
+                            class="text-sm text-slate-500 font-normal">万円~/月</span></div>
+                </div>
+                <div class="w-2/3 p-6">
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🏰</div>
+                            <div>
+                                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">RENT</div>
+                                <div class="text-sm font-bold text-slate-700">3万バーツ~ (1LDK・高級物件)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🍣</div>
+                            <div>
+                                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">FOOD</div>
+                                <div class="text-sm font-bold text-slate-700">外食・日本食</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="text-xl w-6 text-center">🚘</div>
+                            <div>
+                                <div class="text-[10px] text-slate-400 font-bold uppercase tracking-wider">MOVE</div>
+                                <div class="text-sm font-bold text-slate-700">Grabタクシー</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 bg-slate-50 p-3 rounded leading-relaxed border border-slate-100">
+                        東京で年収1000万円以上の暮らしが、月30万円で実現します。メイドサービスや高級スパも日常に。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 5: Area Guide -->
+    <div class="page p-12 bg-white flex flex-col">
+        <div class="border-b-2 border-slate-200 pb-4 mb-6 flex justify-between items-end">
+            <h2 class="text-3xl font-black text-slate-800">03. エリアガイド</h2>
+            <span class="font-en text-[#2a9d8f] font-bold">AREA GUIDE</span>
+        </div>
+
+        <div class="flex-1 relative mb-6 rounded-xl overflow-hidden border border-slate-200 bg-slate-50">
+            <!-- Corrected Map Image Path and Style -->
+            <img src="/images/lead-magnet/map.png" alt="Bangkok Area Map" class="w-full h-full object-contain p-4">
+
+            <!-- Map Labels (Overlay) - Adjust positions based on actual map image if needed -->
+            <!-- Note: Since we are using a static image, labels might be baked in or we can overlay tooltips. 
+                 For simplicity here, assuming the map image is good, we'll confirm details below. -->
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Area 1: Phrom Phong -->
+            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 flex flex-col">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded-full font-bold">日本人街</span>
+                    <h3 class="font-bold text-slate-800 text-sm">プロンポン</h3>
+                </div>
+                <p class="text-xs text-slate-600 leading-relaxed mb-3 flex-1">
+                    日本食、日系スーパー、日本語対応病院が完備。初めての海外でも日本と同じ生活ができます。
+                    <br><span class="text-indigo-600 font-bold">3.5万B〜</span>
+                </p>
+                <div class="bg-white p-2 rounded border border-slate-100">
+                    <div class="text-[10px] font-bold text-slate-400 mb-1 flex items-center gap-1">
+                        <span>👤</span> こんな人におすすめ
+                    </div>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">初めての海外</span>
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">英語が不安</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area 2: Ari -->
+            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 flex flex-col">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-[#2a9d8f] text-white text-[10px] px-2 py-0.5 rounded-full font-bold">ノマド聖地</span>
+                    <h3 class="font-bold text-slate-800 text-sm">アーリー</h3>
+                </div>
+                <p class="text-xs text-slate-600 leading-relaxed mb-3 flex-1">
+                    おしゃれなカフェとコワーキングが密集。欧米人が多く、緑豊かでクリエイティブな雰囲気。
+                    <br><span class="text-[#2a9d8f] font-bold">2万B〜</span>
+                </p>
+                <div class="bg-white p-2 rounded border border-slate-100">
+                    <div class="text-[10px] font-bold text-slate-400 mb-1 flex items-center gap-1">
+                        <span>👤</span> こんな人におすすめ
+                    </div>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">カフェ作業派</span>
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">静かな環境</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area 3: On Nut -->
+            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 flex flex-col">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-orange-500 text-white text-[10px] px-2 py-0.5 rounded-full font-bold">コスパ最強</span>
+                    <h3 class="font-bold text-slate-800 text-sm">オンヌット</h3>
+                </div>
+                <p class="text-xs text-slate-600 leading-relaxed mb-3 flex-1">
+                    駅前に巨大スーパーと格安マッサージ街。生活利便性が高く、家賃も手頃で長期滞在に最適。
+                    <br><span class="text-orange-500 font-bold">1.2万B〜</span>
+                </p>
+                <div class="bg-white p-2 rounded border border-slate-100">
+                    <div class="text-[10px] font-bold text-slate-400 mb-1 flex items-center gap-1">
+                        <span>👤</span> こんな人におすすめ
+                    </div>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">生活費重視</span>
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">便利さ優先</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Area 4: Rama 9 -->
+            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100 flex flex-col">
+                <div class="flex items-center gap-2 mb-2">
+                    <span class="bg-slate-600 text-white text-[10px] px-2 py-0.5 rounded-full font-bold">新都心</span>
+                    <h3 class="font-bold text-slate-800 text-sm">ラマ9</h3>
+                </div>
+                <p class="text-xs text-slate-600 leading-relaxed mb-3 flex-1">
+                    IT企業や新しいモールが集まるエリア。タワマンが多く、ナイトライフも充実した若者の街。
+                    <br><span class="text-slate-600 font-bold">1.8万B〜</span>
+                </p>
+                <div class="bg-white p-2 rounded border border-slate-100">
+                    <div class="text-[10px] font-bold text-slate-400 mb-1 flex items-center gap-1">
+                        <span>👤</span> こんな人におすすめ
+                    </div>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">キラキラ都会派</span>
+                        <span class="text-[10px] text-slate-600 bg-slate-100 px-1.5 py-0.5 rounded">IT・起業家</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE 6: Checklist & CTA -->
+    <div class="page p-12 bg-[#1a2530] text-white flex flex-col">
+        <div class="border-b border-white/20 pb-4 mb-8 flex justify-between items-end">
+            <h2 class="text-3xl font-black">04. 出国前チェックリスト</h2>
+            <span class="font-en text-[#e9c46a] font-bold">FIXED CHECKLIST</span>
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-2xl border border-white/10 mb-8">
+            <h3 class="text-xl font-bold mb-6 text-[#e9c46a]">これだけは忘れないで！</h3>
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <h4 class="font-bold text-[#e9c46a] mb-4 border-b border-[#e9c46a]/30 pb-2">手続き・お金</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">パスポート残存期間 (6ヶ月以上必須)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm"><span class="text-[#e9c46a]">ビザの手配</span> (DTV または 観光ビザ)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">住民票の転失届 (1年以上行くなら推奨)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">海外保険付帯クレカ <span class="text-[#e9c46a]">最低3枚</span> (紛失対策)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">Wiseアカウント開設 (海外送金に必須)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-[#e9c46a] mb-4 border-b border-[#e9c46a]/30 pb-2">生活・デジタル</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">スマホのSIMロック解除</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">VPN契約 (日本のサイト閲覧に必須)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">歯医者に行く (海外保険は対象外が多い)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">国際免許証の取得 (運転するなら)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div
+                                class="w-5 h-5 rounded bg-[#e9c46a] text-[#1a2530] flex items-center justify-center text-xs font-bold mt-0.5">
+                                ✓</div>
+                            <span class="text-sm">常用薬・コンタクトレンズの予備</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-auto">
+            <!-- Passport Stamp Design -->
+            <div class="mb-8 relative inline-block transform -rotate-6 opacity-90 mix-blend-plus-lighter">
+                <div class="border-4 border-[#e9c46a] rounded-xl p-4 px-8 relative mask-ink">
+                    <div
+                        class="absolute top-2 right-2 text-[10px] text-[#e9c46a] font-black tracking-widest border border-[#e9c46a] px-1">
+                        IMG.TH</div>
+                    <div class="text-[#e9c46a] font-en font-black text-xs tracking-[0.3em] opacity-80 mb-1">ADMITTED
+                    </div>
+                    <p class="text-2xl font-black text-[#e9c46a] tracking-widest whitespace-nowrap"
+                        style="text-shadow: 0 0 10px rgba(233, 196, 106, 0.5);">
+                        ようこそ、<br>自由な世界へ。
+                    </p>
+                    <div class="mt-2 flex justify-between items-end border-t-2 border-[#e9c46a] pt-1">
+                        <div class="font-en text-[#e9c46a] text-[10px] font-bold">UNTIL: FOREVER</div>
+                        <div class="font-en text-[#e9c46a] text-[10px] font-bold">2026</div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-sm text-slate-400 mb-8 max-w-lg mx-auto leading-relaxed">
+                同じ夢を持つ仲間が、ここにいます。<br>
+                Nomad in Thailand（ノマタイ）は、タイで不定期イベントを開催している<br>
+                無料のオープンチャットコミュニティです。<br>
+                最新情報や交流の場として、ぜひご参加ください。
+            </p>
+
+            <div class="inline-block p-6 bg-white rounded-2xl shadow-xl">
+                <!-- Real QR Code Placeholder - In production use actual QR -->
+                <p class="text-slate-900 font-bold text-sm mb-3">OPEN CHAT</p>
+                <img src="/images/QrCode.jpg" alt="Official OpenChat QR"
+                    class="w-32 h-32 mx-auto object-contain border-2 border-slate-100 rounded-lg">
+                <p class="text-[#2a9d8f] text-xs font-bold mt-3">Nomad in Thailand</p>
+            </div>
+
+            <div class="mt-8 pt-8 border-t border-white/10">
+                <p class="font-en text-[#e9c46a] font-bold tracking-widest">NOMAD IN THAILAND</p>
+                <p class="text-xs text-slate-500 mt-2">© 2026 Nomad in Thailand. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

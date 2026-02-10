@@ -5,6 +5,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { ArrowLeft } from 'lucide-react';
 import { reader } from '@/lib/reader';
+import NewsletterCTA from '@/components/NewsletterCTA';
 import BlogSidebar from '@/components/blog/BlogSidebar';
 
 interface Props {
@@ -651,7 +652,10 @@ export default async function BlogPostPage({ params }: Props) {
                             <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
                         </div>
 
-                        {/* Footer Link */}
+                        <div className="my-20">
+                            <NewsletterCTA isInline />
+                        </div>
+
                         <div className="mt-16 text-center lg:text-left border-t pt-10 border-slate-100">
                             <Link
                                 href="/blog"
