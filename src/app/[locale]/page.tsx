@@ -1,8 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import Image from "next/image";
-import { ArrowRight, MapPin, Users, Wallet, Shield, Smartphone, Heart, ArrowUpRight, Tag, Clock } from "lucide-react";
-import NewsletterCTA from "@/components/NewsletterCTA";
+import { ArrowRight, Wallet, Shield, Smartphone, Heart, ArrowUpRight, Tag, Clock, Leaf, Tent, MessageCircle, Users, BookOpen, Globe, Play } from "lucide-react";
+
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import Hero from "@/components/Hero";
 import { reader } from '@/lib/reader';
@@ -33,7 +33,7 @@ export default async function Home() {
       {/* Feature Section (Thailand Migration Guide) */}
       <section className="py-16 px-4 bg-[#FFFBF7] border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
-          <Link href="/blog/thailand-migration-guide" className="block group">
+          <Link href="https://lin.ee/Gm3aKrS" className="block group" target="_blank" rel="noopener noreferrer">
             <div className="relative overflow-hidden rounded-[2rem] bg-[#2C3E50] shadow-2xl transition-all duration-500 hover:shadow-[#2C3E50]/20 hover:-translate-y-1">
               {/* Background Image with Overlay */}
               <div className="absolute inset-0 z-0">
@@ -50,12 +50,12 @@ export default async function Home() {
               <div className="relative z-20 flex flex-col md:flex-row items-center min-h-[400px]">
                 {/* Text Content */}
                 <div className="p-8 md:p-16 flex-1 w-full md:w-2/3">
-                  <div className="inline-flex items-center gap-3 mb-8 px-4 py-2 rounded-full bg-[#e9c46a]/10 border border-[#e9c46a]/20 backdrop-blur-sm">
+                  <div className="inline-flex items-center gap-3 mb-8 px-4 py-2 rounded-full bg-[#06C755]/10 border border-[#06C755]/20 backdrop-blur-sm">
                     <span className="flex h-2 w-2 relative">
-                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#e9c46a] opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#e9c46a]"></span>
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#06C755] opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-[#06C755]"></span>
                     </span>
-                    <span className="text-sm font-bold text-[#e9c46a] tracking-widest uppercase">
+                    <span className="text-sm font-bold text-[#06C755] tracking-widest uppercase">
                       {tHome('feature.tag')}
                     </span>
                   </div>
@@ -66,12 +66,12 @@ export default async function Home() {
                     })}
                   </h2>
 
-                  <p className="text-slate-100/90 text-lg md:text-xl mb-10 leading-relaxed font-medium max-w-2xl border-l-4 border-[#e9c46a] pl-6">
+                  <p className="text-slate-100/90 text-lg md:text-xl mb-8 leading-relaxed font-bold max-w-2xl">
                     {tHome('feature.subtitle')}
                   </p>
 
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <div className="inline-flex items-center justify-center px-6 md:px-8 py-4 bg-[#2a9d8f] text-white font-bold text-base md:text-lg rounded-xl hover:bg-[#268c7f] transition-all duration-300 shadow-lg shadow-[#2a9d8f]/30 group-hover:pl-10">
+                    <div className="inline-flex items-center justify-center px-6 md:px-8 py-4 bg-[#06C755] text-white font-bold text-base md:text-lg rounded-xl hover:bg-[#05b34d] transition-all duration-300 shadow-lg shadow-[#06C755]/30 group-hover:pl-10">
                       {tHome.rich('feature.cta', {
                         nowrap: (chunks) => <span className="whitespace-nowrap">{chunks}</span>
                       })}
@@ -89,9 +89,9 @@ export default async function Home() {
                         <div className="w-16 h-16 bg-[#e9c46a] rounded-full flex items-center justify-center mb-6 shadow-md">
                           <ArrowUpRight className="w-8 h-8 text-[#2C3E50]" />
                         </div>
-                        <h3 className="font-serif text-3xl text-[#e9c46a] mb-4 leading-tight font-bold">タイ移住<br />完全ガイド</h3>
+                        <h3 className="font-serif text-3xl text-[#e9c46a] mb-4 leading-tight font-bold">失敗しない<br />タイ移住<br />完全ガイド</h3>
                         <div className="w-10 h-1 bg-white/20 my-2"></div>
-                        <p className="text-white/60 text-xs font-serif tracking-widest mt-2">MIGRATION GUIDE</p>
+                        <p className="text-white/60 text-[10px] font-serif tracking-widest mt-2">FAILURE-FREE</p>
                         <p className="text-white/40 text-[10px] mt-8">2026 EDITION</p>
                       </div>
                     </div>
@@ -105,110 +105,78 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Nomad Essentials Section */}
-      <section className="py-20 bg-slate-50 border-b border-slate-200">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-4xl font-extrabold text-slate-800 mb-4 tracking-tight whitespace-pre-line">
-              {tHome('essentials.title')}
-            </h2>
-            <p className="text-base text-slate-600 max-w-2xl mx-auto whitespace-pre-line">
-              {tHome('essentials.subtitle')}
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Wise */}
-            <Link
-              href="/nomad-info/wise"
-              className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-green-200 hover:bg-green-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1 cursor-pointer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Wallet className="w-6 h-6 text-green-500" />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-green-700 transition-colors">{tHome('essentials.wise.title')}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
-                {tHome.rich('essentials.wise.desc', {
-                  bold: (chunks) => <span className="font-bold text-green-600">{chunks}</span>
-                })}
-              </p>
-              <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-green-500 text-green-600 bg-white group-hover:bg-green-500 group-hover:text-white group-hover:shadow-md">
-                {tHome('essentials.wise.cta')}
-              </div>
-            </Link>
 
-            {/* NordVPN */}
-            <Link
-              href="/nomad-info/nordvpn"
-              className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-blue-200 hover:bg-blue-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 cursor-pointer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Shield className="w-6 h-6 text-blue-500" />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-blue-700 transition-colors">{tHome('essentials.nordvpn.title')}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
-                {tHome.rich('essentials.nordvpn.desc', {
-                  bold: (chunks) => <span className="font-bold text-blue-600">{chunks}</span>
-                })}
-              </p>
-              <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-blue-500 text-blue-600 bg-white group-hover:bg-blue-500 group-hover:text-white group-hover:shadow-md">
-                {tHome('essentials.nordvpn.cta')}
-              </div>
-            </Link>
+      {/* About Section */}
+      <section className="py-24 bg-white relative overflow-hidden">
+        {/* Decorative Background */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50/50 -skew-x-12 translate-x-1/2 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-1/3 h-full bg-slate-50/50 -skew-x-12 -translate-x-1/2 pointer-events-none"></div>
 
-            {/* e-SIM (Airalo) */}
-            <Link
-              href="/nomad-info/airalo"
-              className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-cyan-200 hover:bg-cyan-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1 cursor-pointer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Smartphone className="w-6 h-6 text-cyan-500" />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-cyan-700 transition-colors">{tHome('essentials.airalo.title')}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
-                {tHome.rich('essentials.airalo.desc', {
-                  bold: (chunks) => <span className="font-bold text-cyan-600">{chunks}</span>
-                })}
-              </p>
-              <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-cyan-500 text-cyan-600 bg-white group-hover:bg-cyan-500 group-hover:text-white group-hover:shadow-md">
-                {tHome('essentials.airalo.cta')}
-              </div>
-            </Link>
+        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+          {/* Tag */}
+          <span className="inline-block py-1.5 px-4 rounded-full bg-orange-500/10 text-orange-600 text-xs font-bold tracking-widest mb-8">
+            {tHome('about.tag')}
+          </span>
 
-            {/* Insurance (SafetyWing) */}
-            <Link
-              href="/nomad-info/safetywing"
-              className="group flex flex-col h-full p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-red-50/50 transition-all duration-300 hover:shadow-xl hover:shadow-red-500/10 hover:-translate-y-1 cursor-pointer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow-sm mb-4 group-hover:scale-110 transition-transform duration-300">
-                <Heart className="w-6 h-6 text-red-500" />
-              </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-red-700 transition-colors">{tHome('essentials.safetywing.title')}</h3>
-              <p className="text-sm text-slate-600 leading-relaxed mb-6 flex-grow">
-                {tHome.rich('essentials.safetywing.desc', {
-                  bold: (chunks) => <span className="font-bold text-red-600">{chunks}</span>
-                })}
-              </p>
-              <div className="mt-auto w-full py-2.5 rounded-xl font-bold text-center border-2 transition-all duration-300 border-red-500 text-red-600 bg-white group-hover:bg-red-500 group-hover:text-white group-hover:shadow-md">
-                {tHome('essentials.safetywing.cta')}
-              </div>
-            </Link>
-          </div>
+          {/* Title */}
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-8 leading-tight whitespace-pre-line tracking-tight">
+            {tHome('about.title')}
+          </h2>
 
-          <div className="mt-12 text-center">
-            <Link
-              href="/nomad-info/essential-tools"
-              className="inline-flex items-center justify-center px-8 py-3 rounded-full border-2 border-slate-200 text-slate-600 font-bold hover:bg-slate-50 hover:border-slate-300 transition-all duration-300 group"
-            >
-              {tHome('essentials.viewAll')}
-              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Link>
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-slate-700 font-bold mb-10 whitespace-pre-line leading-relaxed">
+            {tHome('about.subtitle')}
+          </p>
+
+          {/* Description */}
+          <p className="text-slate-500 text-lg leading-loose mb-16 max-w-2xl mx-auto text-left md:text-center whitespace-normal md:whitespace-pre-line">
+            {tHome('about.description')}
+          </p>
+
+          {/* Features (Grid) */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {/* Feature 1: Info (Blue) */}
+
+            <div className="group h-full p-8 rounded-[2rem] bg-blue-50/50 border border-blue-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-2xl bg-white text-blue-500 flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <BookOpen className="w-8 h-8" />
+                </div>
+                <h3 className="font-bold text-xl text-slate-800 mb-3 text-center">{tHome('about.features.info.title')}</h3>
+                <p className="text-sm text-slate-600 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.info.desc')}</p>
+              </div>
+            </div>
+
+            {/* Feature 2: Community (Orange) */}
+
+            <div className="group h-full p-8 rounded-[2rem] bg-orange-50/50 border border-orange-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1">
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-2xl bg-white text-orange-500 flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <Users className="w-8 h-8" />
+                </div>
+                <h3 className="font-bold text-xl text-slate-800 mb-3 text-center">{tHome('about.features.community.title')}</h3>
+                <p className="text-sm text-slate-600 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.community.desc')}</p>
+              </div>
+            </div>
+
+            {/* Feature 3: Support (Green) */}
+            {/* Feature 3: Support (Green) */}
+            <div className="group h-full p-8 rounded-[2rem] bg-green-50/50 border border-green-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1">
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 rounded-2xl bg-white text-green-500 flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                  <Globe className="w-8 h-8" />
+                </div>
+                <h3 className="font-bold text-xl text-slate-800 mb-3 text-center">{tHome('about.features.support.title')}</h3>
+                <p className="text-sm text-slate-600 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.support.desc')}</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Column Section (New) */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-center gap-3 mb-12">
             <div className="h-[1px] w-8 bg-slate-300"></div>
@@ -295,39 +263,211 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 2026 Scheduled Events (Compact Version) */}
-      <section className="py-12 px-4 bg-background">
-        <div className="max-w-2xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <div className="h-[1px] w-8 bg-slate-300"></div>
-            <h2 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">{tHome('events.title')}</h2>
-            <div className="h-[1px] w-8 bg-slate-300"></div>
+
+
+      {/* Nomad Activity Section */}
+      <section className="py-24 px-4 bg-[#0B0F19] relative overflow-hidden">
+        {/* Dynamic Background */}
+        <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-[0.03]"></div>
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent"></div>
+        <div className="absolute -top-[20%] right-[10%] w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow"></div>
+        <div className="absolute -bottom-[20%] left-[10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow delay-1000"></div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="text-center mb-20">
+            <div className="flex justify-center mb-6">
+              <div className="relative w-24 h-24 md:w-32 md:h-32">
+                <Image
+                  src="/character/nomad-dog-hero-transparent.png"
+                  alt="Nomad Dog Logo"
+                  fill
+                  className="object-contain drop-shadow-2xl animate-bounce-slow"
+                />
+              </div>
+            </div>
+            <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#e9c46a] via-[#f4a261] to-[#e76f51]">
+                {tHome('activity.title')}
+              </span>
+            </h2>
+            <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-medium leading-relaxed">
+              {tHome('activity.subtitle')}
+            </p>
           </div>
 
-          <div className="space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {/* THE RESET */}
+            <a
+              href="https://www.the-reset-th.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex flex-col h-full rounded-[2.5rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src="/images/thereset.webp"
+                  alt="THE RESET"
+                  fill
+                  className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
+              </div>
+
+              {/* Hover Gradient Overlay */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-green-500/20 via-transparent to-transparent pointer-events-none z-10"></div>
+
+              <div className="relative p-8 flex flex-col h-full z-20">
+                <div className="flex items-center justify-between mb-8">
+                  <div className="w-16 h-16 rounded-2xl bg-green-500/20 backdrop-blur-md border border-green-500/30 flex items-center justify-center shadow-lg shadow-green-500/20 group-hover:scale-110 transition-transform duration-500">
+                    <Leaf className="w-8 h-8 text-green-400" />
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-green-300 transition-colors drop-shadow-md">
+                  {tHome('activity.reset.title')}
+                </h3>
+                <p className="text-slate-300 leading-relaxed mb-8 flex-grow drop-shadow-sm font-medium">
+                  {tHome('activity.reset.desc')}
+                </p>
+
+                <div className="mt-auto">
+                  <span className="inline-flex items-center text-sm font-bold text-green-400 group-hover:text-green-300 transition-colors bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-full border border-green-500/30">
+                    {tHome('activity.reset.cta')}
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            {/* Nomad Place */}
+            <a
+              href="https://youtu.be/XvF1XOgDkiY?si=KzlxsvnF2rddXFCz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex flex-col h-full rounded-[2.5rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20"
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src="/images/nomad-camp-villa.png"
+                  alt="Nomad Place"
+                  fill
+                  className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
+              </div>
+
+              {/* Hover Gradient Overlay */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-orange-500/20 via-transparent to-transparent pointer-events-none z-10"></div>
+
+              <div className="relative p-8 flex flex-col h-full z-20">
+                <div className="flex items-center justify-between mb-8">
+                  <div className="w-16 h-16 rounded-2xl bg-orange-500/20 backdrop-blur-md border border-orange-500/30 flex items-center justify-center shadow-lg shadow-orange-500/20 group-hover:scale-110 transition-transform duration-500">
+                    <Tent className="w-8 h-8 text-orange-400" />
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-300 transition-colors drop-shadow-md">
+                  {tHome('activity.place.title')}
+                </h3>
+                <p className="text-slate-300 leading-relaxed mb-8 flex-grow whitespace-pre-line drop-shadow-sm font-medium">
+                  {tHome('activity.place.desc')}
+                </p>
+
+                <div className="mt-auto">
+                  <span className="inline-flex items-center text-sm font-bold text-orange-400 group-hover:text-orange-300 transition-colors bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-full border border-orange-500/30">
+                    {tHome('activity.place.cta')}
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </div>
+            </a>
+
+            {/* Open Chat */}
+            <a
+              href="https://lin.ee/E1QFFRn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative flex flex-col h-full rounded-[2.5rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20"
+            >
+              {/* Background Image */}
+              <div className="absolute inset-0 z-0">
+                <Image
+                  src="/images/community_hero.jpg"
+                  alt="Nomad Community"
+                  fill
+                  className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
+              </div>
+
+              {/* Hover Gradient Overlay */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent pointer-events-none z-10"></div>
+
+              <div className="relative p-8 flex flex-col h-full z-20">
+                <div className="flex items-center justify-between mb-8">
+                  <div className="w-16 h-16 rounded-2xl bg-blue-500/20 backdrop-blur-md border border-blue-500/30 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-500">
+                    <MessageCircle className="w-8 h-8 text-blue-400" />
+                  </div>
+                </div>
+
+                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors drop-shadow-md">
+                  {tHome('activity.chat.title')}
+                </h3>
+                <p className="text-slate-300 leading-relaxed mb-8 flex-grow drop-shadow-sm font-medium">
+                  {tHome('activity.chat.desc')}
+                </p>
+
+                <div className="mt-auto">
+                  <span className="inline-flex items-center text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-500/30">
+                    {tHome('activity.chat.cta')}
+                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* 2026 Scheduled Events (Notification Center Style) */}
+      <section className="py-16 px-4 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-4 mb-10">
+            <div className="h-[1px] w-12 bg-slate-300"></div>
+            <h2 className="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">{tHome('events.title')}</h2>
+            <div className="h-[1px] w-12 bg-slate-300"></div>
+          </div>
+
+          <div className="space-y-4">
             {/* News 1: Sponsor Recruitment (Newest First) */}
             <Link href="/nomad-info/sponsor" className="block group">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-5 rounded-xl bg-white border border-slate-100 shadow-sm hover:border-orange-200 hover:bg-orange-50/30 transition-all">
-                <div className="flex items-center gap-3 shrink-0">
+              <div className="flex flex-col md:flex-row md:items-center gap-4 p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-orange-200 hover:translate-x-1 transition-all duration-300">
+                <div className="flex items-center gap-4 shrink-0 min-w-[140px]">
                   <span className="text-slate-400 text-sm font-mono tracking-wider">{tHome('events.sponsor.date')}</span>
-                  <span className="px-2.5 py-1 rounded text-[10px] font-bold bg-orange-100 text-orange-700">{tHome('events.sponsor.tag')}</span>
+                  <span className="px-2.5 py-1 rounded-md text-[11px] font-bold bg-orange-100 text-orange-700 tracking-wide">{tHome('events.sponsor.tag')}</span>
                 </div>
-                <div className="flex items-center justify-between w-full">
-                  <p className="text-slate-700 font-bold group-hover:text-orange-800 transition-colors">
+                <div className="flex items-center justify-between w-full gap-4">
+                  <p className="text-slate-700 font-bold group-hover:text-orange-600 transition-colors text-lg">
                     {tHome('events.sponsor.title')}
                   </p>
-                  <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-orange-400 group-hover:translate-x-1 transition-all" />
+                  <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-orange-50 transition-colors">
+                    <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-orange-400 transition-colors" />
+                  </div>
                 </div>
               </div>
             </Link>
 
             {/* News 2: Site Launch */}
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 p-5 rounded-xl bg-white border border-slate-100 shadow-sm cursor-default">
-              <div className="flex items-center gap-3 shrink-0">
+            <div className="flex flex-col md:flex-row md:items-center gap-4 p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 cursor-default">
+              <div className="flex items-center gap-4 shrink-0 min-w-[140px]">
                 <span className="text-slate-400 text-sm font-mono tracking-wider">{tHome('events.launch.date')}</span>
-                <span className="px-2.5 py-1 rounded text-[10px] font-bold bg-blue-100 text-blue-700">{tHome('events.launch.tag')}</span>
+                <span className="px-2.5 py-1 rounded-md text-[11px] font-bold bg-blue-100 text-blue-700 tracking-wide">{tHome('events.launch.tag')}</span>
               </div>
-              <p className="text-slate-700 font-medium">
+              <p className="text-slate-700 font-medium text-lg">
                 {tHome('events.launch.title')}
               </p>
             </div>
@@ -335,113 +475,52 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Nomad Camp Section */}
-      <section className="py-20 px-4 bg-slate-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-12">
-            <div className="h-[1px] w-8 bg-slate-300"></div>
-            <h2 className="text-2xl md:text-4xl font-extrabold text-slate-800 tracking-tight">{tHome('camp.title')}</h2>
-            <div className="h-[1px] w-8 bg-slate-300"></div>
-          </div>
+      {/* YouTube Section (Cinematic Dark Style) */}
+      <section className="py-24 px-4 bg-[#151515] relative overflow-hidden">
+        {/* Ambient Glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Image Side - Replaced with YouTube Video */}
-            <div className="space-y-6">
-              <div className="rounded-xl overflow-hidden shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500 border border-slate-200 bg-black">
-                <YouTubeEmbed videoId="XvF1XOgDkiY" />
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="flex flex-col md:flex-row items-center gap-12">
+            {/* Text Content */}
+            <div className="flex-1 text-center md:text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 text-red-500 text-xs font-bold tracking-wider mb-6 border border-red-500/20">
+                <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                {tHome('youtube.tag')}
               </div>
 
-              {/* Next Event Card - Premium Luxury Design */}
-              <div className="bg-neutral-950 rounded-xl p-6 border border-amber-500/20 shadow-xl shadow-amber-900/10 relative overflow-hidden group">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -mr-16 -mt-32 pointer-events-none"></div>
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight whitespace-pre-line">
+                {tHome('youtube.title')}
+              </h2>
+              <p className="text-lg text-neutral-400 mb-8 leading-relaxed">
+                {tHome('youtube.desc')}
+              </p>
 
-                <div className="relative z-10 flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
-                  <div>
-                    <div className="inline-flex items-center gap-2 mb-3">
-                      <div className="h-[1px] w-8 bg-gradient-to-r from-transparent to-amber-500"></div>
-                      <span className="text-amber-400 text-[10px] font-bold tracking-[0.2em] uppercase">{tHome('camp.comingSoon')}</span>
-                      <div className="h-[1px] w-8 bg-gradient-to-l from-transparent to-amber-500"></div>
-                    </div>
-                    <h3 className="text-4xl md:text-5xl font-serif text-white tracking-tight mb-2">
-                      {tHome('camp.nextDate')}
-                    </h3>
-                    <p className="text-amber-200/60 font-medium tracking-wide">
-                      {tHome('camp.nextLabel')}
-                    </p>
-                  </div>
-
-                  <div className="text-sm font-medium text-neutral-400 bg-neutral-900/50 px-6 py-4 rounded-lg border border-white/5 backdrop-blur-sm group-hover:border-amber-500/20 transition-colors">
-                    <p className="flex items-center justify-center sm:justify-start gap-3 mb-1 text-neutral-200">
-                      <MapPin className="w-4 h-4 text-amber-600" />
-                      {tHome('camp.location')}
-                    </p>
-                    <p className="text-xs text-neutral-600 text-center sm:text-left pl-7">
-                      {tHome('camp.details')}
-                    </p>
-                  </div>
+              <a
+                href="https://www.youtube.com/@nomad-thai"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-full bg-red-600 text-white font-bold hover:bg-red-700 transition-all shadow-lg shadow-red-600/30 hover:shadow-red-600/40 hover:-translate-y-1 group"
+              >
+                <div className="mr-3 p-1 bg-white/20 rounded-full">
+                  <Play className="w-4 h-4 text-white fill-current" />
                 </div>
-              </div>
+                {tHome('youtube.cta')}
+                <ArrowUpRight className="w-4 h-4 ml-2 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </a>
             </div>
 
-            {/* Content Side */}
-            <div className="space-y-8">
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-slate-800 whitespace-pre-line">
-                  {tHome('camp.heading')}
-                </h3>
-                <p className="text-slate-600 leading-relaxed whitespace-pre-line">
-                  {tHome('camp.desc')}
-                </p>
-              </div>
-
-              {/* Past Achievements */}
-              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                <h4 className="font-bold text-slate-700 mb-4 flex items-center gap-2">
-                  <Users className="w-4 h-4 text-indigo-500" />
-                  {tHome('camp.history')}
-                </h4>
-                <div className="space-y-3">
-                  {[0, 1, 2, 3, 4].map((index) => (
-                    <div key={index} className="flex items-center justify-between text-sm border-b border-slate-100 pb-2 last:border-0 last:pb-0">
-                      <span className="font-medium text-slate-800">{tHome(`camp.historyItems.${index}.place`)}</span>
-                      <span className="text-slate-500">{tHome(`camp.historyItems.${index}.date`)}</span>
-                    </div>
-                  ))}
+            {/* Video Content */}
+            <div className="flex-1 w-full max-w-xl">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/50 border border-white/10 group">
+                {/* Glow Effect on Hover */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-500"></div>
+                <div className="relative bg-black rounded-xl overflow-hidden aspect-video">
+                  <YouTubeEmbed videoId="B_HkXPiv7ow" />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-16 px-4 bg-background border-t border-muted">
-        <NewsletterCTA />
-      </section>
-
-      {/* YouTube Section (Moved to Bottom) */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center p-6 md:p-12 rounded-3xl bg-gradient-to-r from-primary/10 to-accent/10 border border-white/20 backdrop-blur-sm">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="px-3 py-1 rounded-full bg-red-100 text-red-600 text-xs font-bold">
-              {tHome('youtube.tag')}
-            </span>
-          </div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 whitespace-pre-line">{tHome('youtube.title')}</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            {tHome('youtube.desc')}
-          </p>
-          <div className="mb-8">
-            <YouTubeEmbed videoId="B_HkXPiv7ow" />
-          </div>
-          <a
-            href="https://www.youtube.com/@nomad-thai"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-red-600 text-white font-bold hover:bg-red-700 transition-colors shadow-lg shadow-red-600/20"
-          >
-            {tHome('youtube.cta')}
-          </a>
         </div>
       </section>
 

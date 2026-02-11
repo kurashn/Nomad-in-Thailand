@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Link, usePathname, useRouter } from '@/i18n/routing';
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 import Image from "next/image";
 import { useTranslations, useLocale } from 'next-intl';
 
@@ -176,8 +176,20 @@ export default function Navbar() {
                                 ))}
                             </div>
 
-                            {/* Divider */}
                             <div className="my-6 border-t border-muted/50" />
+
+                            {/* Official LINE Button */}
+                            <div className="px-4 mb-6">
+                                <a
+                                    href="https://lin.ee/Gm3aKrS"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-center w-full px-5 py-4 rounded-xl bg-[#06C755] text-white font-bold shadow-md hover:bg-[#05b34c] transition-colors"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {t('line')}
+                                </a>
+                            </div>
 
                             {/* Language Switcher */}
                             <div className="px-4">
