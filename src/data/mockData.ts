@@ -116,15 +116,6 @@ export const nomadArticlesEn = [
     },
 
     {
-        id: 100,
-        title: "Partner & Sponsor Recruitment for 'Overseas Nomad Podcast'",
-        excerpt: "We are looking for individuals and companies who resonate with our vision to support sustainable operation and high-quality content creation.",
-        category: "Announcements",
-        date: "2026-01-10",
-        image: "/images/sponsor_hero.png",
-        link: "/nomad-info/sponsor"
-    },
-    {
         id: 101,
         title: "Thailand DTV Visa Guide 2026: Requirements, Cost & Application Process",
         excerpt: "Stay for 5 years with 180-day entries. A complete guide to the DTV visa for digital nomads, based on actual application experience.",

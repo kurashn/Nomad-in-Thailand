@@ -113,8 +113,9 @@ export default function SimGuidePage() {
                                     <td className="px-6 py-4 font-bold text-blue-600">{t('cost.esim.price')}</td>
                                     <td className="px-6 py-4 text-slate-600">
                                         {t('cost.esim.desc')}{" "}
-                                        <a href={AFFILIATE_LINKS.airalo} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline font-bold inline-flex items-center gap-1">
+                                        <a href={AFFILIATE_LINKS.airalo} target="_blank" rel="nofollow noopener noreferrer" referrerPolicy="no-referrer-when-downgrade" className="text-blue-600 hover:underline font-bold inline-flex items-center gap-1 relative">
                                             Airalo <ArrowRight className="w-3 h-3" />
+                                            <img src={AFFILIATE_LINKS.airalo_pixel} width="1" height="1" className="absolute opacity-0" alt="" />
                                         </a>
                                     </td>
                                 </tr>
@@ -211,8 +212,9 @@ export default function SimGuidePage() {
                         <div>
                             <h3 className="font-bold text-orange-800 mb-1">{t('thaiSim.warning.title')}</h3>
                             <p className="text-sm text-orange-700 leading-relaxed mb-3" dangerouslySetInnerHTML={{ __html: t.raw('thaiSim.warning.desc') }} />
-                            <a href={AFFILIATE_LINKS.airalo} target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-orange-600 hover:text-orange-800 hover:underline inline-flex items-center gap-1 bg-white/50 px-2 py-1 rounded">
+                            <a href={AFFILIATE_LINKS.airalo} target="_blank" rel="nofollow noopener noreferrer" referrerPolicy="no-referrer-when-downgrade" className="text-sm font-bold text-orange-600 hover:text-orange-800 hover:underline inline-flex items-center gap-1 bg-white/50 px-2 py-1 rounded relative">
                                 Check Airalo (eSIM) <ArrowRight className="w-3 h-3" />
+                                <img src={AFFILIATE_LINKS.airalo_pixel} width="1" height="1" className="absolute opacity-0" alt="" />
                             </a>
                         </div>
                     </div>
