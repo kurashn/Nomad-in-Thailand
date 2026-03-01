@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     creator: "@nomad_place",
   },
   verification: {
-    google: "pwAWlIPQ24eVdNIJiOk6Lo8LFQOOjVJqT8-RKCSp0_E",
+    google: "orOsM-QcOd4leoiqTyqlgBR92c9PtfwjKDVGQcOXVIk",
   },
 };
 
