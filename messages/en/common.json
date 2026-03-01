@@ -47,7 +47,13 @@
             "title": "Links",
             "youtube": "YouTube: TOTONOI THAI",
             "contact": "Contact",
-            "newsletter": "Newsletter (Coming Soon)"
+            "newsletter": "Newsletter (Coming Soon)",
+            "privacy_policy": "Privacy Policy",
+            "tos": "Terms of Service",
+            "tokushoho": "Act on Specified Commercial Transactions"
+        },
+        "legal": {
+            "title": "Legal"
         },
         "copyright": "© 2026 TOTONOI THAI. All rights reserved."
     },

@@ -51,13 +51,13 @@ export default function Hero() {
                 animate="visible"
             >
                 {/* Logo */}
-                <motion.div variants={itemVariants} className="flex justify-center mb-6">
+                <motion.div variants={itemVariants} className="flex justify-center items-center mb-6 w-full">
                     <Image
                         src="/character/totonoi-logo.png" unoptimized
                         alt="TOTONOI THAI"
                         width={120}
                         height={120}
-                        className="drop-shadow-2xl"
+                        className="drop-shadow-2xl w-20 h-20 md:w-[120px] md:h-[120px] object-contain mx-auto"
                     />
                 </motion.div>
 

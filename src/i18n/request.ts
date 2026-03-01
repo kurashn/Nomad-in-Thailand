@@ -23,6 +23,7 @@ async function loadMessages(locale: string) {
         ...(await import(`../../messages/${locale}/credit-card.json`)).default,
         ...(await import(`../../messages/${locale}/community.json`)).default,
         ...(await import(`../../messages/${locale}/nomad-tools.json`)).default,
+        ...(await import(`../../messages/${locale}/legal.json`)).default,
     };
 
     return messages;

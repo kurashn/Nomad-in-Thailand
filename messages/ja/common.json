@@ -47,7 +47,13 @@
             "title": "関連リンク",
             "youtube": "公式YouTube",
             "contact": "お問い合わせ",
-            "newsletter": "公式LINE (特典あり)"
+            "newsletter": "公式LINE (特典あり)",
+            "privacy_policy": "プライバシーポリシー",
+            "tos": "利用規約",
+            "tokushoho": "特定商取引法に基づく表記"
+        },
+        "legal": {
+            "title": "規約・ポリシー"
         },
         "copyright": "© 2026 TOTONOI THAI. All rights reserved."
     },

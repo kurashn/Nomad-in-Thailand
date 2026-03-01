@@ -105,7 +105,7 @@
             "chat": {
                 "badge": "FREE",
                 "title": "Sneak a peek via\nFree OpenChat",
-                "desc": "A free community of expats and wellness enthusiasts in Thailand. Occasional sauna meetups and dinners in Bangkok.\nWhy not join the free chat to check the vibe?",
+                "desc": "A free community of expats and wellness enthusiasts in Thailand. Occasional morning runs and sauna/ice bath meetups in Bangkok.\nWhy not join the free chat to check the vibe?",
                 "benefits": [
                     "Casual info exchange on relocation & wellness",
                     "Occasional meetups and sauna events in Bangkok",
@@ -117,14 +117,14 @@
             "paid": {
                 "badge": "PREMIUM",
                 "title": "Connect Deeply\nTOTONOI THAI CLUB",
-                "desc": "Access exclusive discussions, deep interactions in small groups, and priority event access not available in the free chat. A closed paid community for those serious about Thai relocation and wellness.",
+                "desc": "Currently available for a one-time fee of 19,800 JPY (approx. $130 USD).\nAlthough the community has just begun, we are fully committed to elevating its value over time. As the value increases, the participation fee will also go up.\nThis is a special paid community for peers serious about Thai relocation and wellness.",
                 "benefits": [
                     "Full access to all Discord sub-clubs",
                     "Deep sharing of exclusive know-how",
                     "Priority access to limited retreats"
                 ],
                 "price": "Check Details",
-                "cta": "Join the Community"
+                "cta": "See details via official LINE"
             },
             "events": {
                 "title": "Community Real Events",

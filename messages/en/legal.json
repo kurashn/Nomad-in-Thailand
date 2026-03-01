@@ -1,0 +1,55 @@
+{
+    "Legal": {
+        "tokushoho": {
+            "title": "Act on Specified Commercial Transactions",
+            "provider": {
+                "label": "Provider / Distributer",
+                "value": "TOTONOI THAI"
+            },
+            "representative": {
+                "label": "Representative",
+                "value": "[Please update with your name]"
+            },
+            "address": {
+                "label": "Address",
+                "value": "[Please update with your address]\n*Will be disclosed without delay upon request."
+            },
+            "contact": {
+                "label": "Contact Information",
+                "value": "Phone: [Please provide phone] (*Will be disclosed without delay upon request.)\nEmail: [Please provide email]\nPlease use the email above or our official LINE for inquiries."
+            },
+            "price": {
+                "label": "Sales Price",
+                "value": "Prices as displayed on the purchase page for each product/service."
+            },
+            "extra_fees": {
+                "label": "Additional Fees",
+                "value": "Internet connection fees, communication fees, consumption tax (if prices are tax-exclusive), and bank transfer fees (for bank transfers)."
+            },
+            "payment_methods": {
+                "label": "Payment Methods and Timing",
+                "value": "Methods: Credit Card (Stripe)\nTiming: Before service starts or upon application."
+            },
+            "delivery": {
+                "label": "Delivery / Service Commencement",
+                "value": "Service will be available immediately after credit card payment is completed (e.g., sending an invitation link to Discord)."
+            },
+            "cancellation": {
+                "label": "Cancellation and Refunds",
+                "value": "Due to the nature of the services (digital content and online community access), we do not accept cancellations, refunds, or returns after the purchase is completed."
+            },
+            "environment": {
+                "label": "System Requirements",
+                "value": "Devices (smartphones, PCs) capable of running applications like Discord and LINE normally, along with an internet connection."
+            }
+        },
+        "privacy": {
+            "title": "Privacy Policy",
+            "content": "TOTONOI THAI (hereinafter referred to as \"the Management\") establishes the following privacy policy (hereinafter referred to as \"this Policy\") regarding the handling of users' personal information.\n\n1. Method of Collecting Personal Information\nThe Management may acquire the following information when a user uses the Service.\n- Name, email address, phone number\n- Credit card information necessary for payment (processed through payment processors such as Stripe. The Management does not retain your credit card number.)\n- SNS account information such as LINE and Discord (during integration/authentication)\n- Access information such as browsing history, IP address, and Cookies\n\n2. Purpose of Using Personal Information\nThe purposes for which the Management collects and uses personal information are as follows:\n- To provide and operate the Management's services\n- To respond to user inquiries (including identity verification)\n- To send necessary communications such as maintenance notices and important updates\n- To identify users who violate the Terms of Service or attempt to use the service for fraudulent or improper purposes, and to refuse their use\n- To allow users to view, change, or delete their registration information, and view their usage status\n\n3. Provision of Personal Information to Third Parties\nThe Management will not provide personal information to third parties without the prior consent of the user, except in the following cases. However, this excludes cases permitted under the Personal Information Protection Law or other laws.\n- When providing information to payment processing companies such as Stripe for payment processing\n- When required by law\n- When necessary to protect the life, body, or property of a person\n\n4. Analytics Tools\nThis website uses Google Analytics, an access analysis tool by Google. Google Analytics uses Cookies to collect traffic data. This traffic data is collected anonymously and does not identify individuals. You can refuse collection by disabling Cookies. Please check your browser settings.\n\n5. Changes to the Privacy Policy\n1. The contents of this Policy may be changed without notifying the user, except for matters otherwise specified by laws and regulations or in this Policy.\n2. The revised Privacy Policy shall take effect from the time it is posted on this website.\n\n6. Contact for Inquiries\nFor inquiries regarding this Policy, please contact our official LINE or through the following email address.\nEmail: shunknomad@gmail.com"
+        },
+        "tos": {
+            "title": "Terms of Service",
+            "content": "These Terms of Service (hereinafter referred to as \"these Terms\") stipulate the conditions for using all services (including the community, website, etc., hereinafter referred to as the \"Service\") provided by TOTONOI THAI (hereinafter referred to as \"the Management\"). Registered users (hereinafter referred to as \"Users\") shall use the Service in accordance with these Terms.\n\nArticle 1 (Application)\nThese Terms shall apply to all relationships concerning the use of the Service between the User and the Management.\n\nArticle 2 (Registration and Participation)\n1. The User shall register for use (joining the community, completing payment procedures, etc.) by the method prescribed by the Management, upon agreeing to these Terms.\n2. The Management may, at its discretion, refuse a registration application or revoke a registration/enforce a forced withdrawal without prior notice in the following cases, and shall not assume any obligation to disclose the reason:\n - If the application is from someone who has violated these Terms in the past\n - If there are false statements in the registered matters\n - If the Management otherwise determines that the registration is not appropriate\n\nArticle 3 (Prohibited Acts)\nIn using the Service, the User must not engage in the following acts:\n1. Acts that violate laws and regulations or public order and morals, or acts related to criminal behavior\n2. Acts that destroy or interfere with the functionality of the servers or networks of the Management, other users of the Service, or third parties\n3. Acts of collecting or accumulating personal information concerning other users\n4. Unauthorized access acts\n5. Solicitation acts for network businesses, religions, or other sales/solicitations not approved by the Management\n6. Slander, harassment, or acts that cause discomfort to other users\n7. Transmitting information contrary to facts, or other acts the Management deems inappropriate\n\nArticle 4 (Suspension of the Service, etc.)\n1. The Management may suspend or interrupt the provision of all or part of the Service without prior notice to the User if it determines that any of the following apply:\n - When performing maintenance, inspection, or updating of the computer systems for the Service\n - When the provision of the Service becomes difficult due to force majeure such as earthquakes, lightning strikes, fires, power outages, or natural disasters\n - When computers or communication lines stop due to an accident\n - When the Management otherwise determines that the provision of the Service is difficult\n2. The Management shall not be liable for any disadvantages or damages suffered by the User or third parties due to the suspension or interruption of the provision of the Service.\n\nArticle 5 (Withdrawal, Forced Withdrawal, and Refunds)\n1. The User may withdraw from the Service through the withdrawal procedure prescribed by the Management.\n2. If the Management determines that a violation is malicious, such as a violation of the prohibited acts in Article 3, it will enforce a forced withdrawal without prior notice.\n3. Due to the nature of this product, no refunds of the participation fee will be made under any circumstances, including withdrawal due to user convenience or forced withdrawal due to a violation of the Terms.\n\nArticle 6 (Disclaimer)\n1. The Management does not explicitly or implicitly guarantee that the Service is free of de facto or legal defects (including defects related to safety, reliability, accuracy, completeness, effectiveness, fitness for a particular purpose, security, errors or bugs, infringement of rights, etc.).\n2. The Management assumes no responsibility for any damage caused to the User by the Service. Furthermore, the Management shall not be involved in any troubles between users within the Service or the community, and such troubles shall be resolved between the users.\n\nArticle 7 (Changes to Service Contents, etc.)\nThe Management may change the contents of the Service or discontinue the provision of the Service without notifying the User, and shall not be liable for any damage caused to the User by this. Additionally, prices such as community participation fees may be revised (e.g., increased) without prior notice in the future.\n\nArticle 8 (Changes to Terms of Service)\nThe Management may change these Terms at any time without notifying the User if it deems it necessary. Furthermore, if a User starts using the Service after a change to these Terms, the User is deemed to have agreed to the modified Terms.\n\nArticle 9 (Governing Law and Jurisdiction)\nThe interpretation of these Terms shall be governed by Japanese law. In the event of a dispute concerning the Service, the court with jurisdiction over the location of the Management shall be the exclusive agreement jurisdiction."
+        }
+    }
+}

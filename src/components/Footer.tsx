@@ -11,7 +11,7 @@ export default function Footer() {
     return (
         <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                     {/* Logo Section */}
                     <div className="flex flex-col items-center md:items-start">
                         <div className="relative w-24 h-24 mb-4">
@@ -48,6 +48,19 @@ export default function Footer() {
                                 <a href="https://lin.ee/DqxeADk" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#06C755] transition-colors font-bold">
                                     {t('links.newsletter')}
                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* Legal Section */}
+                    <div>
+                        <h3 className="font-bold text-lg mb-4 text-slate-800">{t('legal.title')}</h3>
+                        <ul className="space-y-3">
+                            <li>
+                                <Link href="/legal/tos" className="text-slate-500 hover:text-blue-600 transition-colors">{t('links.tos')}</Link>
+                            </li>
+                            <li>
+                                <Link href="/legal/privacy" className="text-slate-500 hover:text-blue-600 transition-colors">{t('links.privacy_policy')}</Link>
                             </li>
                         </ul>
                     </div>

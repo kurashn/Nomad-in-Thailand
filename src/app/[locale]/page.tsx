@@ -435,7 +435,7 @@ export default async function Home() {
               <div className="relative z-10 mt-auto pt-8 border-t border-amber-500/10">
 
                 <a
-                  href="https://buy.stripe.com/4gM5kEcgo14WfEy57pdMI0R"
+                  href="https://lin.ee/DqxeADk"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center text-sm md:text-base font-bold text-[#1a1727] bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-4.5 rounded-xl hover:from-amber-300 hover:to-amber-400 shadow-[0_0_30px_rgba(245,158,11,0.2)] transition-all duration-300 group/btn"

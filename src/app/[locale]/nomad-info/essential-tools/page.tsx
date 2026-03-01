@@ -7,7 +7,7 @@ import { Metadata } from 'next';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: 'NomadTools' });
+    const t = await getTranslations({ locale, namespace: 'ExpatTools' });
 
     return {
         title: `${t('title')} | Nomad in Thailand`,
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function EssentialToolsPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: 'NomadTools' });
+    const t = await getTranslations({ locale, namespace: 'ExpatTools' });
 
     return (
         <div className="min-h-screen bg-slate-50 pb-20">
