@@ -19,9 +19,9 @@ export default function Navbar() {
     };
 
     const menuItems = [
+        { href: "/#about", label: t('about') },
+        { href: "/#community", label: t('community') },
         { href: "/blog/thailand-migration-guide", label: t('migrationGuide') },
-        { href: "/nomad-info", label: t('nomadGuide') },
-        { href: "/nomad-info/essential-tools", label: t('nomadTools') },
         { href: "/blog", label: t('column') },
     ];
 
@@ -34,8 +34,8 @@ export default function Navbar() {
                             <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity" onClick={() => setIsOpen(false)}>
                                 <div className="relative w-10 h-10 md:w-12 md:h-12 flex-shrink-0">
                                     <Image
-                                        src="/character/nomad-dog-hero-transparent.png"
-                                        alt="Nomad in Thailand Logo"
+                                        src="/character/totonoi-logo.png" unoptimized
+                                        alt="TOTONOI THAI Logo"
                                         fill
                                         className="object-contain"
                                         priority
@@ -43,10 +43,10 @@ export default function Navbar() {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-bold text-lg md:text-xl leading-none tracking-tight text-foreground">
-                                        Nomad in Thailand
+                                        TOTONOI THAI
                                     </span>
                                     <span className="text-[10px] md:text-xs font-medium text-muted-foreground tracking-wide">
-                                        -ノマタイ-
+                                        - タイ移住×ウェルネス -
                                     </span>
                                 </div>
                             </Link>
@@ -64,54 +64,9 @@ export default function Navbar() {
                                 </Link>
                             ))}
 
-                            {/* Language Switcher Desktop - Improved Design */}
-                            <div className="flex items-center border-l pl-4 ml-4">
-                                <div className="flex items-center bg-muted/50 rounded-full p-1 gap-1">
-                                    <button
-                                        onClick={() => switchLocale('ja')}
-                                        className={`px-3 py-1.5 text-sm font-bold rounded-full transition-all duration-200 ${currentLocale === 'ja'
-                                            ? 'bg-primary text-primary-foreground shadow-sm'
-                                            : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                                            }`}
-                                    >
-                                        🇯🇵 JP
-                                    </button>
-                                    <button
-                                        onClick={() => switchLocale('en')}
-                                        className={`px-3 py-1.5 text-sm font-bold rounded-full transition-all duration-200 ${currentLocale === 'en'
-                                            ? 'bg-primary text-primary-foreground shadow-sm'
-                                            : 'text-muted-foreground hover:text-foreground hover:bg-muted'
-                                            }`}
-                                    >
-                                        🇺🇸 EN
-                                    </button>
-                                </div>
-                            </div>
                         </div>
 
-                        {/* Mobile Hamburger Button */}
                         <div className="-mr-2 flex lg:hidden items-center gap-3">
-                            {/* Language Switcher Mobile - Improved Design */}
-                            <div className="flex items-center bg-muted/50 rounded-full p-0.5 gap-0.5">
-                                <button
-                                    onClick={() => switchLocale('ja')}
-                                    className={`px-2.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLocale === 'ja'
-                                        ? 'bg-primary text-primary-foreground shadow-sm'
-                                        : 'text-muted-foreground hover:text-foreground'
-                                        }`}
-                                >
-                                    🇯🇵
-                                </button>
-                                <button
-                                    onClick={() => switchLocale('en')}
-                                    className={`px-2.5 py-1 text-xs font-bold rounded-full transition-all duration-200 ${currentLocale === 'en'
-                                        ? 'bg-primary text-primary-foreground shadow-sm'
-                                        : 'text-muted-foreground hover:text-foreground'
-                                        }`}
-                                >
-                                    🇺🇸
-                                </button>
-                            </div>
 
                             <button
                                 onClick={() => setIsOpen(!isOpen)}
@@ -137,18 +92,18 @@ export default function Navbar() {
                             <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
                                 <div className="relative w-10 h-10 flex-shrink-0">
                                     <Image
-                                        src="/character/nomad-dog-hero-transparent.png"
-                                        alt="Nomad in Thailand Logo"
+                                        src="/character/totonoi-logo.png" unoptimized
+                                        alt="TOTONOI THAI Logo"
                                         fill
                                         className="object-contain"
                                     />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="font-bold text-lg leading-none tracking-tight text-foreground">
-                                        Nomad in Thailand
+                                        TOTONOI THAI
                                     </span>
                                     <span className="text-[10px] font-medium text-muted-foreground tracking-wide">
-                                        -ノマタイ-
+                                        - タイ移住×ウェルネス -
                                     </span>
                                 </div>
                             </Link>
@@ -181,7 +136,7 @@ export default function Navbar() {
                             {/* Official LINE Button */}
                             <div className="px-4 mb-6">
                                 <a
-                                    href="https://lin.ee/Gm3aKrS"
+                                    href="https://lin.ee/DqxeADk"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center w-full px-5 py-4 rounded-xl bg-[#06C755] text-white font-bold shadow-md hover:bg-[#05b34c] transition-colors"
@@ -191,35 +146,6 @@ export default function Navbar() {
                                 </a>
                             </div>
 
-                            {/* Language Switcher */}
-                            <div className="px-4">
-                                <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Language</p>
-                                <div className="flex items-center gap-3">
-                                    <button
-                                        onClick={() => switchLocale('ja')}
-                                        className={`flex-1 px-5 py-3 text-base font-bold rounded-xl transition-all duration-200 border ${currentLocale === 'ja'
-                                            ? 'bg-primary text-primary-foreground border-primary shadow-md'
-                                            : 'bg-muted/30 text-muted-foreground border-muted hover:border-primary/50 hover:text-foreground'
-                                            }`}
-                                    >
-                                        🇯🇵 日本語
-                                    </button>
-                                    <button
-                                        onClick={() => switchLocale('en')}
-                                        className={`flex-1 px-5 py-3 text-base font-bold rounded-xl transition-all duration-200 border ${currentLocale === 'en'
-                                            ? 'bg-primary text-primary-foreground border-primary shadow-md'
-                                            : 'bg-muted/30 text-muted-foreground border-muted hover:border-primary/50 hover:text-foreground'
-                                            }`}
-                                    >
-                                        🇺🇸 English
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Footer */}
-                        <div className="px-6 py-5 text-center text-muted-foreground text-xs border-t border-muted/50 flex-shrink-0">
-                            <p>© 2026 Nomad in Thailand -ノマタイ-</p>
                         </div>
                     </div>
                 )

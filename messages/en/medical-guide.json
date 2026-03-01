@@ -2,14 +2,14 @@
     "MedicalGuide": {
         "meta": {
             "title": "Healthcare in Bangkok 2026: Hospitals, Pharmacies & Insurance Guide",
-            "desc": "Complete guide to medical care in Bangkok for Nomads. Top international hospitals (Samitivej, Bumrungrad), essential pharmacy medicines, and SafetyWing insurance tips."
+            "desc": "Complete guide to medical care in Bangkok for Expats. Top international hospitals (Samitivej, Bumrungrad), essential pharmacy medicines, and SafetyWing insurance tips."
         },
         "hero": {
             "back": "Back to Life Info",
             "title": "Healthcare in Thailand"
         },
         "intro": {
-            "p1": "Fever, food poisoning, or dengue...<br />Getting sick in a foreign country is the <strong>biggest anxiety</strong> for nomads.",
+            "p1": "Fever, food poisoning, or dengue...<br />Getting sick in a foreign country is the <strong>biggest anxiety</strong> for Expats.",
             "p2": "But don't panic.<br />Bangkok is a <strong>world-class medical hub</strong>. The hospitals here often surpass Western standards in service and facility quality, with English spoken fluently everywhere.<br />Here is your essential guide to surviving health issues in Thailand."
         },
         "emergency": {
@@ -68,9 +68,9 @@
         },
         "insurance": {
             "title": "Travel Insurance is MANDATORY",
-            "desc": "Thai private healthcare is excellent but <strong>expensive</strong>.<br />A simple ER visit can cost hundreds of dollars; surgery can cost thousands.<br />If you are a nomad, you need one of these:",
+            "desc": "Thai private healthcare is excellent but <strong>expensive</strong>.<br />A simple ER visit can cost hundreds of dollars; surgery can cost thousands.<br />If you are a Expat, you need one of these:",
             "list1": "<strong>Credit Card Insurance</strong> (Check if it covers 90+ days)",
-            "list2": "<strong>SafetyWing</strong> (Nomad Insurance. ~$56 USD / 4 weeks)",
+            "list2": "<strong>SafetyWing</strong> (Expat Insurance. ~$56 USD / 4 weeks)",
             "note": "*With 'Cashless Direct Billing', you don't pay anything upfront at the hospital."
         },
         "faq": {

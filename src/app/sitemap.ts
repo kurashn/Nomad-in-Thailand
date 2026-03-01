@@ -3,12 +3,11 @@ import { reader } from '@/lib/reader'
 import { routing } from '@/i18n/routing'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-    const baseUrl = 'https://nomad-th.com' // Actual domain
+    const baseUrl = 'https://totonoi-thai.com' // Actual domain
 
     // Base routes (without locale)
     const staticRoutes = [
         '',
-        '/nomad-info',
         '/living',
         '/blog',
         // Nomad Info
@@ -22,7 +21,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/nomad-info/nordvpn',
         '/nomad-info/safetywing',
         '/nomad-info/sponsor',
-        '/nomad-info/community',
         // Living Guide
         '/living/area-guide',
         '/living/medical-guide',

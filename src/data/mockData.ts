@@ -1,15 +1,15 @@
 
 
 
-export const nomadArticlesJa = [
+export const ExpatArticlesJa = [
     {
         id: 111,
         title: "【2026年最新】海外・タイ移住におすすめな最強クレジットカード3選｜自動付帯保険で数万円節約！",
-        excerpt: "タイ移住・ノマド生活に必須の「海外旅行保険が自動付帯するクレジットカード」を3つ厳選。年会費無料で90日間保険適用されるエポスカードから、空港ラウンジが使える楽天プレミアムカードまで徹底比較。",
+        excerpt: "タイ移住・移住生活に必須の「海外旅行保険が自動付帯するクレジットカード」を3つ厳選。年会費無料で90日間保険適用されるエポスカードから、空港ラウンジが使える楽天プレミアムカードまで徹底比較。",
         category: "お金・税金",
         date: "2026-01-11",
         image: "/images/credit_card_hero.png",
-        link: "/nomad-info/credit-card"
+        link: "/Expat-info/credit-card"
     },
 
     {
@@ -19,34 +19,34 @@ export const nomadArticlesJa = [
         category: "お知らせ",
         date: "2026-01-10",
         image: "/images/sponsor_hero.png",
-        link: "/nomad-info/sponsor"
+        link: "/Expat-info/sponsor"
     },
     {
         id: 101,
         title: "【2026年最新】タイDTVビザ完全ガイド！申請条件・費用・書類を実体験から徹底解説",
-        excerpt: "5年間滞在可能、180日ごとの出国でOK。デジタルノマドのための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。",
+        excerpt: "5年間滞在可能、180日ごとの出国でOK。移住者のための最強ビザ「DTV」の取得方法を、実際の申請経験と動画解説を交えて紹介します。",
         category: "ビザ情報",
         date: "2026-01-08",
         image: "/images/dtv-visa-thumbnail.png",
-        link: "/nomad-info/dtv-visa"
+        link: "/Expat-info/dtv-visa"
     },
     {
         id: 102,
         title: "【2026年最新】バンコクの作業カフェ7選！電源・Wi-Fi完備・無料スポットも",
-        excerpt: "Samyan CO-OPなどの穴場から絶景カフェまで。ノマドが実際に使って選んだ「電源・Wi-Fi完備」の作業カフェを厳選レビュー。",
+        excerpt: "Samyan CO-OPなどの穴場から絶景カフェまで。移住者が実際に使って選んだ「電源・Wi-Fi完備」の作業カフェを厳選レビュー。",
         category: "カフェ・作業場所",
         date: "2026-01-07",
         image: "/images/cafe_guide_hero.png",
-        link: "/nomad-info/cafe-guide"
+        link: "/Expat-info/cafe-guide"
     },
     {
         id: 103,
-        title: "【2026年版】ゼロから始めるバンコクノマド生活。準備〜渡航後1ヶ月の完全ロードマップ",
-        excerpt: "会社を辞めるのが怖いですか？リスクを抑え、30日間だけノマド生活を試すための完全ガイド。",
+        title: "【2026年版】ゼロから始めるバンコク移住者生活。準備〜渡航後1ヶ月の完全ロードマップ",
+        excerpt: "会社を辞めるのが怖いですか？リスクを抑え、30日間だけ移住生活を試すための完全ガイド。",
         category: "初心者ガイド",
         date: "2025-12-30",
-        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
-        link: "/nomad-info/bangkok-roadmap"
+        image: "/images/bangkok_Expat_roadmap_thumbnail.png",
+        link: "/Expat-info/bangkok-roadmap"
     },
     {
         id: 104,
@@ -55,7 +55,7 @@ export const nomadArticlesJa = [
         category: "ワークスペース",
         date: "2026-01-09",
         image: "/images/coworking_guide_hero.png",
-        link: "/nomad-info/coworking-guide"
+        link: "/Expat-info/coworking-guide"
     },
     {
         id: 105,
@@ -64,25 +64,25 @@ export const nomadArticlesJa = [
         category: "お金・税金",
         date: "2026-01-02",
         image: "/images/tax_money_hero.png",
-        link: "/nomad-info/tax-money-guide"
+        link: "/Expat-info/tax-money-guide"
     },
     {
         id: 106,
-        title: "海外送金「Wise」完全ガイド。なぜノマドの必須ツールなのか？",
+        title: "海外送金「Wise」完全ガイド。なぜ移住者の必須ツールなのか？",
         excerpt: "「隠れコスト」で損していませんか？銀行の最大8倍安く、圧倒的に速い。海外での給与受け取りから日々の支払いまですべてこれ1つで完結。",
         category: "お金・税金",
         date: "2026-01-03",
         image: "/images/wise_hero_v2.png",
-        link: "/nomad-info/wise"
+        link: "/Expat-info/wise"
     },
     {
         id: 107,
-        title: "海外ノマドの必需品「NordVPN」。なぜカフェのWi-Fiは危険なのか？",
-        excerpt: "「カフェのWi-Fi」そのまま使っていませんか？セキュリティリスクから、海外で日本のテレビを見る方法まで。ノマドの命綱・VPNについて解説します。",
+        title: "海外移住者の必需品「NordVPN」。なぜカフェのWi-Fiは危険なのか？",
+        excerpt: "「カフェのWi-Fi」そのまま使っていませんか？セキュリティリスクから、海外で日本のテレビを見る方法まで。移住者の命綱・VPNについて解説します。",
         category: "セキュリティ",
         date: "2026-01-07",
         image: "/images/nordvpn_hero.png",
-        link: "/nomad-info/nordvpn"
+        link: "/Expat-info/nordvpn"
     },
     {
         id: 108,
@@ -91,56 +91,56 @@ export const nomadArticlesJa = [
         category: "通信・ネット",
         date: "2026-01-08",
         image: "/images/airalo_hero.png",
-        link: "/nomad-info/airalo"
+        link: "/Expat-info/airalo"
     },
     {
         id: 109,
-        title: "【2026年最新】海外旅行保険は「SafetyWing」一択。ノマドが選ぶ最強のサブスク保険",
-        excerpt: "「いつ帰るかわからない」ノマドに最適な、月額制（サブスク）の海外旅行・医療保険。クレジットカード付帯保険が切れた後の選択肢として、世界中のノマドに愛される理由を解説します。",
+        title: "【2026年最新】海外旅行保険は「SafetyWing」一択。移住者が選ぶ最強のサブスク保険",
+        excerpt: "「いつ帰るかわからない」移住者に最適な、月額制（サブスク）の海外旅行・医療保険。クレジットカード付帯保険が切れた後の選択肢として、世界中の移住者に愛される理由を解説します。",
         category: "医療・健康",
         date: "2026-01-08",
         image: "/images/safetywing_hero.png",
-        link: "/nomad-info/safetywing"
+        link: "/Expat-info/safetywing"
     }
 ];
 
-export const nomadArticlesEn = [
+export const ExpatArticlesEn = [
     {
         id: 111,
-        title: "Top 3 Credit Cards for Thailand Nomads (2026) | Save $300+ on Insurance",
-        excerpt: "Essential guide for Digital Nomads in Thailand. We compare the best credit cards with free overseas travel insurance. From the free Epos Card to the premium Marriott Amex.",
+        title: "Top 3 Credit Cards for Thailand Expats (2026) | Save $300+ on Insurance",
+        excerpt: "Essential guide for Expats & Wellness Seekers in Thailand. We compare the best credit cards with free overseas travel insurance. From the free Epos Card to the premium Marriott Amex.",
         category: "Money & Tax",
         date: "2026-01-11",
         image: "/images/credit_card_hero.png",
-        link: "/nomad-info/credit-card"
+        link: "/Expat-info/credit-card"
     },
 
     {
         id: 101,
         title: "Thailand DTV Visa Guide 2026: Requirements, Cost & Application Process",
-        excerpt: "Stay for 5 years with 180-day entries. A complete guide to the DTV visa for digital nomads, based on actual application experience.",
+        excerpt: "Stay for 5 years with 180-day entries. A complete guide to the DTV visa for Expats & Wellness Seekers, based on actual application experience.",
         category: "Visa Info",
         date: "2026-01-08",
         image: "/images/dtv-visa-thumbnail.png",
-        link: "/nomad-info/dtv-visa"
+        link: "/Expat-info/dtv-visa"
     },
     {
         id: 102,
         title: "7 Best Work-Friendly Cafes in Bangkok (2026) | Power & Wi-Fi",
-        excerpt: "From hidden gems like Samyan CO-OP to scenic spots. Carefully selected cafes with power outlets and Wi-Fi, reviewed by nomads.",
+        excerpt: "From hidden gems like Samyan CO-OP to scenic spots. Carefully selected cafes with power outlets and Wi-Fi, reviewed by Expats.",
         category: "Cafes & Workspaces",
         date: "2026-01-07",
         image: "/images/cafe_guide_hero.png",
-        link: "/nomad-info/cafe-guide"
+        link: "/Expat-info/cafe-guide"
     },
     {
         id: 103,
-        title: "Bangkok Nomad Life: From Zero to First Month Roadmap (2026)",
-        excerpt: "Scared to quit your job? A complete guide to testing the nomad lifestyle for just 30 days with minimal risk.",
+        title: "Bangkok Expat Life: From Zero to First Month Roadmap (2026)",
+        excerpt: "Scared to quit your job? A complete guide to testing the Expat Lifestyle for just 30 days with minimal risk.",
         category: "Beginner Guide",
         date: "2025-12-30",
-        image: "/images/bangkok_nomad_roadmap_thumbnail.png",
-        link: "/nomad-info/bangkok-roadmap"
+        image: "/images/bangkok_Expat_roadmap_thumbnail.png",
+        link: "/Expat-info/bangkok-roadmap"
     },
     {
         id: 104,
@@ -149,34 +149,34 @@ export const nomadArticlesEn = [
         category: "Workspaces",
         date: "2026-01-09",
         image: "/images/coworking_guide_hero.png",
-        link: "/nomad-info/coworking-guide"
+        link: "/Expat-info/coworking-guide"
     },
     {
         id: 105,
-        title: "Money & Taxes for Thailand Nomads",
+        title: "Money & Taxes for Thailand Expats",
         excerpt: "What to do with JPY? How to use Wise, open local bank accounts, and basic tax knowledge you need to know.",
         category: "Money & Tax",
         date: "2026-01-02",
         image: "/images/tax_money_hero.png",
-        link: "/nomad-info/tax-money-guide"
+        link: "/Expat-info/tax-money-guide"
     },
     {
         id: 106,
-        title: "Wise Guide: Why It's Essential for Digital Nomads",
+        title: "Wise Guide: Why It's Essential for Expats & Wellness Seekers",
         excerpt: "Are you losing money on hidden costs? Up to 8x cheaper than banks and incredibly fast. Complete guide to international transfers.",
         category: "Money & Tax",
         date: "2026-01-03",
         image: "/images/wise_hero_v2.png",
-        link: "/nomad-info/wise"
+        link: "/Expat-info/wise"
     },
     {
         id: 107,
-        title: "NordVPN: Essential for Overseas Nomads",
+        title: "NordVPN: Essential for Overseas Expats",
         excerpt: "Using cafe Wi-Fi directly? Security risks and how to watch Japanese TV from abroad. Explanation of VPNs.",
         category: "Security",
         date: "2026-01-07",
         image: "/images/nordvpn_hero.png",
-        link: "/nomad-info/nordvpn"
+        link: "/Expat-info/nordvpn"
     },
     {
         id: 108,
@@ -185,16 +185,16 @@ export const nomadArticlesEn = [
         category: "Internet & SIM",
         date: "2026-01-08",
         image: "/images/airalo_hero.png",
-        link: "/nomad-info/airalo"
+        link: "/Expat-info/airalo"
     },
     {
         id: 109,
-        title: "SafetyWing: The Best Subscription Insurance for Nomads",
-        excerpt: "Monthly subscription medical insurance perfect for nomads with indefinite plans. Why it's loved globally.",
+        title: "SafetyWing: The Best Subscription Insurance for Expats",
+        excerpt: "Monthly subscription medical insurance perfect for Expats with indefinite plans. Why it's loved globally.",
         category: "Health & Medical",
         date: "2026-01-08",
         image: "/images/safetywing_hero.png",
-        link: "/nomad-info/safetywing"
+        link: "/Expat-info/safetywing"
     }
 ];
 
@@ -277,18 +277,18 @@ export const livingArticlesEn = [
 ];
 
 // Backwards compatibility alias
-export const nomadArticles = nomadArticlesJa;
+export const ExpatArticles = ExpatArticlesJa;
 export const livingArticles = livingArticlesJa;
 
 export const getArticles = (locale: string) => {
     if (locale === 'en') {
         return {
-            nomad: nomadArticlesEn,
+            Expat: ExpatArticlesEn,
             living: livingArticlesEn
         };
     }
     return {
-        nomad: nomadArticlesJa,
+        Expat: ExpatArticlesJa,
         living: livingArticlesJa
     };
 };

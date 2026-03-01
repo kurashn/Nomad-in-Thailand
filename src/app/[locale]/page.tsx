@@ -33,7 +33,7 @@ export default async function Home() {
       {/* Feature Section (Thailand Migration Guide) */}
       <section className="py-16 px-4 bg-[#FFFBF7] border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
-          <Link href="https://lin.ee/Gm3aKrS" className="block group" target="_blank" rel="noopener noreferrer">
+          <Link href="https://lin.ee/DqxeADk" className="block group" target="_blank" rel="noopener noreferrer">
             <div className="relative overflow-hidden rounded-[2rem] bg-[#2C3E50] shadow-2xl transition-all duration-500 hover:shadow-[#2C3E50]/20 hover:-translate-y-1">
               {/* Background Image with Overlay */}
               <div className="absolute inset-0 z-0">
@@ -108,67 +108,69 @@ export default async function Home() {
 
 
       {/* About Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        {/* Decorative Background */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-50/50 -skew-x-12 translate-x-1/2 pointer-events-none"></div>
-        <div className="absolute bottom-0 left-0 w-1/3 h-full bg-slate-50/50 -skew-x-12 -translate-x-1/2 pointer-events-none"></div>
+      <section id="about" className="py-24 bg-[#0a0f1c] relative overflow-hidden border-t border-slate-800">
+        {/* Ambient Glows */}
+        <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-teal-900/20 rounded-full blur-[120px] pointer-events-none"></div>
+        <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-indigo-900/20 rounded-full blur-[120px] pointer-events-none"></div>
 
-        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+        <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
           {/* Tag */}
-          <span className="inline-block py-1.5 px-4 rounded-full bg-orange-500/10 text-orange-600 text-xs font-bold tracking-widest mb-8">
-            {tHome('about.tag')}
-          </span>
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 mb-8 backdrop-blur-sm">
+            <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
+            <span className="text-teal-300 text-xs font-bold tracking-widest uppercase">
+              {tHome('about.tag')}
+            </span>
+          </div>
 
           {/* Title */}
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-8 leading-tight whitespace-pre-line tracking-tight">
-            {tHome('about.title')}
+          <h2 className="text-3xl md:text-5xl font-black text-white mb-8 leading-tight whitespace-pre-line tracking-tight drop-shadow-lg font-serif">
+            <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-200 via-emerald-200 to-teal-400">
+              {tHome('about.title')}
+            </span>
           </h2>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-slate-700 font-bold mb-10 whitespace-pre-line leading-relaxed">
+          <p className="text-lg md:text-2xl text-teal-50 font-bold mb-10 whitespace-pre-line leading-relaxed drop-shadow-md">
             {tHome('about.subtitle')}
           </p>
 
           {/* Description */}
-          <p className="text-slate-500 text-lg leading-loose mb-16 max-w-2xl mx-auto text-left md:text-center whitespace-normal md:whitespace-pre-line">
+          <p className="text-slate-400 text-base md:text-lg leading-loose mb-16 max-w-2xl mx-auto text-center font-medium whitespace-pre-line">
             {tHome('about.description')}
           </p>
 
           {/* Features (Grid) */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {/* Feature 1: Info (Blue) */}
-
-            <div className="group h-full p-8 rounded-[2rem] bg-blue-50/50 border border-blue-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 text-left">
+            {/* Feature 1: Info */}
+            <div className="group h-full p-8 rounded-[2rem] bg-slate-900/50 border border-slate-700/50 backdrop-blur-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-2 hover:border-cyan-500/30">
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 rounded-2xl bg-white text-blue-500 flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all duration-500">
                   <BookOpen className="w-8 h-8" />
                 </div>
-                <h3 className="font-bold text-xl text-slate-800 mb-3 text-center">{tHome('about.features.info.title')}</h3>
-                <p className="text-sm text-slate-600 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.info.desc')}</p>
+                <h3 className="font-bold text-xl text-white mb-3 text-center tracking-wide">{tHome('about.features.info.title')}</h3>
+                <p className="text-sm text-slate-400 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.info.desc')}</p>
               </div>
             </div>
 
-            {/* Feature 2: Community (Orange) */}
-
-            <div className="group h-full p-8 rounded-[2rem] bg-orange-50/50 border border-orange-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1">
+            {/* Feature 2: Community */}
+            <div className="group h-full p-8 rounded-[2rem] bg-slate-900/50 border border-slate-700/50 backdrop-blur-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-orange-500/10 hover:-translate-y-2 hover:border-orange-500/30 md:translate-y-4">
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 rounded-2xl bg-white text-orange-500 flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 rounded-2xl bg-orange-500/10 border border-orange-500/20 text-orange-400 flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 group-hover:bg-orange-500/20 transition-all duration-500">
                   <Users className="w-8 h-8" />
                 </div>
-                <h3 className="font-bold text-xl text-slate-800 mb-3 text-center">{tHome('about.features.community.title')}</h3>
-                <p className="text-sm text-slate-600 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.community.desc')}</p>
+                <h3 className="font-bold text-xl text-white mb-3 text-center tracking-wide">{tHome('about.features.community.title')}</h3>
+                <p className="text-sm text-slate-400 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.community.desc')}</p>
               </div>
             </div>
 
-            {/* Feature 3: Support (Green) */}
-            {/* Feature 3: Support (Green) */}
-            <div className="group h-full p-8 rounded-[2rem] bg-green-50/50 border border-green-100 overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1">
+            {/* Feature 3: Support */}
+            <div className="group h-full p-8 rounded-[2rem] bg-slate-900/50 border border-slate-700/50 backdrop-blur-md overflow-hidden transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/10 hover:-translate-y-2 hover:border-green-500/30">
               <div className="flex flex-col items-center">
-                <div className="w-16 h-16 rounded-2xl bg-white text-green-500 flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
-                  <Globe className="w-8 h-8" />
+                <div className="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-500/20 text-green-400 flex items-center justify-center mb-6 shadow-inner group-hover:scale-110 group-hover:bg-green-500/20 transition-all duration-500">
+                  <Heart className="w-8 h-8" />
                 </div>
-                <h3 className="font-bold text-xl text-slate-800 mb-3 text-center">{tHome('about.features.support.title')}</h3>
-                <p className="text-sm text-slate-600 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.support.desc')}</p>
+                <h3 className="font-bold text-xl text-white mb-3 text-center tracking-wide">{tHome('about.features.practice.title')}</h3>
+                <p className="text-sm text-slate-400 font-medium leading-relaxed whitespace-pre-line text-center">{tHome('about.features.practice.desc')}</p>
               </div>
             </div>
           </div>
@@ -265,8 +267,8 @@ export default async function Home() {
 
 
 
-      {/* Nomad Activity Section */}
-      <section className="py-24 px-4 bg-[#0B0F19] relative overflow-hidden">
+      {/* Community Section (TOTONOI THAI CLUB) */}
+      <section id="community" className="py-24 px-4 bg-[#0B0F19] relative overflow-hidden">
         {/* Dynamic Background */}
         <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-[0.03]"></div>
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent"></div>
@@ -274,36 +276,192 @@ export default async function Home() {
         <div className="absolute -bottom-[20%] left-[10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow delay-1000"></div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-20">
+          <div className="text-center mb-16">
             <div className="flex justify-center mb-6">
               <div className="relative w-24 h-24 md:w-32 md:h-32">
                 <Image
-                  src="/character/nomad-dog-hero-transparent.png"
-                  alt="Nomad Dog Logo"
+                  src="/character/totonoi-logo.png" unoptimized
+                  alt="Totonoi Dog Logo"
                   fill
                   className="object-contain drop-shadow-2xl animate-bounce-slow"
                 />
               </div>
             </div>
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl">
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-2xl font-serif">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#e9c46a] via-[#f4a261] to-[#e76f51]">
-                {tHome('activity.title')}
+                {tHome('community.title')}
               </span>
             </h2>
-            <p className="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto font-medium leading-relaxed">
-              {tHome('activity.subtitle')}
+            <p className="text-lg md:text-2xl text-slate-300 max-w-3xl mx-auto font-bold leading-relaxed whitespace-pre-line mb-8">
+              {tHome('community.subtitle')}
+            </p>
+            <p className="text-base md:text-lg text-slate-400 max-w-2xl mx-auto font-medium leading-relaxed">
+              {tHome('community.concept')}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+          {/* Discord Vibe Sub-clubs */}
+          <div className="bg-slate-900/60 border border-slate-700/50 rounded-[2rem] p-8 lg:p-10 mb-12 backdrop-blur-sm">
+            <div className="flex items-start lg:items-center flex-col lg:flex-row gap-6 mb-8">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 rounded-2xl bg-indigo-500/20 flex items-center justify-center border border-indigo-500/30 shrink-0">
+                  <span className="text-3xl drop-shadow-lg">💬</span>
+                </div>
+                <div>
+                  <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">{tHome('community.discord.title')}</h3>
+                  <p className="text-slate-400 text-sm md:text-base mt-1.5">{tHome('community.discord.desc')}</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Morning */}
+              <div className="p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group/card">
+                <h4 className="font-bold text-white mb-2 text-sm">{tHome('community.discord.morning.title')}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed font-medium">{tHome('community.discord.morning.desc')}</p>
+              </div>
+              {/* Workout */}
+              <div className="p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group/card">
+                <h4 className="font-bold text-white mb-2 text-sm">{tHome('community.discord.workout.title')}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed font-medium">{tHome('community.discord.workout.desc')}</p>
+              </div>
+              {/* Sauna */}
+              <div className="p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group/card">
+                <h4 className="font-bold text-white mb-2 text-sm">{tHome('community.discord.sauna.title')}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed font-medium">{tHome('community.discord.sauna.desc')}</p>
+              </div>
+              {/* Muay Thai */}
+              <div className="p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group/card">
+                <h4 className="font-bold text-white mb-2 text-sm">{tHome('community.discord.muaythai.title')}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed font-medium">{tHome('community.discord.muaythai.desc')}</p>
+              </div>
+              {/* Meditation */}
+              <div className="p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group/card">
+                <h4 className="font-bold text-white mb-2 text-sm">{tHome('community.discord.meditation.title')}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed font-medium">{tHome('community.discord.meditation.desc')}</p>
+              </div>
+              {/* Cafe */}
+              <div className="p-5 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors group/card">
+                <h4 className="font-bold text-white mb-2 text-sm">{tHome('community.discord.cafe.title')}</h4>
+                <p className="text-xs text-slate-400 leading-relaxed font-medium">{tHome('community.discord.cafe.desc')}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Membership Tiers (Free vs Paid) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 mb-16">
+
+            {/* Free Tier: OpenChat */}
+            <div className="group relative flex flex-col justify-between rounded-[2rem] bg-slate-900 border border-slate-800 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:border-emerald-500/30 p-6 sm:p-10">
+              <div className="absolute top-0 right-[-2rem] p-6 opacity-5 group-hover:scale-110 group-hover:rotate-12 transition-transform duration-700 text-emerald-500 pointer-events-none">
+                <MessageCircle className="w-48 h-48" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-slate-800 text-slate-300 text-xs font-bold tracking-widest border border-slate-700">
+                  {tHome('community.chat.badge', { defaultValue: 'FREE' })}
+                </div>
+                <h3 className="text-xl md:text-3xl font-black text-white mb-4 whitespace-pre-line leading-tight">
+                  {tHome('community.chat.title')}
+                </h3>
+                <p className="text-emerald-50/70 text-sm md:text-base leading-relaxed whitespace-pre-line mb-10 font-medium">
+                  {tHome('community.chat.desc')}
+                </p>
+
+                <ul className="space-y-5 mb-12">
+                  {(tHome.raw('community.chat.benefits') as string[]).map((benefit, i) => (
+                    <li key={`free-benefit-${i}`} className="flex items-center text-emerald-100/90 text-sm font-bold">
+                      <div className="rounded-full bg-emerald-500/10 p-1 mr-4 shrink-0">
+                        <svg className="w-4 h-4 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="leading-snug">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="relative z-10 mt-auto pt-8 border-t border-slate-800/80">
+                <a
+                  href="https://lin.ee/E1QFFRn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full mb-3 inline-flex items-center justify-center text-sm md:text-base font-bold text-white bg-slate-800 border border-slate-700 px-6 py-4.5 rounded-xl hover:bg-emerald-600 hover:border-emerald-500 hover:shadow-[0_0_30px_rgba(16,185,129,0.2)] transition-all duration-300 group/btn"
+                >
+                  {tHome('community.chat.cta')}
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                </a>
+                <p className="text-center text-xs font-bold text-emerald-500/80 tracking-wider">
+                  {tHome('community.chat.password', { defaultValue: '参加時の合言葉：パクチー' })}
+                </p>
+              </div>
+            </div>
+
+            {/* Premium Tier: TOTONOI THAI CLUB */}
+            <div className="group relative flex flex-col justify-between rounded-[2rem] bg-gradient-to-b from-[#1a1727] to-[#0a0f1c] border border-amber-500/20 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-amber-500/10 hover:border-amber-500/40 p-6 sm:p-10">
+              {/* Premium Glow */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-amber-500/20 transition-all duration-700"></div>
+
+              <div className="absolute top-0 right-[-2rem] p-6 opacity-5 group-hover:scale-110 group-hover:-rotate-12 transition-transform duration-700 text-amber-500 pointer-events-none">
+                <Tent className="w-48 h-48" />
+              </div>
+
+              <div className="relative z-10">
+                <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold tracking-widest border border-amber-500/20 shadow-inner">
+                  {tHome('community.paid.badge', { defaultValue: 'PREMIUM' })}
+                </div>
+                <h3 className="text-xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-br from-amber-200 via-amber-400 to-amber-600 mb-4 whitespace-pre-line leading-tight">
+                  {tHome('community.paid.title')}
+                </h3>
+                <p className="text-amber-50/70 text-sm md:text-base leading-relaxed whitespace-pre-line mb-10 font-medium">
+                  {tHome('community.paid.desc')}
+                </p>
+
+                <ul className="space-y-5 mb-12">
+                  {(tHome.raw('community.paid.benefits') as string[]).map((benefit, i) => (
+                    <li key={`paid-benefit-${i}`} className="flex items-center text-amber-50/90 font-bold text-sm">
+                      <div className="rounded-full bg-amber-500/20 p-1 mr-4 shrink-0">
+                        <svg className="w-4 h-4 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                      <span className="leading-snug">{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="relative z-10 mt-auto pt-8 border-t border-amber-500/10">
+
+                <a
+                  href="https://buy.stripe.com/4gM5kEcgo14WfEy57pdMI0R"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center text-sm md:text-base font-bold text-[#1a1727] bg-gradient-to-r from-amber-400 to-amber-500 px-6 py-4.5 rounded-xl hover:from-amber-300 hover:to-amber-400 shadow-[0_0_30px_rgba(245,158,11,0.2)] transition-all duration-300 group/btn"
+                >
+                  {tHome('community.paid.cta')}
+                  <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-16 text-center mb-8">
+            <h3 className="text-2xl font-bold text-white tracking-widest uppercase opacity-80">{tHome('community.events.title')}</h3>
+            <div className="h-1 w-16 bg-gradient-to-r from-orange-500 to-green-500 mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          {/* Real Events */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
             {/* THE RESET */}
             <a
               href="https://www.the-reset-th.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex flex-col h-full rounded-[2.5rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
+              className="group relative flex flex-col h-full rounded-[2rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-green-500/20"
             >
-              {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image
                   src="/images/thereset.webp"
@@ -314,9 +472,6 @@ export default async function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
               </div>
 
-              {/* Hover Gradient Overlay */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-green-500/20 via-transparent to-transparent pointer-events-none z-10"></div>
-
               <div className="relative p-8 flex flex-col h-full z-20">
                 <div className="flex items-center justify-between mb-8">
                   <div className="w-16 h-16 rounded-2xl bg-green-500/20 backdrop-blur-md border border-green-500/30 flex items-center justify-center shadow-lg shadow-green-500/20 group-hover:scale-110 transition-transform duration-500">
@@ -325,40 +480,38 @@ export default async function Home() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-green-300 transition-colors drop-shadow-md">
-                  {tHome('activity.reset.title')}
+                  {tHome('community.events.reset.title')}
                 </h3>
                 <p className="text-slate-300 leading-relaxed mb-8 flex-grow drop-shadow-sm font-medium">
-                  {tHome('activity.reset.desc')}
+                  {tHome('community.events.reset.desc')}
                 </p>
 
                 <div className="mt-auto">
                   <span className="inline-flex items-center text-sm font-bold text-green-400 group-hover:text-green-300 transition-colors bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-full border border-green-500/30">
-                    {tHome('activity.reset.cta')}
+                    {tHome('community.events.reset.cta')}
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </div>
             </a>
 
-            {/* Nomad Place */}
+            {/* Wellness Retreat */}
             <a
               href="https://youtu.be/XvF1XOgDkiY?si=KzlxsvnF2rddXFCz"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative flex flex-col h-full rounded-[2.5rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20"
+              className="group relative flex flex-col h-full rounded-[2rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-orange-500/20"
             >
-              {/* Background Image */}
               <div className="absolute inset-0 z-0">
                 <Image
                   src="/images/nomad-camp-villa.png"
-                  alt="Nomad Place"
+                  alt="Wellness Retreat"
                   fill
                   className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
               </div>
 
-              {/* Hover Gradient Overlay */}
               <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-orange-500/20 via-transparent to-transparent pointer-events-none z-10"></div>
 
               <div className="relative p-8 flex flex-col h-full z-20">
@@ -369,59 +522,15 @@ export default async function Home() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-orange-300 transition-colors drop-shadow-md">
-                  {tHome('activity.place.title')}
+                  {tHome('community.events.place.title')}
                 </h3>
                 <p className="text-slate-300 leading-relaxed mb-8 flex-grow whitespace-pre-line drop-shadow-sm font-medium">
-                  {tHome('activity.place.desc')}
+                  {tHome('community.events.place.desc')}
                 </p>
 
                 <div className="mt-auto">
                   <span className="inline-flex items-center text-sm font-bold text-orange-400 group-hover:text-orange-300 transition-colors bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-full border border-orange-500/30">
-                    {tHome('activity.place.cta')}
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </div>
-              </div>
-            </a>
-
-            {/* Open Chat */}
-            <a
-              href="https://lin.ee/E1QFFRn"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group relative flex flex-col h-full rounded-[2.5rem] bg-slate-900/40 border border-white/5 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/20"
-            >
-              {/* Background Image */}
-              <div className="absolute inset-0 z-0">
-                <Image
-                  src="/images/community_hero.jpg"
-                  alt="Nomad Community"
-                  fill
-                  className="object-cover opacity-60 group-hover:scale-110 transition-transform duration-700"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-slate-900/40 opacity-90 group-hover:opacity-80 transition-opacity duration-500"></div>
-              </div>
-
-              {/* Hover Gradient Overlay */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-b from-blue-500/20 via-transparent to-transparent pointer-events-none z-10"></div>
-
-              <div className="relative p-8 flex flex-col h-full z-20">
-                <div className="flex items-center justify-between mb-8">
-                  <div className="w-16 h-16 rounded-2xl bg-blue-500/20 backdrop-blur-md border border-blue-500/30 flex items-center justify-center shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform duration-500">
-                    <MessageCircle className="w-8 h-8 text-blue-400" />
-                  </div>
-                </div>
-
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-300 transition-colors drop-shadow-md">
-                  {tHome('activity.chat.title')}
-                </h3>
-                <p className="text-slate-300 leading-relaxed mb-8 flex-grow drop-shadow-sm font-medium">
-                  {tHome('activity.chat.desc')}
-                </p>
-
-                <div className="mt-auto">
-                  <span className="inline-flex items-center text-sm font-bold text-blue-400 group-hover:text-blue-300 transition-colors bg-slate-900/50 backdrop-blur-sm px-4 py-2 rounded-full border border-blue-500/30">
-                    {tHome('activity.chat.cta')}
+                    {tHome('community.events.place.cta')}
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </div>
@@ -430,8 +539,6 @@ export default async function Home() {
           </div>
         </div>
       </section>
-
-
 
       {/* 2026 Scheduled Events (Notification Center Style) */}
       <section className="py-16 px-4 bg-slate-50 border-t border-slate-200">
@@ -473,12 +580,12 @@ export default async function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       {/* YouTube Section (Cinematic Dark Style) */}
-      <section className="py-24 px-4 bg-[#151515] relative overflow-hidden">
+      < section className="py-24 px-4 bg-[#151515] relative overflow-hidden" >
         {/* Ambient Glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+        < div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[100px] pointer-events-none" ></div >
 
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -516,15 +623,15 @@ export default async function Home() {
                 {/* Glow Effect on Hover */}
                 <div className="absolute -inset-1 bg-gradient-to-r from-red-600 to-orange-600 opacity-20 blur-lg group-hover:opacity-40 transition-opacity duration-500"></div>
                 <div className="relative bg-black rounded-xl overflow-hidden aspect-video">
-                  <YouTubeEmbed videoId="B_HkXPiv7ow" />
+                  <YouTubeEmbed videoId="Ak4-4HWnNLU" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
 
-    </div>
+    </div >
   );
 }

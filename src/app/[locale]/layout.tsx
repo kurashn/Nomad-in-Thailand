@@ -34,34 +34,33 @@ const zenOldMincho = Zen_Old_Mincho({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://nomad-th.com"),
-  title: "Nomad in Thailand -ノマタイ- | タイ移住・ノマド生活コミュニティ",
-  description: "タイ在住の日本人ノマドのためのコミュニティメディア「ノマタイ」。バンコク、チェンマイなどの移住情報、ビザ、コワーキングスペース、イベント情報を発信。",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://totonoi-thai.com"),
+  title: "TOTONOI THAI - タイ移住×ウェルネス | タイ移住・ウェルネスコミュニティ",
+  description: "タイ移住とウェルネスをテーマにしたコミュニティメディア「TOTONOI THAI」。バンコク、チェンマイなどの移住情報、ビザ情報のほか、サウナ、リトリート、デジタルデトックスなど心と体を整えるタイ生活を発信。",
   keywords: [
     "タイ移住",
-    "デジタルノマド",
+    "ウェルネス",
+    "サウナ",
+    "リトリート",
+    "ウェルネスツーリズム",
     "バンコク生活",
     "チェンマイ生活",
-    "海外ノマド",
-    "ノマタイ",
-    "Nomad in Thailand",
+    "TOTONOI THAI",
+    "海外生活",
     "タイ移住 費用",
-    "タイ ビザ ノマド",
-    "バンコク コワーキングスペース",
-    "タイ 海外送金 Wise",
-    "海外旅行保険 ノマド"
+    "タイ ビザ",
+    "バンコク サウナ"
   ],
   openGraph: {
     type: "website",
-    locale: "ja_JP",
-    url: "https://nomad-th.com",
-    siteName: "Nomad in Thailand -ノマタイ-",
+    url: "https://totonoi-thai.com",
+    siteName: "TOTONOI THAI",
     images: [
       {
-        url: "https://nomad-th.com/images/ogp_default.png",
+        url: "https://totonoi-thai.com/images/ogp_default.png",
         width: 1200,
         height: 630,
-        alt: "Nomad in Thailand -ノマタイ-",
+        alt: "TOTONOI THAI - タイ移住×ウェルネス",
       },
     ],
   },
@@ -99,17 +98,17 @@ export default async function RootLayout({
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://nomad-th.com/#organization",
-        "name": "Nomad in Thailand -ノマタイ-",
-        "alternateName": "ノマタイ",
-        "url": "https://nomad-th.com",
+        "@id": "https://totonoi-thai.com/#organization",
+        "name": "TOTONOI THAI",
+        "alternateName": "トトノイタイ",
+        "url": "https://totonoi-thai.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://nomad-th.com/character/nomad-dog-hero-white.png",
+          "url": "https://totonoi-thai.com/character/totonoi-logo.png",
           "width": 512,
           "height": 512
         },
-        "description": "タイ移住・ノマド生活コミュニティ",
+        "description": "タイ移住とウェルネスをテーマにしたコミュニティメディア",
         "sameAs": [
           "https://x.com/nomad_place",
           "https://instagram.com/nomad_place",
@@ -118,25 +117,25 @@ export default async function RootLayout({
       },
       {
         "@type": "WebSite",
-        "@id": "https://nomad-th.com/#website",
-        "url": "https://nomad-th.com",
-        "name": "Nomad in Thailand -ノマタイ-",
-        "description": "タイ移住・ノマド生活コミュニティ",
+        "@id": "https://totonoi-thai.com/#website",
+        "url": "https://totonoi-thai.com",
+        "name": "TOTONOI THAI",
+        "description": "タイ移住・ウェルネスコミュニティ",
         "publisher": {
-          "@id": "https://nomad-th.com/#organization"
+          "@id": "https://totonoi-thai.com/#organization"
         },
         "inLanguage": locale
       },
       {
         "@type": "FAQPage",
-        "@id": "https://nomad-th.com/#faq",
+        "@id": "https://totonoi-thai.com/#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Nomad in Thailand (ノマタイ) とは何ですか？",
+            "name": "TOTONOI THAI とは何ですか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Nomad in Thailand (通称：ノマタイ) は、タイ在住の日本人デジタルノマドのためのコミュニティメディアです。バンコクやチェンマイでの生活情報、ビザ、コワーキングスペース、イベントの紹介を行っています。"
+              "text": "TOTONOI THAI は、タイ移住とウェルネスをテーマにしたコミュニティメディアです。旧「Nomad in Thailand (ノマタイ) 」を前身とし、バンコクやチェンマイでの生活情報、ビザ、サウナやリトリートに関する情報を発信しています。"
             }
           },
           {
@@ -152,7 +151,7 @@ export default async function RootLayout({
             "name": "初心者でもコミュニティに参加できますか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "はい、大歓迎です。これからタイ移住を考えている方や、ノマドワークを始めたばかりの方も多く在籍しています。"
+              "text": "はい、大歓迎です。これからタイ移住を考えている方や、ウェルネスに関心がある方も多く在籍しています。"
             }
           }
         ]

@@ -6,8 +6,28 @@
             "subtitle": "2026 Edition. Visa, Cost of Living, Jobs, Locations.\nEverything you need to know for a successful migration.",
             "cta": "Read the Complete Guide"
         },
+        "about": {
+            "tag": "ABOUT US",
+            "title": "What is TOTONOI THAI?",
+            "subtitle": "A Thai-based Wellness Community\nto Rebuild Your Human Power in the AI Era",
+            "description": "\"TOTONOI THAI CLUB\" is a community for those who realize the importance of \"wellness\" in this overwhelming AI-dominated era, gathering in Thailand.\n\nIt is not just an information media. Through activities like saunas, retreats, and digital detoxing, it is a place to \"align\" yourselves and collectively strengthen the \"human power\" and resilience that is being lost today.\n\nBy changing our environment and connecting passionately with like-minded peers, let's overcome the coming era strongly together.",
+            "features": {
+                "info": {
+                    "title": "Real Information",
+                    "desc": "Reliable expat and wellness info based on real experiences"
+                },
+                "community": {
+                    "title": "Connecting Hub",
+                    "desc": "Meet peers in an overseas life that tends to be isolating"
+                },
+                "practice": {
+                    "title": "Wellness Practices",
+                    "desc": "Building habits like saunas, meditation,\nand fitness to align mind and body"
+                }
+            }
+        },
         "essentials": {
-            "title": "4 Essential Tools for\nDigital Nomads",
+            "title": "4 Essential Tools for\nExpats & Wellness Seekers",
             "subtitle": "Convenient. Affordable. Secure.\nThrive anywhere with these tools.",
             "viewAll": "View All Tools",
             "wise": {
@@ -27,13 +47,13 @@
             },
             "safetywing": {
                 "title": "SafetyWing",
-                "desc": "Travel medical insurance designed for nomads.\n<bold>Flexible monthly plans</bold>.",
+                "desc": "Travel medical insurance designed for Expats.\n<bold>Flexible monthly plans</bold>.",
                 "cta": "Read Guide"
             }
         },
         "column": {
             "title": "Latest Articles",
-            "subtitle": "Latest info on Thailand migration\nand nomad life",
+            "subtitle": "Latest info on Thailand migration\nand Expat Life",
             "read": "Read",
             "noArticles": "No articles yet"
         },
@@ -42,53 +62,90 @@
             "sponsor": {
                 "date": "2026.01.10",
                 "tag": "Recruit",
-                "title": "Sponsorship Recruitment for 'Nomad in Thailand'"
+                "title": "Sponsorship Recruitment for 'TOTONOI THAI'"
             },
             "launch": {
                 "date": "2026.01.01",
                 "tag": "News",
-                "title": "'Nomad in Thailand' Official Site Launched"
+                "title": "'TOTONOI THAI' Official Site Launched"
             }
         },
-        "camp": {
-            "title": "Nomad Events",
-            "comingSoon": "Coming Soon",
-            "nextDate": "2026.06",
-            "nextLabel": "Next Nomad Camp",
-            "location": "TBA (Location & Dates)",
-            "details": "Details will be announced soon",
-            "heading": "3 Days 2 Nights Nomad Camp\nRule: 'Freedom'",
-            "desc": "All we provide is a 'Luxury Villa' for an extraordinary experience.\nNo schedules, no lectures.\nWork elegantly by the pool or talk all night long.\nA camp to enjoy in your own nomad style.",
-            "history": "Past Events",
-            "historyItems": {
-                "0": {
-                    "place": "Vol.5 Phuket",
-                    "date": "2024.10"
+        "community": {
+            "title": "TOTONOI THAI CLUB",
+            "subtitle": "Creating absolute space for mind and body\nto survive the overwhelming AI era.",
+            "concept": "A community for expats in Thailand to share 'wellness habits' like sauna and fitness. No strict rules required. What's hard to maintain alone becomes a comfortable part of daily life when connected loosely with like-minded peers.",
+            "discord": {
+                "title": "Club Activities",
+                "desc": "Active daily within Discord. Feel free to join anything that interests you.",
+                "morning": {
+                    "title": "☀️ Morning Club",
+                    "desc": "Start the day right with morning runs"
                 },
-                "1": {
-                    "place": "Vol.4 Bali Ubud",
-                    "date": "2024.04"
+                "workout": {
+                    "title": "🏋️ Workout Club",
+                    "desc": "Move your body at your own pace"
                 },
-                "2": {
-                    "place": "Vol.3 Pattaya",
-                    "date": "2023.12"
+                "sauna": {
+                    "title": "🧖‍♂️ Sauna & Ice Bath",
+                    "desc": "Rebalance your mind & body in Bangkok"
                 },
-                "3": {
-                    "place": "Vol.2 Vietnam Da Nang",
-                    "date": "2023.10"
+                "muaythai": {
+                    "title": "🏃‍♂️ Muay Thai",
+                    "desc": "Sweat it out in a true Thai environment"
                 },
-                "4": {
-                    "place": "Vol.1 Chiang Mai",
-                    "date": "2023.05"
+                "meditation": {
+                    "title": "🧘 Meditation Club",
+                    "desc": "Face your mind in a quiet space"
+                },
+                "cafe": {
+                    "title": "☕️ Cafe Club",
+                    "desc": "Work and chat with delicious coffee"
+                }
+            },
+            "chat": {
+                "badge": "FREE",
+                "title": "Sneak a peek via\nFree OpenChat",
+                "desc": "A free community of expats and wellness enthusiasts in Thailand. Occasional sauna meetups and dinners in Bangkok.\nWhy not join the free chat to check the vibe?",
+                "benefits": [
+                    "Casual info exchange on relocation & wellness",
+                    "Occasional meetups and sauna events in Bangkok",
+                    "Try out the community vibe for free"
+                ],
+                "cta": "Join OpenChat",
+                "password": "Entry Password: パクチー (Pakchi)"
+            },
+            "paid": {
+                "badge": "PREMIUM",
+                "title": "Connect Deeply\nTOTONOI THAI CLUB",
+                "desc": "Access exclusive discussions, deep interactions in small groups, and priority event access not available in the free chat. A closed paid community for those serious about Thai relocation and wellness.",
+                "benefits": [
+                    "Full access to all Discord sub-clubs",
+                    "Deep sharing of exclusive know-how",
+                    "Priority access to limited retreats"
+                ],
+                "price": "Check Details",
+                "cta": "Join the Community"
+            },
+            "events": {
+                "title": "Community Real Events",
+                "reset": {
+                    "title": "Digital Detox Retreat (THE RESET)",
+                    "desc": "Ultimate digital detox in the unseen Chiang Mai. Forcefully disconnect from smartphones and experience 'Ultimate Rest' in nature.",
+                    "cta": "View Retreat Details"
+                },
+                "place": {
+                    "title": "Nomad Camp (Nomad Place)",
+                    "desc": "Wellness camps to rebalance mind and body. Rent out luxury villas, connect with self through sauna and yoga. Share profound time with like-minded peers.",
+                    "cta": "Watch Video"
                 }
             }
-        },
-        "youtube": {
-            "tag": "Main Contents",
-            "title": "Real Info on YouTube",
-            "channel": "'Nomad in Thailand'",
-            "desc": "Delivering the local atmosphere and real voices of nomads that text cannot convey.",
-            "cta": "Watch on YouTube"
         }
+    },
+    "youtube": {
+        "tag": "Main Contents",
+        "title": "Real Info on YouTube",
+        "channel": "'TOTONOI THAI'",
+        "desc": "Delivering the local atmosphere, wellness insights, and real voices that text cannot convey.",
+        "cta": "Watch on YouTube"
     }
 }

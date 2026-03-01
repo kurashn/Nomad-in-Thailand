@@ -1,8 +1,8 @@
 {
     "CheatSheet": {
         "meta": {
-            "title": "バンコクノマド カンニングペーパー 2026 PRO (印刷用)",
-            "desc": "バンコクノマドのための究極のカンニングペーパー（完全版）。"
+            "title": "バンコク移住者 カンニングペーパー 2026 PRO (印刷用)",
+            "desc": "バンコク移住者のための究極のカンニングペーパー（完全版）。"
         },
         "nav": {
             "back": "マップに戻る",
@@ -11,7 +11,7 @@
         "header": {
             "edition": "2026 EDITION",
             "official": "OFFICIAL GUIDE",
-            "title1": "BANGKOK NOMAD",
+            "title1": "BANGKOK Expat",
             "title2": "CHEAT SHEET"
         },
         "visa": {
@@ -19,7 +19,7 @@
             "dtv": {
                 "name": "DTVビザ (5年)",
                 "badge": "最強推奨",
-                "desc": "50万B(約250万円)の残高証明が必要。1回180日滞在可。フリーランス・リモートワーカーはまずこれを狙え。"
+                "desc": "50万B(約250万円)の残高証明が必要。1回180日滞在可。フリーランス・起業家・リモートワーカーはまずこれを狙え。"
             },
             "tourist": {
                 "name": "観光ビザ (60日+30日)",
@@ -136,7 +136,7 @@
         },
         "qr": {
             "desc": "最新情報・イベントはWebで",
-            "scan": "nomad-th.com<br />Scan for more"
+            "scan": "Expat-th.com<br />Scan for more"
         }
     }
 }

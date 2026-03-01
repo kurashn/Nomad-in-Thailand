@@ -1,19 +1,19 @@
 {
     "Sponsor": {
         "meta": {
-            "title": "Advertising & Partnership | Nomad in Thailand",
-            "desc": "Directly approach digital nomads and expats in Thailand. Information on advertising and sponsorship opportunities with Nomad in Thailand."
+            "title": "Advertising & Partnership | TOTONOI THAI",
+            "desc": "Directly approach Expats & Wellness Seekers and expats in Thailand. Information on advertising and sponsorship opportunities with TOTONOI THAI."
         },
         "hero": {
             "back": "Back to Home",
             "tag": "Business",
             "title": "Advertising & Partnership",
-            "subtitle": "Reach the next generation of global Japanese citizens\nwho are ready to step out into the world."
+            "subtitle": "Reach wellness seekers and expats in the AI era\nwho are looking to 'align' their lives in Thailand."
         },
         "intro": {
-            "title": "About Nomad in Thailand",
-            "p1": "\"Nomad in Thailand\" is a community media for Japanese digital nomads in their 20s to 40s who are based in, or aiming to move to, Thailand.",
-            "p2": "We specialize in providing \"essential information for moving and staying\", ranging from practical topics like visas, taxes, and housing to real local lifestyle information.",
+            "title": "About TOTONOI THAI",
+            "p1": "\"TOTONOI THAI CLUB\" is a passionate, practical community in Thailand for those who recognize the importance of \"aligning\" themselves and rebuilding their \"human power\" in the AI era.",
+            "p2": "More than just an information media, we provide a place where members can meet like-minded peers to strongly navigate the uncertain times ahead through the environmental shift of moving to Thailand and engaging in wellness activities.",
             "media_power": {
                 "title": "Media Features",
                 "audience": "High-intent Audience",
@@ -22,29 +22,6 @@
                 "engagement_desc": "Read by users who are \"seriously considering moving/staying\", not just casual browsers.",
                 "trust": "Trust based on Experience",
                 "trust_desc": "The operators live locally, ensuring the freshness and reliability of the information."
-            },
-            "stats": {
-                "title": "Jan 2026 Data",
-                "pv": {
-                    "label": "Monthly PV",
-                    "value": "2,640",
-                    "unit": "PV"
-                },
-                "users": {
-                    "label": "Total Users",
-                    "value": "203",
-                    "unit": "Users"
-                },
-                "youtube": {
-                    "label": "YouTube Subscribers",
-                    "value": "405",
-                    "unit": "Subs"
-                },
-                "line": {
-                    "label": "Official LINE",
-                    "value": "107",
-                    "unit": "Subs"
-                }
             }
         },
         "plans": {
@@ -53,7 +30,7 @@
             "listing": {
                 "title": "Premium Company Listing",
                 "tag": "Best Value",
-                "desc": "Your service will be permanently listed in the \"Recommended Agents\" or \"Services to Use\" sections of our articles. Ideal for direct conversion.",
+                "desc": "Your service will be permanently listed in the \"Recommended\" sections of our articles. Ideal for direct conversion.",
                 "features": [
                     "Priority display in articles",
                     "\"Recommended\" Badge",
@@ -71,9 +48,9 @@
                 ]
             },
             "youtube": {
-                "title": "YouTube/Podcast Sponsorship",
+                "title": "YouTube Sponsorship",
                 "tag": "Branding",
-                "desc": "Introduce your service within our YouTube videos or Podcast. Enhances familiarity and brand awareness.",
+                "desc": "Introduce your service within our YouTube videos. Enhances familiarity and brand awareness.",
                 "features": [
                     "CM spots in videos",
                     "Collaboration/Interview videos",

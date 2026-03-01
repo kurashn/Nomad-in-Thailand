@@ -15,7 +15,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
             title: t('ogTitle'),
             description: t('ogDesc'),
             type: "article",
-            images: ["https://nomad-th.com/images/nordvpn_hero.png"],
+            images: ["https://totonoi-thai.com/images/nordvpn_hero.png"],
         }
     };
 }
@@ -32,7 +32,7 @@ export default function NordVPNGuidePage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": t.raw('meta.title'),
-        "image": "https://nomad-th.com/images/nordvpn_hero.png",
+        "image": "https://totonoi-thai.com/images/nordvpn_hero.png",
         "datePublished": "2026-01-25",
         "dateModified": "2026-01-25",
         "author": {
@@ -44,7 +44,7 @@ export default function NordVPNGuidePage() {
             "name": "Nomad in Thailand",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://nomad-th.com/logo.png"
+                "url": "https://totonoi-thai.com/logo.png"
             }
         },
         "description": t.raw('meta.desc')
@@ -324,7 +324,7 @@ export default function NordVPNGuidePage() {
                     <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
                         <div className="flex items-center gap-4 mb-6">
                             <div className="w-12 h-12 bg-slate-200 rounded-full overflow-hidden flex-shrink-0 flex items-center justify-center p-1">
-                                <Image src="/character/nomad-dog-logo-transparent-v2.png" alt="Writer" width={48} height={48} className="object-contain" />
+                                <Image src="/character/totonoi-logo.png" alt="Writer" width={48} height={48} className="object-contain" />
                             </div>
                             <div>
                                 <p className="text-sm text-slate-500">{t('features.review.author')}</p>

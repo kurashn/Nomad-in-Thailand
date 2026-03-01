@@ -1,8 +1,8 @@
 {
     "AreaGuide": {
         "meta": {
-            "title": "Bangkok Neighborhood Guide 2026: Phrom Phong, On Nut, Ari | Nomad in Thailand",
-            "desc": "An in-depth comparison of Bangkok's top 3 neighborhoods for expats and nomads. Find the perfect area for your budget and lifestyle, with rent prices and local insights."
+            "title": "Bangkok Neighborhood Guide 2026: Phrom Phong, On Nut, Ari | TOTONOI THAI",
+            "desc": "An in-depth comparison of Bangkok's top 3 neighborhoods for expats and Expats. Find the perfect area for your budget and lifestyle, with rent prices and local insights."
         },
         "hero": {
             "back": "Back to Lifestyle",
@@ -12,7 +12,7 @@
         "intro": {
             "p1": "Your choice of neighborhood will completely define your Bangkok experience.",
             "p2": "Will you spend hours stuck in traffic, or start your day with a coffee in a leafy garden?<br />Bangkok has developed around the BTS Skytrain, but each station has a distinct personality.",
-            "p3": "In this guide, we deep-dive into the **top 3 areas** for digital nomads and expats, comparing budgets, vibes, and suitability."
+            "p3": "In this guide, we deep-dive into the **top 3 areas** for Expats & Wellness Seekers and expats, comparing budgets, vibes, and suitability."
         },
         "summary": {
             "title": "The Big 3 at a Glance",
@@ -24,7 +24,7 @@
             "onNut": {
                 "name": "On Nut",
                 "budget": "Budget: 15,000 THB+",
-                "desc": "Best value. Nomad-favorite with great amenities."
+                "desc": "Best value. Expat-favorite with great amenities."
             },
             "ari": {
                 "name": "Ari",
@@ -55,10 +55,10 @@
                 "tag": "AREA 02",
                 "name": "On Nut / Phra Khanong",
                 "enName": "",
-                "targetDesc": "Digital Nomads / Value Seekers",
+                "targetDesc": "Expats & Wellness Seekers / Value Seekers",
                 "rentDesc": "15,000 THB+ (~$420+)",
-                "title": "The Nomad's Value Paradise",
-                "desc": "With easy access to the city center (15-20 mins by BTS), On Nut offers a comfortable life at a fraction of the cost.<br />Major supermarkets (Lotus’s, Big C) are right at the station making life incredibly convenient. It's teeming with coworking spaces and diverse digital nomads from around the globe.",
+                "title": "The Expat's Value Paradise",
+                "desc": "With easy access to the city center (15-20 mins by BTS), On Nut offers a comfortable life at a fraction of the cost.<br />Major supermarkets (Lotus’s, Big C) are right at the station making life incredibly convenient. It's teeming with coworking spaces and diverse Expats & Wellness Seekers from around the globe.",
                 "feature1": "Affordable, modern, and stylish condos",
                 "feature2": "Local markets nearby keep food costs low"
             },
@@ -106,7 +106,7 @@
         "faq": {
             "title": "FAQ",
             "area": {
-                "q": "Q. Which area is best for a first-time nomad?",
+                "q": "Q. Which area is best for a first-time Expat?",
                 "a": "For first-timers, **On Nut** is unbeatable. It balances low cost with high convenience, has supermarkets right at the station, and a strong foreigner-friendly community."
             },
             "rent": {

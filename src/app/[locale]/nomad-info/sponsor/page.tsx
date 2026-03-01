@@ -72,31 +72,6 @@ export default function SponsorPage() {
                         })}
                     </p>
 
-                    {/* Stats Section */}
-                    <div className="bg-white rounded-2xl border-2 border-slate-100 p-6 shadow-sm">
-                        <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-6 flex items-center gap-2">
-                            <TrendingUp className="w-4 h-4" />
-                            {t('intro.stats.title')}
-                        </h3>
-                        <div className="grid grid-cols-2 gap-y-8 gap-x-4">
-                            <div>
-                                <div className="text-3xl font-bold text-slate-900 font-serif mb-1">{t('intro.stats.pv.value')}</div>
-                                <div className="text-xs font-bold text-slate-500 uppercase">{t('intro.stats.pv.label')}</div>
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold text-slate-900 font-serif mb-1">{t('intro.stats.youtube.value')}</div>
-                                <div className="text-xs font-bold text-slate-500 uppercase">{t('intro.stats.youtube.label')}</div>
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold text-slate-900 font-serif mb-1">{t('intro.stats.users.value')}</div>
-                                <div className="text-xs font-bold text-slate-500 uppercase">{t('intro.stats.users.label')}</div>
-                            </div>
-                            <div>
-                                <div className="text-3xl font-bold text-slate-900 font-serif mb-1">{t('intro.stats.line.value')}</div>
-                                <div className="text-xs font-bold text-slate-500 uppercase">{t('intro.stats.line.label')}</div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div className="bg-slate-50 rounded-2xl p-8 border border-slate-100">
                     <h3 className="text-lg font-bold text-slate-900 mb-6 border-b border-slate-200 pb-4">
@@ -276,7 +251,7 @@ export default function SponsorPage() {
                         "provider": {
                             "@type": "Organization",
                             "name": "Nomad in Thailand",
-                            "url": "https://nomad-th.com"
+                            "url": "https://totonoi-thai.com"
                         }
                     })
                 }}

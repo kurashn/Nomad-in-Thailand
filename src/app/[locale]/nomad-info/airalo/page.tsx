@@ -344,14 +344,14 @@ export default function AiraloPage() {
                             "author": {
                                 "@type": "Person",
                                 "name": "Nomad in Thailand",
-                                "url": "https://nomad-th.com"
+                                "url": "https://totonoi-thai.com"
                             },
                             "publisher": {
                                 "@type": "Organization",
                                 "name": "Nomad in Thailand",
                                 "logo": {
                                     "@type": "ImageObject",
-                                    "url": "https://nomad-th.com/images/logo.png"
+                                    "url": "https://totonoi-thai.com/images/logo.png"
                                 }
                             }
                         })

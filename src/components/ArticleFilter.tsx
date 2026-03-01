@@ -27,7 +27,7 @@ const CATEGORY_MATCHERS: Record<string, string[]> = {
     visa: ["ビザ・手続き"],
     living: ["生活情報", "体験談"],
     money: ["お金・税金・仮想通貨"],
-    interviews: ["ノマドインタビュー"],
+    interviews: ["移住者インタビュー"],
 };
 
 export default function ArticleFilter({ articles }: Props) {

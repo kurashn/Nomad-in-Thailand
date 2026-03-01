@@ -1,19 +1,19 @@
 {
     "SafetyWingGuide": {
         "meta": {
-            "title": "[2026 Update] Best Nomad Insurance: 'SafetyWing' Review.",
-            "desc": "Perfect for nomads with undefined plans. Monthly subscription travel/medical insurance. Why it's the top choice globally after credit card insurance expires."
+            "title": "[2026 Update] Best Expat Insurance: 'SafetyWing' Review.",
+            "desc": "Perfect for Expats with undefined plans. Monthly subscription travel/medical insurance. Why it's the top choice globally after credit card insurance expires."
         },
         "hero": {
             "back": "Back to Articles",
-            "title": "No Fixed Return Date Needed.<br />'Subscription' Insurance for Nomads"
+            "title": "No Fixed Return Date Needed.<br />'Subscription' Insurance for Expats"
         },
         "intro": {
-            "p1": "The biggest worry for overseas nomads. Isn't it <strong>\"Insurance\"</strong>?",
+            "p1": "The biggest worry for overseas Expats. Isn't it <strong>\"Insurance\"</strong>?",
             "p2": "Credit card insurance expires in the \"first 90 days\".<br />But Japanese travel insurance often requires a fixed return date or a large lump-sum payment...<br /><br /><strong>\"I want insurance that is freer and more flexible.\"</strong>",
-            "p3": "Born from the voices of nomads worldwide is the Norwegian startup <strong>\"SafetyWing\"</strong>.<br />Pay monthly like Netflix, cancel anytime. Truly insurance for digital nomads.",
+            "p3": "Born from the voices of Expats worldwide is the Norwegian startup <strong>\"SafetyWing\"</strong>.<br />Pay monthly like Netflix, cancel anytime. Truly insurance for Expats & Wellness Seekers.",
             "checkTitle": "What you'll learn",
-            "check1": "3 reasons SafetyWing is best for nomads",
+            "check1": "3 reasons SafetyWing is best for Expats",
             "check2": "Decisive difference from credit card insurance",
             "check3": "Are motorbike accidents or dental covered? Detailed coverage FAQ"
         },
@@ -26,10 +26,10 @@
                 "result": "Credit Card Insurance",
                 "desc": "For trips under 90 days, free credit card insurance (like EPOS) is sufficient. No extra cost needed.",
                 "linkText": "Check Best Cards",
-                "linkUrl": "../nomad-info/credit-card"
+                "linkUrl": "../Expat-info/credit-card"
             },
             "type2": {
-                "label": "Long Term / Digital Nomad",
+                "label": "Long Term / Expat",
                 "result": "SafetyWing",
                 "desc": "If your return date is undefined or stay > 90 days, SafetyWing is best. Pay only for months you need, cancel anytime.",
                 "linkText": "Check Price on Official Site",
@@ -74,11 +74,11 @@
             "title": "Deep Dive: 3 Amazing Features",
             "1": {
                 "title": "Full Subscription. Cancel Anytime.",
-                "desc": "Auto-renewal every 4 weeks. If you decide \"I'm going home next month\", just turn off auto-renewal in your dashboard.<br />No penalties, no fees. For nomads with flexible schedules, this is the biggest benefit."
+                "desc": "Auto-renewal every 4 weeks. If you decide \"I'm going home next month\", just turn off auto-renewal in your dashboard.<br />No penalties, no fees. For Expats with flexible schedules, this is the biggest benefit."
             },
             "2": {
                 "title": "Not just Medical. Covers Travel Troubles too.",
-                "desc": "Covers medical expenses, plus lost checked luggage, travel delays, and emergency evacuation.<br />Though called \"Nomad Insurance\", it functions as solid \"Comprehensive Travel Insurance\"."
+                "desc": "Covers medical expenses, plus lost checked luggage, travel delays, and emergency evacuation.<br />Though called \"Expat Insurance\", it functions as solid \"Comprehensive Travel Insurance\"."
             },
             "3": {
                 "title": "Covers \"Home Visits\" too",

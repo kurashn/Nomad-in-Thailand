@@ -58,7 +58,7 @@ export default function NoteSalesCTA({ variant = "inline" }: NoteSalesCTAProps) 
                     </h3>
 
                     <p className="mb-6 text-sm leading-relaxed text-slate-600">
-                        不備で却下されると履歴が傷つきます。ノマド・フリーランスの2名が実際に通過した「ポートフォリオ」と「英文履歴書」をそのまま真似して、確実にビザを勝ち取りませんか？
+                        不備で却下されると履歴が傷つきます。移住者2名が実際に通過した「ポートフォリオ」と「英文履歴書」をそのまま真似して、確実にビザを勝ち取りませんか？
                     </p>
 
                     <a

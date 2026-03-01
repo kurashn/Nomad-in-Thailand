@@ -2,14 +2,14 @@
     "TaxMoneyGuide": {
         "meta": {
             "title": "Thailand Relocation: The Ultimate Money & Tax Guide 2026 | Living Costs & 180-Day Rule",
-            "desc": "Is Bangkok still cheap? A realistic 2026 cost of living guide ($1,000+) & the truth about the 2024 tax reform for digital nomads. Learn about the 180-day rule, foreign income tax, and banking tips."
+            "desc": "Is Bangkok still cheap? A realistic 2026 cost of living guide ($1,000+) & the truth about the 2024 tax reform for Expats & Wellness Seekers. Learn about the 180-day rule, foreign income tax, and banking tips."
         },
         "hero": {
             "back": "Back to Articles",
             "title": "Thailand Relocation: Money & Tax Guide\n<subtag>Living Costs, DTV Tax, Foreign Income</subtag>"
         },
         "intro": {
-            "p1": "\"Is Thailand still cheap to live in?\"\n\"How does the 2024 tax reform actually affect digital nomads?\"",
+            "p1": "\"Is Thailand still cheap to live in?\"\n\"How does the 2024 tax reform actually affect Expats & Wellness Seekers?\"",
             "p2": "If you're planning a move to Bangkok, you've likely asked these questions. For years, the '180-day loophole' allowed tax-free remittances, but as of 2024, the game has changed.\n\nThis guide cuts through the noise. We cover a strictly realistic cost-of-living breakdown for 2026, the essential details of the \"180-day rule\" and Double Taxation Agreements, and how to manage your finances under the new system."
         },
         "cost": {
@@ -19,7 +19,7 @@
                 "header": {
                     "item": "Category",
                     "economy": "Budget / Local Style",
-                    "standard": "Digital Nomad Standard",
+                    "standard": "Expat Standard",
                     "luxury": "Comfortable / Expat"
                 },
                 "rent": {
@@ -51,7 +51,7 @@
                     "economy": "2,000 THB",
                     "economyDesc": "Basic Travel Insurance",
                     "standard": "4,000 THB",
-                    "standardDesc": "Nomad Insurance (SafetyWing)",
+                    "standardDesc": "Expat Insurance (SafetyWing)",
                     "luxury": "10,000 THB+",
                     "luxuryDesc": "Comprehensive Local Health Ins."
                 },
@@ -85,7 +85,7 @@
                 "note": "※Calculated at 1 THB = $0.028 USD. Rates fluctuate."
             },
             "video": {
-                "title": "Video: Real Nomad Expenses",
+                "title": "Video: Real Expat Expenses",
                 "desc": "Check out real monthly receipts: rent, food, and fun."
             }
         },
@@ -97,7 +97,7 @@
             "rule2": "Stay 180+ days = Tax Resident. Foreign income brought into Thailand is taxable.",
             "alert": {
                 "title": "Important 2024 Rule Change (Foreign Sourced Income)",
-                "desc": "Previously, many nomads relied on the 'loophole' of remitting savings from previous years tax-free. However, effective January 1, 2024, the Revenue Department's interpretation changed: <strong>\"Assessable income earned on or after Jan 1, 2024 is taxable if brought into Thailand by a Thai tax resident, regardless of when it was earned.\"</strong>\n\n*Note on Double Taxation Agreements (DTA):* Most Western countries (US, UK, Australia, etc.) have DTAs with Thailand to prevent paying tax twice on the same income. Always consult a tax professional to understand how your home country's treaty applies."
+                "desc": "Previously, many Expats relied on the 'loophole' of remitting savings from previous years tax-free. However, effective January 1, 2024, the Revenue Department's interpretation changed: <strong>\"Assessable income earned on or after Jan 1, 2024 is taxable if brought into Thailand by a Thai tax resident, regardless of when it was earned.\"</strong>\n\n*Note on Double Taxation Agreements (DTA):* Most Western countries (US, UK, Australia, etc.) have DTAs with Thailand to prevent paying tax twice on the same income. Always consult a tax professional to understand how your home country's treaty applies."
             }
         },
         "money": {
@@ -124,7 +124,7 @@
             "q1": "Q. What is a realistic safety net budget?",
             "a1": "A. While you can survive on less $1,000, we recommend a budget of $1,500 - $1,800 USD (approx. 50k-60k THB) for a comfortable, stress-free life. This covers a nice condo, coworking space, and health insurance buffer.",
             "q2": "Q. Can I open a bank account with a Tourist Visa?",
-            "a2": "A. Extremely difficult. Most branches require a long-term visa (Work, Student, DTV). Some nomads have luck at Bangkok Bank's Silom Head Office, but policy varies by staff.",
+            "a2": "A. Extremely difficult. Most branches require a long-term visa (Work, Student, DTV). Some Expats have luck at Bangkok Bank's Silom Head Office, but policy varies by staff.",
             "q3": "Q. Does the 180-day rule mean I have to pay tax?",
             "a3": "A. Not automatically. It means you become specific 'Tax Resident'. You are taxed on foreign income ONLY if you bring it into Thailand. If your income stays in your home bank account and you live off savings earned before 2024 (and can prove it), or if DTA protections apply, your liability may be zero. Professional advice is key."
         },

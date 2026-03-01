@@ -1,17 +1,17 @@
 {
     "CoworkingGuide": {
         "meta": {
-            "title": "Bangkok Coworking Space Guide 2026 | Top 3 for Nomads",
+            "title": "Bangkok Coworking Space Guide 2026 | Top 3 for Expats",
             "desc": "Top selections in On Nut-Siam area! Comparing popular coworking spaces (True Digital Park, The Hive, NapLab) by price, vibe, and Wi-Fi speed."
         },
         "hero": {
             "back": "Back to Articles",
             "title": "[2026 Guide] Bangkok Coworking Space Complete Guide",
-            "subtitle": "Top 3 choices for Digital Nomads in On Nut - Siam area"
+            "subtitle": "Top 3 choices for Expats & Wellness Seekers in On Nut - Siam area"
         },
         "intro": {
             "p1": "Bangkok is one of the world's most competitive coworking markets.<br></br>You can find spaces that combine the style of a cafe with the functionality of an office for less than half the price of Japan.",
-            "p2": "We've selected 3 spots along the BTS Sukhumvit Line (On Nut - Siam) highly rated by Japanese nomads. Choose based on your needs: Community, Deep Work, or 24/7 Access."
+            "p2": "We've selected 3 spots along the BTS Sukhumvit Line (On Nut - Siam) highly rated by Japanese Expats. Choose based on your needs: Community, Deep Work, or 24/7 Access."
         },
         "table": {
             "title": "Top 3 Spaces Comparison",
@@ -53,7 +53,7 @@
                 "station": "BTS Punnawithi (Next to On Nut)",
                 "price": "Free~",
                 "priceSub": "Great Free Area",
-                "desc": "SE Asia's largest tech hub. The building is a massive innovation facility, and the free coworking area is sufficient for serious work. Connected to a gym, mall, and food court - a nomad paradise where you can stay dry all day.",
+                "desc": "SE Asia's largest tech hub. The building is a massive innovation facility, and the free coworking area is sufficient for serious work. Connected to a gym, mall, and food court - a Expat paradise where you can stay dry all day.",
                 "features": {
                     "wifi": "Super Fast Wi-Fi (Free)",
                     "cafe": "Direct Mall Access",
@@ -105,7 +105,7 @@
         },
         "summary": {
             "title": "If in doubt, go to 'True Digital Park'",
-            "desc": "We recommend starting with the free area at True Digital Park.<br></br>From there, try The Hive for community or NapLab for late nights. That's the smart Bangkok Nomad style.",
+            "desc": "We recommend starting with the free area at True Digital Park.<br></br>From there, try The Hive for community or NapLab for late nights. That's the smart Bangkok Expat style.",
             "cta": "Back to Articles"
         }
     }

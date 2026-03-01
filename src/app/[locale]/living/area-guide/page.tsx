@@ -14,7 +14,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
             title: t('title'),
             description: t('desc'),
             type: "article",
-            images: ["https://nomad-th.com/images/area_guide_hero_photo.png"],
+            images: ["https://totonoi-thai.com/images/area_guide_hero_photo.png"],
         }
     };
 }
@@ -27,7 +27,7 @@ export default function AreaGuidePage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": t.raw('meta.title'),
-        "image": "https://nomad-th.com/images/area_guide_hero_photo.png",
+        "image": "https://totonoi-thai.com/images/area_guide_hero_photo.png",
         "datePublished": "2026-01-25",
         "dateModified": "2026-01-25",
         "author": {
@@ -39,7 +39,7 @@ export default function AreaGuidePage() {
             "name": "Nomad in Thailand",
             "logo": {
                 "@type": "ImageObject",
-                "url": "https://nomad-th.com/logo.png"
+                "url": "https://totonoi-thai.com/logo.png"
             }
         },
         "description": t.raw('meta.desc')

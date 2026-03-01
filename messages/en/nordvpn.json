@@ -1,9 +1,9 @@
 {
     "NordVPNGuide": {
         "meta": {
-            "title": "NordVPN: Essential Tool for Digital Nomads to Fix Access Issues | Nomad in Thailand",
+            "title": "NordVPN: Essential Tool for Expats & Wellness Seekers to Fix Access Issues | TOTONOI THAI",
             "desc": "[2026 Update] Solve \"Can't access WordPress\" and \"Geo-blocked sites\" with NordVPN. We explain how to drastically improve your remote work setup, including access to TVer and Netflix.",
-            "ogTitle": "NordVPN: Essential for Nomads. Fix Access Issues from Abroad",
+            "ogTitle": "NordVPN: Essential for Expats. Fix Access Issues from Abroad",
             "ogDesc": "Using public Wi-Fi is risky. A detailed review of NordVPN, the strongest tool to secure your data while enjoying Japanese entertainment."
         },
         "hero": {
@@ -15,7 +15,7 @@
         "intro": {
             "p1": "\"Free Cafe Wi-Fi is so convenient.\"<br />Connecting unprotected is as risky as <br class=\"hidden md:inline\" /><strong>\"leaving your front door wide open when you go out\"</strong>.",
             "p2": "Your credit card info, passwords, confidential client data.<br />Using unencrypted Wi-Fi means these could be <strong>\"fully visible\"</strong> to hackers on the same network.",
-            "p3": "To protect yourself, for overseas nomads, a <strong>\"VPN\"</strong> is not just an option—it's a **necessity**.<br />We've been using <strong>\"NordVPN\"</strong> for years because it offers the world's fastest speeds and ironclad security.",
+            "p3": "To protect yourself, for overseas Expats, a <strong>\"VPN\"</strong> is not just an option—it's a **necessity**.<br />We've been using <strong>\"NordVPN\"</strong> for years because it offers the world's fastest speeds and ironclad security.",
             "boxTitle": "How NordVPN Changes the Game",
             "list1": "<strong>Ironclad Security:</strong> Encrypts your connection to protect data even on sketchy Cafe/Airport Wi-Fi.",
             "list2": "<strong>Unlock Japanese Content:</strong> Watch blocked TVer, Netflix (JP), and AbemaTV from anywhere.",
@@ -42,7 +42,7 @@
                 "title": "Prevent \"Access Denied\" Errors",
                 "desc": "Working abroad, you might hit walls like <strong>\"Can't access WordPress admin\" or \"Bank app won't open\"</strong>.<br />This is because many Japanese servers (Xserver, ConoHa, etc.) block foreign IP addresses for security.",
                 "boxTitle": "Is no VPN a dealbreaker?",
-                "desc1": "Imagine trying to update a blog or fix a client site, only to get a \"403 Forbidden\" error...<br />For digital nomads, this is a total showstopper.",
+                "desc1": "Imagine trying to update a blog or fix a client site, only to get a \"403 Forbidden\" error...<br />For Expats & Wellness Seekers, this is a total showstopper.",
                 "desc2": "Routing through a Japanese server via NordVPN makes your request look like it's coming from Japan.<br />You'll access WordPress and Online Banking smoothly, just as if you were in Tokyo."
             },
             "freeVpn": {
@@ -63,7 +63,7 @@
             },
             "pricing": {
                 "title": "Pricing Details (2026)",
-                "desc": "NordVPN has 3 main plans, but for nomad needs (Wi-Fi protection & Streaming), the <strong>most affordable \"Basic Plan\" is all you need</strong>. There are often discounts of up to 70% off.",
+                "desc": "NordVPN has 3 main plans, but for Expat needs (Wi-Fi protection & Streaming), the <strong>most affordable \"Basic Plan\" is all you need</strong>. There are often discounts of up to 70% off.",
                 "headers": {
                     "plan": "Plan",
                     "price": "Monthly (2yr)",
@@ -89,7 +89,7 @@
             },
             "review": {
                 "title": "[Review] Real feedback after 3 years",
-                "author": "Nomad in Thailand Editors",
+                "author": "TOTONOI THAI Editors",
                 "subAuthor": "Impressions living 3 years in Thailand",
                 "desc": "Honestly, cheap VPNs I used before would slow down at night or suddenly get blocked by TVer. Since switching to NordVPN, my <strong>\"Connection Stress\" has effectively vanished</strong>.",
                 "speed": "🚀 About Speed",

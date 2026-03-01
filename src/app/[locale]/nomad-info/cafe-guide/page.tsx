@@ -21,7 +21,7 @@ export default function CafeGuidePage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": t.raw('meta.title'),
-        "image": "https://nomad-th.com/images/cafe_guide_hero.png",
+        "image": "https://totonoi-thai.com/images/cafe_guide_hero.png",
         "datePublished": "2026-01-07",
         "author": {
             "@type": "Organization",

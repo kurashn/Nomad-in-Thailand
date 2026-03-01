@@ -27,20 +27,20 @@ export default function DtvVisaPage() {
             {
                 "@type": "Article",
                 "headline": t('meta.title'),
-                "image": "https://nomad-th.com/images/dtv-visa-thumbnail.png",
+                "image": "https://totonoi-thai.com/images/dtv-visa-thumbnail.png",
                 "datePublished": "2024-06-01",
                 "dateModified": new Date().toISOString(),
                 "author": {
                     "@type": "Organization",
                     "name": "Nomad in Thailand",
-                    "url": "https://nomad-th.com"
+                    "url": "https://totonoi-thai.com"
                 },
                 "publisher": {
                     "@type": "Organization",
                     "name": "Nomad in Thailand",
                     "logo": {
                         "@type": "ImageObject",
-                        "url": "https://nomad-th.com/character/nomad-dog-hero-white.png"
+                        "url": "https://totonoi-thai.com/character/totonoi-logo.png"
                     }
                 },
                 "description": t('meta.desc')

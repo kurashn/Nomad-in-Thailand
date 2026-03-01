@@ -16,7 +16,7 @@ export default function Footer() {
                     <div className="flex flex-col items-center md:items-start">
                         <div className="relative w-24 h-24 mb-4">
                             <Image
-                                src="/character/nomad-dog-hero-transparent.png"
+                                src="/character/totonoi-logo.png" unoptimized
                                 alt={t('logoAlt')}
                                 fill
                                 className="object-contain"
@@ -29,10 +29,7 @@ export default function Footer() {
                         <h3 className="font-bold text-lg mb-4 text-slate-800">{t('contents.title')}</h3>
                         <ul className="space-y-3">
 
-                            <li><Link href="/nomad-info" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.guide')}</Link></li>
-                            {locale === 'ja' && (
-                                <li><Link href="/nomad-info/community" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.community')}</Link></li>
-                            )}
+                            <li><Link href="/nomad-info/bangkok-roadmap" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.guide')}</Link></li>
                             <li><Link href="/nomad-info/sponsor" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.sponsor')}</Link></li>
                         </ul>
                     </div>
@@ -48,7 +45,7 @@ export default function Footer() {
                             </li>
                             <li><Link href="/contact" className="text-slate-500 hover:text-blue-600 transition-colors">{t('links.contact')}</Link></li>
                             <li>
-                                <a href="https://lin.ee/E1QFFRn" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#06C755] transition-colors font-bold">
+                                <a href="https://lin.ee/DqxeADk" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#06C755] transition-colors font-bold">
                                     {t('links.newsletter')}
                                 </a>
                             </li>

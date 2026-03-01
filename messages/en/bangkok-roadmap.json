@@ -1,19 +1,19 @@
 {
     "BangkokRoadmap": {
         "meta": {
-            "title": "Thailand Relocation & Nomad Life Roadmap 2026 [Bangkok Edition] Visa, Costs, Prep Guide | Nomad Thailand",
-            "desc": "[2026 Latest] Your complete guide to moving to Thailand and living the nomad life in Bangkok. From securing the DTV visa to cost of living breakdowns, recommended neighborhoods, finding work, and joining the community. A step-by-step roadmap for a successful move."
+            "title": "Thailand Relocation & Expat Life Roadmap 2026 [Bangkok Edition] Visa, Costs, Prep Guide | Expat Thailand",
+            "desc": "[2026 Latest] Your complete guide to moving to Thailand and living the Expat Life in Bangkok. From securing the DTV visa to cost of living breakdowns, recommended neighborhoods, finding work, and joining the community. A step-by-step roadmap for a successful move."
         },
         "hero": {
-            "back": "Back to Nomad Info",
+            "back": "Back to Expat Info",
             "tag1": "Complete Guide",
             "tag2": "2026 Edition",
-            "title": "Thailand Relocation & Bangkok Nomad Life Roadmap [2026 Latest]",
+            "title": "Thailand Relocation & Bangkok Expat Life Roadmap [2026 Latest]",
             "author": "Nomatai Editorial"
         },
         "intro": {
-            "p1": "\"I want to live the digital nomad life overseas this year\"—is this your goal, but you're hesitating due to complex visas and procedures?",
-            "p2": "Bangkok, Thailand is one of the world's top cities for digital nomads. With a realistic monthly budget of around $1,000, you can live in a condo with a pool and enjoy delicious Thai food every day.",
+            "p1": "\"I want to live the Expat life overseas this year\"—is this your goal, but you're hesitating due to complex visas and procedures?",
+            "p2": "Bangkok, Thailand is one of the world's top cities for Expats & Wellness Seekers. With a realistic monthly budget of around $1,000, you can live in a condo with a pool and enjoy delicious Thai food every day.",
             "p3": "However, just showing up isn't enough. With the new \"DTV Visa\" introduced in 2024, strategic preparation is more critical than ever.",
             "p4": "We wrote this article for anyone tired of fragmented information online. This is the only complete roadmap covering \"Prep, Visa, Housing, Work, and Community\" in chronological order.",
             "p5": "By the time you finish reading, your Bangkok relocation plan will have shifted from a \"dream\" to a \"concrete schedule\".",
@@ -21,7 +21,7 @@
                 "title": "Why Bangkok?",
                 "item1": "World-class <strong>food culture</strong> and street food heaven",
                 "item2": "Blazing fast internet (avg 200Mbps+)",
-                "item3": "Vibrant nomad community and abundant coworking spaces"
+                "item3": "Vibrant Expat community and abundant coworking spaces"
             }
         },
         "visa": {
@@ -62,7 +62,7 @@
                     },
                     "note": {
                         "label": "Rating",
-                        "dtv": "★★★★★<br />Best for nomads",
+                        "dtv": "★★★★★<br />Best for Expats",
                         "tourist": "★★☆☆☆<br />Short trips",
                         "ed": "★★★☆☆<br />Students"
                     }
@@ -74,7 +74,7 @@
                 "stay": "180 Days/Entry",
                 "condition": "500k THB bank proof",
                 "cost": "10,000 THB",
-                "note": "Best for nomads",
+                "note": "Best for Expats",
                 "points": {
                     "title": "Why DTV is Powerful",
                     "p1": "~$280 for 5 years = <strong>incredible value</strong>",
@@ -166,7 +166,7 @@
                 },
                 "insurance": {
                     "title": "Travel Insurance",
-                    "desc": "Get nomad-friendly insurance like SafetyWing. Costs around $45/month.",
+                    "desc": "Get Expat-friendly insurance like SafetyWing. Costs around $45/month.",
                     "link": "SafetyWing Guide"
                 },
                 "vpn": {
@@ -246,7 +246,7 @@
             "title": "STEP 4: Housing Search & Area Selection",
             "intro": "Bangkok is massive. Where you live dramatically impacts your quality of life.",
             "areas": {
-                "title": "Recommended Areas for Nomads",
+                "title": "Recommended Areas for Expats",
                 "sukhumvit": {
                     "name": "Sukhumvit",
                     "stations": "Asoke, Phrom Phong, Thonglor",
@@ -316,7 +316,7 @@
             },
             "mapLink": {
                 "title": "Explore Bangkok Map",
-                "desc": "Check popular cafes, coworking spaces, and nomad areas on the map.",
+                "desc": "Check popular cafes, coworking spaces, and Expat areas on the map.",
                 "cta": "Open Bangkok Map"
             }
         },
@@ -380,9 +380,9 @@
         },
         "community": {
             "title": "STEP 5: Join the Community",
-            "intro": "Bangkok has a vibrant nomad community, so you won't feel lonely.",
+            "intro": "Bangkok has a vibrant Expat community, so you won't feel lonely.",
             "line": {
-                "title": "Free Nomad Exchange OpenChat",
+                "title": "Free Expat Exchange OpenChat",
                 "desc": "Community primarily for people in their 20s and 30s. We host irregular events like sauna, Muay Thai, trips, and drinks. Free to join.",
                 "cta": "Join OpenChat",
                 "videoCta": "Watch Community Vibes Video"
@@ -402,15 +402,15 @@
                 "title": "Meetups & Events",
                 "desc": "Join regular networking events to meet people.",
                 "events": {
-                    "nomad": "Bangkok Nomad Drinks (monthly)",
+                    "Expat": "Bangkok Expat Drinks (monthly)",
                     "japanese": "Japanese Mixer (weekly)",
                     "startup": "Startup Weekend Bangkok",
                     "language": "Language Exchange"
                 }
             },
             "cafes": {
-                "title": "Popular Nomad Cafes",
-                "desc": "Work from cafes and naturally meet fellow nomads.",
+                "title": "Popular Expat Cafes",
+                "desc": "Work from cafes and naturally meet fellow Expats.",
                 "link": "See Cafe Guide"
             }
         },
@@ -471,7 +471,7 @@
             "q4": "Q. Is the internet fast enough?",
             "a4": "A. Bangkok's internet is world-class. Condos typically have 200-1,000 Mbps fiber. Coworking spaces and cafes also offer fast and reliable WiFi.",
             "q5": "Q. Can I make friends easily?",
-            "a5": "A. Bangkok has an active expat and nomad community. Through Facebook groups, Meetups, and coworking events, you'll quickly find friends.",
+            "a5": "A. Bangkok has an active expat and Expat community. Through Facebook groups, Meetups, and coworking events, you'll quickly find friends.",
             "q6": "Q. Can I extend my stay without a visa?",
             "a6": "A. A Tourist visa (or visa exemption) can usually be extended once for 30 days. After that, you must exit or obtain a proper visa (like DTV). Overstaying carries risks of fines and entry bans.",
             "q7": "Q. What about Thai taxes?",
@@ -486,8 +486,8 @@
                 "desc": "Detailed explanation of requirements, documents, and real experiences"
             },
             "map": {
-                "title": "Bangkok Nomad Map",
-                "desc": "Check cafes, coworking, and nomad spots on the map"
+                "title": "Bangkok Expat Map",
+                "desc": "Check cafes, coworking, and Expat spots on the map"
             },
             "cafe": {
                 "title": "Cafe Guide",
@@ -500,7 +500,7 @@
         },
         "summary": {
             "title": "Welcome to Bangkok!",
-            "desc": "Use this guide to start your fulfilling nomad life.",
+            "desc": "Use this guide to start your fulfilling Expat Life.",
             "cta": "Back to Articles"
         }
     }

@@ -1,8 +1,8 @@
 {
-    "NomadTools": {
-        "title": "Nomad Essential Tools",
+    "ExpatTools": {
+        "title": "Expat Essential Tools",
         "subtitle": "Pro-selected tools to dramatically improve\nyour quality of life abroad.",
-        "description": "The optimal solutions for security, money transfer, and connectivity for nomad life in Bangkok.",
+        "description": "The optimal solutions for security, money transfer, and connectivity for Expat Life in Bangkok.",
         "officialSite": "Visit Official Site",
         "disclaimer": "*This page contains affiliate links. We only recommend tools we personally use and trust.",
         "tools": {
@@ -26,7 +26,7 @@
             },
             "safetywing": {
                 "title": "SafetyWing",
-                "desc": "Subscription-based travel insurance. Perfect for nomads with indefinite plans.",
+                "desc": "Subscription-based travel insurance. Perfect for Expats with indefinite plans.",
                 "cta": "See Details",
                 "feature": "Insurance"
             },

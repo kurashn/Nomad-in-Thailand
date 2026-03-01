@@ -10,13 +10,13 @@ export default function BreadcrumbJsonLd() {
     const breadcrumbs = [
         {
             name: "Home",
-            item: "https://nomad-th.com",
+            item: "https://totonoi-thai.com",
         },
     ];
 
     // Split path and accumulate
     const segments = pathname.split("/").filter((p) => p);
-    let currentPath = "https://nomad-th.com";
+    let currentPath = "https://totonoi-thai.com";
 
     segments.forEach((segment) => {
         currentPath += `/${segment}`;

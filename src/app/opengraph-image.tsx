@@ -6,7 +6,7 @@ import { readFile } from 'fs/promises'
 export const runtime = 'nodejs'
 
 // Image metadata
-export const alt = 'Nomad in Thailand -ノマタイ-'
+export const alt = 'TOTONOI THAI - タイ移住×ウェルネス'
 export const size = {
     width: 1200,
     height: 630,
@@ -16,7 +16,7 @@ export const contentType = 'image/png'
 
 export default async function Image() {
     // Load the dog image
-    const imageBuffer = await readFile(join(process.cwd(), 'public/character/nomad-dog-hero-white.png'))
+    const imageBuffer = await readFile(join(process.cwd(), 'public/character/totonoi-logo.png'))
     const imageData = imageBuffer.buffer.slice(imageBuffer.byteOffset, imageBuffer.byteOffset + imageBuffer.byteLength)
 
     return new ImageResponse(
@@ -37,7 +37,7 @@ export default async function Image() {
                 <img
                     // @ts-ignore
                     src={imageData}
-                    alt="Nomad Dog"
+                    alt="TOTONOI THAI Icon"
                     width="300"
                     height="300"
                     style={{
@@ -61,7 +61,7 @@ export default async function Image() {
                         backgroundClip: 'text',
                         color: 'transparent',
                     }}>
-                        Nomad in Thailand
+                        TOTONOI THAI
                     </div>
                     <div style={{
                         fontSize: '36px',
@@ -69,7 +69,7 @@ export default async function Image() {
                         color: '#64748b',
                         letterSpacing: '0.1em',
                     }}>
-                        - ノマタイ -
+                        タイ移住×ウェルネス
                     </div>
                 </div>
             </div>

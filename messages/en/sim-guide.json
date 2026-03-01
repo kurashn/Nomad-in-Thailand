@@ -1,8 +1,8 @@
 {
     "SimGuide": {
         "meta": {
-            "title": "[2026 Guide] SIM Card & SMS Reception in Thailand | Nomad in Thailand",
-            "desc": "Complete guide to the best SIM strategy (AIS/True) and maintaining a Japanese phone number (SMS authentication). Covering Rakuten Mobile vs povo 2.0, dual SIM setup, and essential connectivity for nomads."
+            "title": "[2026 Guide] SIM Card & SMS Reception in Thailand | TOTONOI THAI",
+            "desc": "Complete guide to the best SIM strategy (AIS/True) and maintaining a Japanese phone number (SMS authentication). Covering Rakuten Mobile vs povo 2.0, dual SIM setup, and essential connectivity for Expats."
         },
         "hero": {
             "title": "[2026 Guide] Thailand SIM Strategy",
@@ -11,7 +11,7 @@
         },
         "intro": {
             "p1": "\"Which local SIM has the best signal?\"\n\"I can't receive SMS authentication to log in to my Japanese accounts...\"",
-            "p2": "These are common troubles digital nomad beginners face. The stress of no internet is immeasurable, and losing access to Japanese banking or credit card sites can threaten your livelihood.",
+            "p2": "These are common troubles Expat beginners face. The stress of no internet is immeasurable, and losing access to Japanese banking or credit card sites can threaten your livelihood.",
             "p3": "In conclusion, the strongest lineup in Thailand is <strong>\"Dual SIM\"</strong>.<br>A local high-speed line and a SIM for maintaining your Japanese number. Managing these two on one smartphone is the smart standard for 2026.",
             "related": "Related",
             "checklist": "See Pre-departure Checklist"
@@ -127,7 +127,7 @@
         },
         "japanSim": {
             "title": "[2nd SIM] How to Receive SMS?",
-            "desc": "Even abroad, you'll be asked for \"SMS Authentication\" to log in to home sites (banks, credit cards, gov services). If you cancel your home number, you'll be stuck.<br>The following two services with free (or cheap) roaming are strongest for Japanese nomads.",
+            "desc": "Even abroad, you'll be asked for \"SMS Authentication\" to log in to home sites (banks, credit cards, gov services). If you cancel your home number, you'll be stuck.<br>The following two services with free (or cheap) roaming are strongest for Japanese Expats.",
             "rakuten": {
                 "name": "1. Rakuten Mobile",
                 "badges": {

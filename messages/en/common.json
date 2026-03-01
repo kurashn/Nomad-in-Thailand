@@ -1,11 +1,14 @@
 {
     "Navbar": {
         "top": "Home",
-        "nomadGuide": "Nomad Resources",
-        "nomadTools": "Nomad Tools",
+        "ExpatGuide": "Expat Resources",
+        "ExpatTools": "Expat Tools",
+        "nomadGuide": "Expat Resources",
+        "nomadTools": "Expat Tools",
+        "about": "About TOTONOI THAI",
         "community": "Community",
         "migrationGuide": "Starter Guide",
-        "column": "Articles",
+        "column": "Articles / Columns",
         "interviews": "Interviews",
         "sponsor": "Sponsorship",
         "contact": "Contact",
@@ -18,7 +21,7 @@
     "Breadcrumb": {
         "home": "Home",
         "blog": "Articles",
-        "nomad-info": "Nomad Resources",
+        "Expat-info": "Expat Resources",
         "contact": "Contact",
         "sponsor": "Sponsorship",
         "privacy-policy": "Privacy Policy",
@@ -26,37 +29,38 @@
         "essential-tools": "Essential Tools"
     },
     "Hero": {
-        "title": "Nomad in Thailand",
-        "subtitle": "All you need is a laptop to connect you to the world.\nChoose how you work, choose where you live.",
-        "description": "Your ideal lifestyle starts here.",
-        "cta": "Start Your Nomad Journey"
+        "title": "TOTONOI THAI",
+        "subtitle": "Wellness x Thailand Relocation.\nFind your balance and choose how you live.",
+        "description": "Your new, healthy lifestyle starts here.",
+        "cta": "Start Your Journey",
+        "password": "Password to join: パクチー (Pakchi)"
     },
     "Footer": {
-        "logoAlt": "Nomad in Thailand Logo",
+        "logoAlt": "TOTONOI THAI Logo",
         "contents": {
             "title": "Contents",
-            "guide": "Nomad Guide",
+            "guide": "Expat Guide",
             "community": "Community",
             "sponsor": "Sponsorship"
         },
         "links": {
             "title": "Links",
-            "youtube": "YouTube: Nomad in Thailand",
+            "youtube": "YouTube: TOTONOI THAI",
             "contact": "Contact",
             "newsletter": "Newsletter (Coming Soon)"
         },
-        "copyright": "© 2026 Nomad in Thailand. All rights reserved."
+        "copyright": "© 2026 TOTONOI THAI. All rights reserved."
     },
-    "NomadInfo": {
-        "title": "Nomad Resources",
-        "description": "From visa and coworking to transport and hospitals. A complete roadmap for a successful nomad life in Thailand.",
-        "heading": "Nomad Resources",
-        "intro": "From 'Work & Visa' like taxes and permits to 'Life & Places' like transport and hospitals.\nWe've gathered all the truly useful information selected by local nomads right here.",
+    "ExpatInfo": {
+        "title": "Expat Resources",
+        "description": "From visa and coworking to transport and hospitals. A complete roadmap for a successful Expat Life in Thailand.",
+        "heading": "Expat Resources",
+        "intro": "From 'Work & Visa' like taxes and permits to 'Life & Places' like transport and hospitals.\nWe've gathered all the truly useful information selected by local Expats right here.",
         "starterKit": {
             "label": "Essential Tools",
-            "title": "Nomad Starter Kit",
+            "title": "Expat Starter Kit",
             "subtitle": "The 4 Essentials for Life in Thailand",
-            "insurance": "Nomad Insurance",
+            "insurance": "Expat Insurance",
             "money": "Global Money App",
             "esim": "eSIM Connectivity",
             "vpn": "VPN Security",
@@ -64,20 +68,20 @@
         },
         "guides": {
             "label": "Guide Articles",
-            "title": "Thailand Nomad & Migration Guides",
-            "subtitle": "From visa to neighborhoods, connectivity to healthcare. Everything you need for nomad life in Thailand.",
+            "title": "Thailand Expat & Migration Guides",
+            "subtitle": "From visa to neighborhoods, connectivity to healthcare. Everything you need for Expat Life in Thailand.",
             "dtvVisa": "DTV Visa Complete Guide",
             "dtvVisaDesc": "Requirements, costs & documents from real experience",
             "bangkokRoadmap": "Bangkok Migration Roadmap",
             "bangkokRoadmapDesc": "Complete timeline from pre-departure to settling in",
             "cafeGuide": "Top 7 Work Cafes in Bangkok",
-            "cafeGuideDesc": "Power outlets & Wi-Fi ready cafes for nomads",
+            "cafeGuideDesc": "Power outlets & Wi-Fi ready cafes for Expats",
             "coworkingGuide": "Coworking Space Guide",
-            "coworkingGuideDesc": "Top 3 picks for Japanese nomads compared",
+            "coworkingGuideDesc": "Top 3 picks for Japanese Expats compared",
             "taxMoneyGuide": "Money & Tax Guide",
             "taxMoneyGuideDesc": "Living costs, 180-day rule & foreign income",
             "areaGuide": "Bangkok Area Guide",
-            "areaGuideDesc": "Best neighborhoods for nomads explained",
+            "areaGuideDesc": "Best neighborhoods for Expats explained",
             "medicalGuide": "Medical & Hospital Guide",
             "medicalGuideDesc": "Healthcare in Thailand & Japanese-speaking hospitals",
             "simGuide": "SIM & Connectivity Guide",
@@ -88,7 +92,7 @@
         }
     },
     "Contact": {
-        "title": "Contact | Nomad in Thailand",
+        "title": "Contact | TOTONOI THAI",
         "header": {
             "title": "Contact Us",
             "subtitle": "We accept requests for interviews, questions about the community,\nand other inquiries here."
@@ -108,7 +112,7 @@
             "desc": "Partnerships to expand our activities.",
             "items": {
                 "0": "Application for Podcast Sponsorship",
-                "1": "Interviews on Thailand/Nomad topics",
+                "1": "Interviews on Thailand/Expat topics",
                 "2": "Speaking/Co-hosting requests",
                 "3": "Promotion planning consultation"
             },
@@ -131,23 +135,23 @@
     },
     "Newsletter": {
         "inline": {
-            "title": "Get the Latest Bangkok Nomad Info",
+            "title": "Get the Latest Bangkok Expat Info",
             "desc": "Get exclusive guidebooks and <bold>hidden spots</bold> delivered to your inbox. (Coming Soon)",
             "cta": "Subscribe (Coming Soon)"
         },
         "section": {
-            "title": "Free Gift:\nBangkok Nomad Complete Guide",
-            "desc": "Get the <bold>Bangkok Nomad Cheat Sheet (PDF)</bold> for free.",
+            "title": "Free Gift:\nBangkok Expat Complete Guide",
+            "desc": "Get the <bold>Bangkok Expat Cheat Sheet (PDF)</bold> for free.",
             "cta": "Get the Guide",
             "note": "*Currently preparing. Please stay tuned."
         }
     },
     "SidebarTools": {
-        "title": "Nomad Essentials",
+        "title": "Expat Essentials",
         "description": "The 'God Tools' we actually use daily in Thailand.",
         "insurance": {
             "name": "SafetyWing",
-            "desc": "Must-have subscription insurance for nomads.",
+            "desc": "Must-have subscription insurance for Expats.",
             "link": "Read Review"
         },
         "money": {
@@ -169,13 +173,13 @@
         "banner": {
             "community": {
                 "label": "LINE OpenChat",
-                "title": "Thai Nomad Community\n(Free to Join)",
-                "desc": "A LINE group for nomads in Thailand to exchange real info.",
+                "title": "Thai Expat Community\n(Free to Join)",
+                "desc": "A LINE group for Expats in Thailand to exchange real info.",
                 "cta": "Join Now"
             },
             "sponsor": {
                 "title": "Advertise Here?",
-                "desc": "Reach Japanese nomads interested in Thailand.",
+                "desc": "Reach Japanese Expats interested in Thailand.",
                 "cta": "Sponsorship Info"
             },
             "retreat": {
@@ -187,7 +191,7 @@
         "title": "Popular Posts",
         "posts": {
             "thailand-migration-guide": "Thailand Migration Guide: Visa, Cost, & Areas",
-            "dtv-visa": "DTV Visa Complete Guide: 5-Year Stay for Nomads",
+            "dtv-visa": "DTV Visa Complete Guide: 5-Year Stay for Expats",
             "bangkok-living-cost": "Real Cost of Living in Bangkok (Budget Breakdown)",
             "bangkok-roadmap": "Bangkok Migration Roadmap"
         }

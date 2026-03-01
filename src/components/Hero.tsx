@@ -1,14 +1,12 @@
 "use client";
 
-import { useTranslations, useLocale } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { useTranslations } from 'next-intl';
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
     const t = useTranslations('Hero');
-    const locale = useLocale();
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -35,8 +33,8 @@ export default function Hero() {
             {/* Background Image with Parallax-like effect (simplest via fixed/absolute) */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/coworking_tech_hub.png"
-                    alt="Modern Tech Hub Coworking Space in Bangkok"
+                    src="/images/wellness_resort_sauna.png"
+                    alt="Tropical Wellness Sauna Resort in Thailand"
                     fill
                     className="object-cover"
                     priority
@@ -52,27 +50,15 @@ export default function Hero() {
                 initial="hidden"
                 animate="visible"
             >
-                {/* Animated Dog Character */}
-                <motion.div variants={itemVariants} className="flex justify-center mb-8">
-                    <motion.div
-                        className="relative w-32 h-32 md:w-40 md:h-40"
-                        animate={{
-                            y: [0, -15, 0], // Floating effect
-                        }}
-                        transition={{
-                            duration: 4,
-                            repeat: Infinity,
-                            ease: "easeInOut",
-                        }}
-                    >
-                        <Image
-                            src="/character/nomad-dog-hero-transparent.png"
-                            alt="Nomad Dog"
-                            fill
-                            className="object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.6)]"
-                            priority
-                        />
-                    </motion.div>
+                {/* Logo */}
+                <motion.div variants={itemVariants} className="flex justify-center mb-6">
+                    <Image
+                        src="/character/totonoi-logo.png" unoptimized
+                        alt="TOTONOI THAI"
+                        width={120}
+                        height={120}
+                        className="drop-shadow-2xl"
+                    />
                 </motion.div>
 
                 {/* Main Title */}
@@ -85,14 +71,14 @@ export default function Hero() {
 
                 {/* Subtitle & Description */}
                 <motion.div variants={itemVariants} className="mb-12">
-                    <p className="text-xl md:text-3xl text-slate-100 font-bold drop-shadow-lg whitespace-pre-line leading-relaxed">
+                    <p className="text-lg md:text-3xl text-slate-100 font-bold drop-shadow-lg whitespace-pre-line leading-relaxed">
                         {t.rich('subtitle', {
-                            nowrap: (chunks) => <span className="inline-block whitespace-nowrap">{chunks}</span>
+                            nowrap: (chunks) => <span className="inline-block md:whitespace-nowrap">{chunks}</span>
                         })}
                     </p>
                     <p className="text-base md:text-xl text-slate-200/90 mt-6 max-w-3xl mx-auto leading-relaxed font-medium">
                         {t.rich('description', {
-                            nowrap: (chunks) => <span className="inline-block whitespace-nowrap">{chunks}</span>
+                            nowrap: (chunks) => <span className="inline-block md:whitespace-nowrap">{chunks}</span>
                         })}
                     </p>
                 </motion.div>
@@ -100,11 +86,11 @@ export default function Hero() {
                 {/* CTA Button */}
                 <motion.div
                     variants={itemVariants}
-                    className="flex flex-col sm:flex-row items-center justify-center gap-5"
+                    className="flex flex-col items-center justify-center gap-5"
                 >
-                    <Link href={locale === 'ja' ? "/nomad-info/community" : "/nomad-info"} className="group">
+                    <a href="https://lin.ee/DqxeADk" target="_blank" rel="noopener noreferrer" className="group">
                         <motion.div
-                            className="px-10 py-5 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold text-xl flex items-center gap-3 shadow-[0_10px_40px_-10px_rgba(45,212,191,0.5)] border border-white/20 backdrop-blur-md"
+                            className="px-5 py-3.5 md:px-10 md:py-5 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold text-sm md:text-xl flex items-center gap-2 md:gap-3 shadow-[0_10px_40px_-10px_rgba(45,212,191,0.5)] border border-white/20 backdrop-blur-md"
                             whileHover={{
                                 scale: 1.05,
                                 boxShadow: "0 20px 50px -10px rgba(45,212,191,0.6)"
@@ -116,10 +102,18 @@ export default function Hero() {
                                 animate={{ x: [0, 4, 0] }}
                                 transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
                             >
-                                <ArrowRight className="w-6 h-6" />
+                                <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
                             </motion.span>
                         </motion.div>
-                    </Link>
+                    </a>
+
+                    {/* Password Text */}
+                    <motion.p
+                        variants={itemVariants}
+                        className="text-sm font-bold text-teal-400 mt-2 tracking-wider"
+                    >
+                        {t('password')}
+                    </motion.p>
                 </motion.div>
             </motion.div>
 

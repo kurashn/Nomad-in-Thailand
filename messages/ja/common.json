@@ -1,11 +1,14 @@
 {
     "Navbar": {
         "top": "TOP",
-        "nomadGuide": "ノマド生活情報",
-        "nomadTools": "ノマドツール",
+        "ExpatGuide": "タイ移住情報",
+        "ExpatTools": "必須ツール",
+        "nomadGuide": "タイ移住情報",
+        "nomadTools": "必須ツール",
+        "about": "TOTONOI THAIとは",
         "community": "コミュニティ",
         "migrationGuide": "タイ移住ガイド",
-        "column": "ブログ一覧",
+        "column": "ブログ・コラム",
         "interviews": "インタビュー",
         "sponsor": "スポンサー募集",
         "contact": "お問い合わせ",
@@ -18,24 +21,25 @@
     "Breadcrumb": {
         "home": "TOP",
         "blog": "記事一覧",
-        "nomad-info": "ノマド生活情報",
+        "Expat-info": "タイ移住情報",
         "contact": "お問い合わせ",
         "sponsor": "スポンサー募集",
         "privacy-policy": "プライバシーポリシー",
         "terms": "利用規約",
-        "essential-tools": "ノマド必須ツール"
+        "essential-tools": "タイ移住必須ツール"
     },
     "Hero": {
-        "title": "Nomad in Thailand",
-        "subtitle": "PC1台で、世界はもっと近くなる。\n働き方も、住む場所も、<nowrap>自分で選ぶ自由を。</nowrap>",
-        "description": "あなたの理想のライフスタイルが、\n<nowrap>ここから始まります。</nowrap>",
-        "cta": "ノマド生活を始める"
+        "title": "TOTONOI THAI",
+        "subtitle": "AI時代に「人間力」を鍛え直す、\n<nowrap>タイ移住・ウェルネスコミュニティ</nowrap>",
+        "description": "タイで心と体を整える。\n<nowrap>無料のオープンチャットで、まずはコミュニティの雰囲気を覗いてみませんか？</nowrap>",
+        "cta": "無料でオープンチャットに参加",
+        "password": "参加時の合言葉：パクチー"
     },
     "Footer": {
-        "logoAlt": "Nomad in Thailand ロゴ",
+        "logoAlt": "TOTONOI THAI ロゴ",
         "contents": {
             "title": "コンテンツ",
-            "guide": "タイノマド攻略ガイド",
+            "guide": "タイ移住攻略ガイド",
             "community": "コミュニティ",
             "sponsor": "スポンサー募集"
         },
@@ -45,18 +49,18 @@
             "contact": "お問い合わせ",
             "newsletter": "公式LINE (特典あり)"
         },
-        "copyright": "© 2026 Nomad in Thailand -ノマタイ-. All rights reserved."
+        "copyright": "© 2026 TOTONOI THAI. All rights reserved."
     },
-    "NomadInfo": {
-        "title": "ノマド生活情報",
-        "description": "ビザ、コワーキングから移動手段、病院まで。タイでのノマド生活を成功させるための完全ロードマップ。",
-        "heading": "ノマド生活情報",
-        "intro": "ビザや税金などの「仕事・実務」から、移動や病院などの「生活情報」まで。\n現地在住ノマドが厳選した、本当に役立つ全情報をここに集約しました。",
+    "ExpatInfo": {
+        "title": "タイ移住情報",
+        "description": "ビザ、コワーキングから移動手段、病院まで。タイでの移住生活を成功させるための完全ロードマップ。",
+        "heading": "タイ移住情報",
+        "intro": "ビザや税金などの「実務」から、移動や病院などの「生活情報」まで。\n現地在住者が厳選した、本当に役立つ全情報をここに集約しました。",
         "starterKit": {
-            "label": "海外ノマドの必需品",
-            "title": "ノマドスターターキット",
+            "label": "タイ移住の必需品",
+            "title": "移住スターターキット",
             "subtitle": "まずはこれだけ。タイ生活の必需品4点セット",
-            "insurance": "ノマド保険",
+            "insurance": "海外保険",
             "money": "海外送金・決済",
             "esim": "eSIM・通信",
             "vpn": "VPNセキュリティ",
@@ -64,20 +68,20 @@
         },
         "guides": {
             "label": "ガイド記事",
-            "title": "タイ移住・ノマド生活ガイド",
-            "subtitle": "ビザ・エリア・通信・医療まで。タイノマドに必要な情報を完全網羅。",
+            "title": "タイ移住・海外生活ガイド",
+            "subtitle": "ビザ・エリア・通信・医療まで。タイ移住に必要な情報を完全網羅。",
             "dtvVisa": "DTVビザ完全ガイド",
             "dtvVisaDesc": "申請条件・費用・書類を実体験から徹底解説",
             "bangkokRoadmap": "バンコク移住ロードマップ",
             "bangkokRoadmapDesc": "渡航前〜到着後の完全タイムライン",
             "cafeGuide": "バンコク作業カフェ7選",
-            "cafeGuideDesc": "電源・Wi-Fi完備のノマド向けカフェ",
+            "cafeGuideDesc": "電源・Wi-Fi完備の落ち着くカフェ",
             "coworkingGuide": "コワーキングスペースガイド",
-            "coworkingGuideDesc": "日本人ノマドおすすめ3選を徹底比較",
+            "coworkingGuideDesc": "日本人移住者おすすめ3選を徹底比較",
             "taxMoneyGuide": "お金・税金ガイド",
             "taxMoneyGuideDesc": "生活費・180日ルール・国外源泉所得",
             "areaGuide": "バンコクエリアガイド",
-            "areaGuideDesc": "ノマドにおすすめのエリアを徹底解説",
+            "areaGuideDesc": "移住者におすすめのエリアを徹底解説",
             "medicalGuide": "医療・病院ガイド",
             "medicalGuideDesc": "タイの医療事情と日本語対応病院",
             "simGuide": "SIM・通信ガイド",
@@ -108,7 +112,7 @@
             "desc": "活動の幅を広げるためのパートナーシップ。",
             "items": {
                 "0": "番組スポンサーへのご応募",
-                "1": "タイ移住・ノマド関連の取材",
+                "1": "タイ移住・ウェルネス関連の取材",
                 "2": "イベント登壇・共催のご依頼",
                 "3": "プロモーション企画のご相談"
             },
@@ -137,17 +141,17 @@
         },
         "section": {
             "title": "タイ移住の「失敗」を\nゼロにするために。",
-            "desc": "公式LINE限定で、<bold>「ノマド生活ロードマップ」</bold>と\n<bold>「非公開の移住マニュアル」</bold>を無料配布しています。",
+            "desc": "公式LINE限定で、<bold>「タイ移住ロードマップ」</bold>と\n<bold>「非公開の移住マニュアル」</bold>を無料配布しています。",
             "cta": "公式LINEで特典を受け取る",
             "note": "※ブロックはいつでも可能です。お気軽にどうぞ。"
         }
     },
     "SidebarTools": {
-        "title": "海外ノマドの必需品",
-        "description": "僕たちノマドが実際にタイ生活で使っている「神ツール」を紹介します。",
+        "title": "タイ移住の必需品",
+        "description": "私たちが実際にタイ生活で使っている「神ツール」を紹介します。",
         "insurance": {
             "name": "SafetyWing",
-            "desc": "ノマド専用のサブスク保険。これがないと不安で旅できません。",
+            "desc": "長期滞在者向けのサブスク保険。これがないと不安で旅できません。",
             "link": "レビューを読む"
         },
         "money": {
@@ -175,7 +179,7 @@
             },
             "sponsor": {
                 "title": "この枚に広告を掲載しませんか？",
-                "desc": "タイ移住・ノマドに興味のある日本人にリーチできます。",
+                "desc": "タイ移住・ウェルネスに興味のある日本人にリーチできます。",
                 "cta": "スポンサー募集を見る"
             },
             "retreat": {

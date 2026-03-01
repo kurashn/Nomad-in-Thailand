@@ -1,8 +1,8 @@
 {
     "CheatSheet": {
         "meta": {
-            "title": "Bangkok Nomad Cheat Sheet 2026 PRO (Print Optimized)",
-            "desc": "The ultimate cheat sheet for Bangkok nomads (Complete Edition)."
+            "title": "Bangkok Expat Cheat Sheet 2026 PRO (Print Optimized)",
+            "desc": "The ultimate cheat sheet for Bangkok Expats (Complete Edition)."
         },
         "nav": {
             "back": "Back to Map",
@@ -11,7 +11,7 @@
         "header": {
             "edition": "2026 EDITION",
             "official": "OFFICIAL GUIDE",
-            "title1": "BANGKOK NOMAD",
+            "title1": "BANGKOK Expat",
             "title2": "CHEAT SHEET"
         },
         "visa": {
@@ -136,7 +136,7 @@
         },
         "qr": {
             "desc": "Latest info & events on Web",
-            "scan": "nomad-th.com<br />Scan for more"
+            "scan": "Expat-th.com<br />Scan for more"
         }
     }
 }

@@ -1,19 +1,19 @@
 {
     "CreditCard": {
         "meta": {
-            "title": "Top 3 Credit Cards for Thailand Nomads (2026) | Save $300+ on Insurance",
-            "desc": "Essential guide for Digital Nomads in Thailand. We compare the best credit cards with free overseas travel insurance. From the free Epos Card to the premium Marriott Amex.",
-            "keywords": "Thailand Nomad, Digital Nomad Insurance, Credit Card Travel Insurance, Epos Card, Rakuten Premium, Marriott Bonvoy Amex, Free Medical Care Thailand"
+            "title": "Top 3 Credit Cards for Thailand Expats (2026) | Save $300+ on Insurance",
+            "desc": "Essential guide for Expats & Wellness Seekers in Thailand. We compare the best credit cards with free overseas travel insurance. From the free Epos Card to the premium Marriott Amex.",
+            "keywords": "Thailand Expat, Expat Insurance, Credit Card Travel Insurance, Epos Card, Rakuten Premium, Marriott Bonvoy Amex, Free Medical Care Thailand"
         },
         "hero": {
             "back": "Back to Guides",
-            "title": "Must-Haves for Thailand Nomads\n<subtag>Top 3 Credit Cards with Free Overseas Insurance</subtag>",
+            "title": "Must-Haves for Thailand Expats\n<subtag>Top 3 Credit Cards with Free Overseas Insurance</subtag>",
             "update": "Updated Jan 2026"
         },
         "intro": {
             "p1": "\"Travel insurance is too expensive...\"\n\"I just want coverage for minor sickness and accidents.\"",
             "p2": "Heading to Thailand soon? One item you simply cannot leave Japan without is the right **Credit Card**.\nDid you know that you can get **90 days of overseas medical insurance** for free, just by using your card for airport transport?",
-            "p3": "In this guide, we've hand-picked the **3 essential cards** that every Digital Nomad in Thailand should carry.\nHaving these cards alone can save you roughly **30,000 to 50,000 JPY ($200-$350)** in insurance premiums per trip."
+            "p3": "In this guide, we've hand-picked the **3 essential cards** that every Digital TOTONOI THAI should carry.\nHaving these cards alone can save you roughly **30,000 to 50,000 JPY ($200-$350)** in insurance premiums per trip."
         },
         "insurance_system": {
             "title": "Critical: \"Automatic\" vs. \"Utilization\" Coverage",
@@ -54,7 +54,7 @@
             "cta_text": "If you don't have a reliable card yet, the Epos Card is the safest bet for high coverage."
         },
         "cards": {
-            "title": "Top 3 Cards for Thailand Nomads",
+            "title": "Top 3 Cards for Thailand Expats",
             "epos": {
                 "name": "Epos Card",
                 "catch": "[Essential] Free for Life & High Coverage",
@@ -64,7 +64,7 @@
                     "Medical Limit: Max 2.7 Million JPY (Gold-tier level)",
                     "Speed: Same-day issuance available"
                 ],
-                "desc": "The single best free card for travel insurance. Although it requires \"Utilization\" (paying for transport), the **2.7 Million JPY** medical coverage is incredibly high for a free card. A must-have for every nomad.",
+                "desc": "The single best free card for travel insurance. Although it requires \"Utilization\" (paying for transport), the **2.7 Million JPY** medical coverage is incredibly high for a free card. A must-have for every Expat.",
                 "cta": "Apply for Epos Card (Official)"
             },
             "rakuten": {
@@ -115,7 +115,7 @@
         },
         "warning": {
             "title": "Important: 90-Day Limit",
-            "desc": "Credit card insurance typically covers you for **90 days** from departure.\nIf you plan to stay in Thailand longer than 3 months, you MUST switch to a nomad insurance like **SafetyWing**. Staying uninsured is a major financial risk.",
+            "desc": "Credit card insurance typically covers you for **90 days** from departure.\nIf you plan to stay in Thailand longer than 3 months, you MUST switch to a Expat insurance like **SafetyWing**. Staying uninsured is a major financial risk.",
             "link": "Learn about SafetyWing (Post-90 Days)"
         },
         "faq": {
