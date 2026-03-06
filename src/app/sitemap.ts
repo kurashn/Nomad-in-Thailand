@@ -16,10 +16,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         '/nomad-info/tax-money-guide',
         '/nomad-info/dtv-visa',
         '/nomad-info/cafe-guide',
-        '/nomad-info/wise',
-        '/nomad-info/airalo',
-        '/nomad-info/nordvpn',
-        '/nomad-info/safetywing',
         '/nomad-info/sponsor',
         // Living Guide
         '/living/area-guide',

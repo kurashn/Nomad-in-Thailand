@@ -20,8 +20,6 @@ export default function Navbar() {
 
     const menuItems = [
         { href: "/#about", label: t('about') },
-        { href: "/#community", label: t('community') },
-        { href: "/blog/thailand-migration-guide", label: t('migrationGuide') },
         { href: "/blog", label: t('column') },
     ];
 
