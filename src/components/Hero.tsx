@@ -88,7 +88,7 @@ export default function Hero() {
                     variants={itemVariants}
                     className="flex flex-col items-center justify-center gap-5"
                 >
-                    <a href="https://lin.ee/E1QFFRn" target="_blank" rel="noopener noreferrer" className="group">
+                    <a href="https://lin.ee/VRrmYI1" target="_blank" rel="noopener noreferrer" className="group">
                         <motion.div
                             className="px-5 py-3.5 md:px-10 md:py-5 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold text-sm md:text-xl flex items-center gap-2 md:gap-3 shadow-[0_10px_40px_-10px_rgba(45,212,191,0.5)] border border-white/20 backdrop-blur-md"
                             whileHover={{

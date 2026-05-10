@@ -134,7 +134,7 @@ export default function Navbar() {
                             {/* Official LINE Button */}
                             <div className="px-4 mb-6">
                                 <a
-                                    href="https://lin.ee/DqxeADk"
+                                    href="https://lin.ee/VRrmYI1"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center justify-center w-full px-5 py-4 rounded-xl bg-[#06C755] text-white font-bold shadow-md hover:bg-[#05b34c] transition-colors"

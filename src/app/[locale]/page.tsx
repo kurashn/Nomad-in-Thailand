@@ -30,7 +30,7 @@ export default async function Home() {
       {/* Feature Section (Thailand Migration Guide) */}
       <section className="py-16 px-4 bg-[#FFFBF7] border-b border-slate-200">
         <div className="max-w-6xl mx-auto">
-          <Link href="https://lin.ee/DqxeADk" className="block group" target="_blank" rel="noopener noreferrer">
+          <Link href="https://lin.ee/VRrmYI1" className="block group" target="_blank" rel="noopener noreferrer">
             <div className="relative overflow-hidden rounded-[2rem] bg-[#2C3E50] shadow-2xl transition-all duration-500 hover:shadow-[#2C3E50]/20 hover:-translate-y-1">
               {/* Background Image with Overlay */}
               <div className="absolute inset-0 z-0">

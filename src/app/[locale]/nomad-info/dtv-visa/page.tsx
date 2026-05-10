@@ -440,7 +440,7 @@ export default function DtvVisaPage() {
                                 responsiveBr: () => <br className="hidden sm:inline" />
                             })}
                         </p>
-                        <a href="https://lin.ee/E1QFFRn" target="_blank" className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#06C755]/90 text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 shadow-md">
+                        <a href="https://lin.ee/VRrmYI1" target="_blank" className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#06C755]/90 text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 shadow-md">
                             {t('line.cta')} <ArrowRight className="w-4 h-4" />
                         </a>
                     </div>

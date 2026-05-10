@@ -44,7 +44,7 @@ export default function Footer() {
                             </li>
                             <li><Link href="/contact" className="text-slate-500 hover:text-blue-600 transition-colors">{t('links.contact')}</Link></li>
                             <li>
-                                <a href="https://lin.ee/DqxeADk" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#06C755] transition-colors font-bold">
+                                <a href="https://lin.ee/VRrmYI1" target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-[#06C755] transition-colors font-bold">
                                     {t('links.newsletter')}
                                 </a>
                             </li>

@@ -75,7 +75,7 @@ export default config({
                                 }),
                                 url: fields.text({
                                     label: 'LINE URL',
-                                    defaultValue: 'https://lin.ee/E1QFFRn',
+                                    defaultValue: 'https://lin.ee/VRrmYI1',
                                 }),
                             },
                         }),

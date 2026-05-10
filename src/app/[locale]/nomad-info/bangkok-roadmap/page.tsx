@@ -650,7 +650,7 @@ export default function BangkokRoadmapPage() {
                                 <h3 className="font-bold text-lg mb-2 text-foreground">{t('community.line.title')}</h3>
                                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{t('community.line.desc')}</p>
                                 <div className="flex flex-col gap-3">
-                                    <a href="https://line.me/ti/g2/M_0JA6IBztNpzLUOfWVaay5sKNPxQypjNDtObQ?utm_source=invitation&utm_medium=link_copy&utm_campaign=default" target="_blank" className="text-primary font-bold text-sm hover:underline inline-flex items-center gap-1">
+                                    <a href="https://lin.ee/VRrmYI1" target="_blank" className="text-primary font-bold text-sm hover:underline inline-flex items-center gap-1">
                                         {t('community.line.cta')} <ArrowRight className="w-4 h-4" />
                                     </a>
                                     <a href="https://youtu.be/Ak4-4HWnNLU?si=riuMMU34diPCn8bt" target="_blank" className="text-muted-foreground text-xs hover:text-red-500 transition-colors inline-flex items-center gap-2">
