@@ -159,36 +159,6 @@ export default async function RootLayout({
     ]
   };
 
-  const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === 'true' || true; // Set to true to force maintenance mode
-
-  if (isMaintenanceMode) {
-    return (
-      <html lang={locale}>
-        <head>
-          <title>メンテナンス中 | TOTONOI THAI</title>
-        </head>
-        <body
-          className={`${inter.variable} ${notoSansJP.variable} ${merriweather.variable} ${zenOldMincho.variable} antialiased bg-[#0B0F19] text-white font-sans flex flex-col min-h-screen items-center justify-center p-4`}
-        >
-          {/* Dynamic Background */}
-          <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-[0.03]"></div>
-          <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-indigo-500/30 to-transparent"></div>
-          <div className="absolute -top-[20%] right-[10%] w-[600px] h-[600px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow"></div>
-          <div className="absolute -bottom-[20%] left-[10%] w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none animate-pulse-slow delay-1000"></div>
-
-          <div className="max-w-md w-full p-12 bg-slate-900/60 border border-slate-700/50 rounded-[2rem] text-center shadow-2xl backdrop-blur-md relative z-10">
-            <h1 className="text-3xl md:text-4xl font-black text-white tracking-widest font-sans uppercase">
-              Maintenance
-            </h1>
-            <p className="text-slate-300 font-medium tracking-widest mt-6 text-sm md:text-base">
-              メンテナンス中
-            </p>
-          </div>
-        </body>
-      </html>
-    );
-  }
-
   return (
     <html lang={locale}>
       <head>
