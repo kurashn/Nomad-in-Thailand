@@ -8,7 +8,7 @@
         "about": "TOTONOI THAIとは",
         "community": "コミュニティ",
         "migrationGuide": "タイ移住ガイド",
-        "column": "ブログ・コラム",
+        "column": "タイ生活情報",
         "interviews": "インタビュー",
         "sponsor": "スポンサー募集",
         "contact": "お問い合わせ",
@@ -30,10 +30,10 @@
     },
     "Hero": {
         "title": "TOTONOI THAI",
-        "subtitle": "AI時代に「人間力」を鍛え直す、\n<nowrap>タイ移住・ウェルネスコミュニティ</nowrap>",
-        "description": "タイで心と体を整える。\n<nowrap>無料のオープンチャットで、まずはコミュニティの雰囲気を覗いてみませんか？</nowrap>",
-        "cta": "無料でオープンチャットに参加",
-        "password": "参加時の合言葉：パクチー"
+        "subtitle": "「整える」を、タイでやる。",
+        "description": "ヴィラ合宿・アイスバス・朝ラン・筋トレ。\n仲間と、自分に戻る。",
+        "cta": "公式LINEで合宿・イベント情報を受け取る",
+        "password": ""
     },
     "Footer": {
         "logoAlt": "TOTONOI THAI ロゴ",

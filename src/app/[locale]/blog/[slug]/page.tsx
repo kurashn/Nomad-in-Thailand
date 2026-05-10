@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props) {
             const thumbnailMatch = frontmatter.match(/thumbnail:\s*(.+)/);
 
             const title = titleMatch ? titleMatch[1].trim() : 'Nomad in Thailand';
-            const description = descriptionMatch ? descriptionMatch[1].trim() : 'タイ在住の日本人ノマドのためのコミュニティメディア';
+            const description = descriptionMatch ? descriptionMatch[1].trim() : 'タイ在住の日本人ノマドのためのライフスタイルメディア';
             const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.jpg';
 
             return {

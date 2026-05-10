@@ -30,7 +30,6 @@ export default function Footer() {
                         <ul className="space-y-3">
 
                             <li><Link href="/nomad-info/bangkok-roadmap" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.guide')}</Link></li>
-                            <li><Link href="/nomad-info/sponsor" className="text-slate-500 hover:text-blue-600 transition-colors">{t('contents.sponsor')}</Link></li>
                         </ul>
                     </div>
 

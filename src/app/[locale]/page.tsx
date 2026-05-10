@@ -15,14 +15,11 @@ export default async function Home() {
   // Fetch latest posts
   const posts = await reader.collections.posts.all();
 
-  // Sort by date, newest first and take top 3
-  const latestPosts = [...posts]
-    .sort((a, b) => {
-      const dateA = a.entry.publishedDate ? new Date(a.entry.publishedDate).getTime() : 0;
-      const dateB = b.entry.publishedDate ? new Date(b.entry.publishedDate).getTime() : 0;
-      return dateB - dateA;
-    })
-    .slice(0, 3);
+  // Select specific important articles for the top page
+  const targetSlugs = ['thailand-migration-guide', 'thailand-long-term-visa-comparison', 'bangkok-living-cost'];
+  const latestPosts = targetSlugs
+    .map(slug => posts.find(p => p.slug === slug))
+    .filter((post): post is NonNullable<typeof post> => post !== undefined);
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -87,12 +84,12 @@ export default async function Home() {
                     <div className="absolute inset-0 bg-[#2C3E50] p-6 flex flex-col justify-between">
                       <div className="border border-[#e9c46a]/30 h-full w-full p-4 flex flex-col items-center justify-center text-center">
                         <div className="w-16 h-16 bg-[#e9c46a] rounded-full flex items-center justify-center mb-6 shadow-md">
-                          <ArrowUpRight className="w-8 h-8 text-[#2C3E50]" />
+                          <MessageCircle className="w-8 h-8 text-[#2C3E50]" />
                         </div>
-                        <h3 className="font-serif text-3xl text-[#e9c46a] mb-4 leading-tight font-bold">失敗しない<br />タイ移住<br />完全ガイド</h3>
+                        <h3 className="font-serif text-3xl text-[#e9c46a] mb-4 leading-tight font-bold">公式LINE<br />友だち追加<br />はこちら</h3>
                         <div className="w-10 h-1 bg-white/20 my-2"></div>
-                        <p className="text-white/60 text-[10px] font-serif tracking-widest mt-2">FAILURE-FREE</p>
-                        <p className="text-white/40 text-[10px] mt-8">2026 EDITION</p>
+                        <p className="text-white/60 text-[10px] font-serif tracking-widest mt-2">OFFICIAL LINE</p>
+                        <p className="text-white/40 text-[10px] mt-8">EVENT INFO</p>
                       </div>
                     </div>
                     {/* Gloss effect */}
@@ -135,7 +132,7 @@ export default async function Home() {
           </p>
 
           {/* Description */}
-          <p className="text-slate-400 text-base md:text-lg leading-loose mb-16 max-w-2xl mx-auto text-center font-medium whitespace-pre-line">
+          <p className="text-slate-400 text-base md:text-lg leading-loose mb-16 max-w-5xl mx-auto text-left md:text-center font-medium whitespace-pre-line">
             {tHome('about.description')}
           </p>
 
@@ -278,23 +275,7 @@ export default async function Home() {
           </div>
 
           <div className="space-y-4">
-            {/* News 1: Sponsor Recruitment (Newest First) */}
-            <Link href="/nomad-info/sponsor" className="block group">
-              <div className="flex flex-col md:flex-row md:items-center gap-4 p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md hover:border-orange-200 hover:translate-x-1 transition-all duration-300">
-                <div className="flex items-center gap-4 shrink-0 min-w-[140px]">
-                  <span className="text-slate-400 text-sm font-mono tracking-wider">{tHome('events.sponsor.date')}</span>
-                  <span className="px-2.5 py-1 rounded-md text-[11px] font-bold bg-orange-100 text-orange-700 tracking-wide">{tHome('events.sponsor.tag')}</span>
-                </div>
-                <div className="flex items-center justify-between w-full gap-4">
-                  <p className="text-slate-700 font-bold group-hover:text-orange-600 transition-colors text-lg">
-                    {tHome('events.sponsor.title')}
-                  </p>
-                  <div className="w-8 h-8 rounded-full bg-slate-50 flex items-center justify-center group-hover:bg-orange-50 transition-colors">
-                    <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-orange-400 transition-colors" />
-                  </div>
-                </div>
-              </div>
-            </Link>
+
 
             {/* News 2: Site Launch */}
             <div className="flex flex-col md:flex-row md:items-center gap-4 p-6 rounded-2xl bg-white border border-slate-100 shadow-sm hover:shadow-md transition-all duration-300 cursor-default">

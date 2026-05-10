@@ -76,7 +76,7 @@ export default function Hero() {
                             nowrap: (chunks) => <span className="inline-block md:whitespace-nowrap">{chunks}</span>
                         })}
                     </p>
-                    <p className="text-base md:text-xl text-slate-200/90 mt-6 max-w-3xl mx-auto leading-relaxed font-medium">
+                    <p className="text-base md:text-xl text-slate-200/90 mt-6 max-w-3xl mx-auto leading-relaxed font-medium whitespace-pre-line">
                         {t.rich('description', {
                             nowrap: (chunks) => <span className="inline-block md:whitespace-nowrap">{chunks}</span>
                         })}
@@ -107,13 +107,7 @@ export default function Hero() {
                         </motion.div>
                     </a>
 
-                    {/* Password Text */}
-                    <motion.p
-                        variants={itemVariants}
-                        className="text-sm font-bold text-teal-400 mt-2 tracking-wider"
-                    >
-                        {t('password')}
-                    </motion.p>
+
                 </motion.div>
             </motion.div>
 

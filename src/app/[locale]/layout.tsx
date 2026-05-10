@@ -35,8 +35,8 @@ const zenOldMincho = Zen_Old_Mincho({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://totonoi-thai.com"),
-  title: "TOTONOI THAI - タイ移住×ウェルネス | タイ移住・ウェルネスコミュニティ",
-  description: "タイ移住とウェルネスをテーマにしたコミュニティメディア「TOTONOI THAI」。バンコク、チェンマイなどの移住情報、ビザ情報のほか、サウナ、リトリート、デジタルデトックスなど心と体を整えるタイ生活を発信。",
+  title: "TOTONOI THAI - タイ移住×ウェルネス | タイ生活ライフスタイルメディア",
+  description: "タイ移住とウェルネスをテーマにしたライフスタイルメディア「TOTONOI THAI」。バンコク、チェンマイなどの移住情報、ビザ情報のほか、サウナ、リトリート、デジタルデトックスなど心と体を整えるタイ生活を発信。",
   keywords: [
     "タイ移住",
     "ウェルネス",
@@ -108,7 +108,7 @@ export default async function RootLayout({
           "width": 512,
           "height": 512
         },
-        "description": "タイ移住とウェルネスをテーマにしたコミュニティメディア",
+        "description": "タイ移住とウェルネスをテーマにしたライフスタイルメディア",
         "sameAs": [
           "https://x.com/nomad_place",
           "https://instagram.com/nomad_place",
@@ -120,7 +120,7 @@ export default async function RootLayout({
         "@id": "https://totonoi-thai.com/#website",
         "url": "https://totonoi-thai.com",
         "name": "TOTONOI THAI",
-        "description": "タイ移住・ウェルネスコミュニティ",
+        "description": "タイ移住・ウェルネスライフスタイルメディア",
         "publisher": {
           "@id": "https://totonoi-thai.com/#organization"
         },
@@ -135,7 +135,7 @@ export default async function RootLayout({
             "name": "TOTONOI THAI とは何ですか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "TOTONOI THAI は、タイ移住とウェルネスをテーマにしたコミュニティメディアです。旧「Nomad in Thailand (ノマタイ) 」を前身とし、バンコクやチェンマイでの生活情報、ビザ、サウナやリトリートに関する情報を発信しています。"
+              "text": "TOTONOI THAI は、タイ移住とウェルネスをテーマにしたライフスタイルメディアです。旧「Nomad in Thailand (ノマタイ) 」を前身とし、バンコクやチェンマイでの生活情報、ビザ、サウナやリトリートに関する情報を発信しています。"
             }
           },
           {
@@ -143,15 +143,15 @@ export default async function RootLayout({
             "name": "イベントに参加するにはどうすればいいですか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "毎月開催される「ゆる飲み会」や「カフェ作業会」などは、公式SNSから誰でも参加申し込みが可能です。"
+              "text": "バンコクで開催される「ゆる飲み会」や「朝ランニング会」「筋トレ会」などは、公式LINEからイベント情報を受け取り、参加申し込みが可能です。"
             }
           },
           {
             "@type": "Question",
-            "name": "初心者でもコミュニティに参加できますか？",
+            "name": "初心者でもイベントに参加できますか？",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "はい、大歓迎です。これからタイ移住を考えている方や、ウェルネスに関心がある方も多く在籍しています。"
+              "text": "はい、大歓迎です。これからタイ移住を考えている方や、ウェルネスに関心がある方も多く参加されています。"
             }
           }
         ]
