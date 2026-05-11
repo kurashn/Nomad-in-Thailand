@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Users } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -13,7 +13,7 @@ export default function Hero() {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2, // Stagger animations for children
+                staggerChildren: 0.2,
                 delayChildren: 0.3,
             },
         },
@@ -24,95 +24,110 @@ export default function Hero() {
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: "easeOut" as const }, // Smooth ease-out
+            transition: { duration: 0.8, ease: "easeOut" as const },
         },
     };
 
     return (
-        <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden py-20">
-            {/* Background Image with Parallax-like effect (simplest via fixed/absolute) */}
+        <section className="relative min-h-screen flex items-center overflow-hidden">
+            {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/wellness_resort_sauna.png"
-                    alt="Tropical Wellness Sauna Resort in Thailand"
+                    src="/images/fvbg.png"
+                    alt="TOTONOI THAI Retreat"
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
                     priority
                 />
-                {/* Modern Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-slate-900/90" />
-                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-black/20 to-black/60 opacity-80" />
+                {/* Gradient overlay: dark on the left where text is, lighter on the right */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#020B18]/85 via-[#020B18]/60 to-[#020B18]/20" />
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#020B18]" />
             </div>
 
+            {/* Content */}
             <motion.div
-                className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-10 pb-10"
+                className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-10 pt-64 pb-20"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
             >
-                {/* Logo */}
-                <motion.div variants={itemVariants} className="flex justify-center items-center mb-6 w-full">
-                    <Image
-                        src="/character/totonoi-logo.png" unoptimized
-                        alt="TOTONOI THAI"
-                        width={120}
-                        height={120}
-                        className="drop-shadow-2xl w-20 h-20 md:w-[120px] md:h-[120px] object-contain mx-auto"
-                    />
-                </motion.div>
-
                 {/* Main Title */}
                 <motion.h1
                     variants={itemVariants}
-                    className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight mb-6 text-white drop-shadow-2xl font-serif"
+                    className="text-4xl md:text-5xl lg:text-6xl font-black tracking-widest mb-4 text-white leading-tight uppercase"
+                    style={{
+                        fontFamily: "var(--font-inter), 'Helvetica Neue', Arial, sans-serif",
+                        textShadow: "0 2px 16px rgba(0,0,0,0.6)",
+                        letterSpacing: "0.15em"
+                    }}
                 >
-                    {t('title')}
+                    TOTONOI THAI
                 </motion.h1>
 
-                {/* Subtitle & Description */}
-                <motion.div variants={itemVariants} className="mb-12">
-                    <p className="text-lg md:text-3xl text-slate-100 font-bold drop-shadow-lg whitespace-pre-line leading-relaxed">
-                        {t.rich('subtitle', {
-                            nowrap: (chunks) => <span className="inline-block md:whitespace-nowrap">{chunks}</span>
-                        })}
+                {/* Subtitle */}
+                <motion.div variants={itemVariants} className="mb-10 max-w-xl">
+                    <p
+                        className="text-lg md:text-2xl text-white font-bold leading-snug mb-4"
+                        style={{
+                            fontFamily: "var(--font-noto-sans-jp), sans-serif",
+                            textShadow: "0 1px 10px rgba(0,0,0,0.7)"
+                        }}
+                    >
+                        {t('subtitle')}
                     </p>
-                    <p className="text-base md:text-xl text-slate-200/90 mt-6 max-w-3xl mx-auto leading-relaxed font-medium whitespace-pre-line">
-                        {t.rich('description', {
-                            nowrap: (chunks) => <span className="inline-block md:whitespace-nowrap">{chunks}</span>
-                        })}
+                    <p
+                        className="text-sm md:text-base text-white/75 leading-loose whitespace-pre-line font-normal"
+                        style={{
+                            fontFamily: "var(--font-noto-sans-jp), sans-serif",
+                            textShadow: "0 1px 8px rgba(0,0,0,0.8)"
+                        }}
+                    >
+                        {t('description')}
                     </p>
                 </motion.div>
 
                 {/* CTA Button */}
                 <motion.div
                     variants={itemVariants}
-                    className="flex flex-col items-center justify-center gap-5"
+                    className="flex flex-col items-start gap-6"
                 >
-                    <a href="https://lin.ee/VRrmYI1" target="_blank" rel="noopener noreferrer" className="group">
-                        <motion.div
-                            className="px-5 py-3.5 md:px-10 md:py-5 rounded-full bg-gradient-to-r from-teal-600 to-emerald-600 text-white font-bold text-sm md:text-xl flex items-center gap-2 md:gap-3 shadow-[0_10px_40px_-10px_rgba(45,212,191,0.5)] border border-white/20 backdrop-blur-md"
-                            whileHover={{
-                                scale: 1.05,
-                                boxShadow: "0 20px 50px -10px rgba(45,212,191,0.6)"
-                            }}
-                            whileTap={{ scale: 0.98 }}
-                        >
-                            {t('cta')}
-                            <motion.span
-                                animate={{ x: [0, 4, 0] }}
-                                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                            >
-                                <ArrowRight className="w-5 h-5 md:w-6 md:h-6" />
-                            </motion.span>
-                        </motion.div>
+                    <a
+                        href="https://lin.ee/VRrmYI1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center gap-3 px-5 py-3 md:px-8 md:py-4 rounded-full bg-[#00A37E] hover:bg-[#008c6a] text-white font-bold text-sm md:text-base shadow-[0_8px_30px_rgba(0,163,126,0.5)] transition-all duration-200 hover:scale-105 active:scale-95 whitespace-nowrap"
+                        style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                        {t('cta')}
+                        <span className="bg-white/20 rounded-full p-2">
+                            <ArrowRight className="w-5 h-5" />
+                        </span>
                     </a>
 
-
+                    {/* Feature pills */}
+                    <div className="flex flex-col sm:flex-row gap-2 text-xs font-bold text-white/90">
+                        <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 w-fit">
+                            <svg className="w-3.5 h-3.5 text-[#00A37E] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                            <span>ウェルネス体験</span>
+                        </div>
+                        <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 w-fit">
+                            <svg className="w-3.5 h-3.5 text-[#00A37E] flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                            </svg>
+                            <span>本格リトリート</span>
+                        </div>
+                        <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 w-fit">
+                            <Users className="w-3.5 h-3.5 text-[#00A37E] flex-shrink-0" />
+                            <span>コミュニティ</span>
+                        </div>
+                    </div>
                 </motion.div>
             </motion.div>
 
-            {/* Decorative gradient at the bottom to blend with next section */}
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-50 to-transparent z-10 pointer-events-none" />
+            {/* Bottom gradient */}
+            <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-[#020B18] to-transparent z-10 pointer-events-none" />
         </section>
     );
 }

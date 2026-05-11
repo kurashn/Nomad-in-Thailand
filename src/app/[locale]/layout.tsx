@@ -187,7 +187,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <BreadcrumbJsonLd />
           <Navbar />
-          <main className="flex-1 pt-16">
+          <main className="flex-1">
             <Breadcrumb />
             {children}
           </main>

@@ -1,30 +1,24 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { ArrowUpRight, Tag, Clock } from 'lucide-react';
 import { reader } from '@/lib/reader';
 import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import ArticleFilter from '@/components/ArticleFilter';
+import { BookOpen } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: 'Navbar' });
 
     return {
-        title: `${t('column')} | Nomad in Thailand`,
+        title: `${t('column')} | TOTONOI THAI`,
+        description: 'タイ移住・ウェルネス・リトリートに関する最新情報をお届け。',
     };
 }
 
 export default async function BlogPage({ params }: { params: Promise<{ locale: string }> }) {
     const { locale } = await params;
-    // Use Navbar namespace for the title "Latest" or "新着記事"
-    const tNavbar = await getTranslations({ locale, namespace: 'Navbar' });
-    // Use Home namespace for the subtitle/description which matches "Latest info..."
-    const tHome = await getTranslations({ locale, namespace: 'Home' });
 
     const posts = await reader.collections.posts.all();
 
-    // Sort by date, newest first
     const sortedPosts = [...posts].sort((a, b) => {
         const dateA = a.entry.publishedDate ? new Date(a.entry.publishedDate).getTime() : 0;
         const dateB = b.entry.publishedDate ? new Date(b.entry.publishedDate).getTime() : 0;
@@ -46,18 +40,40 @@ export default async function BlogPage({ params }: { params: Promise<{ locale: s
     }));
 
     return (
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            {/* Header - matching nomad-info style */}
-            <div className="mb-12 text-center md:text-left">
-                <h1 className="text-3xl md:text-4xl font-extrabold mb-4 text-slate-900 tracking-tight">
-                    {tNavbar('column')}
-                </h1>
-                <p className="text-slate-600 text-lg max-w-2xl whitespace-pre-line">
-                    {tHome('column.subtitle')}
-                </p>
-            </div>
+        <div className="min-h-screen bg-[#020B18]">
 
-            <ArticleFilter articles={formattedArticles} />
+            {/* Hero Header */}
+            <section className="relative pt-36 pb-20 overflow-hidden">
+                {/* Background glow */}
+                <div className="absolute inset-0 pointer-events-none">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#00A37E]/30 via-[#043343]/20 to-transparent blur-[80px]" />
+                </div>
+
+                <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
+                    <div className="inline-flex items-center gap-2 text-[#00A37E] text-xs font-bold tracking-[0.25em] uppercase mb-6">
+                        <BookOpen className="w-4 h-4" />
+                        <span>ARTICLES</span>
+                    </div>
+                    <h1
+                        className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-wide"
+                        style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                        タイ生活情報
+                    </h1>
+                    <p
+                        className="text-white/60 text-sm md:text-base font-medium max-w-xl mx-auto"
+                        style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                        移住・ウェルネス・リトリートに関するリアルな情報をお届け。
+                    </p>
+                </div>
+            </section>
+
+            {/* Article Grid */}
+            <section className="max-w-6xl mx-auto px-6 pb-28">
+                <ArticleFilter articles={formattedArticles} />
+            </section>
+
         </div>
     );
 }

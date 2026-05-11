@@ -1,18 +1,14 @@
 {
     "Navbar": {
         "top": "TOP",
-        "ExpatGuide": "タイ移住情報",
-        "ExpatTools": "必須ツール",
-        "nomadGuide": "タイ移住情報",
-        "nomadTools": "必須ツール",
+        "home": "ホーム",
         "about": "TOTONOI THAIとは",
-        "community": "コミュニティ",
-        "migrationGuide": "タイ移住ガイド",
+        "programs": "プログラム紹介",
+        "facilities": "施設・設備",
+        "faq": "よくある質問",
+        "reserve": "ご予約はこちら",
         "column": "タイ生活情報",
-        "interviews": "インタビュー",
-        "sponsor": "スポンサー募集",
-        "contact": "お問い合わせ",
-        "line": "LINEで特典を受け取る"
+        "line": "公式LINEでイベント情報を受け取る"
     },
     "Common": {
         "ad_disclosure": "※本ページはプロモーションが含まれています",
@@ -30,30 +26,44 @@
     },
     "Hero": {
         "title": "TOTONOI THAI",
-        "subtitle": "「整える」を、タイでやる。",
-        "description": "ヴィラ合宿・アイスバス・朝ラン・筋トレ。\n仲間と、自分に戻る。",
-        "cta": "公式LINEで合宿・イベント情報を受け取る",
+        "subtitle": "タイで、人生を整える。",
+        "description": "日本での窮屈な生活から少し離れ、常夏の国で心身をリセットする。\nウェルネス、リトリート、そして「タイ移住」という新しい選択肢。\nもう一度、自分らしい生き方を取り戻すための場所がここにあります。",
+        "cta": "イベント情報を受け取る",
         "password": ""
     },
     "Footer": {
         "logoAlt": "TOTONOI THAI ロゴ",
-        "contents": {
+        "tagline": "タイ移住×ウェルネス",
+        "mainCopy": "「整う旅」から、\n新しい日常へ。",
+        "desc": "ウェルネス・リトリートで心と身体を整える。",
+        "col1": {
             "title": "コンテンツ",
-            "guide": "タイ移住攻略ガイド",
-            "community": "コミュニティ",
-            "sponsor": "スポンサー募集"
+            "items": {
+                "home": "ホーム",
+                "about": "TOTONOI THAIとは",
+                "programs": "プログラム紹介",
+                "facilities": "施設・設備",
+                "faq": "よくある質問"
+            }
         },
-        "links": {
-            "title": "関連リンク",
-            "youtube": "公式YouTube",
-            "contact": "お問い合わせ",
-            "newsletter": "公式LINE (特典あり)",
-            "privacy_policy": "プライバシーポリシー",
-            "tos": "利用規約",
-            "tokushoho": "特定商取引法に基づく表記"
+        "col2": {
+            "title": "サポート",
+            "items": {
+                "guide": "ご利用ガイド",
+                "reserve": "予約・変更",
+                "cancel": "キャンセルポリシー",
+                "contact": "お問い合わせ",
+                "privacy": "プライバシーポリシー"
+            }
         },
-        "legal": {
-            "title": "規約・ポリシー"
+        "col3": {
+            "title": "施設について",
+            "items": {
+                "facilities": "施設紹介",
+                "access": "アクセス",
+                "notes": "ご利用上の注意",
+                "blog": "ブログ"
+            }
         },
         "copyright": "© 2026 TOTONOI THAI. All rights reserved."
     },
