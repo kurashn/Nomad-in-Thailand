@@ -186,7 +186,7 @@ export default async function RootLayout({
           </>
         )}
         <NextIntlClientProvider messages={messages}>
-          {process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true" ? (
+          {true ? (
             <Maintenance />
           ) : (
             <>
