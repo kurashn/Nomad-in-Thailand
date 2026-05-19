@@ -10,6 +10,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BreadcrumbJsonLd from "@/components/seo/BreadcrumbJsonLd";
 import Breadcrumb from "@/components/Breadcrumb";
+import { Maintenance } from "@/components/Maintenance";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -185,13 +186,19 @@ export default async function RootLayout({
           </>
         )}
         <NextIntlClientProvider messages={messages}>
-          <BreadcrumbJsonLd />
-          <Navbar />
-          <main className="flex-1">
-            <Breadcrumb />
-            {children}
-          </main>
-          <Footer />
+          {process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true" ? (
+            <Maintenance />
+          ) : (
+            <>
+              <BreadcrumbJsonLd />
+              <Navbar />
+              <main className="flex-1">
+                <Breadcrumb />
+                {children}
+              </main>
+              <Footer />
+            </>
+          )}
         </NextIntlClientProvider>
       </body>
     </html>

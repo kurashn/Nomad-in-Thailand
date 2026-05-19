@@ -206,44 +206,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Retreat Banner Section */}
-      <section className="py-12 bg-[#020B18] relative overflow-hidden border-t border-white/5">
-        <div className="max-w-[1200px] mx-auto px-6 relative z-10">
-          <Link href="/retreat" className="group block relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl transition-all duration-500 hover:-translate-y-1 hover:shadow-[#00A37E]/20 hover:border-white/20">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#00A37E]/80 to-[#020B18]/90 z-10 mix-blend-multiply" />
-            <div className="absolute inset-0 bg-black/40 z-10" />
-            
-            <div className="relative h-[250px] md:h-[300px] w-full">
-                <Image
-                    src="/images/fvbg.png"
-                    alt="Chiang Mai Retreat"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-            </div>
 
-            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
-                <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-white text-xs font-bold mb-4 border border-white/20">
-                    <span className="relative flex h-2 w-2">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00A37E] opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00A37E]"></span>
-                    </span>
-                    2026年6〜8月ごろ開催予定（調整中）
-                </div>
-                <h3 className="text-2xl md:text-4xl font-bold text-white mb-2 leading-tight" style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}>
-                    チェンマイ 2泊3日リトリート合宿
-                </h3>
-                <p className="text-white/80 text-sm md:text-base font-medium mb-6">
-                    心と身体を深く整える特別な3日間。限定10名募集。
-                </p>
-                <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white text-[#020B18] font-bold text-sm transition-all duration-300 group-hover:bg-[#00A37E] group-hover:text-white">
-                    詳細を見る
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-            </div>
-          </Link>
-        </div>
-      </section>
 
       {/* Blog / Articles Section */}
       <section className="py-24 bg-[#0a121d] relative overflow-hidden">
