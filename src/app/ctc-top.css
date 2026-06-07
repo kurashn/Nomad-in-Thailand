@@ -1772,8 +1772,10 @@ body.no-scroll {
     padding: 0 !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    letter-spacing: 0.02em !important;
-    text-indent: 0.5em;
+    letter-spacing: 0 !important;
+    word-break: keep-all !important;
+    overflow-wrap: anywhere;
+    font-size: 34px !important;
   }
   .ctc-page .hero-lead,
   .ctc-page .hero-lead-mobile-center {
