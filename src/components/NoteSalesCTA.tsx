@@ -28,7 +28,7 @@ export default function NoteSalesCTA({ variant = "inline" }: NoteSalesCTAProps) 
                 <div className="relative h-48 w-full md:h-auto md:w-2/5 overflow-hidden">
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 md:hidden" />
                     <Image
-                        src="/images/dtv-visa-thumbnail.png" // Fallback to existing DTV image if specific thumbnail not ready
+                        src="/images/dtv-visa-thumbnail.webp" // Fallback to existing DTV image if specific thumbnail not ready
                         alt="DTV Visa Note"
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"

@@ -33,7 +33,7 @@ export default function Hero() {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/fvbg.png"
+                    src="/images/fvbg.webp"
                     alt="TOTONOI THAI Retreat"
                     fill
                     className="object-cover object-center"
@@ -92,7 +92,7 @@ export default function Hero() {
                     className="flex flex-col items-start gap-6"
                 >
                     <a
-                        href="https://lin.ee/VRrmYI1"
+                        href="https://lin.ee/WYck3Sx"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="group inline-flex items-center gap-3 px-5 py-3 md:px-8 md:py-4 rounded-full bg-[#00A37E] hover:bg-[#008c6a] text-white font-bold text-sm md:text-base shadow-[0_8px_30px_rgba(0,163,126,0.5)] transition-all duration-200 hover:scale-105 active:scale-95 whitespace-nowrap"

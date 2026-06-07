@@ -58,7 +58,7 @@ export default function BangkokRoadmapPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-10" />
                 <div className="w-full h-full bg-slate-200 relative">
                     <Image
-                        src="/images/bangkok_nomad_roadmap_thumbnail.png"
+                        src="/images/bangkok_nomad_roadmap_thumbnail.webp"
                         alt="Bangkok Nomad Setup"
                         fill
                         className="object-cover"
@@ -650,7 +650,7 @@ export default function BangkokRoadmapPage() {
                                 <h3 className="font-bold text-lg mb-2 text-foreground">{t('community.line.title')}</h3>
                                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{t('community.line.desc')}</p>
                                 <div className="flex flex-col gap-3">
-                                    <a href="https://lin.ee/VRrmYI1" target="_blank" className="text-primary font-bold text-sm hover:underline inline-flex items-center gap-1">
+                                    <a href="https://lin.ee/WYck3Sx" target="_blank" className="text-primary font-bold text-sm hover:underline inline-flex items-center gap-1">
                                         {t('community.line.cta')} <ArrowRight className="w-4 h-4" />
                                     </a>
                                     <a href="https://youtu.be/Ak4-4HWnNLU?si=riuMMU34diPCn8bt" target="_blank" className="text-muted-foreground text-xs hover:text-red-500 transition-colors inline-flex items-center gap-2">

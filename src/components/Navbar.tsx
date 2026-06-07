@@ -93,7 +93,7 @@ export default function Navbar() {
 
                             {/* CTA Button */}
                             <a
-                                href="https://lin.ee/VRrmYI1"
+                                href="https://lin.ee/WYck3Sx"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#00A37E] hover:bg-[#008c6a] text-white font-bold text-sm transition-all duration-200 shadow-lg shadow-[#00A37E]/40 whitespace-nowrap"
@@ -179,7 +179,7 @@ export default function Navbar() {
 
                         <div className="px-4">
                             <a
-                                href="https://lin.ee/VRrmYI1"
+                                href="https://lin.ee/WYck3Sx"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center gap-3 w-full px-5 py-4 rounded-xl bg-[#00A37E] text-white font-bold shadow-lg hover:bg-[#008c6a] transition-colors"

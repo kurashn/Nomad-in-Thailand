@@ -4,7 +4,7 @@ import { Shield } from "lucide-react";
 export async function generateMetadata() {
     const t = await getTranslations('Legal.privacy');
     return {
-        title: `${t('title')} | TOTONOI THAI`,
+        title: `${t('title')} | Chiang Mai Run Club`,
     };
 }
 
@@ -12,7 +12,7 @@ export default async function PrivacyPage() {
     const t = await getTranslations('Legal.privacy');
 
     return (
-        <div className="bg-slate-50 min-h-screen py-20 px-4">
+        <div className="bg-slate-50 min-h-screen pt-40 pb-20 px-4">
             <div className="max-w-3xl mx-auto">
                 <div className="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-slate-200">
                     <div className="flex items-center gap-4 mb-10">

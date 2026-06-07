@@ -23,7 +23,7 @@ export default function NewsletterCTA({ isInline = false }: { isInline?: boolean
                         </p>
                     </div>
                     <a
-                        href="https://lin.ee/VRrmYI1"
+                        href="https://lin.ee/WYck3Sx"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-[#06C755] hover:bg-[#05b34c] text-white font-bold transition-all shadow-md whitespace-nowrap text-sm group"
@@ -52,7 +52,7 @@ export default function NewsletterCTA({ isInline = false }: { isInline?: boolean
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
-                    href="https://lin.ee/VRrmYI1"
+                    href="https://lin.ee/WYck3Sx"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#06C755] hover:bg-[#05b34c] text-white font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-[#06C755]/20 flex items-center justify-center group"

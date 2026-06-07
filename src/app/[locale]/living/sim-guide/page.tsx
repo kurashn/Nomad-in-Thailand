@@ -22,7 +22,7 @@ export default function SimGuidePage() {
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <Image
-                    src="/images/sim_guide_hero_photo.png"
+                    src="/images/sim_guide_hero_photo.webp"
                     alt="Thai SIM and SMS Guide"
                     fill
                     className="object-cover"

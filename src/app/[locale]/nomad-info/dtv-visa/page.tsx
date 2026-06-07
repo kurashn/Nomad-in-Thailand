@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, CheckCircle2, Shield, Calendar, FileText, ArrowRight } from "lucide-react";
 import NewsletterCTA from "@/components/NewsletterCTA";
-import YouTubeEmbed from "@/components/YouTubeEmbed";
+// YouTubeEmbed import removed — using direct iframe instead
 import NoteSalesCTA from "@/components/NoteSalesCTA";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -27,7 +27,7 @@ export default function DtvVisaPage() {
             {
                 "@type": "Article",
                 "headline": t('meta.title'),
-                "image": "https://totonoi-thai.com/images/dtv-visa-thumbnail.png",
+                "image": "https://totonoi-thai.com/images/dtv-visa-thumbnail.webp",
                 "datePublished": "2024-06-01",
                 "dateModified": new Date().toISOString(),
                 "author": {
@@ -87,7 +87,7 @@ export default function DtvVisaPage() {
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 <Image
-                    src="/images/dtv-visa-thumbnail.png"
+                    src="/images/dtv-visa-thumbnail.webp"
                     alt="Thailand DTV Visa"
                     fill
                     className="object-cover"
@@ -121,8 +121,15 @@ export default function DtvVisaPage() {
                     </p>
 
                     <div className="mt-8 not-prose">
-                        <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg border border-slate-200">
-                            <YouTubeEmbed videoId="B_HkXPiv7ow" />
+                        <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg">
+                            <iframe
+                                className="w-full h-full"
+                                src="https://www.youtube.com/embed/B_HkXPiv7ow"
+                                title="YouTube video"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            />
                         </div>
                         <p className="text-sm text-center text-muted-foreground mt-2">
                             {t('intro.videoNote')}
@@ -310,7 +317,7 @@ export default function DtvVisaPage() {
                         <div className="flex flex-col md:flex-row gap-6 mb-8">
                             <div className="shrink-0">
                                 <Image
-                                    src="/images/dtv-visa-thumbnail.png"
+                                    src="/images/dtv-visa-thumbnail.webp"
                                     alt="DTV Visa Report"
                                     width={100}
                                     height={100}
@@ -440,7 +447,7 @@ export default function DtvVisaPage() {
                                 responsiveBr: () => <br className="hidden sm:inline" />
                             })}
                         </p>
-                        <a href="https://lin.ee/VRrmYI1" target="_blank" className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#06C755]/90 text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 shadow-md">
+                        <a href="https://lin.ee/WYck3Sx" target="_blank" className="inline-flex items-center gap-2 bg-[#06C755] hover:bg-[#06C755]/90 text-white font-bold px-8 py-3 rounded-full transition-all hover:scale-105 shadow-md">
                             {t('line.cta')} <ArrowRight className="w-4 h-4" />
                         </a>
                     </div>

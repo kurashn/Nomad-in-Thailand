@@ -21,7 +21,7 @@ export default function CafeGuidePage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": t.raw('meta.title'),
-        "image": "https://totonoi-thai.com/images/cafe_guide_hero.png",
+        "image": "https://totonoi-thai.com/images/cafe_guide_hero.webp",
         "datePublished": "2026-01-07",
         "author": {
             "@type": "Organization",
@@ -41,7 +41,7 @@ export default function CafeGuidePage() {
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <div className="w-full h-full relative">
                     <Image
-                        src="/images/cafe_guide_hero.png"
+                        src="/images/cafe_guide_hero.webp"
                         alt="Bangkok Work-Friendly Cafe"
                         fill
                         className="object-cover"

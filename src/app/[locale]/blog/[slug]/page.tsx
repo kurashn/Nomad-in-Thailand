@@ -30,22 +30,48 @@ export async function generateMetadata({ params }: Props) {
             const titleMatch = frontmatter.match(/title:\s*(.+)/);
             const descriptionMatch = frontmatter.match(/description:\s*(.+)/);
             const thumbnailMatch = frontmatter.match(/thumbnail:\s*(.+)/);
+            const dateMatch = frontmatter.match(/publishedDate:\s*(.+)/);
+            const categoryMatch = frontmatter.match(/category:\s*(.+)/);
+            const tagsMatch = frontmatter.match(/tags:\n([\s\S]*?)(?=\n\w|$)/);
 
             const title = titleMatch ? titleMatch[1].trim() : 'Nomad in Thailand';
             const description = descriptionMatch ? descriptionMatch[1].trim() : 'タイ在住の日本人ノマドのためのライフスタイルメディア';
-            const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.jpg';
+            const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.webp';
+            const publishedDate = dateMatch ? dateMatch[1].trim() : undefined;
+            const category = categoryMatch ? categoryMatch[1].trim() : undefined;
+            const tags: string[] = [];
+            if (tagsMatch) {
+                const tagLines = tagsMatch[1].split('\n');
+                tagLines.forEach(line => {
+                    const tagVal = line.match(/^\s*-\s*(.+)/);
+                    if (tagVal) tags.push(tagVal[1].trim());
+                });
+            }
+
+            const canonicalUrl = `https://totonoi-thai.com/ja/blog/${slug}`;
 
             return {
                 title,
                 description,
+                alternates: {
+                    canonical: canonicalUrl,
+                    languages: {
+                        'ja': `https://totonoi-thai.com/ja/blog/${slug}`,
+                    },
+                },
                 openGraph: {
                     title,
                     description,
+                    url: canonicalUrl,
                     images: [thumbnail],
                     type: 'article',
+                    ...(publishedDate && { publishedTime: publishedDate }),
+                    ...(category && { section: category }),
+                    ...(tags.length > 0 && { tags }),
+                    authors: ['Chiang Mai Run Club'],
                 },
                 twitter: {
-                    card: 'summary_large_image',
+                    card: 'summary_large_image' as const,
                     title,
                     description,
                     images: [thumbnail],
@@ -248,7 +274,7 @@ function parseMarkdown(markdown: string): string {
                         <div class="relative h-48 w-full md:h-auto md:w-2/5 overflow-hidden">
                             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10 md:hidden"></div>
                             <img
-                                src="/images/dtv-visa-thumbnail.png"
+                                src="/images/dtv-visa-thumbnail.webp"
                                 alt="DTV Visa Note"
                                 class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 style="object-fit: cover;"
@@ -591,12 +617,63 @@ export default async function BlogPostPage({ params }: Props) {
     const title = titleMatch ? titleMatch[1].trim() : 'Untitled';
     const publishedDate = dateMatch ? dateMatch[1].trim() : null;
     const category = categoryMatch ? categoryMatch[1].trim() : null;
-    const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.jpg';
+    const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.webp';
+    const descriptionMatch = frontmatter.match(/description:\s*(.+)/);
+    const description = descriptionMatch ? descriptionMatch[1].trim() : '';
+    const tagsMatch = frontmatter.match(/tags:\n([\s\S]*?)(?=\n\w|$)/);
+    const tags: string[] = [];
+    if (tagsMatch) {
+        const tagLines = tagsMatch[1].split('\n');
+        tagLines.forEach(line => {
+            const tagVal = line.match(/^\s*-\s*(.+)/);
+            if (tagVal) tags.push(tagVal[1].trim());
+        });
+    }
+
+    const canonicalUrl = `https://totonoi-thai.com/ja/blog/${slug}`;
+
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@type': 'BlogPosting',
+        headline: title,
+        description,
+        image: thumbnail.startsWith('/') ? `https://totonoi-thai.com${thumbnail}` : thumbnail,
+        ...(publishedDate && { datePublished: publishedDate }),
+        ...(publishedDate && { dateModified: publishedDate }),
+        author: {
+            '@type': 'Organization',
+            name: 'Chiang Mai Run Club 編集部',
+            url: 'https://totonoi-thai.com',
+            logo: {
+                '@type': 'ImageObject',
+                url: 'https://totonoi-thai.com/ctc-assets/cmrlogo.webp',
+            },
+        },
+        publisher: {
+            '@type': 'Organization',
+            name: 'Chiang Mai Run Club',
+            url: 'https://totonoi-thai.com',
+            logo: {
+                '@type': 'ImageObject',
+                url: 'https://totonoi-thai.com/ctc-assets/cmrlogo.webp',
+            },
+        },
+        mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': canonicalUrl,
+        },
+        ...(tags.length > 0 && { keywords: tags.join(', ') }),
+        ...(category && { articleSection: category }),
+    };
 
     const htmlContent = parseMarkdown(content);
 
     return (
         <article className="min-h-screen bg-slate-50 pb-20 font-sans text-slate-800">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             {/* Hero Header */}
             {/* Hero Header */}
             <div className="relative min-h-[50vh] w-full flex flex-col justify-end">
@@ -610,7 +687,7 @@ export default async function BlogPostPage({ params }: Props) {
                         priority
                     />
                 </div>
-                <div className="relative z-20 container max-w-4xl mx-auto px-4 pb-12 pt-24">
+                <div className="relative z-20 container max-w-4xl mx-auto px-4 pb-12 pt-40">
                     <Link
                         href="/blog"
                         className="inline-flex items-center text-sm mb-6 text-white/90 hover:text-[#9fe870] transition-colors bg-black/30 px-3 py-1 rounded-full backdrop-blur-sm border border-white/20"
@@ -652,8 +729,23 @@ export default async function BlogPostPage({ params }: Props) {
                             <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
                         </div>
 
-                        <div className="my-20">
-                            <NewsletterCTA isInline />
+
+                        {/* Author Profile Box (E-E-A-T) */}
+                        <div className="mt-14 bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
+                            <div className="flex items-start gap-5">
+                                <img
+                                    src="/ctc-assets/cmrlogo.webp"
+                                    alt="Chiang Mai Run Club 編集部"
+                                    className="w-16 h-16 md:w-20 md:h-20 rounded-full object-contain bg-slate-50 border border-slate-100 p-1 flex-shrink-0"
+                                />
+                                <div className="flex-1 min-w-0">
+                                    <p className="text-xs text-[#2a9d8f] font-bold tracking-wider uppercase mb-1">執筆</p>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">Chiang Mai Run Club 編集部</h3>
+                                    <p className="text-sm text-slate-600 leading-relaxed">
+                                        チェンマイ在住の日本人ノマド・フリーランス・経営者が集まるコミュニティ「Chiang Mai Run Club」の編集部。現地での実体験に基づき、タイ移住・生活・ビザ・税金などの情報を発信しています。
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className="mt-16 text-center lg:text-left border-t pt-10 border-slate-100">

@@ -25,7 +25,7 @@ export default function MedicalGuidePage() {
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <div className="w-full h-full relative">
                     <Image
-                        src="/images/medical_guide_hero.png"
+                        src="/images/medical_guide_hero.webp"
                         alt="Medical Care in Bangkok"
                         fill
                         className="object-cover"

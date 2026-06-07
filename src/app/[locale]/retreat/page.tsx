@@ -32,7 +32,7 @@ export default function RetreatPage() {
                         className="w-full h-full relative"
                     >
                         <Image
-                            src="/images/retreat/retreat-hero.png"
+                            src="/images/retreat/retreat-hero.webp"
                             alt="Chiang Mai Retreat Hero"
                             fill
                             className="object-cover object-center opacity-50"
@@ -92,7 +92,7 @@ export default function RetreatPage() {
                                 <div className="relative group w-full sm:w-auto">
                                     <div className="absolute -inset-1 bg-gradient-to-r from-[#00A37E] to-[#00d6a4] rounded-full blur opacity-40 group-hover:opacity-75 transition duration-500 group-hover:duration-200" />
                                     <a
-                                        href="https://lin.ee/VRrmYI1"
+                                        href="https://lin.ee/WYck3Sx"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="relative flex items-center justify-center gap-4 w-full sm:w-auto min-w-[320px] bg-gradient-to-r from-[#00A37E] to-[#008c6a] text-white px-8 py-5 rounded-full font-bold text-lg transition-all duration-300 border border-white/10"
@@ -134,7 +134,7 @@ export default function RetreatPage() {
                     </motion.div>
                     <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeIn} className="relative aspect-[16/10] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
                         <Image
-                            src="/images/retreat/retreat-nature.png"
+                            src="/images/retreat/retreat-nature.webp"
                             alt="Nature Concept"
                             fill
                             className="object-cover"
@@ -175,12 +175,12 @@ export default function RetreatPage() {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {[
-                            { src: "/images/retreat/retreat-sauna.png", title: "サウナ", desc: "心と体で汗をかき、\n心身をデトックス。" },
-                            { src: "/images/retreat/retreat-icebath.png", title: "アイスバス", desc: "冷水で引き締め、\n深い整いへ。" },
-                            { src: "/images/retreat/retreat-massage.png", title: "マッサージ", desc: "プロの施術で\n疲れをリリース。" },
-                            { src: "/images/retreat/retreat-smoothie.png", title: "スムージー", desc: "新鮮なフルーツで\n内側からチャージ。" },
-                            { src: "/images/retreat/retreat-bonfire.png", title: "焚き火", desc: "炎を囲んで語らい、\n心を開放。" },
-                            { src: "/images/retreat/retreat-bbq.png", title: "BBQ", desc: "みんなで楽しむ\n美味しい食事。" },
+                            { src: "/images/retreat/retreat-sauna.webp", title: "サウナ", desc: "心と体で汗をかき、\n心身をデトックス。" },
+                            { src: "/images/retreat/retreat-icebath.webp", title: "アイスバス", desc: "冷水で引き締め、\n深い整いへ。" },
+                            { src: "/images/retreat/retreat-massage.webp", title: "マッサージ", desc: "プロの施術で\n疲れをリリース。" },
+                            { src: "/images/retreat/retreat-smoothie.webp", title: "スムージー", desc: "新鮮なフルーツで\n内側からチャージ。" },
+                            { src: "/images/retreat/retreat-bonfire.webp", title: "焚き火", desc: "炎を囲んで語らい、\n心を開放。" },
+                            { src: "/images/retreat/retreat-bbq.webp", title: "BBQ", desc: "みんなで楽しむ\n美味しい食事。" },
                         ].map((exp, idx) => (
                             <motion.div key={idx} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={fadeIn} className="group rounded-2xl overflow-hidden bg-white/[0.03] border border-white/10 hover:border-[#E5B55C]/40 transition-colors">
                                 <div className="relative h-64 overflow-hidden">
@@ -203,7 +203,7 @@ export default function RetreatPage() {
             <section className="py-20 px-6 max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white/[0.02] border border-white/10 rounded-3xl overflow-hidden">
                     <div className="lg:col-span-6 relative h-[400px] lg:h-[600px] w-full">
-                        <Image src="/images/retreat/retreat-villa.png" alt="Luxury Villa" fill className="object-cover" />
+                        <Image src="/images/retreat/retreat-villa.webp" alt="Luxury Villa" fill className="object-cover" />
                     </div>
                     <div className="lg:col-span-6 p-8 lg:p-12">
                         <div className="text-[#E5B55C] text-xs font-bold tracking-[0.2em] mb-4">VILLA & LIFESTYLE</div>
@@ -280,10 +280,10 @@ export default function RetreatPage() {
                 <h2 className="text-3xl font-bold text-center mb-12">こんな方におすすめ</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {[
-                        { title: "日常から離れて\nリセットしたい方", desc: "忙しい毎日を手放し、\n心と体を整えたい。", img: "/images/retreat/retreat-hero.png" },
-                        { title: "新しい出会いや\nつながりが欲しい方", desc: "価値観の合う仲間と\n深いつながりを。", img: "/images/retreat/retreat-community.png" },
-                        { title: "ウェルネス習慣を\n始めたい方", desc: "サウナや健康的な\n習慣を体験したい。", img: "/images/retreat/retreat-sauna.png" },
-                        { title: "チェンマイの自然を\n満喫したい方", desc: "豊かな自然と\n文化に触れたい。", img: "/images/retreat/retreat-nature.png" },
+                        { title: "日常から離れて\nリセットしたい方", desc: "忙しい毎日を手放し、\n心と体を整えたい。", img: "/images/retreat/retreat-hero.webp" },
+                        { title: "新しい出会いや\nつながりが欲しい方", desc: "価値観の合う仲間と\n深いつながりを。", img: "/images/retreat/retreat-community.webp" },
+                        { title: "ウェルネス習慣を\n始めたい方", desc: "サウナや健康的な\n習慣を体験したい。", img: "/images/retreat/retreat-sauna.webp" },
+                        { title: "チェンマイの自然を\n満喫したい方", desc: "豊かな自然と\n文化に触れたい。", img: "/images/retreat/retreat-nature.webp" },
                     ].map((item, idx) => (
                         <div key={idx} className="relative rounded-2xl overflow-hidden group aspect-[4/3] lg:aspect-square">
                             <Image src={item.img} alt={item.title.replace('\n', '')} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -300,7 +300,7 @@ export default function RetreatPage() {
             {/* 7. Bottom CTA Section */}
             <section className="py-24 px-6 relative border-t border-white/10 overflow-hidden">
                 <div className="absolute inset-0 z-0 opacity-20">
-                    <Image src="/images/retreat/retreat-hero.png" alt="Background" fill className="object-cover blur-sm" />
+                    <Image src="/images/retreat/retreat-hero.webp" alt="Background" fill className="object-cover blur-sm" />
                 </div>
                 <div className="max-w-5xl mx-auto relative z-10 bg-black/60 backdrop-blur-xl border border-white/10 rounded-3xl p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
                     <div className="flex-1">
@@ -323,7 +323,7 @@ export default function RetreatPage() {
 
                     <div className="shrink-0 flex flex-col items-center">
                         <a
-                            href="https://lin.ee/VRrmYI1"
+                            href="https://lin.ee/WYck3Sx"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="group flex items-center justify-center gap-3 bg-[#00A37E] hover:bg-[#008c6a] text-white px-8 py-5 rounded-full font-bold text-lg transition-all duration-300 shadow-[0_0_20px_rgba(0,163,126,0.4)] hover:shadow-[0_0_30px_rgba(0,163,126,0.6)] w-full md:w-auto"

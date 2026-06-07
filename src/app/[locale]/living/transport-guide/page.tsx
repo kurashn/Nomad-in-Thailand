@@ -25,7 +25,7 @@ export default function TransportGuidePage() {
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-black/40 z-10" />
                 <Image
-                    src="/images/transport_hero.png"
+                    src="/images/transport_hero.webp"
                     alt="Bangkok Transportation"
                     fill
                     className="object-cover"

@@ -16,7 +16,7 @@ export default async function ThailandGuidePage({
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/area_guide_hero_photo_optimized.jpg"
+                        src="/images/area_guide_hero_photo_optimized.webp"
                         alt="Bangkok Cityscape at Night"
                         fill
                         className="object-cover"

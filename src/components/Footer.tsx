@@ -68,7 +68,7 @@ export default function Footer() {
                         <div>
                             <h3 className="font-bold text-white mb-6 text-sm tracking-widest" style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}>メディア</h3>
                             <ul className="space-y-4">
-                                <li><a href="https://lin.ee/VRrmYI1" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}>公式LINE</a></li>
+                                <li><a href="https://lin.ee/WYck3Sx" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}>公式LINE</a></li>
                                 <li><a href="https://www.youtube.com/@nomad-thai" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors text-sm font-medium" style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}>公式YouTube</a></li>
                             </ul>
                         </div>

@@ -22,7 +22,7 @@ export default function SponsorPage() {
             <div className="relative bg-slate-900 rounded-3xl overflow-hidden mb-16">
                 <div className="absolute inset-0 opacity-20">
                     <Image
-                        src="/images/sponsor_hero.png"
+                        src="/images/sponsor_hero.webp"
                         alt="Business Partnership"
                         fill
                         className="object-cover"

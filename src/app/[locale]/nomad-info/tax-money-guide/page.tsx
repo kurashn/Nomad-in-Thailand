@@ -25,7 +25,7 @@ export default function TaxMoneyGuidePage() {
                 <div className="absolute inset-0 bg-black/50 z-10" />
                 <div className="w-full h-full relative">
                     <Image
-                        src="/images/tax_money_hero.png"
+                        src="/images/tax_money_hero.webp"
                         alt="Money and Tax for Digital Nomads"
                         fill
                         className="object-cover"
@@ -68,7 +68,7 @@ export default function TaxMoneyGuidePage() {
                     <div className="bg-card border border-muted rounded-2xl overflow-hidden shadow-sm mb-8">
                         <div className="relative h-64 w-full bg-green-50">
                             <Image
-                                src="/images/living_cost_visual.png"
+                                src="/images/living_cost_visual.webp"
                                 alt="Cost of Living Breakdown"
                                 fill
                                 className="object-contain p-8"
@@ -178,7 +178,7 @@ export default function TaxMoneyGuidePage() {
                         <div className="flex flex-col md:flex-row gap-8 items-center mb-8">
                             <div className="w-full md:w-1/2 relative h-56 rounded-xl overflow-hidden shadow-sm bg-white">
                                 <Image
-                                    src="/images/tax_residency_visual.png"
+                                    src="/images/tax_residency_visual.webp"
                                     alt="Tax Residency Rule"
                                     fill
                                     className="object-contain p-4"

@@ -25,7 +25,7 @@ export default function CoworkingGuidePage() {
                 <div className="absolute inset-0 bg-black/60 z-10" />
                 <div className="w-full h-full relative">
                     <Image
-                        src="/images/coworking_guide_hero.png"
+                        src="/images/coworking_guide_hero.webp"
                         alt="Digital Nomad in Bangkok"
                         fill
                         className="object-cover"

@@ -14,7 +14,7 @@ export async function generateMetadata({ params: { locale } }: { params: { local
             title: t('title'),
             description: t('desc'),
             type: "article",
-            images: ["https://totonoi-thai.com/images/area_guide_hero_photo.png"],
+            images: ["https://totonoi-thai.com/images/area_guide_hero_photo.webp"],
         }
     };
 }
@@ -27,7 +27,7 @@ export default function AreaGuidePage() {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": t.raw('meta.title'),
-        "image": "https://totonoi-thai.com/images/area_guide_hero_photo.png",
+        "image": "https://totonoi-thai.com/images/area_guide_hero_photo.webp",
         "datePublished": "2026-01-25",
         "dateModified": "2026-01-25",
         "author": {
@@ -83,7 +83,7 @@ export default function AreaGuidePage() {
             <div className="relative h-[50vh] w-full">
                 <div className="absolute inset-0 bg-black/60 z-10" />
                 <Image
-                    src="/images/area_guide_hero_photo.png"
+                    src="/images/area_guide_hero_photo.webp"
                     alt="Bangkok Area Guide"
                     fill
                     className="object-cover"
