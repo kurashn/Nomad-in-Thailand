@@ -62,7 +62,7 @@ export default function CtcTopPage() {
                 <div className="about-text" style={{ display: 'flex', flexDirection: 'column', gap: '1.2em' }}>
                   <p style={{ margin: 0 }}>
                     平日朝6時〜8時、チェンマイの溜池を走ります。<br className="pc-only-br" />
-                    ランの後はカフェに行くこともあります。
+                    ランの後はカフェに行くことも<br className="sp-only-br" />あります。
                   </p>
                   <p style={{ margin: 0 }}>
                     週4回（月・火・木・金）はジムで合同トレーニング。<br className="pc-only-br" />
@@ -70,29 +70,29 @@ export default function CtcTopPage() {
                   </p>
                   <p style={{ margin: 0 }}>
                     参加者はノマド、フリーランス、経営者、<br className="pc-only-br" />
-                    投資家、チェンマイ在住者、移住検討者が中心です。
+                    投資家、チェンマイ在住者、<br className="sp-only-br" />移住検討者が中心です。
                   </p>
                 </div>
                 <div className="feature-grid">
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon3.webp" alt="" />
                     <h3>01. 週1から<br className="pc-only-br" />続けられる</h3>
-                    <p>朝ランから始められます。ペースの指定はありません。</p>
+                    <p>朝ランから始められます。<br />ペースの指定はありません。</p>
                   </article>
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon4.webp" alt="" />
                     <h3>02. 似た環境の人が<br className="pc-only-br" />集まっている</h3>
-                    <p>ノマド・フリーランス・経営者・投資家が中心です。</p>
+                    <p>ノマド・フリーランス・経営者・投資家が<br />中心です。</p>
                   </article>
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon2.webp" alt="" />
                     <h3>03. 名刺交換のない<br className="pc-only-br" />関係</h3>
-                    <p>サウナや食事から始まる、肩書きのないつながり。</p>
+                    <p>サウナや食事から始まる、<br />肩書きのないつながり。</p>
                   </article>
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon1.webp" alt="" />
                     <h3>04. チェンマイに<br className="pc-only-br" />居場所ができる</h3>
-                    <p>在住者にも移住検討者にも開いています。</p>
+                    <p>在住者にも移住検討者も参加できます。</p>
                   </article>
                 </div>
               </section>

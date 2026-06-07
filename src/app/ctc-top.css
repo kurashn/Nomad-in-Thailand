@@ -1763,6 +1763,26 @@ body.no-scroll {
     align-items: center !important;
     text-align: center !important;
     inset: unset !important;
+    justify-content: center !important;
+  }
+  .ctc-page .hero h1,
+  .ctc-page .hero-h1-mobile-center {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .ctc-page .hero-lead,
+  .ctc-page .hero-lead-mobile-center {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 !important;
+  }
+  .ctc-page .hero-buttons {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 }
 
