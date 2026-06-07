@@ -77,17 +77,17 @@ export default function CtcTopPage() {
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon3.webp" alt="" />
                     <h3>01. 週1から<br className="pc-only-br" />続けられる</h3>
-                    <p>朝ランから始められます。<br />ペースの指定はありません。</p>
+                    <p>朝ランから始められます。<br className="sp-only-br" />ペースの指定はありません。</p>
                   </article>
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon4.webp" alt="" />
                     <h3>02. 似た環境の人が<br className="pc-only-br" />集まっている</h3>
-                    <p>ノマド・フリーランス・経営者・投資家が<br />中心です。</p>
+                    <p>ノマド・フリーランス・経営者・投資家が<br className="sp-only-br" />中心です。</p>
                   </article>
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon2.webp" alt="" />
                     <h3>03. 名刺交換のない<br className="pc-only-br" />関係</h3>
-                    <p>サウナや食事から始まる、<br />肩書きのないつながり。</p>
+                    <p>サウナや食事から始まる、<br className="sp-only-br" />肩書きのないつながり。</p>
                   </article>
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon1.webp" alt="" />

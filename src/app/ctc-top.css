@@ -588,8 +588,7 @@
   font-size: 13px;
   color: var(--text-muted);
   line-height: 1.7;
-  word-break: keep-all;
-  overflow-wrap: anywhere;
+  white-space: nowrap;
 }
 
 /* ==========================================================================
@@ -1528,6 +1527,9 @@ body.no-scroll {
     padding: 0 10px;
     height: 28px;
     font-size: 11px;
+  }
+  .ctc-page .feature-card p {
+    white-space: normal;
   }
   .ctc-page .hero-inner {
     height: auto;
