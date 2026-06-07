@@ -1773,7 +1773,7 @@ body.no-scroll {
     margin-left: auto !important;
     margin-right: auto !important;
     letter-spacing: 0.02em !important;
-    text-indent: 0.02em;
+    text-indent: 0.5em;
   }
   .ctc-page .hero-lead,
   .ctc-page .hero-lead-mobile-center {
