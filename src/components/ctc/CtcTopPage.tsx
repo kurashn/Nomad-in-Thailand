@@ -27,7 +27,7 @@ export default function CtcTopPage() {
       <section className="hero" id="top">
         <div className="hero-inner">
           <div className="hero-copy">
-            <h1 className="hero-h1-mobile-center" style={{ wordBreak: 'keep-all', overflowWrap: 'anywhere' }}>
+            <h1 className="hero-h1-mobile-center">
               走る。整える。繋がる。<br />
               チェンマイで。
             </h1>

@@ -583,6 +583,11 @@
   overflow-wrap: anywhere;
 }
 
+.ctc-page .hero-h1-mobile-center {
+  text-align: center;
+  text-wrap: balance;
+}
+
 .ctc-page .feature-card p {
   font-size: 13px;
   color: var(--text-muted);
@@ -1773,9 +1778,9 @@ body.no-scroll {
     margin-left: auto !important;
     margin-right: auto !important;
     letter-spacing: 0 !important;
+    white-space: normal !important;
     word-break: keep-all !important;
-    overflow-wrap: anywhere;
-    font-size: 34px !important;
+    font-size: 32px !important;
   }
   .ctc-page .hero-lead,
   .ctc-page .hero-lead-mobile-center {
