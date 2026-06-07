@@ -1772,15 +1772,14 @@ body.no-scroll {
   }
   .ctc-page .hero h1,
   .ctc-page .hero-h1-mobile-center {
-    width: 100% !important;
+    width: auto !important;
     text-align: center !important;
     padding: 0 !important;
     margin-left: auto !important;
     margin-right: auto !important;
     letter-spacing: 0 !important;
-    white-space: normal !important;
-    word-break: keep-all !important;
-    font-size: 32px !important;
+    white-space: nowrap !important;
+    font-size: 28px !important;
   }
   .ctc-page .hero-lead,
   .ctc-page .hero-lead-mobile-center {
