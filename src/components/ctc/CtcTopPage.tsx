@@ -92,7 +92,7 @@ export default function CtcTopPage() {
                   <article className="feature-card fade-in">
                     <img src="/ctc-assets/icon1.webp" alt="" />
                     <h3>04. チェンマイに<br className="pc-only-br" />居場所ができる</h3>
-                    <p>在住者にも移住検討者も参加できます。</p>
+                    <p>在住者にも移住検討者にも参加できます。</p>
                   </article>
                 </div>
               </section>
@@ -111,7 +111,7 @@ export default function CtcTopPage() {
                       <img src="/ctc-assets/run.webp" alt="" />
                     </div>
                     <h3>朝ラン</h3>
-                    <p>毎週水曜 6:00〜。<br />溜池のほとりを自分のペースで。</p>
+                    <p>平日毎日 6:00〜。<br />溜池のほとりを自分のペースで。</p>
                   </article>
       
                   <article className="activity-card fade-in">
@@ -270,11 +270,21 @@ export default function CtcTopPage() {
                   <details className="faq-item">
                     <summary className="faq-q">
                       <span className="faq-q-icon">Q</span>
+                      <h3>参加費はかかりますか？</h3>
+                      <span className="faq-toggle"></span>
+                    </summary>
+                    <div className="faq-a">
+                      <p>参加費は無料です。</p>
+                    </div>
+                  </details>
+                  <details className="faq-item">
+                    <summary className="faq-q">
+                      <span className="faq-q-icon">Q</span>
                       <h3>Discordコミュニティに参加するには？</h3>
                       <span className="faq-toggle"></span>
                     </summary>
                     <div className="faq-a">
-                      <p>朝ランに参加した方をDiscordにご招待しています。参加費は無料です。まずは朝ランに来てください。</p>
+                      <p>朝ランに参加した方をDiscordにご招待しています。まずは朝ランに来てください。</p>
                     </div>
                   </details>
                   <details className="faq-item">
