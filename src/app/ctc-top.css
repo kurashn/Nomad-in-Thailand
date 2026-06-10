@@ -523,6 +523,7 @@
   }
   .ctc-page #faq-wrapper::before {
     background-image: url("/ctc-assets/faqbg.webp");
+    background-position: left center;
   }
 }
 
