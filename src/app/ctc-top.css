@@ -522,7 +522,7 @@
     background-image: url("/ctc-assets/bg-sp2.webp");
   }
   .ctc-page #faq-wrapper::before {
-    background-image: url("/ctc-assets/bg-sp3.webp");
+    background-image: url("/ctc-assets/faqbg.webp");
   }
 }
 
