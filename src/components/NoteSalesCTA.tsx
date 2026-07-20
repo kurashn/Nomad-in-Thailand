@@ -3,6 +3,7 @@
 import { useLocale } from "next-intl";
 import { ArrowRight, ShieldCheck, AlertTriangle } from "lucide-react";
 import Image from "next/image";
+import { NOTE_PRODUCT } from "@/config/site";
 
 interface NoteSalesCTAProps {
     variant?: "inline" | "sidebar";
@@ -11,10 +12,13 @@ interface NoteSalesCTAProps {
 export default function NoteSalesCTA({ variant = "inline" }: NoteSalesCTAProps) {
     const locale = useLocale();
 
+    // note商品が非公開の間は何も表示しない（src/config/site.ts で管理）
+    if (!NOTE_PRODUCT.enabled) return null;
+
     // Only show for JA locale for now as the note is in Japanese
     if (locale !== 'ja') return null;
 
-    const noteUrl = "https://note.com/nomad_dayo/n/neee79f24c62b";
+    const noteUrl = NOTE_PRODUCT.url;
 
     return (
         <div className="group relative overflow-hidden rounded-2xl border-2 border-[#2a9d8f] bg-white shadow-lg transition-all hover:shadow-xl my-10">

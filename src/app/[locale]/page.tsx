@@ -21,6 +21,7 @@ import {
   Youtube,
 } from 'lucide-react';
 import NoteSalesCTA from '@/components/NoteSalesCTA';
+import { NOTE_PRODUCT } from '@/config/site';
 
 const SITE_URL = 'https://totonoi-thai.com';
 const SITE_NAME = 'TOTONOI THAI';
@@ -451,20 +452,22 @@ export default async function Home() {
           </div>
         </section>
 
-        {/* ================= NOTE CTA ================= */}
-        <section className="border-y border-black/5 bg-white/60 py-16">
-          <div className="mx-auto max-w-3xl px-6">
-            <div className="mb-6 text-center">
-              <h2 className="mb-2 text-xl font-bold tracking-wide text-[#1f2937] md:text-2xl">
-                実際に審査を通った書類を公開しています
-              </h2>
-              <p className="text-sm text-[#4b5563]">
-                記事では書ききれない、そのまま使える実物の資料です。
-              </p>
+        {/* ================= NOTE CTA（商品公開中のみ表示） ================= */}
+        {NOTE_PRODUCT.enabled && (
+          <section className="border-y border-black/5 bg-white/60 py-16">
+            <div className="mx-auto max-w-3xl px-6">
+              <div className="mb-6 text-center">
+                <h2 className="mb-2 text-xl font-bold tracking-wide text-[#1f2937] md:text-2xl">
+                  実際に審査を通った書類を公開しています
+                </h2>
+                <p className="text-sm text-[#4b5563]">
+                  記事では書ききれない、そのまま使える実物の資料です。
+                </p>
+              </div>
+              <NoteSalesCTA />
             </div>
-            <NoteSalesCTA />
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* ================= LATEST ================= */}
         {latest.length > 0 && (

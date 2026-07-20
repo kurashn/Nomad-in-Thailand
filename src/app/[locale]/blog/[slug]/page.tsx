@@ -9,6 +9,7 @@ import NewsletterCTA from '@/components/NewsletterCTA';
 import BlogSidebar from '@/components/blog/BlogSidebar';
 import RelatedPosts from '@/components/blog/RelatedPosts';
 import NoteSalesCTA from '@/components/NoteSalesCTA';
+import { NOTE_PRODUCT } from '@/config/site';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -239,7 +240,9 @@ function parseMarkdown(markdown: string): string {
         }
 
         // NoteSalesCTA Shortcode: [NOTE_CTA]
+        // note商品が非公開の間は何も描画しない（マーカーはMDXに残し、公開時に自動復活）
         if (line.trim() === '[NOTE_CTA]') {
+            if (!NOTE_PRODUCT.enabled) continue;
             if (currentListType) flushList();
 
             // Render the CTA HTML structure directly
@@ -289,7 +292,7 @@ function parseMarkdown(markdown: string): string {
                             </p>
 
                             <a
-                                href="https://note.com/nomad_dayo/n/neee79f24c62b"
+                                href="${NOTE_PRODUCT.url}"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 class="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[#2a9d8f] px-6 py-3.5 font-bold text-white transition-all hover:bg-[#268c80] hover:scale-[1.02] shadow-md md:w-auto"
@@ -736,8 +739,9 @@ export default async function BlogPostPage({ params }: Props) {
                             </div>
                         </div>
 
-                        {/* ビザ関連記事の読了直後は購入意欲が最も高いため、note CTA を自動表示 */}
-                        {category === 'ビザ・手続き' && <NoteSalesCTA />}
+                        {/* ビザ関連記事の読了直後は意欲が最も高いため、note公開中は販売CTA、非公開中はLINE誘導 */}
+                        {category === 'ビザ・手続き' &&
+                            (NOTE_PRODUCT.enabled ? <NoteSalesCTA /> : <NewsletterCTA isInline />)}
 
                         {/* 回遊導線: モバイルはサイドバー非表示のため、ここが唯一の次の一手になる */}
                         <RelatedPosts currentSlug={slug} category={category} />
