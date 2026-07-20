@@ -26,7 +26,6 @@ import { NOTE_PRODUCT } from '@/config/site';
 const SITE_URL = 'https://totonoi-thai.com';
 const SITE_NAME = 'TOTONOI THAI';
 const YOUTUBE_URL = 'https://www.youtube.com/channel/UCSpo7KdBG5sPBhcvSSWDntA';
-const NOTE_URL = 'https://note.com/nomad_dayo';
 const SITE_TAGLINE = 'タイ移住・ノマド情報メディア';
 const SITE_DESCRIPTION =
   'タイ移住のリアルを、現地在住者が実体験で書くメディア。DTVビザの取り方、バンコク・チェンマイの生活費、税金、仕事、エリア選びまで、移住前に知っておきたい情報を網羅しています。';
@@ -206,7 +205,7 @@ export default async function Home() {
           '@type': 'ImageObject',
           url: `${SITE_URL}/character/totonoi-logo.png`,
         },
-        sameAs: [YOUTUBE_URL, NOTE_URL],
+        sameAs: [YOUTUBE_URL],
         areaServed: { '@type': 'Country', name: 'Thailand' },
         knowsAbout: [
           'タイ移住',

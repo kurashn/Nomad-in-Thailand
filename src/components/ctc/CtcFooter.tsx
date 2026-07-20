@@ -76,7 +76,6 @@ export default function CtcFooter() {
           <Link href="/contact" style={linkStyle}>お問い合わせ</Link>
           <a href="https://lin.ee/WYck3Sx" target="_blank" rel="noopener noreferrer" style={linkStyle}>公式LINE</a>
           <a href="https://www.youtube.com/channel/UCSpo7KdBG5sPBhcvSSWDntA" target="_blank" rel="noopener noreferrer" style={linkStyle}>YouTube（ポッドキャスト）</a>
-          <a href="https://note.com/nomad_dayo" target="_blank" rel="noopener noreferrer" style={linkStyle}>note</a>
           <Link href="/legal/tos" style={linkStyle}>利用規約</Link>
           <Link href="/legal/privacy" style={linkStyle}>プライバシーポリシー</Link>
           <Link href="/legal/tokushoho" style={linkStyle}>特定商取引法に基づく表記</Link>

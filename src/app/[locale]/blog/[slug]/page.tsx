@@ -726,14 +726,6 @@ export default async function BlogPostPage({ params }: Props) {
                                         >
                                             ▶ YouTube（ポッドキャスト）
                                         </a>
-                                        <a
-                                            href="https://note.com/nomad_dayo"
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#2a9d8f] transition-colors"
-                                        >
-                                            ✎ note
-                                        </a>
                                     </div>
                                 </div>
                             </div>
