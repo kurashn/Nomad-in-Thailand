@@ -719,7 +719,7 @@ export default async function BlogPostPage({ params }: Props) {
                                             href="https://www.youtube.com/channel/UCSpo7KdBG5sPBhcvSSWDntA"
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#FF0000] transition-colors"
+                                            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#2a9d8f] transition-colors"
                                         >
                                             ▶ YouTube（ポッドキャスト）
                                         </a>

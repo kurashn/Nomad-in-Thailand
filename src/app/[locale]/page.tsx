@@ -546,7 +546,7 @@ export default async function Home() {
                 href={YOUTUBE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#FF0000] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-[#FF0000]/25 transition-all hover:-translate-y-0.5 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#1f2937] px-8 py-4 text-sm font-bold text-white shadow-lg shadow-black/20 transition-all hover:-translate-y-0.5 hover:bg-[#0a5a42] sm:w-auto"
               >
                 <Youtube className="h-4 w-4" />
                 ポッドキャストを聴く
