@@ -26,6 +26,7 @@ const CATEGORY_MATCHERS: Record<string, string[]> = {
     visa: ["ビザ・手続き"],
     living: ["生活情報", "体験談"],
     money: ["お金・税金・仮想通貨"],
+    interviews: ["ノマドインタビュー"],
 };
 
 export default function ArticleFilter({ articles }: Props) {
@@ -49,6 +50,7 @@ export default function ArticleFilter({ articles }: Props) {
         { id: "visa", label: t('categories.visa') },
         { id: "living", label: t('categories.living') },
         { id: "money", label: t('categories.money') },
+        { id: "interviews", label: t('categories.interviews') },
     ];
 
     const filteredArticles = useMemo(() => {

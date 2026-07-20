@@ -69,18 +69,18 @@ export default function CtcHeader() {
       {/* HEADER */}
       <header className={`header${!isTopPage ? ' header--subpage' : ''}`} id="header">
         <div className="header-inner">
-          <Link href="/" className="header-logo" aria-label="Chiang Mai Run Club トップページへ">
-            <img src="/ctc-assets/cmrlogo.webp" alt="Chiang Mai Run Club" style={{ height: '80px', width: 'auto', objectFit: 'contain' }} />
+          <Link href="/" className="header-logo" aria-label="TOTONOI THAI トップページへ">
+            <img src="/character/totonoi-logo.png" alt="TOTONOI THAI" style={{ height: '64px', width: 'auto', objectFit: 'contain' }} />
           </Link>
           <nav className="nav" aria-label="メインナビゲーション">
-            <Link href="/#community">コミュニティについて</Link>
-            <Link href="/#activities">活動内容</Link>
-            <Link href="/#flow">参加の流れ</Link>
-            <Link href="/blog">タイ生活情報</Link>
-            <Link href="/#faq">よくある質問</Link>
+            <Link href="/blog">記事一覧</Link>
+            <Link href="/blog?category=visa">ビザ・手続き</Link>
+            <Link href="/blog?category=money">お金・税金</Link>
+            <Link href="/blog?category=living">生活情報</Link>
+            <Link href="/nomad-info/dtv-visa">DTVビザガイド</Link>
           </nav>
           <a className="header-cta" href="https://lin.ee/WYck3Sx" target="_blank" rel="noopener noreferrer">
-            <span>まずはLINEで情報を受け取る</span>
+            <span>LINEで最新情報を受け取る</span>
           </a>
 
           {/* Hamburger Button */}
@@ -95,12 +95,12 @@ export default function CtcHeader() {
       {/* Mobile Menu */}
       <nav className="mobile-menu">
         <ul className="mobile-menu-list">
-          <li><Link href="/#community" className="mobile-link">コミュニティについて</Link></li>
-          <li><Link href="/#activities" className="mobile-link">活動内容</Link></li>
-          <li><Link href="/#flow" className="mobile-link">参加の流れ</Link></li>
-          <li><Link href="/blog" className="mobile-link">タイ生活情報</Link></li>
-          <li><Link href="/#faq" className="mobile-link">よくある質問</Link></li>
-          <li><Link href="/#line" className="mobile-link line-btn">まずはLINEで情報を受け取る</Link></li>
+          <li><Link href="/blog" className="mobile-link">記事一覧</Link></li>
+          <li><Link href="/blog?category=visa" className="mobile-link">ビザ・手続き</Link></li>
+          <li><Link href="/blog?category=money" className="mobile-link">お金・税金</Link></li>
+          <li><Link href="/blog?category=living" className="mobile-link">生活情報</Link></li>
+          <li><Link href="/nomad-info/dtv-visa" className="mobile-link">DTVビザガイド</Link></li>
+          <li><a href="https://lin.ee/WYck3Sx" target="_blank" rel="noopener noreferrer" className="mobile-link line-btn">LINEで最新情報を受け取る</a></li>
         </ul>
       </nav>
     </>

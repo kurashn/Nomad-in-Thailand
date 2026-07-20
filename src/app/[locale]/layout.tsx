@@ -39,26 +39,48 @@ const zenOldMincho = Zen_Old_Mincho({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://totonoi-thai.com"),
-  title: "Chiang Mai Run Club | チェンマイで、動いて、整って、つながる。",
-  description: "チェンマイに暮らす日本人のためのラン＆ライフスタイルコミュニティ。",
+  title: {
+    default: "TOTONOI THAI | タイ移住のリアルを、現地在住者が書く",
+    template: "%s | TOTONOI THAI",
+  },
+  description:
+    "タイ移住・デジタルノマドの実務情報メディア。DTVビザの取り方、バンコク・チェンマイの生活費、税金、仕事、エリア選びを現地在住者が実体験で解説します。",
   keywords: [
     "タイ移住",
-    "ウェルネス",
-    "サウナ",
-    "チェンマイ生活",
-    "Chiang Mai Run Club",
-    "CMRC"
+    "DTVビザ",
+    "バンコク 生活費",
+    "チェンマイ 移住",
+    "デジタルノマド タイ",
+    "タイ 税金",
+    "タイ 長期滞在ビザ",
+    "TOTONOI THAI",
   ],
+  applicationName: "TOTONOI THAI",
+  authors: [{ name: "TOTONOI THAI" }],
+  creator: "TOTONOI THAI",
+  publisher: "TOTONOI THAI",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     type: "website",
     url: "https://totonoi-thai.com",
-    siteName: "Chiang Mai Run Club",
+    siteName: "TOTONOI THAI",
+    locale: "ja_JP",
     images: [
       {
-        url: "https://totonoi-thai.com/assets/logo-main.png",
+        url: "https://totonoi-thai.com/images/ogp_default.webp",
         width: 1200,
         height: 630,
-        alt: "Chiang Mai Training Club",
+        alt: "TOTONOI THAI - タイ移住のリアルを、現地在住者が書く",
       },
     ],
   },

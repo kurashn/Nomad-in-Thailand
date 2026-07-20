@@ -7,6 +7,8 @@ import { ArrowLeft } from 'lucide-react';
 import { reader } from '@/lib/reader';
 import NewsletterCTA from '@/components/NewsletterCTA';
 import BlogSidebar from '@/components/blog/BlogSidebar';
+import RelatedPosts from '@/components/blog/RelatedPosts';
+import NoteSalesCTA from '@/components/NoteSalesCTA';
 
 interface Props {
     params: Promise<{ slug: string }>;
@@ -19,71 +21,50 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props) {
     const { slug } = await params;
-    const filePath = path.join(process.cwd(), 'src/content/posts', `${slug}.mdx`);
 
-    try {
-        const fileContent = await fs.readFile(filePath, 'utf-8');
-        const frontmatterMatch = fileContent.match(/^---\n([\s\S]*?)\n---\n/);
+    // frontmatter は正規表現ではなく Keystatic の reader で読む。
+    // YAML の折りたたみ記法（description: >-）を正規表現が ">-" と誤読するバグの再発防止。
+    const post = await reader.collections.posts.read(slug);
 
-        if (frontmatterMatch) {
-            const frontmatter = frontmatterMatch[1];
-            const titleMatch = frontmatter.match(/title:\s*(.+)/);
-            const descriptionMatch = frontmatter.match(/description:\s*(.+)/);
-            const thumbnailMatch = frontmatter.match(/thumbnail:\s*(.+)/);
-            const dateMatch = frontmatter.match(/publishedDate:\s*(.+)/);
-            const categoryMatch = frontmatter.match(/category:\s*(.+)/);
-            const tagsMatch = frontmatter.match(/tags:\n([\s\S]*?)(?=\n\w|$)/);
-
-            const title = titleMatch ? titleMatch[1].trim() : 'Nomad in Thailand';
-            const description = descriptionMatch ? descriptionMatch[1].trim() : 'タイ在住の日本人ノマドのためのライフスタイルメディア';
-            const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.webp';
-            const publishedDate = dateMatch ? dateMatch[1].trim() : undefined;
-            const category = categoryMatch ? categoryMatch[1].trim() : undefined;
-            const tags: string[] = [];
-            if (tagsMatch) {
-                const tagLines = tagsMatch[1].split('\n');
-                tagLines.forEach(line => {
-                    const tagVal = line.match(/^\s*-\s*(.+)/);
-                    if (tagVal) tags.push(tagVal[1].trim());
-                });
-            }
-
-            const canonicalUrl = `https://totonoi-thai.com/ja/blog/${slug}`;
-
-            return {
-                title,
-                description,
-                alternates: {
-                    canonical: canonicalUrl,
-                    languages: {
-                        'ja': `https://totonoi-thai.com/ja/blog/${slug}`,
-                    },
-                },
-                openGraph: {
-                    title,
-                    description,
-                    url: canonicalUrl,
-                    images: [thumbnail],
-                    type: 'article',
-                    ...(publishedDate && { publishedTime: publishedDate }),
-                    ...(category && { section: category }),
-                    ...(tags.length > 0 && { tags }),
-                    authors: ['Chiang Mai Run Club'],
-                },
-                twitter: {
-                    card: 'summary_large_image' as const,
-                    title,
-                    description,
-                    images: [thumbnail],
-                },
-            };
-        }
-    } catch (e) {
-        console.error('Failed to generate metadata:', e);
+    if (!post) {
+        return { title: 'TOTONOI THAI' };
     }
 
+    const title = post.title;
+    const description = post.description || 'タイ移住・デジタルノマドの実務情報メディア TOTONOI THAI';
+    const thumbnail = post.thumbnail || '/images/blog-default.webp';
+    const publishedDate = post.publishedDate ?? undefined;
+    const category = post.category ?? undefined;
+    const tags = (post.tags ?? []).filter((t): t is string => Boolean(t));
+
+    const canonicalUrl = `https://totonoi-thai.com/ja/blog/${slug}`;
+
     return {
-        title: 'Nomad in Thailand',
+        title,
+        description,
+        alternates: {
+            canonical: canonicalUrl,
+            languages: {
+                'ja': canonicalUrl,
+            },
+        },
+        openGraph: {
+            title,
+            description,
+            url: canonicalUrl,
+            images: [thumbnail],
+            type: 'article',
+            ...(publishedDate && { publishedTime: publishedDate }),
+            ...(category && { section: category }),
+            ...(tags.length > 0 && { tags }),
+            authors: ['TOTONOI THAI'],
+        },
+        twitter: {
+            card: 'summary_large_image' as const,
+            title,
+            description,
+            images: [thumbnail],
+        },
     };
 }
 
@@ -588,7 +569,13 @@ function formatInline(text: string): string {
 export default async function BlogPostPage({ params }: Props) {
     const { slug } = await params;
 
-    // Read the MDX file directly
+    // メタ情報は Keystatic の reader で読む（YAML を正しく解釈するため）。
+    // 本文は独自の markdown パーサに渡すので、raw テキストとしてファイルからも読む。
+    const post = await reader.collections.posts.read(slug);
+    if (!post) {
+        notFound();
+    }
+
     const filePath = path.join(process.cwd(), 'src/content/posts', `${slug}.mdx`);
 
     let fileContent: string;
@@ -598,37 +585,20 @@ export default async function BlogPostPage({ params }: Props) {
         notFound();
     }
 
-    // Parse frontmatter and content
     const frontmatterMatch = fileContent.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
 
     if (!frontmatterMatch) {
         notFound();
     }
 
-    const frontmatter = frontmatterMatch[1];
     const content = frontmatterMatch[2].trim();
 
-    // Parse frontmatter fields
-    const titleMatch = frontmatter.match(/title:\s*(.+)/);
-    const dateMatch = frontmatter.match(/publishedDate:\s*(.+)/);
-    const categoryMatch = frontmatter.match(/category:\s*(.+)/);
-    const thumbnailMatch = frontmatter.match(/thumbnail:\s*(.+)/);
-
-    const title = titleMatch ? titleMatch[1].trim() : 'Untitled';
-    const publishedDate = dateMatch ? dateMatch[1].trim() : null;
-    const category = categoryMatch ? categoryMatch[1].trim() : null;
-    const thumbnail = thumbnailMatch ? thumbnailMatch[1].trim() : '/images/blog-default.webp';
-    const descriptionMatch = frontmatter.match(/description:\s*(.+)/);
-    const description = descriptionMatch ? descriptionMatch[1].trim() : '';
-    const tagsMatch = frontmatter.match(/tags:\n([\s\S]*?)(?=\n\w|$)/);
-    const tags: string[] = [];
-    if (tagsMatch) {
-        const tagLines = tagsMatch[1].split('\n');
-        tagLines.forEach(line => {
-            const tagVal = line.match(/^\s*-\s*(.+)/);
-            if (tagVal) tags.push(tagVal[1].trim());
-        });
-    }
+    const title = post.title || 'Untitled';
+    const publishedDate = post.publishedDate ?? null;
+    const category = post.category ?? null;
+    const thumbnail = post.thumbnail || '/images/blog-default.webp';
+    const description = post.description || '';
+    const tags = (post.tags ?? []).filter((t): t is string => Boolean(t));
 
     const canonicalUrl = `https://totonoi-thai.com/ja/blog/${slug}`;
 
@@ -642,20 +612,20 @@ export default async function BlogPostPage({ params }: Props) {
         ...(publishedDate && { dateModified: publishedDate }),
         author: {
             '@type': 'Organization',
-            name: 'Chiang Mai Run Club 編集部',
+            name: 'TOTONOI THAI 編集部',
             url: 'https://totonoi-thai.com',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://totonoi-thai.com/ctc-assets/cmrlogo.webp',
+                url: 'https://totonoi-thai.com/character/totonoi-logo.png',
             },
         },
         publisher: {
             '@type': 'Organization',
-            name: 'Chiang Mai Run Club',
+            name: 'TOTONOI THAI',
             url: 'https://totonoi-thai.com',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://totonoi-thai.com/ctc-assets/cmrlogo.webp',
+                url: 'https://totonoi-thai.com/character/totonoi-logo.png',
             },
         },
         mainEntityOfPage: {
@@ -734,19 +704,43 @@ export default async function BlogPostPage({ params }: Props) {
                         <div className="mt-14 bg-white rounded-2xl border border-slate-200 p-6 md:p-8 shadow-sm">
                             <div className="flex items-start gap-5">
                                 <img
-                                    src="/ctc-assets/cmrlogo.webp"
-                                    alt="Chiang Mai Run Club 編集部"
+                                    src="/character/totonoi-logo.png"
+                                    alt="TOTONOI THAI 編集部"
                                     className="w-16 h-16 md:w-20 md:h-20 rounded-full object-contain bg-slate-50 border border-slate-100 p-1 flex-shrink-0"
                                 />
                                 <div className="flex-1 min-w-0">
                                     <p className="text-xs text-[#2a9d8f] font-bold tracking-wider uppercase mb-1">執筆</p>
-                                    <h3 className="text-lg font-bold text-slate-900 mb-2">Chiang Mai Run Club 編集部</h3>
+                                    <h3 className="text-lg font-bold text-slate-900 mb-2">TOTONOI THAI 編集部</h3>
                                     <p className="text-sm text-slate-600 leading-relaxed">
-                                        チェンマイ在住の日本人ノマド・フリーランス・経営者が集まるコミュニティ「Chiang Mai Run Club」の編集部。現地での実体験に基づき、タイ移住・生活・ビザ・税金などの情報を発信しています。
+                                        タイ在住の日本人による編集部。DTVビザの取得や現地での生活・手続きをすべて自分たちで経験し、その実体験に基づいてタイ移住・生活・ビザ・税金の情報を発信しています。
                                     </p>
+                                    <div className="flex flex-wrap gap-3 mt-4">
+                                        <a
+                                            href="https://www.youtube.com/channel/UCSpo7KdBG5sPBhcvSSWDntA"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#FF0000] transition-colors"
+                                        >
+                                            ▶ YouTube（ポッドキャスト）
+                                        </a>
+                                        <a
+                                            href="https://note.com/nomad_dayo"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#2a9d8f] transition-colors"
+                                        >
+                                            ✎ note
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
+                        {/* ビザ関連記事の読了直後は購入意欲が最も高いため、note CTA を自動表示 */}
+                        {category === 'ビザ・手続き' && <NoteSalesCTA />}
+
+                        {/* 回遊導線: モバイルはサイドバー非表示のため、ここが唯一の次の一手になる */}
+                        <RelatedPosts currentSlug={slug} category={category} />
 
                         <div className="mt-16 text-center lg:text-left border-t pt-10 border-slate-100">
                             <Link

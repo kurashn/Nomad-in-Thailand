@@ -4,7 +4,7 @@ import { Shield } from "lucide-react";
 export async function generateMetadata() {
     const t = await getTranslations('Legal.tokushoho');
     return {
-        title: `${t('title')} | Chiang Mai Run Club`,
+        title: `${t('title')}`,
     };
 }
 

@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 
-export default function CtcTopPage() {
+export default function RunClubLP() {
   useEffect(() => {
     // Scroll-triggered fade-in animations
     const observer = new IntersectionObserver((entries) => {

@@ -1,16 +1,15 @@
 import { reader } from '@/lib/reader';
-import { getTranslations } from 'next-intl/server';
 import { Metadata } from 'next';
 import ArticleFilter from '@/components/ArticleFilter';
 import { BookOpen } from 'lucide-react';
 
-export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
-    const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: 'Navbar' });
+export async function generateMetadata(): Promise<Metadata> {
+    const description =
+        'タイ移住・デジタルノマドの実務情報。ビザ、生活費、税金、仕事、住まいについて現地在住者が実体験で解説した記事の一覧です。';
 
     return {
-        title: `${t('column')} | Chiang Mai Run Club`,
-        description: 'タイ移住・ウェルネス・リトリートに関する最新情報をお届け。',
+        title: 'タイ移住の記事一覧',
+        description,
         alternates: {
             canonical: 'https://totonoi-thai.com/ja/blog',
             languages: {
@@ -18,8 +17,8 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
             },
         },
         openGraph: {
-            title: `${t('column')} | Chiang Mai Run Club`,
-            description: 'タイ移住・ウェルネス・リトリートに関する最新情報をお届け。',
+            title: `タイ移住の記事一覧 | TOTONOI THAI`,
+            description,
             url: 'https://totonoi-thai.com/ja/blog',
             type: 'website',
         },
